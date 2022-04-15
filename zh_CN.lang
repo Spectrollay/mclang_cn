@@ -2542,6 +2542,7 @@ enchantment.protect.fall=摔落保护	#
 enchantment.protect.fire=火焰保护	#
 enchantment.protect.projectile=弹射物保护	#
 enchantment.soul_speed=灵魂疾行	#
+enchantment.swift_sneak=迅捷潜行	#
 enchantment.thorns=荆棘	#
 enchantment.untouching=精准采集	#
 enchantment.waterWalker=深海探索者	#
@@ -5027,6 +5028,7 @@ itemGroup.name.shulkerBox=潜影盒	#
 itemGroup.name.record=唱片	#
 itemGroup.name.skull=生物头颅	#
 itemGroup.name.boat=船	#
+itemGroup.name.chestboat=运输船	#
 itemGroup.name.rail=铁轨	#
 itemGroup.name.minecart=矿车	#
 itemGroup.name.pressurePlate=压力板	#
@@ -5519,6 +5521,7 @@ options.worldconversion.version=世界转换器：%s	#
 options.builddate.format=创建日期：%s	#
 options.buttonSize=按钮尺寸	#
 options.alwaysHighlightHoveringBoxInCrosshair=始终高亮显示	#
+options.showTouchControlSelectionScreen=显示触控选择界面	#
 options.showActionButton=显示操作按钮	#
 options.enableNewTouchControlSchemes=启用新的触控模式	#
 options.category.addons=附加包	#
@@ -6768,13 +6771,13 @@ tile.mangrove_trapdoor.name=红树木活板门	#
 tile.mangrove_wood.name=红树木	#
 tile.stripped_mangrove_wood.name=去皮红树木	#
 item.boat.mangrove.name=红树木船	#
+item.echo_shard.name=回响碎片	#
+item.recovery_compass.name=追溯指针	#
 
 action.hint.exit.chest_boat=点击“跳跃”离开运输船	#
 action.hint.exit.console.chest_boat=按下:_input_key.jump:离开运输船	#
 entity.chest_boat.name=运输船	#
-itemGroup.name.chestboat=运输船	#
 feature.ancientcity=远古城市	#
-enchantment.swift_sneak=迅捷潜行	#
 
 storageManager.mainSizeLabel=%s - 1项目	#
 storageManager.mainSizeLabelPlural=%s - %s项目	#
@@ -10125,6 +10128,17 @@ world_recovery.progress=正在恢复%2个文件（%3）%1%1进度： 已完成%4
 osk.truncation_warning.title=警告	#
 osk.truncation_warning.body=无法编辑文本。文本超出限制，可能会导致截断或数据丢失。	#
 
+## Gatherings
+gathering.button.minecraftLive=Minecraft Live	#
+gathering.caption.startsIn=开始于%s	#
+gathering.caption.endsIn=结束于%s	#
+gathering.caption.eventOver=活动结束	#
+gathering.info.button.readMore=阅读更多...	#
+gathering.info.button.voteNow=现在投票	#
+gathering.info.title.liveIsComing=Minecraft Live即将到来!	#
+gathering.info.header.minecraftLive=Minecraft Live	#
+gathering.info.body.liveIsComing=是时候为Minecraft添加一个新的生物了，选择权在你手中。	#
+
 
 
 ## 教育版
@@ -10432,9 +10446,9 @@ tile.underwater_torch.name=水下火把	#
 item.bundle=捆绑包	#
 
 item.goat_horn.name=山羊角	#
-item.copper_horn.name=铜号角(暂译)	#
+item.copper_horn.name=铜号角	#
 itemGroup.name.goatHorn=山羊角	#
-itemGroup.name.copperHorn=铜号角(暂译)	#
+itemGroup.name.copperHorn=铜号角	#
 
 item.minecraft.copper_horn.harmony.0=Great	#
 item.minecraft.copper_horn.harmony.1=Old	#
