@@ -6730,7 +6730,7 @@ item.spawn_egg.entity.warden.name=监守者刷怪蛋	#
 entity.warden.name=监守者	#
 entity.allay.name=悦灵	#
 item.spawn_egg.entity.allay.name=悦灵刷怪蛋	#
-action.interact.allay=悦灵	#
+action.interact.allay=给予悦灵物品	#
 item.bucketTadpole.name=蝌蚪桶	#
 item.spawn_egg.entity.frog.name=青蛙刷怪蛋	#
 item.spawn_egg.entity.tadpole.name=蝌蚪刷怪蛋	#
@@ -6773,6 +6773,8 @@ tile.stripped_mangrove_wood.name=去皮红树木	#
 item.boat.mangrove.name=红树木船	#
 item.echo_shard.name=回响碎片	#
 item.recovery_compass.name=追溯指针	#
+item.disc_fragment_5=唱片残片	#
+item.record_5.desc=Samuel Åberg - 5	#
 
 action.hint.exit.chest_boat=点击“跳跃”离开运输船	#
 action.hint.exit.console.chest_boat=按下:_input_key.jump:离开运输船	#
@@ -10446,9 +10448,9 @@ tile.underwater_torch.name=水下火把	#
 item.bundle=捆绑包	#
 
 item.goat_horn.name=山羊角	#
-item.copper_horn.name=铜号角	#
+item.copper_horn.name=铜制号角	#
 itemGroup.name.goatHorn=山羊角	#
-itemGroup.name.copperHorn=铜号角	#
+itemGroup.name.copperHorn=铜制号角	#
 
 item.minecraft.copper_horn.harmony.0=Great	#
 item.minecraft.copper_horn.harmony.1=Old	#
