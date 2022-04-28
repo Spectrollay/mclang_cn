@@ -1702,6 +1702,8 @@ createWorldScreen.vanillaExperiments=原版实验性功能	#
 createWorldScreen.vanillaExperimentsDescription=体验正在开发的新的原版功能	#
 createWorldScreen.wildUpdate=荒野更新	#
 createWorldScreen.wildUpdateDescription=体验即将到来的荒野更新中的新功能	#
+createWorldScreen.spectatorMode=旁观模式	#
+createWorldScreen.spectatorModeDescription=体验旁观模式的早期版本	#
 createWorldScreen.experimentalholiday=假日创作者功能	#
 createWorldScreen.experimentalholidayDescription=添加数据驱动的方块和物品技术，以自定义方块的形状、旋转、损坏等	#
 createWorldScreen.experimentalGameTest=GameTest框架	#
@@ -10446,6 +10448,8 @@ tile.underwater_torch.name=水下火把	#
 
 ## 实验性
 item.bundle=捆绑包	#
+
+createWorldScreen.gameMode.spectator=旁观	#
 
 item.goat_horn.name=山羊角	#
 item.copper_horn.name=铜制号角	#
