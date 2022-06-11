@@ -9717,6 +9717,10 @@ hbui.DropdownItem.narrationComponentType=选项	#
 hbui.DropdownItem.select=选择	#
 hbui.DropdownItem.selected=已选择	#
 hbui.DropdownItem.unselected=未选择	#
+###■■■■■这里开始有些内容待定■■■■■
+###不知道是啥东东,可能和新的UI有关
+###先翻译在这,但默认不展示,等有具体消息或功能实装了再说
+
 hbui.EditorActionBar.copy=复制	#
 hbui.EditorActionBar.cut=剪切	#
 hbui.EditorActionBar.paste=粘贴	#
@@ -9725,9 +9729,6 @@ hbui.EditorActionBar.redo=恢复	#
 ##hbui.EditorActionBar.sessions=会话	#
 ##hbui.EditorActionBar.test=Test Single Player	#
 hbui.EditorActionBar.undo=撤销	#
-###从这里开始不知道是啥东东,可能和新的UI有关
-###先翻译在这,但默认不展示,等有具体消息或功能实装了再说
-
 ##hbui.EditorControlDemo.windowSubTitle=演示控制	#
 ##hbui.EditorControlDemo.windowTitle=演示编辑控制	#
 ##hbui.EditorExpander.elementType=扩展	#
@@ -9830,9 +9831,6 @@ hbui.EditorUISettingsDemo.selectLabel=选择：	#
 hbui.EditorUISettingsDemo.themeTitle=主题	#
 hbui.EmptyStateMessage.buttonSelectInputLegend=选择	#
 ##hbui.EmptyStateMessage.narrationTextBlock=文本域	#
-
-###到这里结束
-###下面没问题
 hbui.ErrorModal.goBack=返回	#
 hbui.ErrorModal.goingBack=正在返回上一个界面...	#
 hbui.ErrorModal.title=出错了	#
@@ -9871,8 +9869,8 @@ hbui.PackListItem.descriptionMarketplaceLink=更多信息	#
 hbui.PackListItem.dragInputLegendText=拖动	#
 hbui.PackListItem.dropInputLegendText=放下	#
 hbui.PackListItem.expandDescriptionInputLegend=展开	#
-hbui.PackListItem.narrationAccordion=可折叠的	#
-hbui.PackListItem.narrationActivateButton=启用的资源包 按钮	#
+##hbui.PackListItem.narrationAccordion=可折叠的	#
+##hbui.PackListItem.narrationActivateButton=启用资源包 按钮	#
 hbui.PackListItem.narrationButton=按钮	#
 hbui.PackListItem.narrationCollapsed=折叠	#
 hbui.PackListItem.narrationComponentType=列表项	#
@@ -9883,7 +9881,7 @@ hbui.PackListItem.narrationListLengthContext=第%1$s个/共%2$s个	#
 hbui.PackListItem.narrationMultiplePacksHint=如果多个资源包对同一个世界进行了修改，那么等级最高的行为包所做的修改将会被应用。	#
 hbui.PackListItem.narrationPackDescription=资源包描述	#
 ##hbui.PackListItem.narrationPackRank=Rank %1$s	#
-hbui.PackListItem.narrationRemoveButton=移除资源包 按钮	#
+##hbui.PackListItem.narrationRemoveButton=移除资源包 按钮	#
 ##hbui.PackListItem.narrationReorderComplete=Pack is now rank %1$s	#
 ##hbui.PackListItem.narrationReorderGamepadChangeConfirmation=Rank %1$s. Select to confirm new rank.	#
 ##hbui.PackListItem.narrationReorderGamepadDraggingHint=Use up or down keys to reorder pack	#
@@ -9892,6 +9890,8 @@ hbui.PackListItem.narrationRemoveButton=移除资源包 按钮	#
 ##hbui.PackListItem.narrationReorderPointerChangeConfirmation=Rank %1$s. Release to confirm new rank.	#
 ##hbui.PackListItem.narrationReorderPointerDraggingHint=Drag up or down to reorder pack. Release to accept new rank	#
 ##hbui.PackListItem.narrationReorderPointerHint=Click and drag up or down to reorder pack.	#
+
+###■■■■■新增内容到这里结束■■■■■
 hbui.PackListItem.removeButtonText=移除	#
 hbui.PackTabs.activeTabButtonLabel=启用	#
 hbui.PackTabs.availableTabButtonLabel=可用	#
