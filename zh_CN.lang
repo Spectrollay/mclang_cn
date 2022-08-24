@@ -5503,7 +5503,7 @@ menu.copyright=©Mojang AB	#
 menu.disconnect=断开连接	#
 menu.educatorResources=教师资源	#
 menu.editions=版本	#
-menu.beta=Beta！！！	#
+menu.beta=Beta!!!	#
 menu.game=游戏菜单	#
 menu.generatingLevel=生成世界中	#
 menu.generatingTerrain=生成地形中	#
@@ -5709,7 +5709,6 @@ options.delete_account.confirm.button=注销	#
 options.dev_game_tip=游戏提示	#
 options.dev_ad_show_debug_panel=在调试面板中显示EDU标记	#
 options.dev_ad_token_refresh_threshold=EDU登录令牌刷新阀值秒数	#
-options.dev_side_by_side_comparison_rate=并列比较率	#
 options.dev_playfab_token_refresh_threshold=Playfab令牌刷新阈值分钟数	#
 options.dev_assertions_debug_break=调试器中的断点调试	#
 options.dev_assertions_show_dialog=断点显示日志	#
@@ -6307,8 +6306,6 @@ options.editor.modeDescription.messageWithMouse=为世界编辑添加了强大�
 options.editor.modeActive=Minecraft当前处于编辑器模式。	#
 options.editor.modeNotActive=Minecraft当前未处于编辑器模式。	#
 options.editor.achievementsDisabled=本项目中无法获得成就。	#
-
-options.dcast_character.Title=用于角色创建的新角色	#
 
 patchNotes.loading=正在加载更新说明	#
 patchNotes.continue=继续	#
@@ -9491,7 +9488,6 @@ trade.expMax=经验：最大	#
 trade.levelPrefix=%d级	#
 trade.levelPrefixAndName=%d级 - %s	#
 trade.levelPrefixAndName.max=最高级 - %s	#
-trade.nameAndLevel=%s - %s	#
 trade.level.1=新手	#
 trade.level.2=学徒	#
 trade.level.3=老手	#
@@ -9945,8 +9941,8 @@ osk.truncation_warning.body=无法编辑文本。文本超出限制，可能会�
 
 ## Gatherings
 gathering.button.minecraftLive=Minecraft Live	#
-gathering.caption.startsIn=开始于%s	#
-gathering.caption.endsIn=结束于%s	#
+gathering.caption.startsIn=将于%s后开始	#
+gathering.caption.endsIn=将于%s后结束	#
 gathering.caption.eventOver=活动已结束	#
 gathering.info.button.readMore=阅读更多...	#
 gathering.info.button.voteNow=立刻投票	#
