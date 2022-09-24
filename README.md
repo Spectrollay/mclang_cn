@@ -23,6 +23,7 @@
 
 <b>下载:</b>
 - Release标签用于发布适配正式版的中文译名修正包
+- [更好的基岩版资源包](https://github.com/Spectrollay/mcpack_bb)现已默认内置正式版译名修正包
 - Pre-release标签用于发布适配开发版的中文译名修正包
 - [备用网盘](https://pan.huang1111.cn/s/5eOAul?path=/)
 
