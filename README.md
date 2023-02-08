@@ -4,7 +4,7 @@
 
 <h3>和基岩版的无脑翻译说再见!</h3>
 
-<h4>适用于所有基于基岩引擎开发的游戏版本!<br>独家适配隐藏内容和不同平台的独有内容!<br>快速适配最新的绝大多数正式版和开发版!</h4>
+<b>适用于所有基于基岩引擎开发的游戏版本!<br>独家适配隐藏内容和不同平台的独有内容!<br>快速适配最新的绝大多数正式版和开发版!</b>
 
 [![Release](https://img.shields.io/github/v/release/Spectrollay/mclang_cn?color=brightgreen&label=正式版)](https://github.com/Spectrollay/mclang_cn/releases/latest)   [![Latest](https://img.shields.io/github/v/release/Spectrollay/mclang_cn?color=blue&include_prereleases&label=最新版)](https://github.com/Spectrollay/mclang_cn/releases)
 
