@@ -14,8 +14,8 @@
 
 <h4>发布日期:</h4>
 
-- 正式版 - 2023/2/8
-- 开发版 - 2023/2/8
+- ![正式版](https://img.shields.io/github/release-date/Spectrollay/mclang_cn?label=%E6%AD%A3%E5%BC%8F%E7%89%88)
+- ![开发版](https://img.shields.io/github/release-date-pre/Spectrollay/mclang_cn?label=%E5%BC%80%E5%8F%91%E7%89%88)
 
 <h4>现已跟进:</h4>
 
@@ -54,5 +54,4 @@
 
 <h4>关于:</h4>
 
-- 本项目允许自由转载及二创,但须保留版权.
-- 项目仍在不断改进中,欢迎提出宝贵的意见!
+- [![License](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-ff69b4)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-Hans)
