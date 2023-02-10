@@ -32,6 +32,7 @@
 
 <h4>近期更新:</h4>
 
+- [独有]近似匹配了Java版的物品稀有度名称颜色和一些自定义名称颜色
 - [独有]新增了教育版和教育版演示模式的UI内容
 - [独有]新增了角色编辑器的一些相关内容
 - [独有]新增了VR模式的一些相关内容
@@ -54,4 +55,6 @@
 
 <h4>关于:</h4>
 
-- [![License](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-ff69b4)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-Hans)
+- [![Basis](https://img.shields.io/badge/%E5%9F%BA%E4%BA%8E-Minecraft%20Wiki-ff69b4)](https://minecraft.fandom.com/zh/wiki/Minecraft_Wiki)
+- [![Reference](https://img.shields.io/badge/%E5%8F%82%E8%80%83-Crowdin-ff69b4)](https://crowdin.com/translate/minecraft/10038/enus-zhcn?filter=basic&value=0)
+- [![License](https://img.shields.io/badge/%E5%8D%8F%E8%AE%AE-CC%20BY--NC--SA%204.0-ff69b4)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-Hans)
