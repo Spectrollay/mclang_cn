@@ -1,0 +1,90 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "§6适配版本: Beta 1.19.70.21 / Preview 1.19.70.21\n作者: Minecraft Kit开发团队\n发布: https://github.com/Spectrollay/mclang_cn§r",
+        "name": "§e中文译名修正包§r",
+        "uuid": "7a613ccc-40b2-75da-8e7f-7f4e5ee69dcb",
+        "version": [1,19,31],
+        "min_engine_version":[1,13,0]
+    },
+    "modules": [
+        {
+            "type": "resources",
+            "uuid": "1c1c81cc-a4aa-1fb4-41f3-de9c5ea945b2",
+            "version": [1,19,31]
+        }
+    ],
+    "subpacks": [
+        {
+            "folder_name": "beta",
+            "name": " §gBeta",
+            "memory_tier": 1
+        },
+        {
+            "folder_name": "preview",
+            "name": " §gPreview",
+            "memory_tier": 1
+        },
+        {
+            "folder_name": "debug",
+            "name": " §g去开发版水印",
+            "memory_tier": 1
+        },
+        {
+            "folder_name": "default",
+            "name": " §g默认",
+            "memory_tier": 1
+        }
+    ],
+    
+    "settings": [
+    {
+	  "type": "label",
+	  "text": "§6版本: 1.19.31\n作者: Minecraft Kit开发团队§r\n发布:\n(基岩版工具包)https://github.com/Spectrollay/mcpack_bk\n(中文译名修正)https://github.com/Spectrollay/mclang_cn\n§c版权所有,侵权必究§r"
+	}/*,
+    {
+	  "type": "slider",
+	  "text": "滑条",
+	  "name": "this_is_a_slider",
+	  "min": 1,
+	  "max": 20,
+	  "default": 1
+    },
+    {
+	  "type": "step_slider",
+	  "text": "滑块",
+	  "name": "this_is_a_step_slider",
+	  "steps": [
+	    "选项1",
+		"选项2",
+		"选项3",
+		"选项4",
+		"选项5"
+	  ],
+	  "default": 1
+    },
+    {
+	  "type": "toggle",
+	  "text": "开关",
+	  "name": "this_is_a_toggle",
+	  "default": true
+    },
+    {
+	  "type": "dropdown",
+	  "text": "选项",
+	  "name": "this_is_a_dropdown",
+	  "options": [
+	    "选项1",
+		"选项2",
+		"选项3"
+	  ],
+	  "default": 0
+    },
+    {
+	  "type": "input",
+	  "text": "输入框",
+	  "name": "this_is_a_input",
+	  "default": "在此输入.."
+    }*/
+  ]
+}
