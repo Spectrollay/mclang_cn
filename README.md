@@ -19,8 +19,8 @@
 
 <h4>现已跟进:</h4>
 
-- Release 1.19.62
-- Beta/Preview 1.19.70.23
+- Release 1.19.70
+- Beta/Preview 1.19.70.26
 
 <h4>主要功能:</h4>
 
