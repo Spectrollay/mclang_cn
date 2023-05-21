@@ -6,9 +6,9 @@
 
 <b>适用于所有基于基岩引擎开发的游戏版本!<br>独家适配隐藏内容和不同平台的独有内容!<br>快速适配最新的绝大多数正式版和开发版!</b>
 
-[![Release](https://img.shields.io/github/v/release/Spectrollay/mclang_cn?color=brightgreen&label=正式版)](https://github.com/Spectrollay/mclang_cn/releases/latest)   [![Latest](https://img.shields.io/github/v/release/Spectrollay/mclang_cn?color=blue&include_prereleases&label=最新版)](https://github.com/Spectrollay/mclang_cn/releases)
+[![Release](https://img.shields.io/github/v/release/Spectrollay/mclang_cn?color=20A162&label=正式版)](https://github.com/Spectrollay/mclang_cn/releases/latest)   [![Latest](https://img.shields.io/github/v/release/Spectrollay/mclang_cn?color=43B244&include_prereleases&label=最新版)](https://github.com/Spectrollay/mclang_cn/releases)
 
-[![Download](https://img.shields.io/badge/%E5%85%A8%E7%89%88%E6%9C%AC%E4%B8%8B%E8%BD%BD-%E5%9B%BD%E5%86%85%E4%BA%91%E7%9B%98-orange)](https://pan.huang1111.cn/s/5eOAul?path=/)
+[![QQ-Group](https://img.shields.io/badge/QQ-%E7%BE%A4%E7%BB%84-blue)](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=WVA6aPqtv99hiYleW7vUq5OsBIufCAB1&authKey=B0%2BaXMCTqnmQrGh0wzCZTyWTIPyHS%2FPEM5QXcFfVwroFowNnzs6Yg1er1%2F8Fekqp&noverify=0&group_code=833473609)   [![YH-Group](https://img.shields.io/badge/云湖-%E7%BE%A4%E7%BB%84-blue)](https://yhfx.jwznb.com/share?key=VyTE7W7sLwRl&ts=1684642802 )
 
 </div>
 
