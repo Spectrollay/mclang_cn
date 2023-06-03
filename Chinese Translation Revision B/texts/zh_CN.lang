@@ -1,7 +1,3 @@
-## menu.beta=Spectrollay!	## 5678
-
-
-
 ## 本中文译名修正资源包依照Minecraft Wiki译名标准化进行制作
 ## 版权所有: Minecraft Kit开发团队
 ## 作者: Spectrollay
@@ -5675,7 +5671,7 @@ menu.copyright=©Mojang AB	#
 menu.disconnect=断开连接	#
 menu.educatorResources=教师资源	#
 menu.editions=版本	#
-menu.beta=Spectrollay!	#
+menu.beta=Beta!!!	#
 menu.game=游戏菜单	#
 menu.generatingLevel=生成世界中	#
 menu.generatingTerrain=生成地形中	#
