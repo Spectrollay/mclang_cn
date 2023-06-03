@@ -2,10 +2,10 @@
     "format_version": 2,
     
     "header": {
-        "description": "§6适配版本: 1.20.10.20\n作者: Minecraft Kit开发团队\n发布: https://github.com/Spectrollay/mclang_cn§r",
+        "description": "§6一般情况下需要将本资源包置于全局资源顶部\n适配版本: 1.20.10.21\n作者: Minecraft Kit开发团队§r",
         "name": "§e中文译名修正包§r",
         "uuid": "7a613ccc-40b2-75da-8e7f-7f4e5ee69dcb",
-        "version": [1,20,3],
+        "version": [1,20,4],
         "min_engine_version":[1,0,4]
     },
 
@@ -13,14 +13,14 @@
         {
             "type": "resources",
             "uuid": "1c1c81cc-a4aa-1fb4-41f3-de9c5ea945b2",
-            "version": [1,20,3]
+            "version": [1,20,4]
         }
     ],
     
     "settings": [
     {
 	  "type": "label",
-	  "text": "§6版本: 1.20.3\n作者: Minecraft Kit开发团队§r\n发布:\n(基岩版工具包)https://github.com/Spectrollay/mcpack_bk\n(中文译名修正)https://github.com/Spectrollay/mclang_cn\n§c版权所有,侵权必究§r"
+	  "text": "§6本资源包为基岩版工具包子模块\n功能: 修正基岩版的离谱翻译§r\n\n发布:\n\t(基岩版工具包)https://github.com/Spectrollay/mcpack_bk\n\t(中文译名修正)https://github.com/Spectrollay/mclang_cn\n§c版权所有,侵权必究§r"
 	}/*,
     {
 	  "type": "slider",
