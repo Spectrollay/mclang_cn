@@ -13555,10 +13555,3 @@ tips.previewapp.3=你在Minecraft Preview中购买的任何内容都在Minecraft
 tips.previewapp.4=关于新的功能你有什么好的建议吗?快访问feedback.minecraft.net吧！	#
 tips.previewapp.5=你知道你可以在discord.gg/Minecraft上与我们的开发者聊天吗？	#
 tips.previewapp.6=中文译名修正包由Minecraft Kit开发团队制作!	#
-
-
-
-## 修改
-
-options.dev_enableDebugHudOverlay.off=开启	#
-options.dev_enableDebugHudOverlay.basic=关闭	#

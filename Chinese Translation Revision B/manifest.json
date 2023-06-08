@@ -20,7 +20,7 @@
     "settings": [
     {
 	  "type": "label",
-	  "text": "§6本资源包为基岩版工具包子模块\n功能: 修正基岩版的离谱翻译§r\n\n发布:\n   (基岩版工具包)https://github.com/Spectrollay/mcpack_bk\n   (中文译名修正)https://github.com/Spectrollay/mclang_cn\n§c版权所有,侵权必究§r"
+	  "text": "§6本资源包为基岩版工具包子模块\n\n功能: 修正基岩版的离谱翻译§r\n\n发布:\n   (基岩版工具包)https://github.com/Spectrollay/mcpack_bk\n   (中文译名修正)https://github.com/Spectrollay/mclang_cn\n§c版权所有,侵权必究§r"
 	}/*,
     {
 	  "type": "slider",
