@@ -1,5 +1,7 @@
 <div align="center">
 
+![Title](images/minceraft.png)
+
 <h1>基岩版中文译名修正</h1>
 
 ![1.20 - Trails & Tales](images/1.20_KeyArt.jpg)
