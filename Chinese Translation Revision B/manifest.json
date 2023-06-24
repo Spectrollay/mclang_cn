@@ -1,6 +1,6 @@
 {
     "format_version": 1,
-    
+
     "header": {
         "description": "§6请将本资源包置于全局资源顶部\n适配版本: 1.20.10.23\n作者: Minecraft Kit开发团队§r",
         "name": "§e中文译名修正包§r",
@@ -16,7 +16,7 @@
             "version": [1,20,6]
         }
     ],
-    
+
     "settings": [
     {
 	  "type": "label",
