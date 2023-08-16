@@ -1,70 +1,67 @@
 {
-    "format_version": 1,
-
-    "header": {
-        "description": "§6请将本资源包置于全局资源顶部\n适配版本: 1.20.20.23\n作者: Minecraft Kit开发团队§r",
-        "name": "§e中文译名修正包§r",
-        "uuid": "7a613ccc-40b2-75da-8e7f-7f4e5ee69dcb",
-        "version": [1,20,8],
-        "min_engine_version":[1,0,4]
-    },
-
-    "modules": [
-        {
-            "type": "resources",
-            "uuid": "1c1c81cc-a4aa-1fb4-41f3-de9c5ea945b2",
-            "version": [1,20,8]
-        }
-    ],
-
-    "settings": [
-    {
-	  "type": "label",
-	  "text": "§6本资源包为基岩版工具包子模块\n\n功能: 修正基岩版的离谱翻译§r\n\n发布:\n   (基岩版工具包)https://github.com/Spectrollay/mcpack_bk\n   (中文译名修正)https://github.com/Spectrollay/mclang_cn\n§c版权所有,侵权必究§r"
-	}/*,
-    {
-	  "type": "slider",
-	  "text": "滑条",
-	  "name": "this_is_a_slider",
-	  "min": 1,
-	  "max": 20,
-	  "default": 1
-    },
-    {
-	  "type": "step_slider",
-	  "text": "滑块",
-	  "name": "this_is_a_step_slider",
-	  "steps": [
-	    "选项1",
-		"选项2",
-		"选项3",
-		"选项4",
-		"选项5"
-	  ],
-	  "default": 1
-    },
-    {
-	  "type": "toggle",
-	  "text": "开关",
-	  "name": "this_is_a_toggle",
-	  "default": true
-    },
-    {
-	  "type": "dropdown",
-	  "text": "选项",
-	  "name": "this_is_a_dropdown",
-	  "options": [
-	    "选项1",
-		"选项2",
-		"选项3"
-	  ],
-	  "default": 0
-    },
-    {
-	  "type": "input",
-	  "text": "输入框",
-	  "name": "this_is_a_input",
-	  "default": "在此输入.."
-    }*/
-  ]
+	"format_version": 1,
+	"header": {
+		"description": "§6请将本资源包置于全局资源顶部\n模块版本: 1.20.9 | 适配版本: 1.20.30.21\n作者: Minecraft Kit开发团队§r",
+		"name": "§e中文译名修正包§r",
+		"uuid": "7a613ccc-40b2-75da-8e7f-7f4e5ee69dcb",
+		"version": [1,20,9],
+		"min_engine_version": [1,0,4]
+	},
+	"modules": [
+		{
+			"type": "resources",
+			"uuid": "1c1c81cc-a4aa-1fb4-41f3-de9c5ea945b2",
+			"version": [1,20,9]
+		}
+	],
+	"settings": [
+		{
+			"type": "label",
+			"text": "§6本资源包为基岩版工具包子模块\n\n功能: 修正基岩版的离谱翻译§r\n\n发布:\n   (基岩版工具包)https://github.com/Spectrollay/mcpack_bk\n   (中文译名修正)https://github.com/Spectrollay/mclang_cn\n§c版权所有,侵权必究§r"
+		} /*,
+		{
+			"type": "step_slider",
+			"text": "滑块",
+			"name": "this_is_a_step_slider",
+			"steps": [
+				"选项1",
+				"选项2",
+				"选项3",
+				"选项4",
+				"选项5"
+			],
+			"default": 0
+		},
+		{
+			"type": "slider",
+			"text": "滑条",
+			"name": "this_is_a_slider",
+			"min": 0,
+			"max": 20,
+			"default": 0
+		},
+		{
+			"type": "dropdown",
+			"text": "选项",
+			"name": "this_is_a_dropdown",
+			"options": [
+				"选项1",
+				"选项2",
+				"选项3"
+			],
+			"default": 0
+		},
+		{
+			"type": "toggle",
+			"text": "开关",
+			"name": "this_is_a_toggle",
+			"default": true
+		},
+		{
+			"type": "input",
+			"text": "输入框",
+			"name": "this_is_a_input",
+			"default": ""
+		}*/
+	]
 }
