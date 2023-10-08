@@ -1,2 +1,4 @@
+# 配置文件
+
 *.json linguist-language=Json
 *.lang linguist-language=Lang
