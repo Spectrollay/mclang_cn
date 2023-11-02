@@ -1,17 +1,17 @@
 {
 	"format_version": 1,
 	"header": {
-		"description": "§6请将本资源包置于全局资源顶部\n模块版本: 1.20.12 | 适配版本: 1.20.30-32\n作者: Minecraft Kit开发团队§r",
+		"description": "§6请将本资源包置于全局资源顶部\n模块版本: 1.20.16 | 适配版本: 1.20.40\n作者: Minecraft Kit开发团队§r",
 		"name": "§e中文译名修正包§r",
 		"uuid": "7a613ccc-40b2-75da-8e7f-7f4e5ee69dcb",
-		"version": [1,20,12],
+		"version": [1,20,16],
 		"min_engine_version": [1,0,4]
 	},
 	"modules": [
 		{
 			"type": "resources",
 			"uuid": "1c1c81cc-a4aa-1fb4-41f3-de9c5ea945b2",
-			"version": [1,20,12]
+			"version": [1,20,16]
 		}
 	],
 	"settings": [
