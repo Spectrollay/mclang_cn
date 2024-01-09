@@ -13336,10 +13336,7 @@ resourcePack.editor.paste.toolRail.description=鼠标左键单击选择一个方
 resourcePack.editor.paste.pane.title=粘贴	#
 resourcePack.editor.paste.pane.submitButton=确认粘贴	#
 resourcePack.editor.paste.pane.transform.title=转变	#
-resourcePack.editor.paste.pane.transform.origin.title=原点	#
-resourcePack.editor.paste.pane.transform.origin.x=原点 X	#
-resourcePack.editor.paste.pane.transform.origin.y=原点 Y	#
-resourcePack.editor.paste.pane.transform.origin.z=原点 Z	#
+resourcePack.editor.paste.pane.transform.origin.title=偏移	#
 resourcePack.editor.paste.pane.transform.rotation.title=旋转	#
 resourcePack.editor.paste.pane.transform.rotation.none=0°	#
 resourcePack.editor.paste.pane.transform.rotation.90=90°	#
@@ -13362,13 +13359,16 @@ resourcePack.editor.selectionTool.settingsPane.title=选择	#
 resourcePack.editor.selectionTool.transformPane.title=转变	#
 resourcePack.editor.selectionTool.transformPane.origin=原点	#
 resourcePack.editor.selectionTool.transformPane.size=大小	#
+resourcePack.editor.selectionTool.projectThroughLiquid=带有液体的项目	#
 
 resourcePack.editor.menuBar.file=文件	#
 resourcePack.editor.menuBar.file.export=导出为	#
 resourcePack.editor.menuBar.file.export.world=可游玩的世界	#
 resourcePack.editor.menuBar.file.export.project=编辑器项目	#
-resourcePack.editor.menuBar.file.pauseScreen=暂停屏幕	#
+resourcePack.editor.menuBar.file.pauseScreen=游戏菜单	#
 resourcePack.editor.menuBar.file.settings=UI设置	#
+resourcePack.editor.menuBar.file.cursor=光标设置	#
+resourcePack.editor.menuBar.file.cursor.projectThroughLiquid=带有液体的项目	#
 resourcePack.editor.menuBar.edit=编辑	#
 resourcePack.editor.menuBar.edit.undo=撤消	#
 resourcePack.editor.menuBar.edit.redo=重做	#
@@ -13380,10 +13380,10 @@ resourcePack.editor.menuBar.edit.quickFill=快速填充	#
 resourcePack.editor.menuBar.edit.delete=删除	#
 resourcePack.editor.menuBar.view=查看	#
 resourcePack.editor.menuBar.view.logging=日志面板	#
+resourcePack.editor.menuBar.view.navigationLogging=移动记录	#
 resourcePack.editor.menuBar.worldOptions=世界选项	#
-resourcePack.editor.menuBar.worldOptions.actors=角色	#
-resourcePack.editor.menuBar.worldOptions.pause.pauseActors=暂停角色	#
-resourcePack.editor.menuBar.worldOptions.pause.unpauseActors=取消暂停角色	#
+resourcePack.editor.menuBar.worldOptions.pause=暂停	#
+resourcePack.editor.menuBar.worldOptions.pause.actors=角色	#
 resourcePack.editor.menuBar.worldOptions.changeDimension=更改维度	#
 resourcePack.editor.menuBar.worldOptions.changeDimension.overworld=主世界	#
 resourcePack.editor.menuBar.worldOptions.changeDimension.nether=下界	#
@@ -13391,6 +13391,10 @@ resourcePack.editor.menuBar.worldOptions.changeDimension.end=结束	#
 resourcePack.editor.menuBar.worldOptions.daylightCycle=昼夜更替	#
 resourcePack.editor.menuBar.worldOptions.daylightCycle.turnOnDaylightCycle=开启	#
 resourcePack.editor.menuBar.worldOptions.daylightCycle.turnOffDaylightCycle=关闭	#
+resourcePack.editor.menuBar.parentMenu.weather=天气	#
+resourcePack.editor.menuBar.parentMenu.weather.clear=晴天	#
+resourcePack.editor.menuBar.parentMenu.weather.rain=雨天	#
+resourcePack.editor.menuBar.parentMenu.weather.thunder=雷暴	#
 resourcePack.editor.menuBar.help=帮助	#
 resourcePack.editor.menuBar.help.quickStart=快速入门	#
 resourcePack.editor.menuBar.help.documentation=文档	#
@@ -13402,6 +13406,50 @@ commands.editor.project.export=导出项目	#
 commands.editor.project.exportComplete=导出完成，文件写入%s	#
 commands.editor.project.beginExport=正在导出...	#
 commands.editor.project.exportCopyFailed=无法复制世界数据%s	#
+
+## resourcePack.editor.playtestResult. is a prefix that maps directly to an enum value in the editor
+## Ensure that the spelling and case is identical to the enumeration in C++/TypeScript for
+## enum `Editor::Playtest::SessionResult`
+
+resourcePack.editor.playtestResult.OK=成功	#
+resourcePack.editor.playtestResult.InvalidSessionHandle=无效的会话句柄	#
+resourcePack.editor.playtestResult.SessionInfoNotFound=未找到会话信息	#
+resourcePack.editor.playtestResult.TooManyPlayers=当你正在托管其他玩家时无法测试世界	#
+resourcePack.editor.playtestResult.WorldExportFailed=世界导出失败	#
+resourcePack.editor.playtestResult.WorldExportBusy=世界导出繁忙	#
+resourcePack.editor.playtestResult.UnsupportedScenario=你必须先托管编辑器项目才能测试世界	#
+resourcePack.editor.playtestResult.EditorSystemFailure=编辑器系统故障	#
+resourcePack.editor.playtestResult.InvalidLevelId=无效的世界ID	#
+resourcePack.editor.playtestResult.PlayerNotFound=玩家未找到	#
+resourcePack.editor.playtestResult.ResponseTimeout=响应超时	#
+resourcePack.editor.playtestResult.UnspecifiedError=未指定错误	#
+
+resourcePack.editor.playtest.Menu.Title=测试世界	#
+resourcePack.editor.playtest.Title.Tooltip=将你的编辑器项目作为可玩的Minecraft世界进行测试。这不会将更改保存到你的项目中。仅在托管单个玩家项目时可用。	#
+resourcePack.editor.playtest.Dialog.Title=测试设置	#
+resourcePack.editor.playtest.Dialog.GameMode=游戏模式	#
+resourcePack.editor.playtest.Dialog.Difficulty=难度	#
+resourcePack.editor.playtest.Dialog.DaylightCycle=昼夜更替	#
+resourcePack.editor.playtest.Dialog.WeatherCycle=天气更替	#
+resourcePack.editor.playtest.Dialog.ShowCoordinates=显示坐标	#
+resourcePack.editor.playtest.Dialog.OverrideSpawn=在当前位置重生	#
+resourcePack.editor.playtest.Dialog.TimeOfDay=时间	#
+resourcePack.editor.playtest.Dialog.TestButton=测试世界	#
+
+resourcePack.editor.toolRail.line.title=直线	#
+resourcePack.editor.toolRail.line.tooltip=直线工具创建方块线段	#
+resourcePack.editor.toolRail.line.pane.dropdown.fill.title=填充选择	#
+resourcePack.editor.toolRail.line.pane.width.title=宽度	#
+resourcePack.editor.toolRail.line.pane.selectionMode=选择模式	#
+resourcePack.editor.toolRail.line.pane.selectionMode.freeForm=自由	#
+resourcePack.editor.toolRail.line.pane.selectionMode.fixedDistance=固定距离	#
+resourcePack.editor.toolRail.line.pane.selectionMode.adjacent=相邻面	#
+resourcePack.editor.toolRail.line.pane.height.title=高度	#
+resourcePack.editor.toolRail.line.pane.algorithm.title=算法	#
+resourcePack.editor.toolRail.line.pane.algorithm.Direct=直接	#
+resourcePack.editor.toolRail.line.pane.algorithm.Staggered=交错（栅栏）	#
+resourcePack.editor.toolRail.line.pane.surfaceContour=表面轮廓	#
+resourcePack.editor.toolRail.line.pane.fillAction=填充选择	#
 
 
 
@@ -13833,7 +13881,7 @@ authentication.popup.setup.secondPage.button=完成了	#
 authentication.popup.demoLink=尝试演示课程。	#
 
 classroomSettings.uriResource.header.title=资源链接	#
-classroomSettings.uriResource.header.description=在暂停菜单上创建一个新按钮，为你的世界添加一个评估工具、网站或其他资源的链接。	#
+classroomSettings.uriResource.header.description=在游戏菜单上创建一个新按钮，为你的世界添加一个评估工具、网站或其他资源的链接。	#
 classroomSettings.uriResource.name.placeHolder=打开链接（默认）		### Text before (Default) should match pause.externalLink
 classroomSettings.uriResource.name.title=资源按钮名称	#
 classroomSettings.uriResource.uri.placeHolder=需要启用按钮	#
@@ -13843,7 +13891,7 @@ classroomSettings.uriResource.uri.warning.emptyUri=不要忘记添加一个URL�
 
 commands.codebuilder.description=为一个玩家设置代码编辑器状态。	#
 commands.codebuilder.invalidRuntimeAction=无效的运行时操作。	#
-commands.resourceuri.description=在暂停菜单中设置资源URI	#
+commands.resourceuri.description=在游戏菜单中设置资源URI	#
 commands.resourceuri.named=按钮名称“%s”的资源URI设置为“%s”	#
 commands.resourceuri.default=资源URI设置为“%s”	#
 commands.resourceuri.clear=资源URI已删除	#
@@ -13862,6 +13910,18 @@ createWorldScreen.immutableworld=不变的世界	#
 createWorldScreen.perfectweather=极好的天气	#
 createWorldScreen.playerdamage=玩家伤害	#
 createWorldScreen.pvpdamage=PVP伤害	#
+
+edu.cloudError.generic.linkDescription=进一步了解云端支持	#
+edu.cloudError.generic.message=将你的世界上传到云端时出了问题。%1 错误代码 %2	#
+edu.cloudError.generic.title=上传失败	#
+edu.cloudError.largeWorld.message=云上传支持的最大文件大小为250MB。	#
+edu.cloudError.largeWorld.title=世界过大	#
+edu.cloudError.outOfStorage.linkDescription=如何备份你的世界	#
+edu.cloudError.outOfStorage.message=你的OneDrive文件夹没有足够的空间来保存这个世界。你可以通过其他方式进行备份将其保存在其他地方。	#
+edu.cloudError.outOfStorage.title=你的上传内容没有进入云端	#
+edu.cloudError.unauthorized.message=无法访问云存储。请检查你的OneDrive设置。	#
+edu.cloudError.unauthorized.title=云端访问问题	#
+edu.cloudError.uploadFailed.message=请重新上传至云端。	#
 
 item.spawn_egg.entity.npc.failed.edu=你需要世界建造者限才能生成NPC	#
 
@@ -13939,7 +13999,7 @@ library.item.sharepopup.copyButton=复制链接	#
 library.item.sharepopup.addResourceButton=添加一个资源	#
 library.item.sharepopup.secondaryText=在共享之前，你是否要向世界添加评估工具、Flipgrid话题或网站？	#
 library.item.sharepopup.addResource.labelOne=复制测验、Flipgrid话题或网站的URL，并将其粘贴到下方。	#
-library.item.sharepopup.addResource.labelTwo=暂停菜单上将创建一个新按钮，以便用户可以随时从世界内访问资源。	#
+library.item.sharepopup.addResource.labelTwo=游戏菜单上将创建一个新按钮，以便用户可以随时从世界内访问资源。	#
 library.item.sharepopup.addResource.learnMoreLinkText=了解更多	#
 library.item.sharepopup.addResource.urlLabel=资源按钮URL：	#
 library.item.sharepopup.addResource.urlHintText=需要启用按钮	#
@@ -13949,7 +14009,7 @@ library.item.sharepopup.addResource.doneButton=完成	#
 library.item.sharepopup.addResource.cancelButton=取消	#
 library.item.sharepopup.addResource.deleteButton=删除	#
 library.item.sharepopup.addResource.invalidSchema=请输入以“http”或“https”开头的网址以继续。	#
-library.item.sharepopup.editResourceLabel=以下是我们将添加到暂停菜单的按钮预览，任何打开世界的人都能看见。	#
+library.item.sharepopup.editResourceLabel=以下是我们将添加到游戏菜单的按钮预览，任何打开世界的人都能看见。	#
 library.item.sharepopup.editResource.button.accessibility=编辑资源URL	#
 library.item.share.toast.title=链接已复制到你的剪贴板。	#
 
@@ -14114,7 +14174,7 @@ library.category.label.commonCore=普通基础%1级	#
 library.category.title.commonCore=普通基础%1级	#
 library.category.description.commonCoreMath=这些引人入胜的活动旨在为数学教育提供支持，并且符合每一项普通基础数学标准。	#
 
-library.notification.label.resourceUri=此世界与指向其他资源的链接共享。在你创建世界后，请在暂停屏幕上寻找“%1”按钮。	#
+library.notification.label.resourceUri=此世界与指向其他资源的链接共享。在你创建世界后，请在游戏菜单上寻找“%1”按钮。	#
 
 library.search.title=图书馆搜索	#
 library.search.placeholder=搜索图书馆... 	### This string can only be 15 characters. If the string is too long, just "Search..." is OK.
@@ -14122,6 +14182,22 @@ library.search.singleResult="%s"在图书馆中有1个搜索结果	#
 library.search.multipleResults="%s"在图书馆中有%1个搜索结果	#
 library.search.sortMethod.lexicographic.ascending=从A到Z排序	#
 library.search.sortMethod.relevance=按相关性排序	#
+
+menu.eduLocalStorage=本地存储	#
+menu.eduCloudStorage=云存储	#
+menu.eduCloudStorage.caps=云存储设置	#
+
+options.eduCloud.fileDate=OneDrive文件 最近更改	#
+options.eduCloud.fileName=OneDrive文件 名字	#
+options.eduCloud.folder.body=查看和下载存储在OneDrive文件夹"%s"中的世界。	### Token in quotes will be "Minecraft Education" or "Minecraft Education Preview". Both are brand names and will not be localized.
+options.eduCloud.folder.header=访问OneDrive	#
+options.eduCloud.oneDrive=OneDrive	#
+options.eduCloud.toggle=将世界备份到云端	#
+options.eduCloud.toggleOnWorld=备份到云端	#
+
+progressScreen.title.eduCloudUpload=正在上传到云端	#
+progressScreen.message.eduUploadingCloudWorld=上传中...	#
+progressScreen.message.eduFinishedCloudUpload=完成！	#
 
 resourceUri.launch.success=已打开资源链接。	#
 resourceUri.launch.failure=无法打开资源链接。此URL似乎不受支持。	#
@@ -14555,6 +14631,8 @@ beta.loading.18=中文译名修正包由Minecraft Kit开发团队制作!	#
 
 ## Preview
 
+gui.importRetailWorld.text.1=你必须先导入这个世界才能在预览版中使用它。	#
+gui.importRetailWorld.text.3=你要制作这个世界的预览版备份吗？	#
 store.disabledOnBeta=此功能目前在预览版中被禁用。	#
 tips.previewapp.1=感谢你使用Minecraft Preview！	#
 tips.previewapp.2=如果你使用的是Minecraft Preview，你只能和其他在同类型设备上游玩Minecraft Preview的好友一起游玩！	#
