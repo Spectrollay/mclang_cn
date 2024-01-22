@@ -953,12 +953,15 @@ commands.generic.exception=在执行此命令时出现了未知的错误	#
 commands.generic.invalidAgentType=适用于仅智能体选择器的类型参数	#
 commands.generic.invalidcontext=对给定命令类型的前后文无效	#
 commands.generic.invalidDevice=你输入的命令%s在此设备上不受支持	#
+commands.generic.invalidMessage=无效的消息长度	#
 commands.generic.invalidPlayerType=仅适用于玩家选择器的类型参数	#
 commands.generic.invalidType=未知的类型参数	#
 commands.generic.levelError=最高等级必须高于最低等级	#
 commands.generic.malformed.body=正文缺失或变形	#
 commands.generic.malformed.type=无效请求类型	#
 commands.generic.notimplemented=未执行	#
+commands.generic.sourceNotLoaded=原始音量未加载	#
+commands.generic.destinationNotLoaded=目标音量未加载	#
 commands.generic.num.invalid=“%1$s”不是一个有效的数字	#
 commands.generic.num.tooBig=你输入的数字(%1$d)太大了，最大只能为%2$d	#
 commands.generic.num.tooSmall=你输入的数字(%1$d)太小了，最少也需要%2$d	#
@@ -1010,6 +1013,7 @@ commands.help.description=提供帮助/命令列表。	#
 commands.help.footer=小提示：在输入命令时可以使用 <tab> 键来自动补全命令或参数	#
 commands.help.header=--- 显示帮助手册第%1$d页/共%2$d页（/help <页码>） ---	#
 commands.help.command.aliases=%s（也称为%s）：	#
+commands.hud.description=更改HUD元素的可见性。	#
 commands.hud.success=Hud命令已成功执行	#
 commands.immutableworld.description=设置世界的不可变状态。	#
 commands.immutableworld.info=immutableworld为%s	#
@@ -1320,6 +1324,8 @@ commands.spawnpoint.description=设置玩家的生成点。	#
 commands.spawnpoint.success.multiple.specific=将%1$s的生成点设置为(%2$d, %3$d, %4$d)	#
 commands.spawnpoint.success.multiple.generic=设置%1$s的生成点	#
 commands.spawnpoint.wrongDimension=不能在此维度设置出生点	#
+commands.clearrealmevents.description=清除世界数据中存储的所有Realm事件。	#
+commands.clearrealmevents.start=清除所有Realm事件	#
 commands.clearspawnpoint.success.single=已移除%1$s的重生点	#
 commands.clearspawnpoint.description=移除玩家的重生点。	#
 commands.clearspawnpoint.success.multiple=已移除%1$s的重生点	#
@@ -3031,7 +3037,7 @@ gameMode.hardcore=极限模式！	#
 gameMode.spectator=旁观模式	#
 gameMode.survival=生存模式	#
 
-gameTip.cameraMovement.mouse=环顾四周[linebreak]使用你的鼠标旋转	### please leave "[linebreak]" unchanged
+gameTip.cameraMovement.mouse=环顾四周[LINEBREAK]使用你的鼠标旋转	### {StrContains='LINEBREAK'}
 gameTip.cameraMovement.touch=触摸并拖动屏幕环顾四周	#
 gameTip.cameraMovement.controller=移动 :tip_right_stick: 环顾四周	#
 
@@ -3053,11 +3059,11 @@ gameTip.placeBlock.mouse=点击放置方块 	#
 gameTip.placeBlock.touch=点击放置方块  	#
 gameTip.placeBlock.controller=点击地面放置方块	#
 
-gameTip.openInventorySurvival.mouse=打开物品栏[linebreak]按下 :_input_key.inventory:	### please leave "[linebreak]" unchanged
+gameTip.openInventorySurvival.mouse=打开物品栏[LINEBREAK]按下 :_input_key.inventory:	### {StrContains='LINEBREAK'}
 gameTip.openInventorySurvival.touch=打开物品栏查看合成配方	#
 gameTip.openInventorySurvival.controller=按下 :_input_key.inventory: 打开物品栏	#
 
-gameTip.openInventoryCreative.mouse=打开物品栏[linebreak]按下 :_input_key.inventory:	### please leave "[linebreak]" unchanged
+gameTip.openInventoryCreative.mouse=打开物品栏[LINEBREAK]按下 :_input_key.inventory:	### {StrContains='LINEBREAK'}
 gameTip.openInventoryCreative.touch=打开物品栏查看建筑方块	#
 gameTip.openInventoryCreative.controller=按下 :_input_key.inventory: 打开物品栏	#
 
@@ -3065,7 +3071,7 @@ gameTip.sneak.mouse=你正在潜行！不会从边缘掉下去	#
 gameTip.sneak.touch=你正在潜行，不会从边缘掉下去	#
 gameTip.sneak.controller=你正在潜行，不会从边缘掉下去	#
 
-gameTip.placeCraftingTable.mouse=放置工作台[linebreak]拿着它然后点击地面	### please leave "[linebreak]" unchanged
+gameTip.placeCraftingTable.mouse=放置工作台[LINEBREAK]拿着它然后点击地面	### {StrContains='LINEBREAK'}
 gameTip.placeCraftingTable.touch=拿着工作台然后点击地面放置它	#
 gameTip.placeCraftingTable.controller=拿着工作台然后点击地面放置它	#
 
@@ -6118,6 +6124,8 @@ options.fov.toggle=动态视场	#
 options.licenses=授权	#
 options.licensed_content=授权内容	#
 options.networkSettings=网络设置	#
+options.ecoMode=环保模式	###Eco Mode refers to an ecological friendly mode {MaxLength=‘20’}
+options.enableEcoMode=启用环保模式	###Eco Mode refers to an ecological friendly mode {MaxLength=‘30’}
 options.font_license=字体授权	#
 options.font_license_body=%1	#
 options.livingRoomFOV=起居室视场角	#
@@ -7898,7 +7906,7 @@ store.realmsPlus.noTrial.description=你的Realm和150多个商城包将立即�
 store.realmsPlus.noTrial.description.contentSub=你的Realm和Marketplace Pass中的150多个商城包将立即可用。至多10名玩家可以同时游玩，他们还可以免费访问你的Realm内的所有世界！你的订阅期为30天，价格为%s:minecoin:。	#
 store.realmsPlus.noTrial.description.iap=你的Realm和150多个商城包将立即可用。至多10名玩家可以同时游玩，他们还可以免费访问你的Realm内的所有订阅内容！你需支付%s/月的费用，并且你可以通过订阅设置取消订阅来停止续费。	#
 store.realmsPlus.noTrial.description.iap.contentSub=你的Realm和Marketplace Pass中的150多个商城包将立即可用。至多10名玩家可以同时游玩，他们还可以免费访问你的Realm内的所有世界！你需支付%s/月的费用，并且你可以通过订阅设置取消订阅来停止续费。	#
-store.realmsPlus.realmName.placeholder=%s的Realm		###The string passed in here is the gamertag of the player to indicate the name of the player's world.	#
+store.realmsPlus.realmName.placeholder=%s的Realm	###The string passed in here is the gamertag of the player to indicate the name of the player's world.	#
 
 store.realmsPlus.recurring.offerTrial=Realms Plus是一种持续性订阅，每月会自动收取订阅费，直到取消订阅为止。%s你的Realm和150多个商城包将立即可用。至多10名玩家可以同时游玩，他们还可以免费访问你的Realm内的所有订阅内容！前30天免费，之后你需支付%s/月的费用。你可以通过订阅设置取消订阅来停止续费。	#
 store.realmsPlus.recurring.offerTrial.contentSub=Realms Plus是一种持续性订阅，每月会自动收取订阅费，直到取消订阅为止。%s你的Realm和Marketplace Pass中的150多个商城包将立即可用。至多10名玩家可以同时游玩，他们还可以免费访问你的Realm内的所有世界！前30天免费，之后你需支付%s/月的费用。你可以通过订阅设置取消订阅来停止续费。	#
@@ -8096,6 +8104,9 @@ store.csb.purchase.amazonDeviceWarning.body.line2=如有任何疑问，请访问
 store.csb.purchase.amazonDeviceWarning.button.back=返回	#
 
 store.csb.alreadySubscribed.toolTip=你已经订阅了Marketplace Pass。	### {StrContains="Marketplace Pass"}
+
+store.csb.banner.offer=立即开始30天免费试玩！	#
+store.csb.banner.learnMore=了解更多	#
 
 store.inventory.button=我的内容	#
 store.inventory.title=我的内容	#
@@ -11041,7 +11052,7 @@ hbui.AddFriendAccordion.narration.friendsHint=你已是该玩家的好友。点�
 hbui.AddFriendAccordion.narration.playerHint=点击查看个人资料。使用右方向键进行其他操作。	#
 hbui.AddFriendAccordion.narration.suggestions=建议	#
 hbui.AddFriendAccordion.openPlayer=查看个人资料	#
-hbui.AddFriendError.blockedAddingFriendsMessage= 由于账户设置限制，你无法添加好友。通过账户设置中的“隐私与在线安全”查看和管理你的多人游戏设置。	#
+hbui.AddFriendError.blockedAddingFriendsMessage=由于账户设置限制，你无法添加好友。通过账户设置中的“隐私与在线安全”查看和管理你的多人游戏设置。	#
 hbui.AddFriendError.blockedAddingFriendsTitle=你需要权限！	#
 hbui.AddFriendError.learnMore=了解更多	#
 hbui.AddFriendError.loadErrorMessage=我们遇到一个未知错误，请重试。	#
