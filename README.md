@@ -1,4 +1,4 @@
-<div align="center">
+<div style="text-align: center">
 
 ![Title](images/minceraft.png)
 
@@ -25,7 +25,7 @@
 
 <h4>现已跟进:</h4>
 
-- Release 1.20.51
+- Release 1.20.60
 - Beta/Preview 1.20.70.21
 
 <h4>主要功能:</h4>
