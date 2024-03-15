@@ -8893,7 +8893,7 @@ tile.stained_glass_pane.blue.name=蓝色染色玻璃板	#
 tile.stained_glass_pane.purple.name=紫色染色玻璃板	#
 tile.stained_glass_pane.magenta.name=品红色染色玻璃板	#
 tile.stained_glass_pane.pink.name=粉红色染色玻璃板	#
-tile.clay.name=黏土块	#
+tile.clay.name=黏土	#
 tile.hardened_clay.name=陶瓦	#
 tile.stained_hardened_clay.black.name=黑色陶瓦	#
 tile.stained_hardened_clay.blue.name=蓝色陶瓦	#
@@ -13777,11 +13777,19 @@ resourcePack.editor.client.name=编辑器资源	#
 resourcePack.editor.server.description=编辑器服务端资源	#
 resourcePack.editor.server.name=编辑器资源	#
 
+resourcePack.editor.locate.title=定位	#
+resourcePack.editor.locate.title.alt=定位...	#
+resourcePack.editor.locate.title.biome=生物群系	#
+resourcePack.editor.locate.title.biome.alt=生物群系：	#
+resourcePack.editor.locate.biome.message=找到生物群系	#
+resourcePack.editor.locate.find.Biome=寻找生物群系	#
+resourcePack.editor.locate.biomeLocation=生物群系位置	#
+resourcePack.editor.locate.goto.biome=前往生物群系	#
+
 resourcePack.editor.toolRail.cubeBrushSettings.pane=画笔	#
 resourcePack.editor.toolRail.cubeBrushSettings.size=画笔尺寸	#
 resourcePack.editor.toolRail.cubeBrushSettings.hollow=空心	#
 resourcePack.editor.toolRail.cubeBrushSettings.face=表面模式	#
-resourcePack.editor.toolRail.cubeBrushSettings.block=方块类型	#
 resourcePack.editor.toolRail.cubeBrushSettings.run=运行！	#
 resourcePack.editor.toolRail.cubeBrushTool.title=画笔(CTRL+B)。	#
 resourcePack.editor.toolRail.cubeBrushTool.description=鼠标左键单击或拖动以绘制	#
@@ -13811,7 +13819,6 @@ resourcePack.editor.paste.pane.transform.mirrorZ=镜像 Z	#
 
 resourcePack.editor.selectionTool.deselect=取消选择	#
 resourcePack.editor.selectionTool.fillPane.title=填充选定内容	#
-resourcePack.editor.selectionTool.fillPane.blockType=方块类型	#
 resourcePack.editor.selectionTool.fillPane.fillAction=填充选定内容	#
 resourcePack.editor.selectionTool.toolRail.title=选择(CTRL+S)	#
 resourcePack.editor.selectionTool.toolRail.description=鼠标左键单击以创建选区；按CTRL + D取消选择	#
@@ -13842,9 +13849,11 @@ resourcePack.editor.menuBar.edit.copy=复制	#
 resourcePack.editor.menuBar.edit.quickPaste=快速粘贴	#
 resourcePack.editor.menuBar.edit.quickFill=快速填充	#
 resourcePack.editor.menuBar.edit.delete=删除	#
+resourcePack.editor.menuBar.extensions=扩展	#
 resourcePack.editor.menuBar.view=查看	#
 resourcePack.editor.menuBar.view.logging=日志面板	#
 resourcePack.editor.menuBar.view.navigationLogging=移动记录	#
+resourcePack.editor.menuBar.view.blockPalette=方块调色板	#
 resourcePack.editor.menuBar.worldOptions=世界选项	#
 resourcePack.editor.menuBar.worldOptions.pause=暂停	#
 resourcePack.editor.menuBar.worldOptions.pause.actors=角色	#
@@ -13855,6 +13864,8 @@ resourcePack.editor.menuBar.worldOptions.changeDimension.end=结束	#
 resourcePack.editor.menuBar.worldOptions.daylightCycle=昼夜更替	#
 resourcePack.editor.menuBar.worldOptions.daylightCycle.turnOnDaylightCycle=开启	#
 resourcePack.editor.menuBar.worldOptions.daylightCycle.turnOffDaylightCycle=关闭	#
+resourcePack.editor.menuBar.experimental=实验性	#
+resourcePack.editor.menuBar.locate=定位	#
 resourcePack.editor.menuBar.parentMenu.weather=天气	#
 resourcePack.editor.menuBar.parentMenu.weather.clear=晴天	#
 resourcePack.editor.menuBar.parentMenu.weather.rain=雨天	#
@@ -13902,7 +13913,6 @@ resourcePack.editor.playtest.Dialog.TestButton=测试世界	#
 
 resourcePack.editor.toolRail.line.title=直线	#
 resourcePack.editor.toolRail.line.tooltip=直线工具创建方块线段	#
-resourcePack.editor.toolRail.line.pane.dropdown.fill.title=填充选择	#
 resourcePack.editor.toolRail.line.pane.width.title=宽度	#
 resourcePack.editor.toolRail.line.pane.selectionMode=选择模式	#
 resourcePack.editor.toolRail.line.pane.selectionMode.freeForm=自由	#
@@ -13914,6 +13924,13 @@ resourcePack.editor.toolRail.line.pane.algorithm.Direct=直接	#
 resourcePack.editor.toolRail.line.pane.algorithm.Staggered=交错（栅栏）	#
 resourcePack.editor.toolRail.line.pane.surfaceContour=表面轮廓	#
 resourcePack.editor.toolRail.line.pane.fillAction=填充选择	#
+
+resourcePack.editor.toolRail.blockPalette.title=方块调色板(CTRL+P)	#
+resourcePack.editor.toolRail.blockPalette.tooltip=设置最喜欢或最常用方块的调色板	#
+resourcePack.editor.blockPalette.addSearchItem=使用找到的方块	#
+resourcePack.editor.blockPalette.title=方块调色板	#
+resourcePack.editor.blockPalette.paletteDropdown.title=调色板	#
+resourcePack.editor.blockPalette.blockPicker=搜索	#
 
 
 
