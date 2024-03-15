@@ -1921,6 +1921,8 @@ createWorldScreen.delete.confirm=永久删除世界？	#
 createWorldScreen.deleteWarningFormat=你确定要删除“%s”吗？这个世界将永远失去！	#
 createWorldScreen.editTitleFormat=编辑“%s”	#
 createWorldScreen.game.settings=游戏设置	#
+createWorldScreen.hardcoreActive=由于你在创建世界时选择了极限模式，因此某些设置被禁用。	#
+createWorldScreen.isHardcore=极限模式	#
 createWorldScreen.gameMode=游戏模式	#
 createWorldScreen.gameMode.default=默认游戏模式	#
 createWorldScreen.gameMode.personal=个人游戏模式	#
@@ -2772,6 +2774,7 @@ edu.worlds_screen.search_placeholder=搜索我的世界	#
 edu.worlds_screen.play=游戏	#
 edu.worlds_screen.host=主机	#
 edu.worlds_screen.settings=设置	#
+edu.worlds_screen.download=下载	### It needs to be localized in its verb form, not as a noun
 edu.worlds_screen.manage=管理	#
 edu.worlds_screen.back=返回	#
 edu.worlds_screen.copy=复制	#
@@ -3096,6 +3099,11 @@ gameTip.playerMovement.touch=使用移动摇杆进行移动	#
 gameTip.playerMovement.touch.classic=使用移动摇杆进行移动	#
 gameTip.playerMovement.controller=移动 :tip_left_stick: 四处移动	#
 
+gameTip.flying.mouse=双击 :_input_key.jump: 飞翔	#
+gameTip.flying.touch=双击跳跃飞翔	#
+
+gameTip.jump.mouse=使用 :_input_key.jump: 跳跃	#
+
 gameTip.hotbar.mouse=滚动鼠标滚轮以选中快捷栏中的 # 以手持	#
 gameTip.hotbar.touch=点击快捷栏中的 # 以手持	#
 gameTip.hotbar.controller=点击快捷栏中的 # 以手持	#
@@ -3119,11 +3127,13 @@ gameTip.openInventoryCreative.mouse=打开物品栏[LINEBREAK]按下 :_input_key
 gameTip.openInventoryCreative.touch=打开物品栏查看建筑方块	#
 gameTip.openInventoryCreative.controller=按下 :_input_key.inventory: 打开物品栏	#
 
-gameTip.sneak.mouse=你正在潜行！不会从边缘掉下去	#
+gameTip.useSneak.mouse=按住 :_input_key.sneak: 潜行！[LINEBREAK]现在不会从边缘掉下去	#
+
+gameTip.sneak.mouse=你正在潜行！现在不会从边缘掉下去	#
 gameTip.sneak.touch=你正在潜行，不会从边缘掉下去	#
 gameTip.sneak.controller=你正在潜行，不会从边缘掉下去	#
 
-gameTip.placeCraftingTable.mouse=放置工作台[LINEBREAK]拿着它然后点击地面	### {StrContains='LINEBREAK'}
+gameTip.placeCraftingTable.mouse=放置工作台。拿着它然后点击地面	#
 gameTip.placeCraftingTable.touch=拿着工作台然后点击地面放置它	#
 gameTip.placeCraftingTable.controller=拿着工作台然后点击地面放置它	#
 
@@ -3277,6 +3287,16 @@ howtoplay.category.standsAndTables=台和桌	#
 howtoplay.category.survivingTheFirstNight=度过首个夜晚	#
 howtoplay.category.theEndDimension=末地维度	#
 howtoplay.category.optionsAndCheats=选项和作弊	#
+howtoplay.category.marketplace=商城	#
+
+howtoplay.addons=附加包	#
+howtoplay.addons.text.1=附加包是Minecraft商城中一种可用的内容类型，允许你向世界中添加自定义方块、物品、生物、配方和其他游戏内容。	#
+howtoplay.addons.text.2=通过编辑世界界面和创建新世界界面，附加包可以让你修改现有的世界和Realms。	#
+howtoplay.addons.header.1=叠加附加包	#
+howtoplay.addons.text.3=叠加或添加多个附加包可能会增加加载时间并导致意外的结果。	#
+howtoplay.addons.text.4=我们建议你在添加或移除附加包之前先保存你的世界或Realms的备份。	#
+howtoplay.addons.text.5=要了解有关如何充分利用附加包的更多信息，你可以访问我们的常见问题解答页面。	#
+howtoplay.addons.button.text.1=附加包常见问题解答	#
 
 howtoplay.adventureMode=冒险模式	#
 howtoplay.adventureMode.text.1=冒险模式是世界建造者的一种游戏模式。在冒险模式中，玩家必须使用特殊工具来放置或破坏方块。	#
@@ -3757,6 +3777,16 @@ howtoplay.loom.text.3=一个旗帜可以有多层，让你尝试旗帜许多不�
 howtoplay.loom.header.2=织布机图案	#
 howtoplay.loom.text.4=将一个旗帜图案添加到织布机的第三个槽位可以合成特殊图案，例如苦力怕的脸或花朵图案。当将这些图案添加到你的旗帜时，你不会失去你的旗帜图案。	#
 
+howtoplay.mashups=混搭包	#
+howtoplay.mashups.text.1=探索充满刺激且配备了相关的皮肤、纹理等的主题世界！	#
+
+howtoplay.minecoins=Minecoins	#
+howtoplay.minecoins.text.1=使用Minecoin探索无限可能性：Minecraft中的游戏货币！Minecoin允许你在支持的Minecraft游戏中增添多样性。	#
+howtoplay.minecoins.text.2=兑换后，你的Minecoin将与你的微软账号关联，因此你可以在其他支持的设备上访问你的Minecoin和购买内容！	#
+howtoplay.minecoins.button.text.1=获取Minecoin	#
+howtoplay.minecoins.header.1=免责声明	#
+howtoplay.minecoins.text.3=*Minecoin需要带有Minecraft商城的Minecraft基岩版。Minecoin在Sony PlayStation上不兼容。有关兼容信息，请参阅minecraft.net/minecoins	#
+
 howtoplay.mining=采矿	#
 howtoplay.mining.title=游戏指南：采矿	#
 howtoplay.mining.text.1=并不是所有合成材料都在地表上，有些可能需要你深入地下或进入山体内部。	#
@@ -3950,6 +3980,9 @@ howtoplay.scaffolding.text.2=脚手架需要支撑。你只能在水平方向放
 howtoplay.scaffolding.header.3=快速打破	#
 howtoplay.scaffolding.text.3=当脚手架被破坏时，它也会破坏由它所支撑的每一个脚手架。这将让你能够通过破坏支撑方块来快速清理你的脚手架！	#
 
+howtoplay.skins=皮肤	#
+howtoplay.skins.text.1=穿上一些新鲜的像素，用各种各样的灵感造型表达自己。	#
+
 howtoplay.structureBlocks=结构方块	#
 howtoplay.structureBlocks.text.1=结构方块使得创作者们能够把世界的部分区域复制并保存为一个结构，所保存的结构在之后又可以粘贴回世界中。		###
 howtoplay.structureBlocks.header.1=获取方式		###
@@ -3995,6 +4028,9 @@ howtoplay.theEnd.header.1=另一边	#
 howtoplay.theEnd.text.3=一旦传送门被激活，跳入其中即可前往末地。	#
 howtoplay.theEnd.text.4=末地是可怕的末影龙的家园。她是既凶残又强大的敌人，似乎能从奇异的水晶中汲取力量。她的龙息和火球攻击可以在整个战地留下滞留性酸物。带上一些好友确保取得胜利！	#
 howtoplay.theEnd.text.5=一次不够的话，可以将四颗末地水晶添加到返回传送门的各个角落来重新唤醒末影龙。	#
+
+howtoplay.textures=纹理包 #
+howtoplay.textures.text.1=纹理包在视觉上改变游戏的外观，为你的Minecraft世界披上一层新鲜的外套。 #
 
 howtoplay.tools=工具	#
 howtoplay.tools.text.1=在Minecraft中有许多工具，使用这些工具开采方块比徒手开采要快得多。这些工具可使用木头、石头、铁、金、钻石或下界合金制成。	#
@@ -7785,6 +7821,7 @@ selectWorld.newWorld=新的世界	#
 selectWorld.newWorld.copyOf=%s的备份	#
 selectWorld.newWorld.educationCopyOf=[EDU]%s	#
 selectWorld.worldTags.experimental=实验性	#
+selectWorld.worldTags.hardcore=极限模式	#
 ## NOTE: "Realms" is the name of a service and doesn't get localized.
 selectWorld.realmsComingSoon=Realms即将推出！	#
 selectWorld.realmsBeta=Realms测试版	#
@@ -8149,7 +8186,7 @@ store.csb.faq.answer2=精选内容每月更新，不断提供新鲜内容供你�
 store.csb.faq.question3=我需要什么才能享有Marketplace Pass呢？	### {StrContains="Marketplace Pass"}
 store.csb.faq.answer3=访问Marketplace Pass需要有活跃的订阅，以及带有Minecraft商城的Minecraft基岩版兼容版本。需要登录微软账号。	### {StrContains="Marketplace Pass"}
 store.csb.faq.question4=取消Marketplace Pass后，我的内容会发生什么？	### {StrContains="Marketplace Pass"}
-store.csb.faq.answer4=一旦世界、材质包、皮肤包或混搭包移出目录，你将需要从商城中购买物品来继续游玩。除非你手动删除包，否则包不会从你的本地存储中删除。所兑换的每月角色创建器物品均可保留。	#
+store.csb.faq.answer4=一旦世界、纹理包、皮肤包或混搭包移出目录，你将需要从商城中购买物品来继续游玩。除非你手动删除包，否则包不会从你的本地存储中删除。所兑换的每月角色创建器物品均可保留。	#
 store.csb.faq.question5=订阅结束后会发生什么？	#
 store.csb.faq.answer5=在订阅结束后的18个月内，你将能够购买和下载任何保存到你的云存储中的世界模板，Minecraft不再提供这些世界模板的情况除外。所兑换的每月角色创建器物品均可保留。	#
 store.csb.faq.question6=这和Realms Plus有什么不同？	#
@@ -8176,7 +8213,7 @@ store.csb.content.contentDescription=畅享精彩的Minecraft内容！有了Mark
 store.csb.freeTrial=开始免费试用	#
 
 store.csb.welcomeDialog.title=欢迎订阅Marketplace Pass！	### {StrContains="Marketplace Pass"}
-store.csb.welcomeDialog.body=立即开始使用150多种冒险游戏、迷你小游戏、皮肤包、材质等！	#
+store.csb.welcomeDialog.body=立即开始使用150多种冒险游戏、迷你小游戏、皮肤包、纹理等！	#
 store.csb.welcomeDialog.continue=开始浏览	#
 
 store.csb.purchase.warningDialog.title=注意	#
@@ -11026,6 +11063,48 @@ entity.wind_charge_projectile.name=风弹	#
 entity.breeze_wind_charge_projectile.name=风弹	#
 entity.bogged.name=沼骸	#
 item.spawn_egg.entity.bogged.name=沼骸刷怪蛋	#
+item.flow_pottery_sherd.name=涡流纹样陶片	#
+item.guster_pottery_sherd.name=旋风纹样陶片	#
+item.scrape_pottery_sherd.name=刮削纹样陶片	#
+item.banner_pattern.flow=涡流	#
+item.banner_pattern.guster=旋风	#
+item.banner.flow.black=黑色涡流	#
+item.banner.flow.blue=蓝色涡流	#
+item.banner.flow.brown=棕色涡流	#
+item.banner.flow.cyan=青色涡流	#
+item.banner.flow.gray=灰色涡流	#
+item.banner.flow.green=绿色涡流	#
+item.banner.flow.lightBlue=淡蓝色涡流	#
+item.banner.flow.lime=黄绿色涡流	#
+item.banner.flow.magenta=品红色涡流	#
+item.banner.flow.orange=橙色涡流	#
+item.banner.flow.pink=粉红色涡流	#
+item.banner.flow.purple=紫色涡流	#
+item.banner.flow.red=红色涡流	#
+item.banner.flow.silver=淡灰色涡流	#
+item.banner.flow.white=白色涡流	#
+item.banner.flow.yellow=黄色涡流	#
+item.banner.guster.black=黑色旋风	#
+item.banner.guster.blue=蓝色旋风	#
+item.banner.guster.brown=棕色旋风	#
+item.banner.guster.cyan=青色旋风	#
+item.banner.guster.gray=灰色旋风	#
+item.banner.guster.green=绿色旋风	#
+item.banner.guster.lightBlue=淡蓝色旋风	#
+item.banner.guster.lime=黄绿色旋风	#
+item.banner.guster.magenta=品红色旋风	#
+item.banner.guster.orange=橙色旋风	#
+item.banner.guster.pink=粉红色旋风	#
+item.banner.guster.purple=紫色旋风	#
+item.banner.guster.red=红色旋风	#
+item.banner.guster.silver=淡灰色旋风	#
+item.banner.guster.white=白色旋风	#
+item.banner.guster.yellow=黄色旋风	#
+item.breeze_rod.name=旋风棒	#
+tile.heavy_core.name=Heavy Core	#
+item.mace.name=Mace	#
+trim_pattern.flow.name=涡流盔甲纹饰	#
+trim_pattern.bolt.name=镶铆盔甲纹饰	#
 
 entity.firefly.name=萤火虫	#
 item.spawn_egg.entity.firefly.name=萤火虫刷怪蛋	#
