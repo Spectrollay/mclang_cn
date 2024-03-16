@@ -1559,7 +1559,7 @@ commands.xp.success.negative.levels=已剥夺%2$s%1$d级经验	#
 commands.reloadconfig.description=重载与变量、密钥、权限等相关的配置文件。	#
 commands.reloadconfig.success=已成功从磁盘中重载包配置文件：'%1$s'。	#
 
-connect.authorizing=登入中...	#
+connect.authorizing=登录中...	#
 connect.connecting=正在连接到服务器...	#
 connect.failed=无法连接至服务器	#
 
@@ -1882,7 +1882,6 @@ createWorldScreen.experimentalbiomes=自定义生物群系	#
 createWorldScreen.experimentalbiomesDescription=创建自定义生物群系并更改世界生成	#
 createWorldScreen.experimentalCreatorFeatures=即将到来的创作者功能	#
 createWorldScreen.experimentalCreatorFeaturesDescription=包括实体属性和可调整的迷雾参数	#
-createWorldScreen.experimentalmodding=开放额外修改	#
 createWorldScreen.experimentalmoddingDescription=还在做很多重复的事情？这可能有助于创建你的附加包	#
 createWorldScreen.cavesandcliffs=洞穴与山崖	#
 createWorldScreen.cavesandcliffsDescription=探索新的多样化洞穴生成	#
@@ -2559,7 +2558,6 @@ death.attack.player.item=%1$s被%2$s用%3$s杀死了	#
 death.attack.spit=%1$s被%2$s的口水淹死了	#
 death.attack.starve=%1$s饿死了	#
 death.attack.sweetBerry=%1$s被甜浆果丛刺死了	#
-death.attack.sweetBerry.player=%1$s在试图逃离%2$s时被甜浆果丛刺死了	#
 death.attack.thorns=%1$s在试图伤害%2$s时被杀	#
 death.attack.thrown=%1$s被%2$s给砸死了	#
 death.attack.thrown.item=%1$s被%2$s用%3$s给砸死了	#
@@ -3587,7 +3585,8 @@ howtoplay.elytra.text.2=鞘翅无法制作，但可在稀少的末地船（由�
 howtoplay.elytra.header.1=学习飞行	#
 howtoplay.elytra.text.3.notTouch=装备鞘翅时，玩家可以在下落时按下 :_input_key.jump: 开始滑翔。请注意，需要从足够高度起飞才能真正获得全部效果！	#
 howtoplay.elytra.text.3.touch=装备鞘翅时，在下落时点击 :touch_jump: 或 :tip_virtual_button_fly_up: 开始滑翔。请注意，需要从足够高度起飞才能真正获得全部效果！	#
-howtoplay.elytra.text.4.touch=滑翔期间，你可以通过环顾四周来掌控方向。朝下看时，会加快移动 - 但也会更快地撞向地面。朝上看时，会提升一些高度 - 但时间过长，你会失速、坠落而不是上升！	#
+howtoplay.elytra.text.4=滑翔期间，你可以通过环顾四周来掌控方向。朝下看时，会加快移动 - 但也会更快地撞向地面。朝上看时，会提升一些高度 - 但时间过长，你会失速、坠落而不是上升！	#
+howtoplay.elytra.text.4.touch=滑翔期间，你可以通过环顾四周来掌控方向。朝下看时，会提升速度，但也会更快地撞向地面。朝上看时，会提升一些高度，但时间过长，你会失速 - 这意味着你会开始坠落。	#
 howtoplay.elytra.text.5=飞行时你鞘翅的耐久度会慢慢降低。如果鞘翅在飞行过程中破损你将掉落到地上。你可以用铁砧把鞘翅与幻翼膜合成来修复它们。	#
 howtoplay.elytra.header.2=火箭动力飞行	#
 howtoplay.elytra.text.6=无效果的烟花火箭可用于帮助鞘翅飞行。如果你使用有效果的烟花火箭来帮助飞行则会受到伤害。	#
@@ -3611,6 +3610,7 @@ howtoplay.endCities.text.1=杀死末影龙后会生成末地折跃门。将末�
 howtoplay.endCities.text.2=这个全新的异域场景一定隐藏着一些有趣的物品，也许有一些你可以带回家的物品。	#
 
 howtoplay.enderChest=末影箱	#
+
 howtoplay.enderChest.text.1=世界中的所有末影箱都互相关联。你可从任一末影箱内获取置于其他末影箱内的物品。但是，对于每个玩家来说，末影箱中所装物品都是特定的。这让玩家可将物品存储在任一末影箱内，然后从世界不同位置的其他末影箱内取回它们。	#
 
 howtoplay.eyeOfEnder=末影之眼	#
@@ -3745,6 +3745,7 @@ howtoplay.loom.text.2=将旗帜放置进织布机的第一个槽位，并将任�
 howtoplay.loom.text.3=一个旗帜可以有多层，让你尝试旗帜许多不同的可能性。一个旗帜上至多可以应用6种图案，以创造出独特的设计。	#
 howtoplay.loom.header.2=织布机图案	#
 howtoplay.loom.text.4=将一个旗帜图案添加到织布机的第三个槽位可以合成特殊图案，例如苦力怕的脸或花朵图案。当将这些图案添加到你的旗帜时，你不会失去你的旗帜图案。	#
+
 
 howtoplay.mining=采矿	#
 howtoplay.mining.title=游戏指南：采矿	#
@@ -3910,6 +3911,7 @@ howtoplay.redstone.text.2=若要为其中一个物品提供能量，你需要诸
 howtoplay.redstone.text.3=在电源旁边放置一些红石粉并开启它来传输能量。	#
 howtoplay.redstone.text.4=有许多物品使用红石信号来发挥作用，例如漏斗或活塞。	#
 howtoplay.redstone.text.5=红石可以实现无限可能！试着为自己创建一些有用的东西，例如自动农场！	#
+
 
 howtoplay.scaffolding=脚手架	#
 howtoplay.scaffolding.header.1=触碰天际	#
@@ -5935,7 +5937,6 @@ options.delete_account.confirm.button=注销	#
 options.dev_game_tip=游戏提示	#
 options.dev_ad_show_debug_panel=在调试面板中显示EDU标记	#
 options.dev_ad_token_refresh_threshold=EDU登录阀值数（分钟）	#
-## options.dev_ad_edu_max_token_refresh=EDU最大令牌刷新（分钟）	#
 options.dev_ad_edu_max_signin_token_refresh=EDU最大登录令牌刷新（分钟）	#
 options.dev_ad_edu_max_graph_token_refresh=EDU最大图形令牌刷新（分钟）	#
 options.dev_side_by_side_comparison_rate=并列比较率	#
@@ -7227,7 +7228,7 @@ resourcePack.header.level=玩家需要下载所有启用的资源包才能加入
 resourcePack.crashRecovery.title=全局资源重置	#
 resourcePack.crashRecovery.message=上一次资源加载失败。	#
 resourcePack.warnings=警告：	#
-resourcePack.warning.add.title=更新世界？	#
+resourcePack.warning.add.title=升级世界？	#
 resourcePack.warning.add.body=这个世界的外观和行为可能与未修改的世界不同，你也无法获得成就。在继续之前，你可能需要保存一份当前世界的备份。点击“确定”启用此包，点击“取消”保持禁用。	#
 resourcePack.warning.remove.title=这很危险！	#
 resourcePack.warning.remove.body=在选择游玩一个世界后添加或移除行为包，可能损坏世界并导致你丢失所创建的内容。在继续之前，你可能需要保存一份当前世界的备份。点击“确定”移除此包，点击“取消”保持启用。	#
@@ -7576,7 +7577,7 @@ storageManager.multiselect=多选	#
 storageManager.miscellaneous=杂项	#
 
 storageManager.groupType=类型	#
-storageManager.groupPack=插件	#
+storageManager.groupPack=附加包	#
 
 storageManager.shareTitle=导出资源	#
 storageManager.mcpack=Minecraft资源包	#
@@ -8070,6 +8071,8 @@ store.csb.buyNow.viewTerms=条款和条件	#
 store.csb.buyNow.viewPrivacyPolicy=隐私政策	#
 
 store.csb.buyNow.title=开始订阅Marketplace Pass	### {StrContains="Marketplace Pass"}
+
+store.csb.subscription=注册后，150多个精彩的Minecraft商城包将立即可用。下载并游玩冒险地图、穿上皮肤、尝试纹理包，甚至可以每月领取一套角色创建器物品。目录会定期更新，Marketplace Pass总有新内容等着你去发现。你将被收取%s/月的费用，你可以在订阅设置中取消订阅，避免未来出现收费的情况。	### {StrContains="Marketplace Pass"}
 
 store.csb.recurring.offerTrial=Marketplace Pass是一项持续订阅，每月自动收取续订费，直到订阅取消为止。%s订阅后，150多个商城包将立即可用。你可以在订阅设置中取消订阅，避免未来出现收费的情况。	### {StrContains="Marketplace Pass"}
 store.csb.recurring.withoutTrial=Marketplace Pass是一项持续订阅，每月自动收取续订费，直到订阅取消为止。%s订阅后，150多个商城包将立即可用。你将被收取%s/月的费用，你可以在订阅设置中取消订阅，避免未来出现收费的情况。	### {StrContains="Marketplace Pass"}
@@ -10143,6 +10146,7 @@ tips.edu.27=课程加载太慢？尝试在“设置”中关闭渲染距离。	#
 tips.edu.28=想要使用代码编辑器？确保已启用作弊。	#
 tips.edu.29=按下F5更改玩家视角。	#
 tips.edu.30=使用“/spawnpoint”更改出生点。和在床上睡觉一样！	#
+tips.edu.31=本中文译名修正包由Spectrollay制作!	#
 
 beginnerTips.1=大多数怪物只在晚上出现。在白天，你是安全的...大概吧。	#
 beginnerTips.2=破坏方块，收集资源。使用合成网格制作有用的物品。现在开始合成了！	#
@@ -10838,7 +10842,9 @@ gathering.info.qr.body.console=扫码加入我们的活动流程	#
 gathering.info.signIn.title=登录以加入活动。	#
 gathering.info.signIn.body=请登录你的微软账户参加活动。	#
 
-### Gatherings(New)
+
+
+### Minecraft Live活动
 ## gathering.button.minecraftLive=生物投票	#
 ## gathering.caption.startsIn=距离开始还剩 %s	#
 ## gathering.caption.endsIn=距离结束还剩 %s	#
