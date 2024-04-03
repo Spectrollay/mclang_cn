@@ -5762,6 +5762,8 @@ menu.editorMode=编辑器模式	#
 menu.editor.play=恢复	#
 menu.character_cast.select_title=选择你的初始角色	#
 menu.character_cast.preview_title=与角色见面！	#
+menu.realms=Realms	###{StrContains="Realms"}
+menu.realmsServer=Realms服务器	###{StrContains="Realms"}{MaxLength='18'}
 
 merchant.deprecated=交易一些别的东西来解锁！	#
 
@@ -12127,6 +12129,7 @@ hbui.gameplay.DeathScreen.respawnInputLegend=重生	#
 hbui.gameplay.DeathScreen.select=选择	#
 hbui.gameplay.DeathScreen.youDied=你死了！	#
 hbui.GuidedCreateWorldRoute.title=引导式世界创建	#
+hbui.HeroItem.role=文本框	#
 hbui.InboxListItem.accept=接受	#
 hbui.InboxListItem.delete=删除	#
 hbui.InboxListItem.go=开始	#
@@ -12696,6 +12699,8 @@ hbui.ProfileRoute.statsTabButtonLabel=统计数据	#
 hbui.ProfileRoute.suggestedAchievementsListLabel=建议的下组成就	#
 hbui.ProfileRoute.tabNarration=%1$s，标签%2$s/%3$s	#
 hbui.ProgressSpinnerModal.title=加载中	#
+hbui.PromoListItem.enumeration=第%1$s个/共%2$s个	#
+hbui.PromoListItem.role=文本框	#
 hbui.QuickWorldCreationRoute.Difficulty.createInputLegend=创建	#
 hbui.QuickWorldCreationRoute.Difficulty.easyDescription=会生成敌对生物，但对玩家造成的伤害较少。	#
 hbui.QuickWorldCreationRoute.Difficulty.easyTitle=简单	#
@@ -12768,7 +12773,72 @@ hbui.RealmsNewStoryRoute.removeScreenshotImage=删除截图图片	#
 hbui.RealmsNewStoryRoute.selectScreenshot=选择截图	#
 hbui.RealmsNewStoryRoute.selectScreenshotOptional=选择截图（可选）	#
 hbui.RealmsNewStoryRoute.textBoxPlaceholder=编写动态...	#
-hbui.RealmsPDPScreen.title=选择你的计划	#
+hbui.RealmsPDPFAQAccordion.clickToExpand=点击展开	#
+hbui.RealmsPDPFAQAccordion.enumeration=第%1$s个/共%2$s个	#
+hbui.RealmsPDPFAQAccordion.textBlock=文本框	#
+hbui.RealmsPDPScreen.FAQ.Cost.description1=你可以订阅Realms计划：	### {StrContains="Realms"}
+hbui.RealmsPDPScreen.FAQ.Cost.description2=Realms Core计划：%1$s/月。无限制添加成员，同时与2名其他玩家进行在线游戏。	### {StrContains="Realms"}
+hbui.RealmsPDPScreen.FAQ.Cost.description3=Realms Plus计划：%1$s/月。无限制添加成员，同时与10名其他玩家进行在线游戏。此外还可在Marketplace Pass目录中免费享受超过150个商城内容。	### {StrContains="Realms"}
+hbui.RealmsPDPScreen.FAQ.Cost.title=Realm的费用是多少？	### {StrContains="Realm"}
+hbui.RealmsPDPScreen.FAQ.Expiry.description=你的世界需要由自己保管。在订阅到期后，你有18个月的时间可以将其下载到设备上。如果你在此期间重新订阅，即可再次获得访问Realm的权限，你的Realm与之前相比不会发生任何变化。	### {StrContains="Realm"}
+hbui.RealmsPDPScreen.FAQ.Expiry.title=如果订阅到期，Realm中的世界会怎么样？	### {StrContains="Realm"}
+hbui.RealmsPDPScreen.FAQ.Friends.description=你邀请的玩家（成员）不需要购买Realms订阅即可在你的Realm中游玩。你可以邀请任意Minecraft玩家免费加入你的Realm进行游戏。	### {StrContains="Realms"} {StrContains="Realm"}
+hbui.RealmsPDPScreen.FAQ.Friends.title=如果我的好友想要在我的Realm中游玩，是否需要购买Realms订阅？	### {StrContains="Realms"} {StrContains="Realm"}
+hbui.RealmsPDPScreen.FAQ.header=常见问题解答	#
+hbui.RealmsPDPScreen.FAQ.HowMany.description=你可以一次性在Realm上存储最多3个世界。启用其中任意一个世界即可开始在该世界中游玩。一次只能游玩一个世界。	### {StrContains="Realm"}
+hbui.RealmsPDPScreen.FAQ.HowMany.title=我的Realm上可以有多少个世界？	### {StrContains="Realm"}
+hbui.RealmsPDPScreen.FAQ.PersonalServer.description=我们将你的世界部署在一台超级计算机上，这台计算机拥有超快的速度和超强的能力，它会持续不断的运行，你和你的好友可以随时在该世界中游玩。我们随时都会进行自动保存，这样就能保护你的世界不受损坏。你可以决定谁能连接到你的世界，也可以决定游戏要怎么玩。（所有繁杂的工作都由服务器来完成）	#
+hbui.RealmsPDPScreen.FAQ.PersonalServer.title=什么是私人服务器？	#
+hbui.RealmsPDPScreen.FAQ.Realms.description=Realms是一种小型个人服务器，其作用是为你的Minecraft世界提供联机环境。与常规多人游戏会话不同，Realms始终在线，即便你不在线你的好友也同样可以游玩。而与大型Minecraft公共服务器不同的是，Realms只能通过邀请加入，所以你可以决定谁能加入你的游戏。	### {StrContains="Realms"}
+hbui.RealmsPDPScreen.FAQ.Realms.title=什么是Realms？	### {StrContains="Realms"}
+hbui.RealmsPDPScreen.hero.content.header=通过Realms Plus获取额外内容	### {StrContains="Realms"}
+hbui.RealmsPDPScreen.hero.content.text=Realms Plus订阅包括Marketplace Pass：每月更新超过2组的商城内容。皮肤、角色创建器物品、世界、纹理以及混搭包应有尽有，总有新内容供你体验。	### {MaxLength="250"} {StrContains="Realms"}
+hbui.RealmsPDPScreen.hero.content.title=访问超过150个商城包	### {MaxLength="56"}
+hbui.RealmsPDPScreen.hero.perks.header=Realms包括的其他特权	### {StrContains="Realms"}
+hbui.RealmsPDPScreen.hero.perks.text=将你的冒险分享到动态，通过成员标签见证Realm的成长，使用时间线了解大家在Realm中的游戏时间安排。	### {MaxLength="250"} {StrContains="Realm"}
+hbui.RealmsPDPScreen.hero.perks.title=通过Realms动态进行社交	### {MaxLength="56"} {StrContains="Realms"}
+hbui.RealmsPDPScreen.promos.easy.description=没有任何技术门槛。免费无忧备份。无需共享个人信息。	#
+hbui.RealmsPDPScreen.promos.easy.title=安全快捷	#
+hbui.RealmsPDPScreen.promos.free.description=你邀请的玩家会成为Realm成员。他们无需付费即可加入Realm进行游玩；唯一的条件就是拥有一份Minecraft基岩版。	### {StrContains="Realm"}
+hbui.RealmsPDPScreen.promos.free.title=成员免费游玩	#
+hbui.RealmsPDPScreen.promos.header=什么是Realms？	### {StrContains="Realms"}
+hbui.RealmsPDPScreen.promos.persistent.description=你和你邀请的Realm成员可随时在任意设备上游玩已上传至Realm中的世界。即便你不在线成员也一样可以游玩。	### {StrContains="Realm"}
+hbui.RealmsPDPScreen.promos.persistent.title=永不下线的多人游戏世界	#
+hbui.RealmsPDPScreen.splash.buyNow=立即购买	### {MaxLength="20"}
+hbui.RealmsPDPScreen.splash.text=管理自己的Minecraft服务器！哪些玩家可以加入、游戏要怎么玩，都由你来定。即便你不在线成员也可以免费游玩。轻松设置、管理，并且可在任何设备上游玩。	### {MaxLength="200"}
+hbui.RealmsPDPScreen.splash.title=你的专属服务器，永不下线	### {MaxLength="50"}
+hbui.RealmsPDPScreen.splash.tryFree=免费试用	### {MaxLength="20"}
+hbui.RealmsPDPScreen.title=Minecraft Realms	### {StrContains="Realms"}
+hbui.RealmsPlanPickerScreen.buyButton=立即购买  	#
+hbui.RealmsPlanPickerScreen.buyRealmsPlusButtonTrial=免费试用	#
+hbui.RealmsPlanPickerScreen.currency=$	#
+hbui.RealmsPlanPickerScreen.error.body=请确认你已使用同一账号登录Minecraft和设备的平台商店，然后重试。	#
+hbui.RealmsPlanPickerScreen.error.button=再试一次	#
+hbui.RealmsPlanPickerScreen.error.title=无法访问平台商店	#
+hbui.RealmsPlanPickerScreen.featureLine0=你和2位好友	#
+hbui.RealmsPlanPickerScreen.featureLine0Narration=你和2位好友	#
+hbui.RealmsPlanPickerScreen.featureLine0Plus=你	#
+hbui.RealmsPlanPickerScreen.featureLine0PlusNarration=你和10位好友	#
+hbui.RealmsPlanPickerScreen.featureLine0PlusNum=10位好友	#
+hbui.RealmsPlanPickerScreen.featureLine1=3个世界槽位	#
+hbui.RealmsPlanPickerScreen.featureLine2=服务器全天候在线	#
+hbui.RealmsPlanPickerScreen.featureLine2Narration=服务器全天候可用	#
+hbui.RealmsPlanPickerScreen.featureLine3=成员免费游玩	#
+hbui.RealmsPlanPickerScreen.featureLine4=跨平台游戏	#
+hbui.RealmsPlanPickerScreen.featureLine5=免费自动备份	#
+hbui.RealmsPlanPickerScreen.featureLine5Narration=自动免费备份	#
+hbui.RealmsPlanPickerScreen.featureLine6=Realms动态	### {StrContains="Realms"}
+hbui.RealmsPlanPickerScreen.featureLine7=30天免费试用	#
+hbui.RealmsPlanPickerScreen.featureLine8=包含Marketplace Pass	#
+hbui.RealmsPlanPickerScreen.featureNarrationCore=Realms core套餐详情。文本框	### {StrContains="Realms"}
+hbui.RealmsPlanPickerScreen.featureNarrationPlus=Realms plus套餐详情。文本框	### {StrContains="Realms"}
+hbui.RealmsPlanPickerScreen.planCoreCardNarration=纵向面板。组。core套餐每月%1$s	#
+hbui.RealmsPlanPickerScreen.planRealmsPlusCardNarration=纵向面板。组。plus套餐每月%1$s	#
+hbui.RealmsPlanPickerScreen.priceCore=Core	#
+hbui.RealmsPlanPickerScreen.priceMonthly=月	#
+hbui.RealmsPlanPickerScreen.pricePlus=Plus	#
+hbui.RealmsPlanPickerScreen.title=选择你的计划	#
+hbui.RealmsPlanPickerScreen.titleNarrationHint=比较两个计划	#
 hbui.RealmsPreviews.create.cancel.beta=不，不要创建Beta Realm	#
 hbui.RealmsPreviews.create.cancel.preview=不，不要创建Preview Realm	#
 hbui.RealmsPreviews.create.message.beta=你将创建一个与付费Realms订阅匹配的免费Beta Realm。只要付费订阅处于活跃状态，就可以访问这个全新的Beta Realm。你的付费Realm不会受到影响。	#
@@ -13157,6 +13227,8 @@ hbui.SignInWorldsFriendsServersRoute.signInList3=加入数以百计的其他玩�
 hbui.SignInWorldsFriendsServersRoute.signInList3PS=加入数以百计的其他玩家，享受独特的特色服务器体验	#
 hbui.SignInWorldsFriendsServersRoute.signInList4=在多个平台上访问你的商城内容和角色	#
 hbui.SignInWorldsFriendsServersRoute.signInPrompt=立即使用你的微软账号登录以解锁各种功能，包括：	#
+hbui.Splash.role=文本框	#
+hbui.Splash.select=选择	#
 hbui.StatListItem.compareNarration=%1$s与%2$s比较	#
 hbui.StatListItem.itemNarration=%1$s/%2$s	#
 hbui.StorageIndicator.bytes=%1$sB	#
