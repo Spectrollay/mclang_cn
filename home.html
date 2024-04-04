@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="3;url=./">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="./stylesheet/home.css" rel="stylesheet">
+    <style>
+        main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        a {
+            color: inherit;
+            cursor: default;
+            position: relative;
+            text-decoration: none;
+            box-shadow: inset 0 -2px 0 0 #FFFFFF;
+        }
+
+        h2 {
+            margin: 10px 0;
+        }
+
+        .redirect_title, .redirect_message {
+            color: #FFFFFF;
+        }
+
+        .message {
+            margin: 10px 0;
+        }
+    </style>
+    <link href="./images/Logo.jpg" rel="icon">
+    <title>中文译名修正项目</title>
+</head>
+
+<body>
+<div class="loading_mask" id="loading_mask">
+    <div class="spinner"><img alt="" id="spinner_img" src="./images/Loading_white.gif"></div>
+</div>
+<header>
+    <div class="header_back" id="back" onclick="clickedBack();">
+        <img alt="Back" class="back_icon" id="back_icon" src="./images/arrowLeft.png">
+    </div>
+    <div class="header_logo" onclick="scrollToTop();">
+        <img alt="Title Icon" class="title_icon" src="./images/Logo.jpg">
+        <span class="header_title">Repository</span>
+    </div>
+</header>
+<main>
+    <div>
+        <h2 class="redirect_title">页面已迁移至新地址</h2>
+        <h4 class="message redirect_message"><span id="second">3</span>秒后将自动重定向</h4>
+        <h4 class="message redirect_message">没有成功重定向?<a onclick="jumpToPage('./');">点此前往</a></h4>
+    </div>
+</main>
+
+</body>
+
+<script src="./javascript/home.js"></script>
+
+</html>
