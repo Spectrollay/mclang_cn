@@ -18,6 +18,8 @@
 
 <b>本项目隶属于: <a href="https://github.com/Spectrollay/mcpack_bk">基岩版工具包</a></b>
 
+<b>访问我们的网站: <a href="https://spectrollay.gitee.io/mclang_cn/">基岩版中文译名修正项目</a></b>
+
 <h4>发布日期:</h4>
 
 - ![正式版](https://img.shields.io/github/release-date/Spectrollay/mclang_cn?label=正式版)
@@ -26,7 +28,7 @@
 <h4>现已跟进:</h4>
 
 - Release 1.20.73
-- Beta/Preview 1.21.0.20
+- Beta/Preview 1.21.0.21
 
 <h4>主要功能:</h4>
 
@@ -45,15 +47,12 @@
 - 旋风棒,沉重核心,重锤,新的纹样陶片,旗帜与盔甲纹饰
 - 沼骸,旋风人和风弹
 - OreUI的改进
-- 游戏提示和教程
-- Realm动态
 
 <h4>下载:</h4>
 
 - Release标签用于发布适配正式版的中文译名修正包
 - Pre-release标签用于发布适配开发版的中文译名修正包
 - [基岩版工具包](https://github.com/Spectrollay/mcpack_bk)现已默认内置正式版中文译名修正
-- [点击这里](https://pan.huang1111.cn/s/5eOAul?path=/)前往国内云盘下载全部版本
 
 <h4>关于:</h4>
 
