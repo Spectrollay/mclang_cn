@@ -7,7 +7,11 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link href="./stylesheet/home.css" rel="stylesheet">
     <style>
-
+        /* TODO: 在移除预览提示块时移除该样式 */
+        .preview_block {
+            border-top: 2px solid #5A5B5C;
+            border-bottom: 2px solid #333334;
+        }
     </style>
     <link href="./images/Logo.jpg" rel="icon">
     <title>中文译名修正项目</title>
@@ -25,13 +29,50 @@
         <img alt="Title Icon" class="title_icon" src="./images/Logo.jpg">
         <span class="header_title">Repository</span>
     </div>
+    <div class="header_right_blank"></div>
 </header>
-<main>
+<main id="main">
+    <div class="main_title">
+        <div class="main_title_area">
+            <div class="main_title_span">中文译名修正项目</div>
+        </div>
+    </div>
+    <!--  TODO: 移除时一并移除相应样式  -->
+    <div class="main preview_block">
+        <div class="preview_title">欢迎观看设计预览!</div>
+        <div class="preview_detail">我们想听听你对这个新设计的意见.</div>
+        <div class="preview_detail">请注意: 新设计仍未完工,可能会缺失部分功能.</div>
+        <div class="btn_group">
+            <button class="btn green_btn large_btn" onclick="playSound(this);toRepo();"><img class="link_img"
+                                                                                             src="./images/ExternalLink_white.png"
+                                                                                             alt=""/>提出反馈
+            </button>
+        </div>
+    </div>
+    <div class="main main_block">
+        <div class="main_block_cont">
+            <div class="title3">即将到来</div>
+            <div class="description">
+                Coming soon..
+            </div>
+        </div>
+    </div>
     <div>
-
+        <div class="page_info"><br></div>
+        <div class="page_info_title">INFORMATION</div>
+        <div class="page_info">Version: 2.0.Build1<br>Server Version: 4.0<br>Updated: 2024-04-27-01</div>
+        <div class="page_info_title">ABOUT US</div>
+        <div class="page_info">Developer: @Spectrollay<br>Maintainer: @Spectrollay<br>Chat Group: [<a
+                href="https://t.me/Spectrollay_MCW" target="_blank" onclick="playSound1();">Telegram</a>] [<a
+                href="https://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=WVA6aPqtv99hiYleW7vUq5OsBIufCAB1&authKey=B0%2BaXMCTqnmQrGh0wzCZTyWTIPyHS%2FPEM5QXcFfVwroFowNnzs6Yg1er1%2F8Fekqp&noverify=0&group_code=833473609"
+                target="_blank" onclick="playSound1();">QQ</a>] [<a
+                href="https://yhfx.jwznb.com/share?key=VyTE7W7sLwRl&ts=1684642802" target="_blank"
+                onclick="playSound1();">云湖</a>]
+        </div>
+        <div class="page_info_title">MADE WITH ❤️ IN CHINA</div>
+        <div class="page_info"><br></div>
     </div>
 </main>
-
 </body>
 
 <script src="./javascript/home.js"></script>

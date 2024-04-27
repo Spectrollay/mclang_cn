@@ -15,8 +15,8 @@ const parts = currentPagePath.split('/').filter(Boolean);
 const rootPath = '/' + (parts.length > 0 ? parts[0] + '/' : '');
 const slashCount = (currentPagePath.match(/\//g) || []).length;
 
-const soundClickPath = rootPath + 'Website/sounds/click.ogg';
-const soundButtonPath = rootPath + 'Website/sounds/button.ogg';
+const soundClickPath = rootPath + 'sounds/click.ogg';
+const soundButtonPath = rootPath + 'sounds/button.ogg';
 const pageLevel = (slashCount - 1) + "级页面";
 
 console.log("浏览器UA: ", navigator.userAgent)
@@ -199,6 +199,12 @@ function jumpToPage(link) {
     setTimeout(function () {
         window.location.href = link;
     }, 320);
+}
+
+function toRepo() {
+    setTimeout(function () {
+        window.open("https://github.com/Spectrollay/minecraft_repository/issues/new");
+    }, 600);
 }
 
 // 回到网页顶部

@@ -1,3 +1,10 @@
+/* 防止反色以杜绝出现奇怪的显示问题 */
+@media (prefers-color-scheme: dark) {
+    body {
+        color-scheme: light;
+    }
+}
+
 /* 自定义字体 */
 @font-face {
     font-family: 'Minecraft Ten';
@@ -9,7 +16,7 @@
     src: url("../fonts/NotoSans-Bold.ttf") format('truetype');
 }
 
-/* 界面选择事件 */
+/* 页面选择事件 */
 ::selection {
     background-color: transparent;
     color: inherit;
@@ -18,6 +25,10 @@
 /* 禁用长按菜单 */
 * {
     touch-action: manipulation;
+}
+
+.flex {
+    display: flex;
 }
 
 /* 总体样式 */
@@ -71,33 +82,37 @@ header {
 }
 
 /* 顶栏元素 */
-.header_menu, .header_back, .header_logo, .header_repo, .header_debug, .header_settings {
+.header_menu, .header_back, .header_logo, .header_repo, .header_debug, .header_settings, .header_right_blank {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
 }
 
-/* 顶栏按钮悬停 */
 .header_menu:hover, .header_back:hover, .header_repo:hover, .header_debug:hover, .header_settings:hover {
     background-color: #F4F6F9;
 }
 
-/* 顶栏按钮激活 */
 .header_menu:active, .header_back:active, .header_repo:active, .header_debug:active, .header_settings:active {
     background-color: #D0D1D4;
 }
 
 /* 顶栏左侧按钮 */
 .header_menu, .header_back {
-    width: 40px;
-    border-right: 2px solid #FFFFFF;
+    width: 42px;
+    box-shadow: inset -2px 0 #FFFFFF;
+    border-right: 2px solid #A1A3A5;
 }
 
 /* 顶栏右侧按钮 */
 .header_repo, .header_debug, .header_settings {
-    width: 40px;
-    border-left: 2px solid #A1A3A5;
+    width: 42px;
+    box-shadow: inset 2px 0 #A1A3A5;
+    border-left: 2px solid #FFFFFF;
+}
+
+.header_right_blank {
+    width: 44px;
 }
 
 /* 顶栏按钮图标 */
@@ -110,6 +125,14 @@ header {
     width: 32px;
 }
 
+.menu_icon, .back_icon {
+    padding: 4px 6px 4px 4px;
+}
+
+.repo_icon, .debug_icon, .settings_icon {
+    padding: 4px 4px 4px 6px;
+}
+
 /* 标题区域 */
 .title_icon {
     height: 26px;
@@ -120,8 +143,6 @@ header {
 /* 标题图标 */
 .header_logo {
     flex: 1;
-    border-left: 2px solid #A1A3A5;
-    border-right: 2px solid #FFFFFF;
 }
 
 /* 标题文字 */
@@ -137,6 +158,7 @@ main {
     top: 44px;
     width: 100%;
     min-width: 360px;
+    color: #FFFFFF;
     position: fixed;
     overflow-x: hidden;
     overflow-y: auto;
@@ -167,6 +189,14 @@ main::-webkit-scrollbar-thumb {
     justify-content: center;
     min-width: 360px;
     z-index: 9;
+}
+
+.tab_bar_area.main_tab_bar {
+    height: 52px;
+    position: fixed;
+    top: 54px;
+    left: 0;
+    right: 0;
 }
 
 .tab_bar {
@@ -249,6 +279,14 @@ main::-webkit-scrollbar-thumb {
     display: block;
 }
 
+.tab_sidebar.no_active {
+    display: none;
+}
+
+.tab_sidebar.active {
+    display: block;
+}
+
 /* 主体块 */
 .main {
     height: auto;
@@ -261,7 +299,10 @@ main::-webkit-scrollbar-thumb {
     border-bottom: 2px solid #333334;
     border-left: 2px solid #333334;
     border-right: 2px solid #333334;
-    color: #FFFFFF;
+}
+
+#holiday_tip1, #holiday_tip2 {
+    display: none;
 }
 
 /* 主体上下提示 */
@@ -329,10 +370,23 @@ main::-webkit-scrollbar-thumb {
     font-family: "Minecraft Seven", sans-serif;
 }
 
+.description {
+    margin: 10px;
+}
+
+.description p {
+    text-indent: 2em;
+}
+
+.description img {
+    width: 100%;
+}
+
 .description1 {
     font-size: 18px;
     font-family: "NotoSans Bold", sans-serif;
     margin: 4px 0;
+    text-align: center;
 }
 
 .description2 {
@@ -348,11 +402,40 @@ main::-webkit-scrollbar-thumb {
     margin-top: 4px;
 }
 
-.header_notice_body a, .description1 a, .description2 a, .description3 a {
+.header_notice_body a, .description1 a, .description2 a, .description3 a, p a {
     color: inherit;
     position: relative;
     text-decoration: none;
     box-shadow: inset 0 -2px 0 0 #FFFFFF;
+}
+
+.main_title {
+    font-family: "NotoSans Bold", sans-serif;
+    border-bottom: 2px solid #333334;
+    border-left: 0;
+    border-right: 0;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_title_area {
+    margin: 10px 0;
+}
+
+.main_title_span {
+    font-size: 24px;
+}
+
+.main_block {
+    font-family: "NotoSans Bold", sans-serif;
+    border-top: 2px solid #5A5B5C;
+    border-bottom: 2px solid #333334;
+    border-left: 0;
+    border-right: 0;
+    padding: 0 16px;
+    min-height: 80px;
 }
 
 /* 默认按钮样式 */
@@ -364,15 +447,11 @@ main::-webkit-scrollbar-thumb {
     justify-self: center;
 }
 
-.preview_btn {
+.small_btn {
     width: 140px;
 }
 
-.download_btn {
-    width: 140px;
-}
-
-.download_btn_large {
+.large_btn {
     width: 292px;
 }
 
@@ -447,6 +526,47 @@ main::-webkit-scrollbar-thumb {
     box-shadow: inset 0 -4px #B1B2B5;
 }
 
+/* 带有图标的按钮 */
+.link_img, .link_img_black {
+    margin-bottom: -1.5px;
+    height: 14px;
+    width: 14px;
+    padding-right: 6px;
+}
+
+/* 带有Tooltip的按钮 */
+.btn_with_tooltip_cont {
+    position: relative;
+    display: inline-block;
+}
+
+.btn_tooltip {
+    visibility: hidden;
+    background-color: #1F1F1F;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: -30px;
+    right: 10px;
+    opacity: 0;
+    transition: opacity 0.6s;
+}
+
+.btn_with_tooltip_cont:hover .btn_tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.key_icon {
+    position: absolute;
+    top: -2px;
+    right: 0;
+    z-index: 2;
+    height: 20px;
+}
+
 /* 主体块 */
 .block {
     margin: 0 20px;
@@ -496,7 +616,6 @@ main::-webkit-scrollbar-thumb {
 }
 
 .neutral_banner {
-    color: #FFFFFF;
     background-color: #1E1E1F;
 }
 
@@ -504,14 +623,153 @@ main::-webkit-scrollbar-thumb {
     background-color: #2E6BE5;
 }
 
-.normal_banner {
-    background-color: #1E1E1F;
-}
-
 .important_banner {
     font-weight: bolder;
     color: #000000;
     background-color: #FFE866;
+}
+
+.important_banner a {
+    box-shadow: inset 0 -2px 0 0 #000000;
+}
+
+/* 按钮块 */
+.btn_group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Badge */
+.badge_area {
+    display: flex;
+    align-items: center;
+}
+
+.badge {
+    width: 6px;
+    height: 6px;
+    margin-right: 6px;
+}
+
+.green_badge {
+    background-color: #6CC349;
+}
+
+.blue_badge {
+    background-color: #8CB3FF;
+}
+
+.yellow_badge {
+    background-color: #FFE866;
+}
+
+.red_badge {
+    background-color: #F46D6D;
+}
+
+/* Tag */
+.tag {
+    align-self: center;
+    color: #000000;
+    margin: 4px;
+    padding: 0 2px;
+    font-size: 12px;
+}
+
+.black_tag {
+    color: #FFFFFF;
+    background-color: #1E1E1F;
+}
+
+.green_tag {
+    background-color: #6CC349;
+}
+
+.blue_tag {
+    background-color: #8CB3FF;
+}
+
+.yellow_tag {
+    background-color: #FFE866;
+}
+
+.red_tag {
+    background-color: #F46D6D;
+}
+
+/* 表格属性 */
+.table_area {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+table, th, td {
+    border: 1px solid #FFFFFF;
+}
+
+th {
+    height: 40px;
+}
+
+td {
+    height: 60px;
+}
+
+.table {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    word-wrap: break-word;
+    hyphens: auto;
+    max-width: 600px;
+}
+
+.table-big {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    word-wrap: break-word;
+    hyphens: auto;
+    max-width: 1000px;
+}
+
+.table td {
+    min-width: 100px;
+}
+
+/* 表格底部信息区域 */
+.info_area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.info_area div {
+    width: 100%;
+    max-width: 1000px;
+}
+
+.info_text {
+    margin-bottom: 0;
+}
+
+/* Divider分割线 */
+divider {
+    display: block;
+    margin: 6px 0;
+    height: 4px;
+    width: 100%;
+    box-shadow: inset 0 2px #333334, inset 0 -2px #5A5B5C;
 }
 
 /* Modal弹窗 */
@@ -535,14 +793,45 @@ main::-webkit-scrollbar-thumb {
     text-align: center;
 }
 
-.modal_title {
+.modal_title_area {
     height: 40px;
     font-size: 18px;
+    position: relative;
+    background-color: #48494A;
+    box-shadow: inset 2px 2px rgba(255, 255, 255, 0.2), inset -2px -2px rgba(255, 255, 255, 0.1);
+}
+
+.modal_title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #48494A;
-    box-shadow: inset 2px 2px rgba(255, 255, 255, 0.2), inset -2px -2px rgba(255, 255, 255, 0.1);
+    height: 100%;
+    width: 100%;
+}
+
+.modal_close_btn {
+    position: absolute;
+    top: 50%;
+    right: 4px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100% - 8px);
+    width: 32px;
+}
+
+.modal_close_btn:hover, .modal_close_btn:active {
+    background-color: #58585A;
+}
+
+.modal_close_btn_img {
+    height: 20px;
+    width: 20px;
 }
 
 .modal_content {
@@ -618,4 +907,28 @@ main::-webkit-scrollbar-thumb {
     position: relative;
     text-decoration: none;
     box-shadow: inset 0 -2px 0 0 rgba(255, 255, 255, 0.4);
+}
+
+/* 全屏遮罩 */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+    display: none;
+}
+
+/* 除了顶栏 */
+.overlay_main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
 }
