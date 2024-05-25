@@ -18,7 +18,7 @@
 
 <b>本项目隶属于: <a href="https://github.com/Spectrollay/mcpack_bk">基岩版工具包</a></b>
 
-<b>访问我们的网站: <a href="https://spectrollay.gitee.io/mclang_cn/">基岩版中文译名修正项目</a></b>
+<b>访问我们的网站: <a href="https://spectrollay.github.io/mclang_cn/">基岩版中文译名修正项目</a></b>
 
 <h4>发布日期:</h4>
 
@@ -27,8 +27,8 @@
 
 <h4>现已跟进:</h4>
 
-- Release 1.20.80
-- Beta/Preview 1.21.0.23
+- Release 1.20.81
+- Beta/Preview 1.21.0.26
 
 <h4>主要功能:</h4>
 
