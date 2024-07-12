@@ -1,8 +1,10 @@
 <div align="center">
 
-![Title](images/minecraft.png)
+![Title](images/Minecraft.png)
 
 <h1>基岩版中文译名修正</h1>
+
+![1.21 - Tricky Trials](images/1.21_KeyArt.png)
 
 <h3>和基岩版的无脑翻译说再见!</h3>
 

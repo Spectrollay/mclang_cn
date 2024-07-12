@@ -8,6 +8,173 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').match
     document.body.classList.add('no-dark-mode');
 }
 
+// 页面滚动条
+const scrollContainer = document.querySelector('scroll-container');
+const mainContent = document.querySelector('.main_scroll_container');
+const customScrollbar = document.querySelector('custom-scrollbar');
+const customThumb = document.querySelector('custom-scrollbar-thumb');
+const sidebar = document.querySelector('#sidebar');
+let sidebarContainer;
+let sidebarContent;
+let sidebarCustomScrollbar;
+let sidebarThumb;
+if (sidebar) {
+    sidebarContainer = document.querySelector('#sidebar_scroll_container');
+    sidebarContent = sidebarContainer.querySelector('.sidebar_content');
+    sidebarCustomScrollbar = sidebar.querySelector('custom-scrollbar');
+    sidebarThumb = sidebar.querySelector('custom-scrollbar-thumb');
+}
+
+let scrollTimeout;
+let isDragging;
+
+function updateThumb() {
+    const scrollHeight = mainContent.scrollHeight;
+    const containerHeight = scrollContainer.getBoundingClientRect().height;
+    customScrollbar.style.height = containerHeight + 'px';
+    if (mainContent.classList.contains('main_with_tab_bar')) {
+        customScrollbar.style.top = '100px';
+    }
+    let thumbHeight = Math.max((containerHeight / scrollHeight) * containerHeight, 20);
+    customThumb.style.height = `${thumbHeight}px`;
+    let maxScrollTop = scrollHeight - containerHeight;
+    const currentScrollTop = Math.round(scrollContainer.scrollTop);
+    const thumbPosition = (currentScrollTop / maxScrollTop) * (containerHeight - (thumbHeight + 4));
+    customThumb.style.top = `${thumbPosition}px`;
+    if (thumbHeight + 0.5 >= containerHeight) {
+        customScrollbar.style.display = 'none';
+    } else {
+        customScrollbar.style.display = 'block';
+    }
+}
+
+function updateSidebarThumb() {
+    const scrollHeight = sidebarContent.scrollHeight;
+    const containerHeight = Math.floor(sidebarContainer.getBoundingClientRect().height);
+    const thumbHeight = Math.max((containerHeight / scrollHeight) * containerHeight, 20);
+    const maxScrollTop = scrollHeight - containerHeight;
+    const currentScrollTop = Math.round(sidebarContainer.scrollTop);
+    const thumbPosition = (currentScrollTop / maxScrollTop) * (containerHeight - (thumbHeight + 4));
+
+    if (thumbHeight >= containerHeight) {
+        sidebarCustomScrollbar.style.display = 'none';
+    } else {
+        sidebarCustomScrollbar.style.display = 'block';
+    }
+
+    sidebarThumb.style.height = `${thumbHeight}px`;
+    sidebarThumb.style.top = `${thumbPosition}px`;
+}
+
+function showScroll() {
+    clearTimeout(scrollTimeout);
+    customScrollbar.style.opacity = "1";
+    scrollTimeout = setTimeout(() => {
+        customScrollbar.style.opacity = "0";
+    }, 3000);
+}
+
+function showSidebarScroll() {
+    clearTimeout(scrollTimeout);
+    sidebarCustomScrollbar.style.opacity = "1";
+    scrollTimeout = setTimeout(() => {
+        sidebarCustomScrollbar.style.opacity = "0";
+    }, 3000);
+}
+
+function handleScroll() {
+    showScroll();
+    updateThumb();
+}
+
+function startDrag() {
+    isDragging = true;
+    document.addEventListener('mousemove', onDrag);
+    document.addEventListener('mouseup', stopDrag);
+    document.addEventListener('touchmove', onDrag);
+    document.addEventListener('touchend', stopDrag);
+}
+
+function onDrag(e) {
+    if (!isDragging) return;
+
+    const mouseY = e.clientY || e.touches[0].clientY;
+    const {top, height: containerHeight} = scrollContainer.getBoundingClientRect();
+    const thumbHeight = customThumb.offsetHeight;
+    const maxThumbTop = containerHeight - thumbHeight;
+    const newTop = Math.min(Math.max(mouseY - top - thumbHeight / 2, 0), maxThumbTop);
+    const maxScrollTop = mainContent.scrollHeight - containerHeight;
+    scrollContainer.scrollTo({
+        top: (newTop / maxThumbTop) * maxScrollTop,
+        behavior: "instant"
+    });
+    updateThumb();
+}
+
+function stopDrag() {
+    setTimeout(() => {
+        isDragging = false;
+    }, 0);
+    document.removeEventListener('mousemove', onDrag);
+    document.removeEventListener('mouseup', stopDrag);
+    document.removeEventListener('touchmove', onDrag);
+    document.removeEventListener('touchend', stopDrag);
+}
+
+function handleScrollbarClick(e) {
+    if (isDragging) return;
+
+    const {top, height: scrollbarHeight} = customScrollbar.getBoundingClientRect();
+    const clickPosition = e.clientY - top;
+    const thumbHeight = customThumb.offsetHeight;
+    const containerHeight = scrollContainer.clientHeight;
+    const maxScrollTop = mainContent.scrollHeight - containerHeight;
+    scrollContainer.scrollTop = (clickPosition / (scrollbarHeight - thumbHeight)) * maxScrollTop;
+    updateThumb();
+}
+
+if (scrollContainer) {
+    scrollContainer.addEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleScroll);
+    scrollContainer.addEventListener('touchmove', handleScroll);
+    scrollContainer.addEventListener('mousemove', handleScroll);
+
+    window.addEventListener('load', function () {
+        setTimeout(function () {
+            handleScroll();
+        }, 10);
+    });
+
+    // 添加鼠标和触摸事件
+    customThumb.addEventListener('mousedown', startDrag);
+    customThumb.addEventListener('touchstart', startDrag);
+
+    // 添加点击滚动条事件
+    customScrollbar.addEventListener('click', handleScrollbarClick);
+}
+
+if (sidebarContainer) {
+    sidebarContainer.addEventListener('scroll', () => {
+        showSidebarScroll();
+        updateSidebarThumb();
+    });
+
+    window.addEventListener('load', function () {
+        setTimeout(function () {
+            showSidebarScroll();
+            updateSidebarThumb();
+        }, 10);
+    });
+
+    window.addEventListener('resize', function () {
+        showSidebarScroll();
+        updateSidebarThumb();
+    });
+    sidebarContainer.addEventListener('touchmove', showSidebarScroll);
+    sidebarContainer.addEventListener('mousemove', showSidebarScroll);
+}
+
+// 路径检测
 const currentURL = window.location.href;
 const currentPagePath = window.location.pathname;
 const hostPath = window.location.origin;
@@ -39,16 +206,17 @@ if (hostPath.includes('file:///')) {
     document.addEventListener('touchstart', function (event) {
         event.preventDefault();
     });
-} else if (hostPath.includes('gitee.io')) {
-    console.log("当前运行在Gitee");
-    // 禁用右键菜单
-    document.addEventListener('contextmenu', function (event) {
-        event.preventDefault();
-    });
-    // 禁用长按菜单
-    document.addEventListener('touchstart', function (event) {
-        event.preventDefault();
-    });
+    // Gitee Pages 已下线
+// } else if (hostPath.includes('gitee.io')) {
+//     console.log("当前运行在Gitee");
+//     // 禁用右键菜单
+//     document.addEventListener('contextmenu', function (event) {
+//         event.preventDefault();
+//     });
+//     // 禁用长按菜单
+//     document.addEventListener('touchstart', function (event) {
+//         event.preventDefault();
+//     });
 } else {
     console.log("当前运行在" + hostPath);
 }
@@ -73,31 +241,42 @@ links.forEach(function (link) {
 
 // 兼容性检测
 const compatibilityModal = `
-        <div id="compatibility_modal" class="modal_area">
-            <div class="modal">
-                <div class="modal_title">兼容性提示</div>
-                <div class="modal_content">
-                    <p>不同浏览器之间存在些许差异,为确保你的使用体验,我们推荐通过以下浏览器或内核的最新发行版访问本站以获得完全的特性支持:
-                        Edge / Chrome / Firefox / Safari / WebView Android</p>
-                </div>
-                <div class="modal_btn_area">
-                    <button class="btn red_btn modal_btn" onclick="neverShowCompatibilityModalAgain(this);">不再显示</button>
-                    <button class="btn green_btn modal_btn" onclick="hideCompatibilityModal(this);">我知道了</button>
-                </div>
-            </div>
-        </div>`;
-document.addEventListener("DOMContentLoaded", function () {
-    if (!localStorage.getItem('neverShowCompatibilityModalAgain') || localStorage.getItem('neverShowCompatibilityModalAgain') !== '1') {
-        const overlay = document.getElementById("overlay");
+    <div class="overlay" id="overlay_compatibility_modal" tabindex="-1"></div>
+    <modal_area id="compatibility_modal" tabindex="-1">
+        <modal>
+            <modal_title_area>
+                <modal_title>兼容性提示</modal_title>
+            </modal_title_area>
+            <modal_content>
+                    <p>由于不同平台的代码支持存在些许差异, 为确保你的使用体验, 我们推荐通过以下浏览器及内核的最新发行版访问本站以获得完全的特性支持</p>
+                    <p>浏览器: Edge / Chrome / Safari / Firefox<br>内核: Chromium / Android WebView / Apple WebKit</p>
+                    <p>在不支持或过旧的浏览器及内核上访问本站可能会出现错乱甚至崩溃问题</p>
+            </modal_content>
+            <modal_button_area>
+                <modal_button_group>
+                    <modal_button_list>
+                        <custom-button data="modal|red|||false||" js="neverShowCompatibilityModalAgain(this);" text="不再显示"></custom-button>
+                        <custom-button data="modal|green|||false||" js="hideCompatibilityModal(this);" text="我知道了"></custom-button>
+                    </modal_button_list>
+                </modal_button_group>
+            </modal_button_area>
+        </modal>
+    </modal_area>`;
+
+document.body.insertAdjacentHTML('afterbegin', compatibilityModal);
+
+setTimeout(function () {
+    if (localStorage.getItem(`(${rootPath})neverShowCompatibilityModalAgain`) !== '1') {
+        const overlay = document.getElementById("overlay_compatibility_modal");
         const modal = document.getElementById("compatibility_modal");
         overlay.style.display = "block";
         modal.style.display = "block";
         console.log("显示兼容性提示弹窗");
     }
-});
+}, 100);
 
 function hideCompatibilityModal(button) {
-    const overlay = document.getElementById("overlay");
+    const overlay = document.getElementById("overlay_compatibility_modal");
     const modal = document.getElementById("compatibility_modal");
     playSound(button);
     overlay.style.display = "none";
@@ -107,11 +286,9 @@ function hideCompatibilityModal(button) {
 
 function neverShowCompatibilityModalAgain(button) {
     hideCompatibilityModal(button);
-    localStorage.setItem('neverShowCompatibilityModalAgain', '1');
+    localStorage.setItem(`(${rootPath})neverShowCompatibilityModalAgain`, '1');
     console.log("关闭兼容性提示弹窗且不再提示");
 }
-
-document.body.insertAdjacentHTML('afterbegin', compatibilityModal);
 
 // 输出错误日志
 window.addEventListener("error", function (event) {
@@ -209,34 +386,150 @@ function toRepo() {
 
 // 回到网页顶部
 function scrollToTop() {
-    main.scrollTo({
+    scrollContainer.scrollTo({
         top: 0,
         behavior: "smooth"
     });
     console.log("成功执行回到顶部操作");
 }
 
-const loading_mask = document.getElementById('loading_mask');
+function toTop() {
+    scrollContainer.scrollTo({
+        top: 0,
+        behavior: "instant"
+    });
+}
 
-// 监听页面加载完成事件
-window.addEventListener('load', function () {
+// 自定义按钮
+class CustomButton extends HTMLElement {
+    constructor() {
+        super();
+        this.render();
+    }
 
-    // 延时600ms后隐藏蒙版
-    loading_mask.style.opacity = '0';
-    setTimeout(function () {
-        loading_mask.style.display = 'none';
-    }, 600);
-});
+    render() {
+        const data = this.getAttribute('data') || '';
+        const [type, status, size, id, isTip, tip, icon] = data.split('|').map(item => item.trim());
+        this.status = status || 'normal';
+        this.icon = icon || '';
+        const ctype = type || 'default';
+        const csize = size || 'middle';
+        const cid = id || '';
+        const cisTip = isTip === true;
+        const ctip = tip || '';
+        const js = this.getAttribute('js') || 'false';
+        const text = this.getAttribute('text') || '';
 
-const secondElement = document.getElementById('second');
-if (secondElement) {
-    let count = parseInt(secondElement.textContent);
-
-    const secondInterval = setInterval(function () {
-        count--;
-        secondElement.textContent = count.toString();
-        if (count <= 0) {
-            clearInterval(secondInterval);
+        if (ctype === "default") {
+            if (cisTip === true) {
+                this.innerHTML = `
+                        <div class="btn_with_tooltip_cont">
+                            <button class="btn ${csize}_btn ${status}_btn" id="${cid}">${text}</button>
+                            <div class="btn_tooltip">${ctip}</div>
+                            <img alt="" class="tip_icon" src="${rootPath}images/${icon}.png"/>
+                        </div>
+                    `;
+            } else {
+                this.innerHTML = `
+                        <button class="btn ${csize}_btn ${status}_btn" id="${cid}">${text}</button>
+                    `;
+            }
+        } else {
+            this.classList.add(ctype + "_custom_btn");
+            this.innerHTML = `
+                    <button class="btn ${status}_btn ${ctype}_btn" id="${cid}">${text}</button>
+                `;
         }
-    }, 1000);
+
+        const button = this.querySelector('button');
+        if (button) {
+            button.addEventListener('click', () => {
+                playSound(button);
+            });
+            if (this.status !== 'disabled') {
+                if (js !== "false") {
+                    button.addEventListener('click', () => {
+                        eval(js);
+                    });
+                }
+            }
+        }
+    }
+}
+
+customElements.define('custom-button', CustomButton);
+
+// Modal弹窗
+setTimeout(function () {
+    const modals = document.querySelectorAll('modal');
+    if (modals) {
+        modals.forEach((modal) => {
+            const focusableElementsString = 'a[href], area[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), button:not([disabled]), iframe, object, embed, [tabindex="0"], [contenteditable]';
+            let focusableElements = modal.querySelectorAll(focusableElementsString);
+            focusableElements = Array.prototype.slice.call(focusableElements);
+
+            const firstTabStop = focusableElements[0];
+            const lastTabStop = focusableElements[focusableElements.length - 1];
+
+            modal.addEventListener('keydown', function (e) {
+                if (e.key === 'Tab') {
+                    if (e.shiftKey) {
+                        // Shift + Tab
+                        if (document.activeElement === firstTabStop) {
+                            e.preventDefault();
+                            lastTabStop.focus();
+                        }
+                    } else {
+                        // Tab
+                        if (document.activeElement === lastTabStop) {
+                            e.preventDefault();
+                            firstTabStop.focus();
+                        }
+                    }
+                }
+            });
+            // 聚焦模态框内的第一个可聚焦元素
+            modal.addEventListener('shown.modal', function () {
+                firstTabStop.focus();
+            });
+        });
+    }
+}, 100);
+
+const modalCloseBtns = document.querySelectorAll('modal_close_btn');
+if (modalCloseBtns) {
+    modalCloseBtns.forEach((modalCloseBtn) => {
+        modalCloseBtn.setAttribute('tabindex', '0');
+        modalCloseBtn.addEventListener('keyup', function (event) {
+            if (event.key === 'Enter') {
+                modalCloseBtn.click();
+            }
+        });
+    });
+}
+
+function showModal(modal) {
+    const overlay = document.getElementById("overlay_" + modal);
+    const frame = document.getElementById(modal);
+    overlay.style.display = "block";
+    frame.style.display = "block";
+}
+
+function hideModal(button) {
+    let frameId;
+    let currentElement = button.parentElement;
+
+    while (currentElement) {
+        if (currentElement.tagName.toLowerCase() === 'modal_area') {
+            frameId = currentElement.id;
+            break;
+        }
+        currentElement = currentElement.parentElement;
+    }
+
+    const overlay = document.getElementById("overlay_" + frameId);
+    const frame = document.getElementById(frameId);
+    playSound(button);
+    overlay.style.display = "none";
+    frame.style.display = "none";
 }

@@ -3,10 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="3;url=./">
+    <meta content="3;url=./" http-equiv="refresh">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <link href="./stylesheet/home.css" rel="stylesheet">
+    <link href="stylesheet/loading_mask.css" rel="stylesheet">
+    <link href="stylesheet/home.css" rel="stylesheet">
     <style>
         main {
             display: flex;
@@ -35,33 +36,85 @@
             margin: 10px 0;
         }
     </style>
-    <link href="./images/Logo.jpg" rel="icon">
+    <script>
+        const root_path = '/' + (window.location.pathname.split('/').filter(Boolean).length > 0 ? window.location.pathname.split('/').filter(Boolean)[0] + '/' : '');
+    </script>
+    <link href="images/Logo.jpg" rel="icon">
     <title>中文译名修正项目</title>
 </head>
 
 <body>
 <div class="loading_mask" id="loading_mask">
-    <div class="spinner"><img alt="" id="spinner_img" src="./images/Loading_white.gif"></div>
+    <div>
+        <div class="spinner"><img alt="" id="spinner_img" src="images/Loading_white.gif"/></div>
+        <div class="spinner">
+            <div class="spinner"><span class="spinner_text">载入中</span></div>
+        </div>
+    </div>
 </div>
 <header>
-    <div class="header_back" id="back" onclick="clickedBack();">
-        <img alt="Back" class="back_icon" id="back_icon" src="./images/arrowLeft.png">
+    <div class="header_item header_item_left" id="back" onclick="clickedBack();">
+        <img alt="Back" class="back_icon" id="back_icon" src=""/>
     </div>
     <div class="header_logo" onclick="scrollToTop();">
-        <img alt="Title Icon" class="title_icon" src="./images/Logo.jpg">
+        <img alt="Title Icon" class="title_icon" src="./images/Logo.jpg"/>
         <span class="header_title">Repository</span>
     </div>
+    <div class="header_item header_item_right header_right_blank"></div>
 </header>
-<main>
-    <div>
-        <h2 class="redirect_title">页面已迁移至新地址</h2>
-        <h4 class="message redirect_message"><span id="second">3</span>秒后将自动重定向</h4>
-        <h4 class="message redirect_message">没有成功重定向?<a onclick="jumpToPage('./');">点此前往</a></h4>
-    </div>
-</main>
+<scroll-container>
+    <main class="main_content_center main_scroll_container" id="main">
+        <div>
+            <h2 class="redirect_title">页面已迁移至新地址</h2>
+            <h4 class="message redirect_message"><span id="second">3</span>秒后将自动重定向</h4>
+            <h4 class="message redirect_message">没有成功重定向?<a onclick="jumpToPage('./');">点此前往</a></h4>
+        </div>
+    </main>
+</scroll-container>
+<custom-scrollbar>
+    <custom-scrollbar-track></custom-scrollbar-track>
+    <custom-scrollbar-thumb></custom-scrollbar-thumb>
+</custom-scrollbar>
 
 </body>
 
 <script src="./javascript/home.js"></script>
+<script>
+    const menu_icon = document.getElementById('menu_icon');
+    const back_icon = document.getElementById('back_icon');
+
+    if (back_icon) {
+        back_icon.src = root_path + 'images/arrowLeft.png';
+    }
+    if (menu_icon) {
+        menu_icon.src = root_path + 'images/menu.png';
+    }
+
+    const loading_mask = document.getElementById('loading_mask');
+
+    // 监听页面加载完成事件
+    window.addEventListener('load', function () {
+        // 延时600ms后隐藏蒙版
+        loading_mask.style.opacity = '0';
+        setTimeout(function () {
+            loading_mask.style.display = 'none';
+        }, 600);
+
+        const secondElement = document.getElementById('second');
+        if (secondElement) {
+            let count = parseInt(secondElement.textContent);
+
+            const secondInterval = setInterval(function () {
+                count--;
+                secondElement.textContent = count.toString();
+                if (count <= 0) {
+                    clearInterval(secondInterval);
+                }
+            }, 1000);
+        }
+
+    });
+
+</script>
 
 </html>
