@@ -378,6 +378,17 @@ function jumpToPage(link) {
     }, 320);
 }
 
+// 打开网页
+function openLink(url) {
+    window.open(url);
+}
+
+function delayedOpenLink(url) {
+    setTimeout(function () {
+        window.open(url);
+    }, 1500);
+}
+
 function toRepo() {
     setTimeout(function () {
         window.open("https://github.com/Spectrollay/minecraft_repository/issues/new");
