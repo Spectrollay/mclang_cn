@@ -4,7 +4,7 @@
 
 <h1>基岩版中文译名修正</h1>
 
-![1.21 - Tricky Trials](images/1.21_KeyArt.png)
+![Newest KeyArt](images/KeyArt.png)
 
 <h3>和基岩版的无脑翻译说再见!</h3>
 
@@ -53,4 +53,3 @@
 
 - [![Basis](https://img.shields.io/badge/%E5%9F%BA%E4%BA%8E-Minecraft%20Wiki-ff69b4)](https://zh.minecraft.wiki)
 - [![Reference](https://img.shields.io/badge/%E5%8F%82%E8%80%83-Crowdin-ff69b4)](https://crowdin.com/translate/minecraft/10038/enus-zhcn?filter=basic&value=0)
-- [![License](https://img.shields.io/badge/%E5%8D%8F%E8%AE%AE-CC%20BY--NC--SA%204.0-ff69b4)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-Hans)

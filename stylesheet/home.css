@@ -38,6 +38,7 @@
 .wrap_flex {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* 总体样式 */

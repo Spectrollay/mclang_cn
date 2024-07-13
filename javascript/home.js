@@ -391,7 +391,7 @@ function delayedOpenLink(url) {
 
 function toRepo() {
     setTimeout(function () {
-        window.open("https://github.com/Spectrollay/minecraft_repository/issues/new");
+        window.open("https://github.com/Spectrollay" + rootPath + "issues/new");
     }, 600);
 }
 
@@ -409,6 +409,26 @@ function toTop() {
         top: 0,
         behavior: "instant"
     });
+}
+
+// 复制文本
+function copyText(text) {
+    let textToCopy = text;
+    let tempTextarea = document.createElement("textarea");
+
+    tempTextarea.value = textToCopy;
+    document.body.appendChild(tempTextarea);
+
+    tempTextarea.select();
+    tempTextarea.setSelectionRange(0, 999999); // 兼容移动设备
+
+    navigator.clipboard.writeText(tempTextarea.value)
+        .then(() => {
+            console.log('复制成功: ', tempTextarea.value);
+        })
+        .catch(err => {
+            console.log('复制失败: ', err);
+        });
 }
 
 // 自定义按钮

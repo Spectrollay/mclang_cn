@@ -92,13 +92,27 @@
 
     const loading_mask = document.getElementById('loading_mask');
 
-    // 监听页面加载完成事件
-    window.addEventListener('load', function () {
+    function hide_mask(){
         // 延时600ms后隐藏蒙版
         loading_mask.style.opacity = '0';
         setTimeout(function () {
             loading_mask.style.display = 'none';
         }, 600);
+    }
+
+    // 加载超过8秒时
+    let count = 8;
+    const secondInterval = setInterval(function () {
+        count--;
+        if (count <= 0) {
+            clearInterval(secondInterval);
+            hide_mask();
+        }
+    }, 1000);
+
+    // 页面加载完成时
+    window.addEventListener('load', function () {
+        hide_mask();
 
         const secondElement = document.getElementById('second');
         if (secondElement) {
