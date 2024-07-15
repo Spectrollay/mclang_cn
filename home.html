@@ -3,11 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta content="3;url=./" http-equiv="refresh">
+    <meta content="3;url=/mclang_cn/" http-equiv="refresh">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <link href="stylesheet/loading_mask.css" rel="stylesheet">
-    <link href="stylesheet/home.css" rel="stylesheet">
+    <link href="/mclang_cn/stylesheet/loading_mask.css" rel="stylesheet">
+    <link href="/mclang_cn/stylesheet/home.css" rel="stylesheet">
     <style>
         main {
             display: flex;
@@ -36,17 +36,14 @@
             margin: 10px 0;
         }
     </style>
-    <script>
-        const root_path = '/' + (window.location.pathname.split('/').filter(Boolean).length > 0 ? window.location.pathname.split('/').filter(Boolean)[0] + '/' : '');
-    </script>
-    <link href="images/Logo.jpg" rel="icon">
+    <link href="/mclang_cn/images/Logo.jpg" rel="icon">
     <title>中文译名修正项目</title>
 </head>
 
 <body>
 <div class="loading_mask" id="loading_mask">
     <div>
-        <div class="spinner"><img alt="" id="spinner_img" src="images/Loading_white.gif"/></div>
+        <div class="spinner"><img alt="" id="spinner_img" src="/mclang_cn/images/Loading_white.gif"/></div>
         <div class="spinner">
             <div class="spinner"><span class="spinner_text">载入中</span></div>
         </div>
@@ -57,7 +54,7 @@
         <img alt="Back" class="back_icon" id="back_icon" src=""/>
     </div>
     <div class="header_logo" onclick="scrollToTop();">
-        <img alt="Title Icon" class="title_icon" src="./images/Logo.jpg"/>
+        <img alt="Title Icon" class="title_icon" src="/mclang_cn/images/Logo.jpg"/>
         <span class="header_title">Repository</span>
     </div>
     <div class="header_item header_item_right header_right_blank"></div>
@@ -78,16 +75,16 @@
 
 </body>
 
-<script src="./javascript/home.js"></script>
+<script src="/mclang_cn/javascript/home.js"></script>
 <script>
     const menu_icon = document.getElementById('menu_icon');
     const back_icon = document.getElementById('back_icon');
 
     if (back_icon) {
-        back_icon.src = root_path + 'images/arrowLeft.png';
+        back_icon.src = '/mclang_cn/images/arrowLeft.png';
     }
     if (menu_icon) {
-        menu_icon.src = root_path + 'images/menu.png';
+        menu_icon.src = '/mclang_cn/images/menu.png';
     }
 
     const loading_mask = document.getElementById('loading_mask');

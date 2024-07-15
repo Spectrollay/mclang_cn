@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <link href="stylesheet/loading_mask.css" rel="stylesheet">
-    <link href="stylesheet/home.css" rel="stylesheet">
+    <link href="/mclang_cn/stylesheet/loading_mask.css" rel="stylesheet">
+    <link href="/mclang_cn/stylesheet/home.css" rel="stylesheet">
     <style>
         /* TODO: 在移除预览提示块时移除该样式 */
         .preview_block {
@@ -36,17 +36,14 @@
             width: 310px;
         }
     </style>
-    <script>
-        const root_path = '/' + (window.location.pathname.split('/').filter(Boolean).length > 0 ? window.location.pathname.split('/').filter(Boolean)[0] + '/' : '');
-    </script>
-    <link href="./images/Logo.jpg" rel="icon">
+    <link href="/mclang_cn/images/Logo.jpg" rel="icon">
     <title>中文译名修正项目</title>
 </head>
 
 <body>
 <div class="loading_mask" id="loading_mask">
     <div>
-        <div class="spinner"><img alt="" id="spinner_img" src="images/Loading_white.gif"/></div>
+        <div class="spinner"><img alt="" id="spinner_img" src="/mclang_cn/images/Loading_white.gif"/></div>
         <div class="spinner">
             <div class="spinner"><span class="spinner_text">载入中</span></div>
         </div>
@@ -57,7 +54,7 @@
         <img alt="Back" class="back_icon" id="back_icon" src=""/>
     </div>
     <div class="header_logo" onclick="scrollToTop();">
-        <img alt="Title Icon" class="title_icon" src="images/Logo.jpg">
+        <img alt="Title Icon" class="title_icon" src="/mclang_cn/images/Logo.jpg">
         <span class="header_title">Repository</span>
     </div>
     <div class="header_item header_item_right header_right_blank"></div>
@@ -85,7 +82,7 @@
                 <div class="description2">
                     <div>
                         <div class="wrap_flex">
-                            <img alt="Newest KeyArt" class="keyart" src="./images/KeyArt.png"/>
+                            <img alt="Newest KeyArt" class="keyart" src="/mclang_cn/images/KeyArt.png"/>
                             <div class="detail_block">
                                 <h3>和基岩版的无脑翻译说再见!</h3>
                                 <div style="margin: 12px 0">
@@ -195,7 +192,7 @@
         <div>
             <div class="page_info"><br></div>
             <div class="page_info_title">INFORMATION</div>
-            <div class="page_info">Version: 2.0.Build4<br>Server Version: 4.0<br>Updated: 2024-07-14-01</div>
+            <div class="page_info">Version: 2.0.Build5<br>Server Version: 4.0<br>Updated: 2024-07-15-01</div>
             <div class="page_info_title">ABOUT US</div>
             <div class="page_info">Developer: @Spectrollay<br>Maintainer: @Spectrollay<br>Chat Group: <a href="https://t.me/Spectrollay_MCW" target="_blank" onclick="playSound1();">Telegram</a> / <a href="https://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=WVA6aPqtv99hiYleW7vUq5OsBIufCAB1&authKey=B0%2BaXMCTqnmQrGh0wzCZTyWTIPyHS%2FPEM5QXcFfVwroFowNnzs6Yg1er1%2F8Fekqp&noverify=0&group_code=833473609" target="_blank" onclick="playSound1();">QQ</a> / <a href="https://yhfx.jwznb.com/share?key=VyTE7W7sLwRl&ts=1684642802" target="_blank" onclick="playSound1();">云湖</a></div>
             <div class="page_info_title">MADE WITH ❤️ IN CHINA</div>
@@ -210,16 +207,16 @@
 
 </body>
 
-<script src="./javascript/home.js"></script>
+<script src="/mclang_cn/javascript/home.js"></script>
 <script>
     const menu_icon = document.getElementById('menu_icon');
     const back_icon = document.getElementById('back_icon');
 
     if (back_icon) {
-        back_icon.src = root_path + 'images/arrowLeft.png';
+        back_icon.src = '/mclang_cn/images/arrowLeft.png';
     }
     if (menu_icon) {
-        menu_icon.src = root_path + 'images/menu.png';
+        menu_icon.src = '/mclang_cn/images/menu.png';
     }
 
     const loading_mask = document.getElementById('loading_mask');
