@@ -30,7 +30,7 @@
 <h4>现已跟进:</h4>
 
 - Release 1.21.2
-- Beta/Preview 1.21.20.22
+- Beta/Preview 1.21.20.23
 
 <h4>主要功能:</h4>
 

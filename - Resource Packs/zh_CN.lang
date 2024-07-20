@@ -1900,8 +1900,6 @@ createWorldScreen.experimentalFocusTargetCamera=创作者相机：聚焦目标�
 createWorldScreen.experimentalFocusTargetCameraDescription=启用现有的自由相机聚焦目标实体的行为	#
 createWorldScreen.recipeUnlocking=配方解锁	#
 createWorldScreen.recipeUnlockingDescription=启用配方解锁	#
-createWorldScreen.experimentalholiday=假日创作者功能	#
-createWorldScreen.experimentalholidayDescription=添加数据驱动的方块和物品技术，以自定义方块的形状、旋转、损坏等	#
 createWorldScreen.experimentalGameTest=测试版API	#
 createWorldScreen.experimentalGameTestDescription=在附加包中使用“-beta”版本的API模块	#
 createWorldScreen.experimentalMolangFeatures=Molang功能	#
@@ -3132,7 +3130,11 @@ feed.manage=管理信息摘要	#
 feed.share=分享	#
 feed.addScreenshot=添加截屏	#
 feed.shareScreenshot=截屏已捕获。前往Realms动态进行分享。	#
+feed.screenshotCaptured=截屏已捕获。你可以在相册截屏中查看。	#
+feed.screenshotAlmostFull=截屏已捕获。你的相册快满了。(%d/%d)	#
+feed.screenshotReachedMax=截屏已捕获。你的相册已满。(%d/%d)	#
 feed.screenshotFull=你的相册已满。删除截屏以释放空间。	#
+feed.screenshotFullShort=相册截屏已满	#
 feed.comments=评论	#
 feed.edit=编辑	#
 feed.screenshots=截屏	#
@@ -12099,6 +12101,7 @@ hbui.CreateNewWorld.createOnRealmsError.unknown.title=出错了	#
 hbui.CreateNewWorld.createWorldError.close=关闭	#
 hbui.CreateNewWorld.createWorldError.notEnoughStorage.message=你没有足够的可用存储空间来创建这个世界。请释放一些空间然后重试。	#
 hbui.CreateNewWorld.createWorldError.notEnoughStorage.title=存储空间已满	#
+hbui.CreateNewWorld.creatingNewWorldModal.title=创建新世界...	#
 hbui.CreateNewWorld.deleteWorldModal.continueButton=继续编辑	#
 hbui.CreateNewWorld.deleteWorldModal.continueInputLegend=继续	#
 hbui.CreateNewWorld.deleteWorldModal.deleteButton=删除世界	#
@@ -12187,7 +12190,7 @@ hbui.CreateNewWorld.hardcoreModeWorldModal.body=以下是你需要了解的极�
 hbui.CreateNewWorld.hardcoreModeWorldModal.bodyListItem1=死亡后不会重生，游戏结束！	#
 hbui.CreateNewWorld.hardcoreModeWorldModal.bodyListItem2=在创建世界后无法关闭极限模式。	#
 hbui.CreateNewWorld.hardcoreModeWorldModal.bodyListItem3=死亡后可以选择旁观这个世界，但无法与之交互。	#
-hbui.CreateNewWorld.hardcoreModeWorldModal.createWorld=创建极限模式世界	#
+hbui.CreateNewWorld.hardcoreModeWorldModal.createWorld=以极限模式游玩	#
 hbui.CreateNewWorld.hardcoreModeWorldModal.doNotShowAgain=不再显示	#
 hbui.CreateNewWorld.hardcoreModeWorldModal.goBack=返回	#
 hbui.CreateNewWorld.hardcoreModeWorldModal.title=欢迎来到极限模式	#
@@ -12407,7 +12410,8 @@ hbui.CreateNewWorldSideMenu.multiplayerTabLabel=多人游戏	#
 hbui.CreateNewWorldSideMenu.narrationCreateButtonHint=创建一个名为"%3$s"，难度为%2$s的%1$s世界。前去更改其他设置选项。	#
 hbui.CreateNewWorldSideMenu.narrationPlayButtonHint=游玩一个名为"%3$s"，难度为%2$s的%1$s世界。前去更改其他设置选项。	#
 hbui.CreateNewWorldSideMenu.play=游戏	#
-hbui.CreateNewWorldSideMenu.playOnRealm=在Realms上游玩	#
+hbui.CreateNewWorldSideMenu.playOnRealm=在Realms服务器上游玩	#
+hbui.CreateNewWorldSideMenu.playOnRealmSecondVariant=在Realm上游玩	#
 hbui.CreateNewWorldSideMenu.resourcePacksTabLabel=资源包	#
 hbui.CreateNewWorldSideMenu.scriptingCodingTabLabel=脚本和编程	#
 hbui.DebugDrawer.closeButtonNarrationHint=使用下方向键执行其他操作	#
@@ -12422,7 +12426,7 @@ hbui.EditWorld.clearPlayerDataModal.descriptionOne=选择“删除所有玩家�
 hbui.EditWorld.clearPlayerDataModal.descriptionTwo=选择“保留所有玩家数据”将保留当前数据（如背包物品和位置）并应用于“世界所有者”。这是任何在本地加载世界的玩家或Realm的所有者。	#
 hbui.EditWorld.clearPlayerDataModal.keepButton=保留所有玩家数据	#
 hbui.EditWorld.clearPlayerDataModal.title=从世界中删除玩家数据？	#
-hbui.EditWorld.clearPlayerDataToast=成功删除玩家数据	#
+hbui.EditWorld.clearPlayerDataToast=成功删除数据	#
 hbui.EditWorld.exportingWorldModal.content=请不要退出游戏。退出可能会破坏世界。	#
 hbui.EditWorld.exportingWorldModal.title=保存	#
 hbui.EditWorld.exportWorldFlow.buttonsEnumaration=第%1$s个/共%2$s个	#
@@ -12470,6 +12474,7 @@ hbui.EditWorld.saveChangesModal.message=你有未保存的更改。请及时保�
 hbui.EditWorld.saveChangesModal.save=保存更改	#
 hbui.EditWorld.saveChangesModal.saveInputLegend=保存	#
 hbui.EditWorld.saveChangesModal.title=你确定要保存更改吗？	#
+hbui.EditWorld.startLocalWorldModal.title=加载世界中...	#
 hbui.EmptyFriendList.noFriendsCaption=让我们添加一些好友！	#
 hbui.ErrorModal.goBack=返回	#
 hbui.ErrorModal.goingBack=正在返回上一个屏幕...	#
@@ -12553,6 +12558,7 @@ hbui.gameplay.DeathScreen.open=打开	#
 hbui.gameplay.DeathScreen.respawn=重生	#
 hbui.gameplay.DeathScreen.respawning=重生中...	#
 hbui.gameplay.DeathScreen.respawnInputLegend=重生	#
+hbui.gameplay.DeathScreen.savingWorld=保存中...	#
 hbui.gameplay.DeathScreen.select=选择	#
 hbui.gameplay.DeathScreen.spectateWorldButton=旁观世界	#
 hbui.gameplay.DeathScreen.spectateWorldInputLegend=旁观世界	#
@@ -12720,7 +12726,7 @@ hbui.Notifications.multiplayerWarnings.nintendoLocalMultiplayerPrivilegesBlocked
 hbui.Notifications.multiplayerWarnings.nintendoMultiplayerPrivilegesBlockedThirdParty=由于家长控制限制，你不能游玩本地多人游戏。通过家长控制中的“与他人交流”查看和管理你的多人游戏设置。	#
 hbui.Notifications.multiplayerWarnings.nonMultiplayerSkinEquipped=你当前的皮肤不允许在多人游戏中使用。	#
 hbui.Notifications.multiplayerWarnings.playstationCrossPlatformDisabled=在设置的档案部分中启用跨平台游戏以与其他平台上的好友一起游戏。	#
-hbui.Notifications.multiplayerWarnings.playstationDisconnectedThirdPartyWithSubscription=你未连接到PlayStation Network。你的PlayStation Network好友无法加入你的多人世界。登陆PlayStation Network与好友一起游玩。	#### CertRequirement: [PlayStation Network]
+hbui.Notifications.multiplayerWarnings.playstationDisconnectedThirdPartyWithSubscription=你未连接到PlayStation Network。你的PlayStation Network好友无法加入你的多人世界。登陆PlayStation Network与好友一起游玩。	### CertRequirement: [PlayStation Network]
 hbui.Notifications.multiplayerWarnings.playstationMultiplayerPrivilegesBlockedThirdParty=由于家长控制限制，你不能游玩本地多人游戏。通过家长控制中的“与他人交流”查看和管理你的多人游戏设置。	#
 hbui.Notifications.notEnoughStorage=你的存储空间即将不足！Minecraft已限制你使用该功能直到你清理出额外的存储空间。	#
 hbui.Notifications.readMoreLink=阅读更多	#
@@ -13108,12 +13114,13 @@ hbui.PlayScreen.serverTab.unsavedChanges.message=你有未保存的更改。请�
 hbui.PlayScreen.serverTab.unsavedChanges.saveChangesButton=保存更改	#
 hbui.PlayScreen.serverTab.unsavedChanges.saveChangesButtonInputLegend=保存	#
 hbui.PlayScreen.serverTab.unsavedChanges.title=要保存你的更改吗？	#
-hbui.PlayScreen.serverTab.storageBanner.alternativeStorageWorldsHiddenText=某些世界可能被隐藏，因为它们保存在外部存储中。	#
-hbui.PlayScreen.serverTab.storageBanner.changeStorageLink=在设置中更改存储位置	#
-hbui.PlayScreen.serverTab.storageBanner.changeStorageText=你的世界消失了？	#
-hbui.PlayScreen.serverTab.storageBanner.externalStorageWarningText=你正在外部存储上游玩。	#
-hbui.PlayScreen.serverTab.storageBanner.localWorldsHiddenText=某些世界可能被隐藏，因为它们保存在本地存储中。	#
-hbui.PlayScreen.serverTab.storageBanner.manageStorageLink=在设置中管理存储	#
+hbui.PlayScreen.startLocalWorldModal.title=加载世界中...	#
+hbui.PlayScreen.storageBanner.alternativeStorageWorldsHiddenText=某些世界可能被隐藏，因为它们保存在外部存储中。	#
+hbui.PlayScreen.storageBanner.changeStorageLink=在设置中更改存储位置	#
+hbui.PlayScreen.storageBanner.changeStorageText=你的世界消失了？	#
+hbui.PlayScreen.storageBanner.externalStorageWarningText=你正在外部存储上游玩。	#
+hbui.PlayScreen.storageBanner.localWorldsHiddenText=某些世界可能被隐藏，因为它们保存在本地存储中。	#
+hbui.PlayScreen.storageBanner.manageStorageLink=在设置中管理存储	#
 hbui.PlayScreen.survival=生存	#
 hbui.PlayScreen.SuspendedMessage.bodyFirstParagraph=你已被禁止游玩Minecraft多人游戏。你将无法在服务器上游玩游戏、加入Realms、创建多人游戏、加入多人游戏或是使用商城。	#
 hbui.PlayScreen.SuspendedMessage.bodySecondParagraph=如需更多信息或提交申述请求，请点击下方按钮。	#
@@ -14532,6 +14539,27 @@ resourcePack.editor.client.name=编辑器资源	#
 resourcePack.editor.server.description=编辑器服务端资源	#
 resourcePack.editor.server.name=编辑器资源	#
 
+resourcePack.editor.global.keyBinding.toggleMode=切换模式	#
+
+resourcePack.editor.toolMode.keyBinding.console=打开控制台	#
+resourcePack.editor.toolMode.keyBinding.devConsole=打开开发控制台	#
+resourcePack.editor.toolMode.keyBinding.hotbar1=选择快捷栏1	#
+resourcePack.editor.toolMode.keyBinding.hotbar2=选择快捷栏2	#
+resourcePack.editor.toolMode.keyBinding.hotbar3=选择快捷栏3	#
+resourcePack.editor.toolMode.keyBinding.hotbar4=选择快捷栏4	#
+resourcePack.editor.toolMode.keyBinding.hotbar5=选择快捷栏5	#
+resourcePack.editor.toolMode.keyBinding.hotbar6=选择快捷栏6	#
+resourcePack.editor.toolMode.keyBinding.hotbar7=选择快捷栏7	#
+resourcePack.editor.toolMode.keyBinding.hotbar8=选择快捷栏8	#
+resourcePack.editor.toolMode.keyBinding.hotbar9=选择快捷栏9	#
+
+resourcePack.editor.viewport.keyBinding.moveUp=向上移动	#
+resourcePack.editor.viewport.keyBinding.moveDown=向下移动	#
+resourcePack.editor.viewport.keyBinding.moveLeft=向左移动	#
+resourcePack.editor.viewport.keyBinding.moveRight=向右移动	#
+resourcePack.editor.viewport.keyBinding.moveForward=向前移动	#
+resourcePack.editor.viewport.keyBinding.moveBack=向后移动	#
+
 resourcePack.editor.locate.title=定位	#
 resourcePack.editor.locate.title.alt=定位...	#
 resourcePack.editor.locate.title.biome=生物群系	#
@@ -14541,13 +14569,52 @@ resourcePack.editor.locate.find.Biome=寻找生物群系	#
 resourcePack.editor.locate.biomeLocation=生物群系位置	#
 resourcePack.editor.locate.goto.biome=前往生物群系	#
 
-resourcePack.editor.toolRail.cubeBrushSettings.pane=画笔	#
-resourcePack.editor.toolRail.cubeBrushSettings.size=画笔尺寸	#
-resourcePack.editor.toolRail.cubeBrushSettings.hollow=空心	#
-resourcePack.editor.toolRail.cubeBrushSettings.face=表面模式	#
-resourcePack.editor.toolRail.cubeBrushSettings.run=运行！	#
-resourcePack.editor.toolRail.cubeBrushTool.title=画笔	#
-resourcePack.editor.toolRail.cubeBrushTool.description=鼠标左键单击或拖动以绘制	#
+resourcePack.editor.toolRail.crossModuleBrushTool.title=画笔	#
+resourcePack.editor.toolRail.crossModuleBrushTool.description=左键单击或拖动以绘画	#
+resourcePack.editor.toolRail.crossModuleBrushSettings.faceMode=表面模式	#
+resourcePack.editor.toolRail.crossModuleBrushSettings.brush=画笔	#
+resourcePack.editor.toolRail.crossModuleBrushSettings.pane=画笔设置	#
+resourcePack.editor.toolRail.crossModuleBrushSettings.brushSettings=独立画笔设置	#
+resourcePack.editor.toolRail.crossModuleBrushSettings.extraSettings=附加设置	#
+resourcePack.editor.toolRail.crossModuleBrushSettings.fillConstraints=填充约束	#
+resourcePack.editor.toolRail.crossModuleBrushSettings.mask=遮罩	#
+resourcePack.editor.toolRail.crossModuleBrushSettings.replace=替换	#
+
+resourcePack.editor.brushShape.common.settings.uniform=均匀	#
+resourcePack.editor.brushShape.common.settings.radius=半径	#
+resourcePack.editor.brushShape.common.settings.length=长度	#
+resourcePack.editor.brushShape.common.settings.axis=拉伸轴	#
+resourcePack.editor.brushShape.common.settings.xAxis=X轴	#
+resourcePack.editor.brushShape.common.settings.yAxis=Y轴	#
+resourcePack.editor.brushShape.common.settings.zAxis=Z轴	#
+resourcePack.editor.brushShape.common.settings.xAxisNeg=-X轴	#
+resourcePack.editor.brushShape.common.settings.yAxisNeg=-Y轴	#
+resourcePack.editor.brushShape.common.settings.zAxisNeg=-Z轴	#
+
+resourcePack.editor.brushShape.cylinder.name=圆柱体	#
+resourcePack.editor.brushShape.cylinder.settings.width=宽度半径	#
+resourcePack.editor.brushShape.cylinder.settings.depth=深度半径	#
+
+resourcePack.editor.brushShape.cone.name=圆锥体	#
+resourcePack.editor.brushShape.cone.settings.length=拉伸长度	#
+resourcePack.editor.brushShape.cone.settings.width=宽度半径	#
+resourcePack.editor.brushShape.cone.settings.depth=深度半径	#
+
+resourcePack.editor.brushShape.cuboid.name=立方体	#
+resourcePack.editor.brushShape.cuboid.settings.x_length=X轴长度	#
+resourcePack.editor.brushShape.cuboid.settings.y_length=Y轴长度	#
+resourcePack.editor.brushShape.cuboid.settings.z_length=Z轴长度	#
+
+resourcePack.editor.brushShape.pyramid.name=金字塔	#
+resourcePack.editor.brushShape.pyramid.settings.width=宽度	#
+resourcePack.editor.brushShape.pyramid.settings.depth=深度	#
+resourcePack.editor.brushShape.pyramid.settings.height=高度	#
+
+resourcePack.editor.brushShape.ellipsoid.name=椭圆体	#
+resourcePack.editor.brushShape.ellipsoid.settings.x_radius=X轴半径	#
+resourcePack.editor.brushShape.ellipsoid.settings.y_radius=Y轴半径	#
+resourcePack.editor.brushShape.ellipsoid.settings.z_radius=Z轴半径	#
+
 resourcePack.editor.toolRail.floodFillSelectionTool.title=填充色彩选择工具。	#
 resourcePack.editor.toolRail.floodFillSelectionTool.description=使用泛洪填充算法选择你目前正在看的区域。	#
 resourcePack.editor.playerPositionExtension.dimension=维度	#
@@ -14569,23 +14636,79 @@ resourcePack.editor.paste.pane.transform.rotation.none=0°	#
 resourcePack.editor.paste.pane.transform.rotation.90=90°	#
 resourcePack.editor.paste.pane.transform.rotation.180=180°	#
 resourcePack.editor.paste.pane.transform.rotation.270=270°	#
-resourcePack.editor.paste.pane.transform.mirrorX=镜像 X	#
-resourcePack.editor.paste.pane.transform.mirrorZ=镜像 Z	#
+resourcePack.editor.paste.pane.transform.mirrorX=镜像X	#
+resourcePack.editor.paste.pane.transform.mirrorZ=镜像Z	#
+
+resourcePack.editor.core.keyBinding.showLogPanel=显示日志面板	#
+resourcePack.editor.core.keyBinding.showGameMenu=显示游戏菜单	#
+
+resourcePack.editor.delete.keyBinding=删除选中内容	#
+
+resourcePack.editor.navigation.keyBinding.add=添加导航位置	#
+resourcePack.editor.navigation.keyBinding.previous=跳转到上一个导航位置	#
+resourcePack.editor.navigation.keyBinding.next=跳转到下一个导航位置	#
+
+resourcePack.editor.transaction.keyBinding.undo=撤销	#
+resourcePack.editor.transaction.keyBinding.redo=重做	#
+
+resourcePack.editor.grapple.keyBinding.flyToCursor=飞到光标位置	#
+resourcePack.editor.grapple.keyBinding.flyToSelection=飞到选中位置	#
 
 resourcePack.editor.selectionTool.deselect=取消选择	#
 resourcePack.editor.selectionTool.fillPane.title=填充选定内容	#
 resourcePack.editor.selectionTool.fillPane.fillAction=填充选定内容	#
 resourcePack.editor.selectionTool.toolRail.title=选择	#
-resourcePack.editor.selectionTool.toolRail.description=鼠标左键单击以创建选区；按CTRL + D取消选择	#
+resourcePack.editor.selectionTool.toolRail.description=鼠标左键单击以创建选区；按CTRL+D取消选择	#
 resourcePack.editor.selectionTool.selectionMode=模式	#
 resourcePack.editor.selectionTool.selectionMode.mouseAndKeyboard=自由	#
 resourcePack.editor.selectionTool.selectionMode.fixedDistance=固定距离	#
 resourcePack.editor.selectionTool.selectionMode.adjacent=相邻	#
 resourcePack.editor.selectionTool.settingsPane.title=选择	#
 resourcePack.editor.selectionTool.transformPane.title=转变	#
-resourcePack.editor.selectionTool.transformPane.origin=原点	#
+resourcePack.editor.selectionTool.transformPane.origin=原始	#
+resourcePack.editor.selectionTool.transformPane.origin.tooltip=选区体积在世界坐标中的原始位置。	#
 resourcePack.editor.selectionTool.transformPane.size=大小	#
 resourcePack.editor.selectionTool.projectThroughLiquid=带有液体的项目	#
+resourcePack.editor.selectionTool.keyBinding.moveCursorForward=向前移动光标	#
+resourcePack.editor.selectionTool.keyBinding.moveCursorBack=向后移动光标	#
+resourcePack.editor.selectionTool.keyBinding.moveCursorLeft=向左移动光标	#
+resourcePack.editor.selectionTool.keyBinding.moveCursorRight=向右移动光标	#
+resourcePack.editor.selectionTool.keyBinding.moveCursorUp=向上移动光标	#
+resourcePack.editor.selectionTool.keyBinding.moveCursorDown=向下移动光标	#
+resourcePack.editor.selectionTool.keyBinding.moveSelectionForward=向前移动选区	#
+resourcePack.editor.selectionTool.keyBinding.moveSelectionBack=向后移动选区	#
+resourcePack.editor.selectionTool.keyBinding.moveSelectionLeft=向左移动选区	#
+resourcePack.editor.selectionTool.keyBinding.moveSelectionRight=向右移动选区	#
+resourcePack.editor.selectionTool.keyBinding.moveSelectionUp=向上移动选区	#
+resourcePack.editor.selectionTool.keyBinding.moveSelectionDown=向下移动选区	#
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionForward=向前移动所有选区	#
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionBack=向后移动所有选区	#
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionLeft=向左移动所有选区	#
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionRight=向右移动所有选区	#
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionUp=向上移动所有选区	#
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionDown=向下移动所有选区	#
+resourcePack.editor.selectionTool.keyBinding.growForward=向前扩展选区	#
+resourcePack.editor.selectionTool.keyBinding.growBack=向后扩展选区	#
+resourcePack.editor.selectionTool.keyBinding.growLeft=向左扩展选区	#
+resourcePack.editor.selectionTool.keyBinding.growRight=向右扩展选区	#
+resourcePack.editor.selectionTool.keyBinding.growUp=向上扩展选区	#
+resourcePack.editor.selectionTool.keyBinding.growDown=向下扩展选区	#
+resourcePack.editor.selectionTool.keyBinding.shrinkForward=向前缩小选区	#
+resourcePack.editor.selectionTool.keyBinding.shrinkBack=向后缩小选区	#
+resourcePack.editor.selectionTool.keyBinding.shrinkLeft=向左缩小选区	#
+resourcePack.editor.selectionTool.keyBinding.shrinkRight=向右缩小选区	#
+resourcePack.editor.selectionTool.keyBinding.shrinkUp=向上缩小选区	#
+resourcePack.editor.selectionTool.keyBinding.shrinkDown=向下缩小选区	#
+resourcePack.editor.selectionTool.keyBinding.toggleTool=切换选择工具	#
+resourcePack.editor.selectionTool.keyBinding.fill=填充选区内容	#
+resourcePack.editor.selectionTool.keyBinding.deselect=取消选择	#
+
+resourcePack.editor.actionBar.redo=重做	#
+resourcePack.editor.actionBar.redo.tooltipTitle=重做	#
+resourcePack.editor.actionBar.redo.tooltipDescription=重做操作	#
+resourcePack.editor.actionBar.undo=撤销	#
+resourcePack.editor.actionBar.undo.tooltipTitle=撤销	#
+resourcePack.editor.actionBar.undo.tooltipDescription=撤销操作	#
 
 resourcePack.editor.menuBar.file=文件	#
 resourcePack.editor.menuBar.file.export=导出为	#
@@ -14657,6 +14780,7 @@ resourcePack.editor.playtest.Dialog.Title=测试设置	#
 resourcePack.editor.playtest.Dialog.GameMode=游戏模式	#
 resourcePack.editor.playtest.Dialog.Difficulty=难度	#
 resourcePack.editor.playtest.Dialog.DaylightCycle=昼夜更替	#
+resourcePack.editor.playtest.Dialog.Weather=天气	#
 resourcePack.editor.playtest.Dialog.WeatherCycle=天气更替	#
 resourcePack.editor.playtest.Dialog.ShowCoordinates=显示坐标	#
 resourcePack.editor.playtest.Dialog.OverrideSpawn=在当前位置重生	#
@@ -14676,6 +14800,19 @@ resourcePack.editor.toolRail.line.pane.algorithm.Direct=直接	#
 resourcePack.editor.toolRail.line.pane.algorithm.Staggered=交错（栅栏）	#
 resourcePack.editor.toolRail.line.pane.surfaceContour=表面轮廓	#
 resourcePack.editor.toolRail.line.pane.fillAction=填充选择	#
+resourcePack.editor.toolRail.line.keyBinding.selectAll=全选	#
+resourcePack.editor.toolRail.line.keyBinding.deselect=取消选择	#
+resourcePack.editor.toolRail.line.keyBinding.deselectAll=取消全选	#
+resourcePack.editor.toolRail.line.keyBinding.fillAndClear=填充内容并取消选择	#
+resourcePack.editor.toolRail.line.keyBinding.fill=填充内容	#
+resourcePack.editor.toolRail.line.keyBinding.deleteAndClear=删除内容并取消选择	#
+resourcePack.editor.toolRail.line.keyBinding.delete=删除内容	#
+resourcePack.editor.toolRail.line.keyBinding.moveForward=向前移动选中项	#
+resourcePack.editor.toolRail.line.keyBinding.moveBack=向后移动选中项	#
+resourcePack.editor.toolRail.line.keyBinding.moveLeft=向左移动选中项	#
+resourcePack.editor.toolRail.line.keyBinding.moveRight=向右移动选中项	#
+resourcePack.editor.toolRail.line.keyBinding.moveUp=向上移动选中项	#
+resourcePack.editor.toolRail.line.keyBinding.moveDown=向下移动选中项	#
 
 resourcePack.editor.timeOfDay.menu.title=一天中的时间设置	#
 resourcePack.editor.timeOfDay.dropDown.title=预设	#
@@ -14701,6 +14838,83 @@ resourcePack.editor.blockPalette.addSearchItem=使用找到的方块	#
 resourcePack.editor.blockPalette.title=方块调色板	#
 resourcePack.editor.blockPalette.paletteDropdown.title=调色板	#
 resourcePack.editor.blockPalette.blockPicker=搜索	#
+
+resourcePack.editor.toolRail.summonTool.pane.title=召唤工具	#
+resourcePack.editor.toolRail.summonTool.pane.type=实体类型	#
+resourcePack.editor.toolRail.summonTool.pane.select=选择模式	#
+resourcePack.editor.toolRail.summonTool.tool.title=召唤工具	#
+resourcePack.editor.toolRail.summonTool.tool.tip=点击召唤实体	#
+resourcePack.editor.toolRail.summonTool.tool.summonSubPane=实体生成	#
+resourcePack.editor.toolRail.summonTool.tool.selectSubPane=实体选择	#
+resourcePack.editor.toolRail.summonTool.tool.selectSubPane.rotation=旋转	#
+resourcePack.editor.toolRail.summonTool.tool.infoText=点击实体进行选择，或点击地图召唤新实体	#
+resourcePack.editor.summonTool.summonSubPane.EntityPickerTitle=实体类型	#
+resourcePack.editor.toolRail.summonTool.keyBinding.toggle=切换召唤工具	#
+resourcePack.editor.toolRail.summonTool.keyBinding.delete=删除实体	#
+resourcePack.editor.toolRail.summonTool.keyBinding.clear=清除选择	#
+resourcePack.editor.toolRail.summonTool.keyBinding.moveForward=向前移动选中项	#
+resourcePack.editor.toolRail.summonTool.keyBinding.moveBack=向后移动选中项	#
+resourcePack.editor.toolRail.summonTool.keyBinding.moveLeft=向左移动选中项	#
+resourcePack.editor.toolRail.summonTool.keyBinding.moveRight=向右移动选中项	#
+resourcePack.editor.toolRail.summonTool.keyBinding.moveUp=向上移动选中项	#
+resourcePack.editor.toolRail.summonTool.keyBinding.moveDown=向下移动选中项	#
+
+resourcePack.editor.pastepreview.tool.title=粘贴预览	#
+resourcePack.editor.pastepreview.tool.tip=使用鼠标调整剪贴板预览的位置，然后点击粘贴到世界中	#
+resourcePack.editor.pastepreview.pane.root.title=粘贴预览	#
+resourcePack.editor.pastepreview.pane.root.size=大小	#
+resourcePack.editor.pastepreview.pane.placement.title=放置设置	#
+resourcePack.editor.pastepreview.pane.placement.origin=起点	#
+resourcePack.editor.pastepreview.pane.placement.offset=偏移量	#
+resourcePack.editor.pastepreview.pane.placement.rotation=旋转（围绕Y轴）	#
+resourcePack.editor.pastepreview.pane.placement.mirrorX=镜像X	#
+resourcePack.editor.pastepreview.pane.placement.mirrorZ=镜像Z	#
+resourcePack.editor.pastepreview.pane.placement.pastebutton=粘贴	#
+resourcePack.editor.pastepreview.pane.controls.title=光标控制	#
+resourcePack.editor.pastepreview.pane.controls.cursor=控制	#
+resourcePack.editor.pastepreview.pane.controls.cursor.keyboard=仅键盘	#
+resourcePack.editor.pastepreview.pane.controls.cursor.mouseandkeys=鼠标和键盘	#
+resourcePack.editor.pastepreview.pane.controls.cursor.fixed=固定距离	#
+resourcePack.editor.pastepreview.pane.controls.cursor.target.title=目标	#
+resourcePack.editor.pastepreview.pane.controls.cursor.target.block=方块	#
+resourcePack.editor.pastepreview.pane.controls.cursor.target.face=相邻	#
+resourcePack.editor.pastepreview.keyBinding.copy=复制选择	#
+resourcePack.editor.pastepreview.keyBinding.cut=剪切选择	#
+resourcePack.editor.pastepreview.keyBinding.quickPaste=快速粘贴	#
+resourcePack.editor.pastepreview.keyBinding.paste=粘贴	#
+resourcePack.editor.pastepreview.keyBinding.clearPreview=清除预览	#
+resourcePack.editor.pastepreview.keyBinding.moveForward=向前移动预览	#
+resourcePack.editor.pastepreview.keyBinding.moveBack=向后移动预览	#
+resourcePack.editor.pastepreview.keyBinding.moveLeft=向左移动预览	#
+resourcePack.editor.pastepreview.keyBinding.moveRight=向右移动预览	#
+resourcePack.editor.pastepreview.keyBinding.moveUp=向上移动预览	#
+resourcePack.editor.pastepreview.keyBinding.moveDown=向下移动预览	#
+resourcePack.editor.pastepreview.keyBinding.moveOffsetForward=向前移动偏移	#
+resourcePack.editor.pastepreview.keyBinding.moveOffsetBack=向后移动偏移	#
+resourcePack.editor.pastepreview.keyBinding.moveOffsetLeft=向左移动偏移	#
+resourcePack.editor.pastepreview.keyBinding.moveOffsetRight=向右移动偏移	#
+resourcePack.editor.pastepreview.keyBinding.moveOffsetUp=向上移动偏移	#
+resourcePack.editor.pastepreview.keyBinding.moveOffsetDown=向下移动偏移	#
+resourcePack.editor.pastepreview.keyBinding.moveOriginForward=向前移动原点	#
+resourcePack.editor.pastepreview.keyBinding.moveOriginBack=向后移动原点	#
+resourcePack.editor.pastepreview.keyBinding.moveOriginLeft=向左移动原点	#
+resourcePack.editor.pastepreview.keyBinding.moveOriginRight=向右移动原点	#
+resourcePack.editor.pastepreview.keyBinding.moveOriginUp=向上移动原点	#
+resourcePack.editor.pastepreview.keyBinding.moveOriginDown=向下移动原点	#
+resourcePack.editor.pastepreview.keyBinding.pasteAtCursor=在光标位置粘贴	#
+resourcePack.editor.pastepreview.keyBinding.toggleBlockTarget=切换方块目标模式	#
+resourcePack.editor.pastepreview.keyBinding.toggleAdjacentTarget=切换相邻目标模式	#
+resourcePack.editor.pastepreview.keyBinding.rotateClockWise=顺时针旋转预览	#
+resourcePack.editor.pastepreview.keyBinding.rotateCounterClockWise=逆时针旋转预览	#
+resourcePack.editor.pastepreview.keyBinding.toggleMirrorX=切换镜像X	#
+resourcePack.editor.pastepreview.keyBinding.toggleMirrorZ=切换镜像Z	#
+resourcePack.editor.pastepreview.keyBinding.toggleMouseTracking=启用鼠标跟踪	#
+resourcePack.editor.pastepreview.keyBinding.toggleFixedDistance=启用固定距离	#
+
+resourcePack.editor.deferredLightingSettings.menu.title=延迟渲染光照设置	#
+resourcePack.editor.datatransferaccessors.atmospheric_scattering=大气散射	#
+resourcePack.editor.datatransferaccessors.color_grading=颜色分级	#
+resourcePack.editor.datatransferaccessors.lighting_group=全局光照	#
 
 
 
@@ -15147,7 +15361,7 @@ commands.resourceuri.description=在游戏菜单中设置资源URI	#
 commands.resourceuri.named=按钮名称“%s”的资源URI设置为“%s”	#
 commands.resourceuri.default=资源URI设置为“%s”	#
 commands.resourceuri.clear=资源URI已删除	#
-commands.summon.failed.npc.edu=你需要世界建造者权限才能召唤NPC		###
+commands.summon.failed.npc.edu=你需要世界建造者权限才能召唤NPC	###
 commands.takepicture.description=拍摄用户的照片或从用户视角拍摄照片。	#
 commands.takepicture.cameranotfound=无法找到相机。	#
 commands.takepicture.cameranotspawned=无法生成相机。	#
@@ -15164,24 +15378,29 @@ createWorldScreen.playerdamage=玩家伤害	#
 createWorldScreen.pvpdamage=PVP伤害	#
 
 edu.cloudError.generic.code=错误代码：
-edu.cloudError.generic.download.title=你的世界没有从云端下载	#### {MaxLength="45"}
-edu.cloudError.generic.linkDescription=进一步了解云端支持	#
+edu.cloudError.generic.download.title=世界下载失败	### {MaxLength="45"}
+edu.cloudError.generic.linkDescription=进一步了解错误	#
 edu.cloudError.generic.message=将你的世界上传到云端时出了问题。	#
-edu.cloudError.generic.upload.title=上传失败	#### {MaxLength="45"}
-edu.cloudError.largeWorld.message=云上传支持的最大文件大小为250MB。	#
-edu.cloudError.largeWorld.title=世界过大	#### {MaxLength="45"}
+edu.cloudError.generic.download.message=将你的世界从云端下载时出了问题。	#
+edu.cloudError.generic.upload.title=上传失败	### {MaxLength="45"}
+edu.cloudError.largeWorld.message=这个世界只会被保存到本地。云上传支持的最大文件大小为250MB。	#
+edu.cloudError.largeWorld.title=世界过大	### {MaxLength="45"}
 edu.cloudError.notfound.download.message=我们无法在云端找到这个世界。退出并返回我的世界，重新查看你的世界。	#
-edu.cloudError.notfound.download.title=在OneDrive上未找到文件	#### {MaxLength="45"}
-edu.cloudError.outOfStorage.linkDescription=如何备份你的世界	#
-edu.cloudError.outOfStorage.message=你的OneDrive文件夹没有足够的空间来保存这个世界。你可以通过其他方式进行备份将其保存在其他地方。	#
-edu.cloudError.outOfStorage.title=你的上传内容没有进入云端	#### {MaxLength="45"}
-edu.cloudError.unauthorized.download.message=请向系统管理员检查你的OneDrive设置。	#
-edu.cloudError.unauthorized.download.title=你没有权限下载该文件	#### {MaxLength="45"}
-edu.cloudError.unauthorized.message=你无法访问云存储。请检查你的OneDrive设置。	#
-edu.cloudError.unauthorized.title=云端访问问题	#### {MaxLength="45"}
+edu.cloudError.notfound.download.title=在OneDrive上未找到文件	### {MaxLength="45"}
+edu.cloudError.outOfStorage.linkDescription=当OneDrive空间不足时如何备份你的世界	#
+edu.cloudError.outOfStorage.download.message=你的设备没有足够的空间！为什么不删除一些不需要的东西来继续保存新的内容？	#
+edu.cloudError.outOfStorage.message=你的OneDrive没有足够的空间来保存这个世界。	#
+edu.cloudError.outOfStorage.title=你的上传内容没有进入云端	### {MaxLength="45"}
+edu.cloudError.unauthorized.download.message=你没有权限下载该文件。请让系统管理员检查你的OneDrive设置。	#
+edu.cloudError.unauthorized.download.title=权限错误	### {MaxLength="45"}
+edu.cloudError.unauthorized.linkDescription=如何检查OneDrive设置	#
+edu.cloudError.unauthorized.message=你没有访问云存储的权限。如果你希望备份并在设备之间同步你的世界文件，请检查你的OneDrive设置。	#
+edu.cloudError.unauthorized.title=云端访问问题	### {MaxLength="45"}
 edu.cloudError.uploadFailed.message=请重新上传至云端。	#
+edu.cloudError.uploadFailed.linkDescription=获取该错误的帮助	#
 
-item.spawn_egg.entity.npc.failed.edu=你需要世界建造者限才能生成NPC	#
+item.spawn_egg.entity.npc.failed.edu=你需要世界建造者权限来生成NPC	#
+item.worldbuilder.block.failed.edu=你需要世界建造者权限来放置该方块	#
 
 library.connection.failed.body=我们无法连接到图书馆。这可能由于你的计算机处于脱机状态或对图书馆目录的访问受到阻止。	#
 library.connection.failed.help=获取帮助	#
@@ -15445,23 +15664,50 @@ menu.eduLocalStorage=本地存储	#
 menu.eduCloudStorage=云存储	#
 menu.eduCloudStorage.caps=云存储设置	#
 
+newAndFeatured.name=新内容与精选	### This will appear on a button on our home screen, so needs to remain short after translation. If the translation for "New & Featured" is too long, the category label can be translated as "featured".  Please try for less than 20 characters including spaces
+newAndFeatured.description=此合集包含新的图书馆课程和世界、每月亮点及经典收藏。希望你能发现新的探索内容！	### "Library" here is a destination, refers to the name for the EDU-equivalent of the Marketplace. Please treat this as a proper noun.
+
 options.eduCloud.toggleCloud=启用世界备份到OneDrive	#
-options.eduCloud.fileDate=OneDrive文件 最近更改	#
-options.eduCloud.fileName=OneDrive文件 名字	#
 options.eduCloud.folder.body=查看和下载存储在OneDrive文件夹"%s"中的世界。	### Token in quotes will be "Minecraft Education" or "Minecraft Education Preview". Both are brand names and will not be localized.
 options.eduCloud.folder.header=访问OneDrive	#
 options.eduCloud.oneDrive=OneDrive	#
-options.eduCloud.learnMore.text=了解有关云支持的更多信息	#
+options.eduCloud.learnMore.text=了解有关云存储的更多信息	#
+
+options.cloudStorage=云存储	#
+options.cloudStorageTitle=云存储设置	#
+options.cloudFileNameTitle=OneDrive文件名称	#
+options.cloudFileLastChangedTitle=OneDrive文件最后更改时间	#
+options.cloudHelpText=了解更多关于云存储的信息	#
+options.cloudToggleCloudSave=启用世界备份到OneDrive	#
+options.cloudNotAvailableText=不可用	#
+
+popup.title.eduCloudConflictResolution=不同步	### {MaxLength="45"}
+popup.message.eduConflictResolution.description=啊哦。你设备上的世界与云端中的世界不同步。你想怎么做？%1您可以让两个世界文件与 LOCAL 版本、CLOUD 版本相同，或者... 保留两者！保留两者将使您的本地文件成为 OneDrive 版本的单独副本。%1 本地世界名称："%1"%1 本地世界最后更改时间：%1 (本地)%1 OneDrive 文件名称："%1"%1 OneDrive 世界最后更新：%1 (云端)	### %1 will be replaced with a newline. LOCAL should match the word used in popup.buttons.eduConflictResolution.local, CLOUD should match the word used in popup.buttons.eduConflictResolution.cloud, KEEP BOTH should match popup.buttons.eduConflictResolution.both
+popup.message.eduConflictResolution.localWorldName=本地世界名称："%1"	### %1 will be the name of the local world wrapped in quotes
+popup.message.eduConflictResolution.localWorldDate=本地世界最后更改时间：%1 (本地)	### %1 will be the date
+popup.message.eduConflictResolution.cloudName=OneDrive文件名称："%1"	### %1 will be the name of the world on OneDrive wrapped in quotes
+popup.message.eduConflictResolution.cloudDate=OneDrive世界最后更新：%1 (云端)	### %1 will be the date
+popup.buttons.eduConflictResolution.local=保留本地	#
+popup.buttons.eduConflictResolution.cloud=保留云端	#
+popup.buttons.eduConflictResolution.both=保留两者	#
+
 
 progressScreen.title.eduCloudFetch=云同步	#
 progressScreen.message.eduFetchingCloudWorld=检查中...	#
-
 progressScreen.title.eduCloudUpload=正在上传到云端	#
 progressScreen.message.eduUploadingCloudWorld=上传中...	#
 progressScreen.message.eduFinishedCloudUpload=完成！	#
 progressScreen.title.eduCloudDownload=从云端下载	#
 progressScreen.message.eduDownloadingCloudWorld=下载中...	#
+progressScreen.message.eduImportingCloudWorld=导入中...
+progressScreen.message.eduInitializingCloudWorldDownload=初始化中...	#
 progressScreen.message.eduFinishedCloudDownload=完成！	#
+progressScreen.message.eduLaunchingCloudWorld=启动中...	#
+progressScreen.message.eduCanceledCloudOperation=取消中...	#
+progressScreen.title.eduCanceledCloudOperation=云端操作已取消	#
+progressScreen.message.eduSyncingCloud=同步中...	#
+progressScreen.title.eduSyncingCloud=正在与云端同步	#
+
 
 resourceUri.launch.success=已打开资源链接。	#
 resourceUri.launch.failure=无法打开资源链接。此URL似乎不受支持。	#
@@ -15484,10 +15730,10 @@ toast.genericLinkOpened=已在你的网页浏览器中打开链接。	#
 structure_block.export.default_name=我的建筑方块	#
 
 joincode.invalid.title=加入代码不正确	#
-joincode.invalid.body=你输入的%1个加入代码不正确。请与服主确认你拥有正确的代码，或者你也可以尝试通过IP地址加入。 	#
+joincode.invalid.body=你已输入%1个不正确的加入代码。请与服主确认你拥有正确的代码，或者你也可以尝试通过连接ID加入。 	#
 joincode.invalid.button.tryagain=再试一次	#
-joincode.invalid.button.enterip=输入IP地址	#
-joincode.invalid.abuse.body=你输入的%1个加入代码不正确。请尝试使用IP地址加入世界	#
+joincode.invalid.button.enterip=输入连接ID	#
+joincode.invalid.abuse.body=你已输入%1个不正确的加入代码。请稍后再试或尝试使用连接ID加入世界	#
 
 joincode.item.sharepopup.title.simple=分享链接	#
 joincode.popup.body=分享一个链接，邀请其他用户探索你的世界。请注意，此链接仅在你为服主时有效。	#
@@ -15872,6 +16118,8 @@ options.crossPlatformPlay=跨平台游戏	#
 
 ## Beta
 
+## menu.play=游玩测试版	#
+
 beta.loading.1=当你处于测试版中时你只能和其他同样处于测试版中的好友一起游玩！	#
 beta.loading.2=请记住，当你处于测试版中时将不能在Realms和大多数服务器上进行游戏。	#
 beta.loading.3=你在测试版中购买的一切都是真实有效的，即使你离开了测试版它们也不会消失。	#
@@ -15891,16 +16139,39 @@ beta.loading.16=你知道你可以在discord.gg/Minecraft上与我们的开发�
 beta.loading.17=不用担心崩溃，因为在测试版中的崩溃意味着之后的崩溃会少一些！	#
 beta.loading.18=中文译名修正包由Spectrollay制作!	#
 
+## tips.realms.1=使用游戏菜单截图。	#
+## tips.realms.2=Realm始终在线，所以你和你的好友可以随时游玩。	#
+## tips.realms.3=通过查看Realms动态中的动态信息保持对Realm中发生事情的了解。	#
+## tips.realms.4=通过向动态信息中添加一个动态与这个Realm中的其他玩家分享你的精彩时刻。	#
+## tips.realms.5=查看Realms动态中的时间轴，了解其他玩家何时在游玩。	#
+## tips.realms.6=在游玩Realm时，从游戏菜单中访问Realms动态。	#
+## tips.realms.7=在Realms动态的成员选项卡中了解你的Realm社区。	#
+## tips.realms.8=使用Realms动态社交，跟上你朋友的进度，并组织游玩时间。	#
+## tips.realms.9=本中文译名修正包由Spectrollay制作!	#
+
 
 
 ## Preview
 
 gui.importRetailWorld.text.1=你必须先导入这个世界才能在预览版中使用它。	#
 gui.importRetailWorld.text.3=你要制作这个世界的预览版备份吗？	#
+## menu.play=游玩预览版	#
+## playscreen.beta_legacy_worlds=旧的预览版世界	#
+## playscreen.beta_worlds=预览版世界	#
 store.disabledOnBeta=此功能目前在预览版中被禁用。	#
+store.loading.error.unavailable=商城在预览版中被禁用。	#
 tips.previewapp.1=感谢你使用Minecraft Preview！	#
 tips.previewapp.2=如果你使用的是Minecraft Preview，你只能和其他在同类型设备上游玩Minecraft Preview的好友一起游玩！	#
-tips.previewapp.3=你在Minecraft Preview中购买的任何内容都在Minecraft中可用！	#
 tips.previewapp.4=关于新的功能你有什么好的建议吗?快访问feedback.minecraft.net吧！	#
 tips.previewapp.5=你知道你可以在discord.gg/Minecraft上与我们的开发者聊天吗？	#
 tips.previewapp.6=中文译名修正包由Spectrollay制作!	#
+
+## tips.realms.1=使用游戏菜单截图。	#
+## tips.realms.2=Realm始终在线，所以你和你的好友可以随时游玩。	#
+## tips.realms.3=通过查看Realms动态中的动态信息保持对Realm中发生事情的了解。	#
+## tips.realms.4=通过向动态信息中添加一个动态与这个Realm中的其他玩家分享你的精彩时刻。	#
+## tips.realms.5=查看Realms动态中的时间轴，了解其他玩家何时在游玩。	#
+## tips.realms.6=在游玩Realm时，从游戏菜单中访问Realms动态。	#
+## tips.realms.7=在Realms动态的成员选项卡中了解你的Realm社区。	#
+## tips.realms.8=使用Realms动态社交，跟上你朋友的进度，并组织游玩时间。	#
+## tips.realms.9=本中文译名修正包由Spectrollay制作!	#
