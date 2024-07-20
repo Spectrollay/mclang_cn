@@ -344,10 +344,6 @@ custom-scrollbar-thumb {
 /* 预览提示 */
 .preview_block {
     font-family: "NotoSans Bold", sans-serif;
-    border-top: 4px solid #5A5B5C;
-    border-bottom: 4px solid #333334;
-    border-left: 0;
-    border-right: 0;
 }
 
 .preview_title {
