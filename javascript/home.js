@@ -1,6 +1,3 @@
-let sidebarOpen = false;
-let overlayShow = false;
-
 const startTime = new Date().getTime();
 const audioInstances = [];
 const main = document.getElementById("main");
