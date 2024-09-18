@@ -29,8 +29,8 @@
 
 <h4>现已跟进:</h4>
 
-- Release 1.21.21
-- Beta/Preview 1.21.30.23
+- Release 1.21.30
+- Beta/Preview 1.21.30.25
 
 <h4>主要功能:</h4>
 
