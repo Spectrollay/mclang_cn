@@ -1,3 +1,25 @@
+/*
+ * Copyright © 2020. Spectrollay
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+
 const startTime = new Date().getTime();
 const audioInstances = [];
 const main = document.getElementById("main");
@@ -25,8 +47,10 @@ if (sidebar) {
     sidebarThumb = sidebar.querySelector('custom-scrollbar-thumb');
 }
 
-let scrollTimeout;
-let isDragging;
+let scrollTimeout;  // 记录滚动结束后滚动条的消失事件
+let isDragging; // 用于标识是否正在拖动
+let startY; // 记录初始的点击位置
+let initialThumbTop; // 记录滑块初始的位置
 
 function updateThumb() {
     const scrollHeight = mainContent.scrollHeight;
@@ -82,13 +106,16 @@ function showSidebarScroll() {
     }, 3000);
 }
 
-function handleScroll() {
+function handleScroll() { // NOTE 在有涉及到自定义高度变化的地方要调用这个代码
     showScroll();
     updateThumb();
 }
 
-function startDrag() {
+function startDrag(e) {
     isDragging = true;
+    startY = e.clientY || e.touches[0].clientY; // 记录初始点击位置
+    initialThumbTop = customThumb.getBoundingClientRect().top - scrollContainer.getBoundingClientRect().top; // 记录滑块的当前位置
+
     document.addEventListener('mousemove', onDrag);
     document.addEventListener('mouseup', stopDrag);
     document.addEventListener('touchmove', onDrag);
@@ -98,16 +125,19 @@ function startDrag() {
 function onDrag(e) {
     if (!isDragging) return;
 
-    const mouseY = e.clientY || e.touches[0].clientY;
-    const {top, height: containerHeight} = scrollContainer.getBoundingClientRect();
+    const currentY = e.clientY || e.touches[0].clientY; // 获取当前鼠标的位置
+    const deltaY = currentY - startY; // 计算鼠标的移动距离
+    const {height: containerHeight} = scrollContainer.getBoundingClientRect(); // 根据初始位置和移动距离计算新的滑块位置
     const thumbHeight = customThumb.offsetHeight;
     const maxThumbTop = containerHeight - thumbHeight;
-    const newTop = Math.min(Math.max(mouseY - top - thumbHeight / 2, 0), maxThumbTop);
-    const maxScrollTop = mainContent.scrollHeight - containerHeight;
+    const newTop = Math.min(Math.max(initialThumbTop + deltaY, 0), maxThumbTop); // 计算滑块的新位置，确保在可滑动范围内
+    const maxScrollTop = mainContent.scrollHeight - containerHeight; // 计算页面内容的滚动位置
+
     scrollContainer.scrollTo({
         top: (newTop / maxThumbTop) * maxScrollTop,
-        behavior: "instant"
+        behavior: "instant" // 确保滚动时不产生动画
     });
+
     updateThumb();
 }
 
@@ -177,9 +207,9 @@ if (sidebarContainer) {
 // 路径检测
 const currentURL = window.location.href;
 const currentPagePath = window.location.pathname;
-const hostPath = window.location.origin;
+let hostPath = window.location.origin;
 const parts = currentPagePath.split('/').filter(Boolean);
-const rootPath = '/' + (parts.length > 0 ? parts[0] + '/' : '');
+let rootPath = '/' + (parts.length > 0 ? parts[0] + '/' : '');
 const slashCount = (currentPagePath.match(/\//g) || []).length;
 
 const soundClickPath = rootPath + 'sounds/click.ogg';
@@ -255,7 +285,7 @@ const compatibilityModal = `
 document.body.insertAdjacentHTML('afterbegin', compatibilityModal);
 
 setTimeout(function () {
-    if (localStorage.getItem(`(${rootPath})neverShowCompatibilityModalAgain`) !== '1') {
+    if (localStorage.getItem('(/mclang_cn/)neverShowCompatibilityModalAgain') !== '1') {
         const overlay = document.getElementById("overlay_compatibility_modal");
         const modal = document.getElementById("compatibility_modal");
         overlay.style.display = "block";
@@ -276,7 +306,7 @@ function hideCompatibilityModal(button) {
 
 function neverShowCompatibilityModalAgain(button) {
     hideCompatibilityModal(button);
-    localStorage.setItem(`(${rootPath})neverShowCompatibilityModalAgain`, '1');
+    localStorage.setItem('(/mclang_cn/)neverShowCompatibilityModalAgain', '1');
     console.log("关闭兼容性提示弹窗且不再提示");
 }
 
