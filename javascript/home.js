@@ -410,9 +410,7 @@ function delayedOpenLink(url) {
 }
 
 function toRepo() {
-    setTimeout(function () {
-        window.open("https://github.com/Spectrollay" + rootPath + "issues/new");
-    }, 600);
+    window.open("https://github.com/Spectrollay" + rootPath + "issues/new");
 }
 
 // 回到网页顶部
