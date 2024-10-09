@@ -11439,6 +11439,33 @@ gathering.activation.warning.title=哦不！	#
 
 
 ## 实验性
+tile.pale_hanging_moss.name=苍白垂藤	#
+tile.pale_moss_block.name=苍白苔藓块	#
+tile.pale_moss_carpet.name=苍白覆地苔藓	#
+tile.pale_oak_button.name=苍白橡木按钮	#
+tile.pale_oak_door.name=苍白橡木门	#
+tile.pale_oak_fence.name=苍白橡木栅栏	#
+tile.pale_oak_fence_gate.name=苍白橡木栅栏门	#
+tile.pale_oak_hanging_sign.name=悬挂式苍白橡木告示牌	#
+tile.pale_oak_leaves.name=苍白橡树树叶	#
+tile.pale_oak_log.name=苍白橡木原木	#
+tile.pale_oak_planks.name=苍白橡木木板	#
+tile.pale_oak_pressure_plate.name=苍白橡木压力板	#
+tile.pale_oak_sapling.name=苍白橡树树苗	#
+tile.pale_oak_sign.name=苍白橡木告示牌	#
+tile.pale_oak_slab.name=苍白橡木台阶	#
+tile.pale_oak_stairs.name=苍白橡木楼梯	#
+tile.pale_oak_trapdoor.name=苍白橡木活板门	#
+tile.pale_oak_wood.name=苍白橡木	#
+tile.stripped_pale_oak_log.name=去皮苍白橡木原木	#
+tile.stripped_pale_oak_wood.name=去皮苍白橡木	#
+item.boat.pale_oak.name=苍白橡木船	#
+tile.chest_boat.pale_oak.name=苍白橡木运输船	#
+tile.creaking_heart.name=嘎枝之心	#
+entity.creaking.name=嘎枝	#
+entity.creaking_transient.name=嘎枝	#
+item.spawn_egg.entity.creaking.name=嘎枝刷怪蛋	#
+
 entity.firefly.name=萤火虫	#
 item.spawn_egg.entity.firefly.name=萤火虫刷怪蛋	#
 
