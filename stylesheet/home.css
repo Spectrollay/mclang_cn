@@ -235,23 +235,6 @@ custom-scrollbar-thumb {
     text-align: center;
 }
 
-/* 预览提示 */
-.preview_block {
-    font-family: "NotoSans Bold", sans-serif;
-}
-
-.preview_title {
-    font-family: "NotoSans Bold", sans-serif;
-    font-size: 18px;
-    margin: 4px 0;
-}
-
-.preview_detail {
-    font-family: "NotoSans Bold", sans-serif;
-    font-size: 16px;
-    margin: 4px 0;
-}
-
 /* 加载中图标 */
 .loading_icon {
     height: 32px;
@@ -348,7 +331,7 @@ a {
     border-right: 0;
     border-top: 2px solid #5A5B5C;
     font-family: "NotoSans Bold", sans-serif;
-    min-height: 80px;
+    min-height: 60px;
     padding: 0 16px;
 }
 

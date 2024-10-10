@@ -4,7 +4,7 @@
 
 <h1>基岩版中文译名修正</h1>
 
-![Newest KeyArt](images/KeyArt.png)
+![Newest KeyArt](images/KeyArt_old.png)
 
 <h3>和基岩版的无脑翻译说再见!</h3>
 
