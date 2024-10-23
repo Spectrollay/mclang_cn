@@ -20,8 +20,8 @@
  * SOFTWARE.
  */
 
-const site_version = "2.0.RC1"; // NOTE 版本号
-const update_count = "2024-10-10-01"; // NOTE 发布编号
+const site_version = "2.0"; // NOTE 版本号
+const update_count = "2024-10-23-01"; // NOTE 发布编号
 const server_version = "4.0";
 const version_info = "<span>Version: " + site_version + "<br>Server Version: " + server_version + "<br>Updated: " + update_count + "</span>";
 
@@ -31,14 +31,43 @@ if (version_area) {
 }
 
 const startTime = new Date().getTime();
-const audioInstances = [];
 const main = document.getElementById("main");
+
+window.logManager = {
+    log: function (message, level = 'info') {
+        const isLocalEnv = hostPath.includes('localhost') || rootPath.includes('_test');
+
+        // 根据环境输出不同日志
+        if (level === 'error') {
+            console.error(`[ERROR]: ${message}`);
+        } else if (isLocalEnv) {
+            // 在本地环境或测试环境中输出所有日志
+            if (level === 'info') {
+                console.log(`[INFO]: ${message}`);
+            } else if (level === 'warn') {
+                console.warn(`[WARN]: ${message}`);
+            }
+        }
+    }
+};
 
 // 检测浏览器是否处于夜间模式
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
     // 覆盖夜间模式下的样式
     document.body.classList.add('no-dark-mode');
 }
+
+// 禁止拖动元素
+const images = document.querySelectorAll("img");
+const links = document.querySelectorAll("a");
+images.forEach(function (image) {
+    image.draggable = false;
+});
+
+links.forEach(function (link) {
+    link.draggable = false;
+});
+
 
 // 节流函数,防止事件频繁触发
 function throttle(func, delay) {
@@ -80,7 +109,7 @@ function updateThumb(thumb, container, content, customScrollbar) {
 
 // 处理滚动条点击跳转
 function handleScrollbarClick(e, isDragging, customScrollbar, thumb, container, content) {
-    if (isDragging) return;
+    if (isDragging || content.classList.contains('sidebar_content')) return;
 
     const {top, height: scrollbarHeight} = customScrollbar.getBoundingClientRect();
     const clickPosition = e.clientY - top;
@@ -108,7 +137,7 @@ function handleScroll(customScrollbar, customThumb, container, content, scrollTi
 
 // 处理拖动滚动条的逻辑
 function handlePointerMove(e, dragState, thumb, container, content) {
-    if (!dragState.isDragging) return;
+    if (!dragState.isDragging || content.classList.contains('sidebar_content')) return;
 
     const currentY = e.clientY || e.touches[0].clientY;
     const deltaY = currentY - dragState.startY;
@@ -119,8 +148,7 @@ function handlePointerMove(e, dragState, thumb, container, content) {
     const maxScrollTop = content.scrollHeight - containerHeight; // 计算页面内容的滚动位置
 
     container.scrollTo({
-        top: (newTop / maxThumbTop) * maxScrollTop,
-        behavior: "instant" // 确保滚动时不产生动画
+        top: (newTop / maxThumbTop) * maxScrollTop, behavior: "instant" // 确保滚动时不产生动画
     });
 
     updateThumb(thumb, container, content, container.closest('scroll-view').querySelector('custom-scrollbar'));
@@ -189,11 +217,19 @@ function createHandleScroll(customScrollbar, customThumb, container, content) {
 // 自定义高度变化检测
 const mainScrollContainer = document.querySelector('.main_scroll_container');
 const mainHandleScroll = throttle(createHandleScroll( // NOTE 在有涉及到自定义高度变化的地方要调用这个代码
-    document.querySelector('.scroll_container').closest('scroll-view').querySelector('custom-scrollbar'),
-    document.querySelector('.scroll_container').closest('scroll-view').querySelector('custom-scrollbar-thumb'),
-    mainScrollContainer,
-    document.querySelector('.scroll_container')
+    document.querySelector('.scroll_container').closest('scroll-view').querySelector('custom-scrollbar'), document.querySelector('.scroll_container').closest('scroll-view').querySelector('custom-scrollbar-thumb'), mainScrollContainer, document.querySelector('.scroll_container')
 ), 1);
+
+let lastScrollHeight = mainScrollContainer.scrollHeight;
+
+function watchHeightChange() { // 检查高度变化 NOTE 在有容器高度平滑变化的地方要调用这个代码
+    const currentScrollHeight = mainScrollContainer.scrollHeight;
+    if (lastScrollHeight !== currentScrollHeight) {
+        mainHandleScroll(); // 联动自定义网页滚动条
+        lastScrollHeight = currentScrollHeight;
+    }
+    requestAnimationFrame(watchHeightChange); // 在下一帧再次检查
+}
 
 // 路径检测
 const currentURL = window.location.href;
@@ -202,23 +238,20 @@ let hostPath = window.location.origin;
 const parts = currentPagePath.split('/').filter(Boolean);
 let rootPath = '/' + (parts.length > 0 ? parts[0] + '/' : '');
 const slashCount = (currentPagePath.match(/\//g) || []).length;
-
-const soundClickPath = rootPath + 'sounds/click.ogg';
-const soundButtonPath = rootPath + 'sounds/button.ogg';
 const pageLevel = (slashCount - 1) + "级页面";
 
-console.log("浏览器UA: ", navigator.userAgent)
-console.log("完整路径: ", currentURL);
-console.log("来源: ", hostPath);
-console.log("根路径: ", rootPath);
-console.log("当前路径: ", currentPagePath);
+logManager.log("浏览器UA: " + navigator.userAgent)
+logManager.log("完整路径: " + currentURL);
+logManager.log("来源: " + hostPath);
+logManager.log("根路径: " + rootPath);
+logManager.log("当前路径: " + currentPagePath);
 
 if (hostPath.includes('file:///')) {
-    console.log('当前运行在本地文件');
+    logManager.log('当前运行在本地文件');
 } else if (hostPath.includes('localhost')) {
-    console.log("当前运行在本地服务器");
+    logManager.log("当前运行在本地服务器");
 } else if (hostPath.includes('github.io')) {
-    console.log("当前运行在Github");
+    logManager.log("当前运行在Github");
     // 禁用右键菜单
     document.addEventListener('contextmenu', function (event) {
         event.preventDefault();
@@ -228,26 +261,63 @@ if (hostPath.includes('file:///')) {
         event.preventDefault();
     });
 } else {
-    console.log("当前运行在" + hostPath);
+    logManager.log("当前运行在" + hostPath);
 }
 if (rootPath.includes('_test')) {
-    console.log("环境为测试环境");
+    logManager.log("环境为测试环境");
 } else {
-    console.log("环境为标准环境");
+    logManager.log("环境为标准环境");
 }
 
-console.log("当前位于" + pageLevel);
+logManager.log("当前位于" + pageLevel);
 
-// 禁止拖动元素
-const images = document.querySelectorAll("img");
-const links = document.querySelectorAll("a");
-images.forEach(function (image) {
-    image.draggable = false;
+// 输出错误日志
+window.addEventListener("error", function (event) {
+    logManager.log("错误: " + event.message, 'error');
 });
 
-links.forEach(function (link) {
-    link.draggable = false;
+document.addEventListener("DOMContentLoaded", function () {
+    logManager.log("页面加载完成!");
 });
+
+window.addEventListener("load", function () {
+    const endTime = new Date().getTime();
+    let loadTime = endTime - startTime;
+    logManager.log("页面加载耗时: " + loadTime + "ms");
+});
+
+// 页面加载时缓存音效文件
+const cacheName = 'audio-cache';
+window.onload = async function () {
+    if ('caches' in window) {
+        try {
+            const cache = await caches.open(cacheName);
+            await cache.addAll([soundClickPath, soundButtonPath]);
+            logManager.log('音效文件已缓存!');
+        } catch (error) {
+            logManager.log('音效文件缓存失败: ' + error, 'error');
+        }
+    }
+};
+
+async function getCachedAudio(filePath) {
+    if ('caches' in window) {
+        try {
+            const cache = await caches.open(cacheName);
+            const response = await cache.match(filePath);
+            if (response) {
+                const blob = await response.blob();
+                const audioURL = URL.createObjectURL(blob);
+                logManager.log('从缓存获取音效文件');
+                return new Audio(audioURL); // 返回缓存中的音效
+            }
+        } catch (error) {
+            logManager.log('从缓存获取音效文件失败: ' + error, 'error');
+        }
+    } else {
+        return new Audio(filePath); // 缓存不存在或失败时直接返回网络资源
+    }
+}
 
 // 兼容性检测
 const compatibilityModal = `
@@ -275,16 +345,16 @@ const compatibilityModal = `
 
 document.body.insertAdjacentHTML('afterbegin', compatibilityModal);
 
-setTimeout(function () {
+window.addEventListener('load', () => setTimeout(function () {
     if (localStorage.getItem('(/mclang_cn/)neverShowCompatibilityModalAgain') !== '1') {
         const overlay = document.getElementById("overlay_compatibility_modal");
         const modal = document.getElementById("compatibility_modal");
         overlay.style.display = "block";
         modal.style.display = "block";
         modal.focus();
-        console.log("显示兼容性提示弹窗");
+        logManager.log("显示兼容性提示弹窗");
     }
-}, 100);
+}, 20));
 
 function hideCompatibilityModal(button) {
     const overlay = document.getElementById("overlay_compatibility_modal");
@@ -292,89 +362,114 @@ function hideCompatibilityModal(button) {
     playSound(button);
     overlay.style.display = "none";
     modal.style.display = "none";
-    console.log("关闭兼容性提示弹窗");
+    logManager.log("关闭兼容性提示弹窗");
 }
 
 function neverShowCompatibilityModalAgain(button) {
     hideCompatibilityModal(button);
     localStorage.setItem('(/mclang_cn/)neverShowCompatibilityModalAgain', '1');
-    console.log("关闭兼容性提示弹窗且不再提示");
+    logManager.log("关闭兼容性提示弹窗且不再提示");
 }
 
-// 输出错误日志
-window.addEventListener("error", function (event) {
-    console.error("错误: ", event.message);
-});
+const soundClickPath = rootPath + 'sounds/click.ogg';
+const soundButtonPath = rootPath + 'sounds/button.ogg';
+const soundPopPath = rootPath + 'sounds/pop.ogg';
+const soundHidePath = rootPath + 'sounds/hide.ogg';
+const soundOpenPath = rootPath + 'sounds/open.wav';
+const soundClosePath = rootPath + 'sounds/close.wav';
 
-document.addEventListener("DOMContentLoaded", function () {
-    const click = new Audio(soundClickPath);
-    const button = new Audio(soundButtonPath);
-    click.volume = 0;
-    button.volume = 0;
-    audioInstances.push(click);
-    audioInstances.push(button);
-    click.play().then(() => {
-        console.log("音频预加载成功!");
-    }).catch((error) => {
-        console.warn("音频预加载失败: ", error);
-    });
-    button.play().then(() => {
-        console.log("音频预加载成功!");
-    }).catch((error) => {
-        console.warn("音频预加载失败: ", error);
-    });
-
-    console.log("页面加载完成!");
-});
-
-window.addEventListener("load", function () {
-    const endTime = new Date().getTime();
-    let loadTime = endTime - startTime;
-    console.log("页面加载耗时: " + loadTime + "ms");
-});
-
-function playSound1() {
-    const audio = new Audio(soundClickPath);
-    audioInstances.push(audio);
-    audio.play().then(() => {
-        console.log("音效播放成功!");
-    }).catch((error) => {
-        console.error("音效播放失败: ", error);
+function playClickSound() {
+    getCachedAudio(soundClickPath).then(audio => {
+        audio.play().then(() => {
+            logManager.log("点击音效播放成功!");
+        }).catch(error => {
+            logManager.log('点击音效播放失败: ' + error, 'error');
+        });
+    }).catch(error => {
+        logManager.log('获取点击音效失败: ' + error, 'error');
     });
 }
 
-function playSound2() {
-    const audio = new Audio(soundButtonPath);
-    audioInstances.push(audio);
-    audio.play().then(() => {
-        console.log("音效播放成功!");
-    }).catch((error) => {
-        console.error("音效播放失败: ", error);
+function playButtonSound() {
+    getCachedAudio(soundButtonPath).then(audio => {
+        audio.play().then(() => {
+            logManager.log("按钮音效播放成功!");
+        }).catch(error => {
+            logManager.log('获取按钮音效失败: ' + error, 'error');
+        });
+    }).catch(error => {
+        logManager.log('获取按钮音效失败: ' + error, 'error');
+    });
+}
+
+function playPopSound(){
+    getCachedAudio(soundPopPath).then(audio => {
+        audio.play().then(() => {
+            logManager.log("弹出音效播放成功!");
+        }).catch(error => {
+            logManager.log('获取弹出音效失败: ' + error, 'error');
+        });
+    }).catch(error => {
+        logManager.log('获取弹出音效失败: ' + error, 'error');
+    });
+}
+
+function playHideSound(){
+    getCachedAudio(soundHidePath).then(audio => {
+        audio.play().then(() => {
+            logManager.log("隐藏音效播放成功!");
+        }).catch(error => {
+            logManager.log('获取隐藏音效失败: ' + error, 'error');
+        });
+    }).catch(error => {
+        logManager.log('获取隐藏音效失败: ' + error, 'error');
+    });
+}
+
+function playOpenSound(){
+    getCachedAudio(soundOpenPath).then(audio => {
+        audio.play().then(() => {
+            logManager.log("打开音效播放成功!");
+        }).catch(error => {
+            logManager.log('获取打开音效失败: ' + error, 'error');
+        });
+    }).catch(error => {
+        logManager.log('获取打开音效失败: ' + error, 'error');
+    });
+}
+
+function playCloseSound(){
+    getCachedAudio(soundClosePath).then(audio => {
+        audio.play().then(() => {
+            logManager.log("关闭音效播放成功!");
+        }).catch(error => {
+            logManager.log('获取关闭音效失败: ' + error, 'error');
+        });
+    }).catch(error => {
+        logManager.log('获取关闭音效失败: ' + error, 'error');
     });
 }
 
 // 按键音效
 function playSound(button) {
     if (button.classList.contains("normal_btn") || button.classList.contains("red_btn") || button.classList.contains("sidebar_btn") || (button.classList.contains("tab_bar_btn") && button.classList.contains("no_active")) || button.classList.contains("close_btn")) {
-        console.log("选择播放点击音效");
-        playSound1();
+        playClickSound();
     } else if (button.classList.contains("green_btn")) {
-        console.log("选择播放按钮音效");
-        playSound2();
+        playButtonSound();
     }
 }
 
 // 点击返回按钮事件
 function clickedBack() {
-    console.log("点击返回");
-    playSound1();
+    logManager.log("点击返回");
+    playClickSound();
     if (window.history.length <= 1) {
-        console.log("关闭窗口");
+        logManager.log("关闭窗口");
         setTimeout(function () {
             window.close();
         }, 600);
     } else {
-        console.log("返回上一级页面");
+        logManager.log("返回上一级页面");
         setTimeout(function () {
             window.history.back();
         }, 600);
@@ -383,7 +478,7 @@ function clickedBack() {
 
 // 跳转链接
 function jumpToPage(link) {
-    playSound1();
+    playClickSound();
     setTimeout(function () {
         window.location.href = link;
     }, 320);
@@ -407,16 +502,14 @@ function toRepo() {
 // 回到网页顶部
 function scrollToTop() {
     mainScrollContainer.scrollTo({
-        top: 0,
-        behavior: "smooth"
+        top: 0, behavior: "smooth"
     });
     console.log("成功执行回到顶部操作");
 }
 
 function toTop() {
     mainScrollContainer.scrollTo({
-        top: 0,
-        behavior: "instant"
+        top: 0, behavior: "instant"
     });
 }
 
@@ -433,9 +526,9 @@ function copyText(text) {
 
     navigator.clipboard.writeText(tempTextarea.value)
         .then(() => {
-            console.log('复制成功: ', tempTextarea.value);
+            logManager.log('复制成功: ', tempTextarea.value);
         })
-        .catch(err => {
-            console.log('复制失败: ', err);
+        .catch(error => {
+            logManager.log('复制失败: ' + error, 'error');
         });
 }

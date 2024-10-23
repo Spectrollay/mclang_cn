@@ -104,18 +104,12 @@
 </body>
 
 <script>
-    const menu_icon = document.getElementById('menu_icon');
     const back_icon = document.getElementById('back_icon');
-
     if (back_icon) {
         back_icon.src = '/mclang_cn/images/arrowLeft.png';
     }
-    if (menu_icon) {
-        menu_icon.src = '/mclang_cn/images/menu.png';
-    }
 
     const loading_mask = document.getElementById('loading_mask');
-
     function hide_mask() {
         // 延时600ms后隐藏蒙版
         loading_mask.style.opacity = '0';
