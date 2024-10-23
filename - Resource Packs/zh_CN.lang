@@ -47,9 +47,9 @@ accessibility.list.or.three_or_more.last=和%s	#
 
 accessibility.button.tts.title=按钮	#
 accessibility.checkbox.tts.title=复选框	#
-accessibility.checkbox.tts.status=状态%s			### Status will be checked or unchecked
+accessibility.checkbox.tts.status=状态%s	### Status will be checked or unchecked
 accessibility.dropdown.tts.title=下拉	#
-accessibility.screen.tts.title=%s屏幕		### %s will be replaced with the title of the screen (Example: Library Screen)
+accessibility.screen.tts.title=%s屏幕	### %s will be replaced with the title of the screen (Example: Library Screen)
 accessibility.slider.tts.title=滑块	#
 accessibility.tab.tts.title=选项卡	#
 accessibility.textbox.tts.title=文本框	#
@@ -78,7 +78,7 @@ accessibility.fullprice=原价%sMinecoin	#
 accessibility.discount.price=折后%sMinecoin	#
 accessibility.discount.percent=%s折	#
 
-accessibility.sectionName=第%s部分： 	#
+accessibility.sectionName=第%s部分：	#
 
 accessibility.state.on=：已打开	#
 accessibility.state.off=：已关闭	#
@@ -92,7 +92,7 @@ accessibility.state.unselected=：未选择	#
 accessibility.store.offerDescription.share=分享	#
 accessibility.store.wishlist.button=愿望清单	#
 
-accessibility.index=第%s个/共%s个		### This is numbering, which number out of the total number of objects is available for interaction. Example: 1 of 3
+accessibility.index=第%s个/共%s个	### This is numbering, which number out of the total number of objects is available for interaction. Example: 1 of 3
 
 accessibility.slider.tts.percentValue=百分之%s	#
 
@@ -113,7 +113,7 @@ accessibility.play.uploadWorld=上传世界	#
 accessibility.pause.permissions=权限	#
 accessibility.pause.profile=选择个人资料	#
 
-accessibility.start.buttonHelper=%s：%s		### Used for on-screen gamepad helpers (eg. "Y Button : Change User")
+accessibility.start.buttonHelper=%s：%s	### Used for on-screen gamepad helpers (eg. "Y Button : Change User")
 
 accessibility.screenName.achievements=成就屏幕	#
 accessibility.screenName.chat=聊天屏幕	#
@@ -143,7 +143,7 @@ accessibility.screenName.realmSettings=Realm设置屏幕	#
 accessibility.screenName.settings=游戏设置屏幕	#
 accessibility.screenName.skinPicker=选择皮肤屏幕	#
 accessibility.screenName.start=主菜单	#
-accessibility.screenName.vrAlignment=VR校准屏幕 	#
+accessibility.screenName.vrAlignment=VR校准屏幕	#
 accessibility.screenName.emoteWheel=表情屏幕	#
 accessibility.screenName.addExternalServer=添加外部服务器屏幕	#
 accessibility.screenName.editExternalServer=编辑外部服务器屏幕	#
@@ -163,7 +163,7 @@ accessibility.store.tag=选项卡	#
 accessibility.textbox.editing=正在编辑	#
 
 accessibility.text.period=句号	#
-accessibility.text.period.url=点					### Pronunciation for a period inside of a URL, as in "www dot microsoft dot com"
+accessibility.text.period.url=点	### Pronunciation for a period inside of a URL, as in "www dot微软dot com"
 accessibility.text.comma=逗号	#
 accessibility.text.colon=冒号	#
 accessibility.text.apostrophe=撇号	#
@@ -242,8 +242,8 @@ accessibility.gamepad.trigger.left=左扳机	#
 accessibility.gamepad.bumper.right=右肩键	### Used for both Xbox and controller on Windows
 accessibility.gamepad.bumper.left=左肩键	### Used for both Xbox and controller on Windows
 
-accessibility.keyboard.leftBracket=左方括号键			### left square bracket means '[' on the english keyboard
-accessibility.keyboard.rightBracket=右方括号键		### right square bracket means ']' on the english keyboard
+accessibility.keyboard.leftBracket=左方括号键	### left square bracket means '[' on the english keyboard
+accessibility.keyboard.rightBracket=右方括号键	### right square bracket means ']' on the english keyboard
 
 accessibility.emotes.hovered=%s，表情按钮%d，第%d个，共%d个	#
 accessibility.emotes.assigned=%s表情已装备	#
@@ -484,13 +484,13 @@ authentication.tryagain=使用其他账号登录	#
 authentication.welcome=欢迎，%s！	#
 authentication.exitingGame=再见，欢迎下次回来。	#
 authentication.finalTrialWarning=这是你的Minecraft教育版的最后一次试用机会。%1%1在这次试用之后，你的学校或组织将需要购买许可证才能继续使用Minecraft教育版的所有功能。	#
-authentication.oneTrialWarning=在你的学校或组织购买许可前，你有1次Minecraft教育版试用机会。%1%1每次打开Minecraft教育版，都会使用一次试用机会。 	#
+authentication.oneTrialWarning=在你的学校或组织购买许可前，你有1次Minecraft教育版试用机会。%1%1每次打开Minecraft教育版，都会使用一次试用机会。	#
 authentication.trialMessageTitle=免费试用	#
 authentication.trialWelcome=欢迎！%1%1在你的学校必须购买许可之前，你有%2次Minecraft教育版试用机会。%1每次打开Minecraft教育版，都会使用一次试用机会。请尽情享用！	#
 authentication.trialWarning=在你的学校或组织购买许可前，你有%2次Minecraft教育版试用机会。%1%1每次打开Minecraft教育版，都会使用一次试用机会。	#
 authentication.trialEnded=你的Minecraft教育版试用机会已用完。%1%1你的学校或组织必须购买许可，你才能继续使用Minecraft教育版。%1%1你现在将退出你的%2账号，但仍可以继续探索功能有限的演示课程。	#
 authentication.trialEndedTitle=试玩版已到期	#
-authentication.clickToPurchase=如何购买		### Translations should be 20 characters or less
+authentication.clickToPurchase=如何购买	### Translations should be 20 characters or less
 authentication.adalException=我们无法连接到你当前所需的服务。请检查你的网络连接，然后再试一次。	#
 authentication.buyMinecraft=前往App Store	#
 authentication.edu.leaveGame.title=你已被退出登录	#
@@ -898,8 +898,8 @@ commands.entitydata.success=实体数据已更新：%1$s	#
 commands.entitydata.tagError=数据标签解析失败：%1$s	#
 commands.event.description=触发指定对象的事件	#
 commands.event.error.empty=事件名称不能为空	#
-commands.event.error.failed=无法执行%1$s于：%2$s					##1: Event Name ##2: List of failed entities for which the event could not be executed
-commands.event.success=成功执行%1$s于：%2$s						##1: Event Name ##2: List of entities
+commands.event.error.failed=无法执行%1$s于：%2$s	##1: Event Name ##2: List of failed entities for which the event could not be executed
+commands.event.success=成功执行%1$s于：%2$s	##1: Event Name ##2: List of entities
 commands.execute.align.invalidInput=无效的旋转，“x”、“y”和“z”的预期组合	#
 commands.execute.allInvocationsFailed=全部调用失败：“%1$s”	#
 commands.execute.failed=将“%1$s”执行为%2$s失败	#
@@ -909,12 +909,12 @@ commands.execute.falseCondition=执行子命令%1$s%2$s时失败。	##1: Subcomm
 commands.execute.falseConditionWithCount=执行子命令%1$s%2$s时失败，个数：%3$s。	##1: Subcommand ##2: ConditionSubcommand ##3: Test passed count
 commands.execute.trueCondition=测试通过。	#
 commands.execute.trueConditionWithCount=测试通过，个数：%1$s。	#
-commands.execute.ifUnlessBlocks.tooManyBlocks=检测方块过多。（最大方块个数：%1$s，指定方块个数：%2$s）		###1: Max number of blocks that are checked ##2: Current number of blocks that are checked
-commands.execute.ifUnlessScore.score.notFound=未找到%2$s的%1$s分数		###1: Objective Name ##2: Player Name
-commands.execute.ifUnlessScore.targets.tooMany=%1$s目标与选择器匹配。只允许1个目标。		### Number of targets that are matching with selector
-commands.execute.ifUnlessScore.targets.empty=记分板上没有追踪的玩家“%1$s”		###1: Player name
-commands.execute.ifUnlessScore.objectiveNotFound=没有找到名称为“%1$s”的目标		###1: Objective Name
-commands.execute.ifUnlessScore.players.compareOperation.invalidOperation=%1$s操作无效。		###1: Operator
+commands.execute.ifUnlessBlocks.tooManyBlocks=检测方块过多。（最大方块个数：%1$s，指定方块个数：%2$s）	###1: Max number of blocks that are checked ##2: Current number of blocks that are checked
+commands.execute.ifUnlessScore.score.notFound=未找到%2$s的%1$s分数	###1: Objective Name ##2: Player Name
+commands.execute.ifUnlessScore.targets.tooMany=%1$s目标与选择器匹配。只允许1个目标。	### Number of targets that are matching with selector
+commands.execute.ifUnlessScore.targets.empty=记分板上没有追踪的玩家“%1$s”	###1: Player name
+commands.execute.ifUnlessScore.objectiveNotFound=没有找到名称为“%1$s”的目标	###1: Objective Name
+commands.execute.ifUnlessScore.players.compareOperation.invalidOperation=%1$s操作无效。	###1: Operator
 commands.fill.description=用特定方块填充全部或部分地区。	#
 commands.fill.failed=未填充方块	#
 commands.fill.outOfWorld=无法在世界外放置方块	#
@@ -1256,77 +1256,77 @@ commands.schedule.tickingarea.func.clear.failure=没有删除常加载区域名�
 
 ## Going overboard on the context but Scoreboards do some weird stuff :D 									##
 
-commands.scoreboard.description=跟踪并显示各计分项的分数。							###
-commands.scoreboard.allMatchesFailed=没有匹配的对象													###
-commands.scoreboard.noMultiWildcard=仅允许使用一个用户通配符										###
-commands.scoreboard.objectiveNotFound=没有找到名称为“%1$s”的计分项						###1: Objective Name
-commands.scoreboard.objectiveReadOnly=无法设置只读计分项“%1$s”			###1: Objective Name
-commands.scoreboard.objectives.add.alreadyExists=已存在名为“%1$s”的计分项		###1: Objective Name
-commands.scoreboard.objectives.add.displayTooLong=“%1$s”作为计分项的显示名太长了，它最多只能有%2$d个字		###1: Objective Display Name ##2: Name Length Limit
-commands.scoreboard.objectives.add.success=已成功添加新计分项“%1$s”																###1: Objective Name
-commands.scoreboard.objectives.add.tooLong=“%1$s”作为计分项名太长了，它最多只能有%2$d个字						###1: Objective Name ##2: Name Length Limit
-commands.scoreboard.objectives.add.wrongType=无效的计分项标准类型“%1$s”							###1: Criteria Name
-commands.scoreboard.objectives.add.needName=计分项需要一个名称。										###
-commands.scoreboard.objectives.description=修改记分板的计分项。									###
-commands.scoreboard.objectives.list.count=记分板正在显示%1$d个计分项							###1: Number of Objectives
-commands.scoreboard.objectives.list.empty=记分板上没有计分项							###
-commands.scoreboard.objectives.list.entry=- %1$s：显示为“%2$s”，类型为“%3$s”						###1: Objective Name ##2: Objective Display Name ##3: Critiera Name
-commands.scoreboard.objectives.remove.success=成功地移除了计分项“%1$s”							###1: Objective Name
-commands.scoreboard.objectives.setdisplay.invalidSlot=没有名称为“%1$s”的显示位置							###1: Display Slot
-commands.scoreboard.objectives.setdisplay.successCleared=已清空计分项显示位置“%1$s”			###1: Display Slot
-commands.scoreboard.objectives.setdisplay.successSet=已将显示位置“%1$s”的计分项设置为“%2$s”		###1: Display Slot ##2: Objective Name
-commands.scoreboard.players.add.success=已为%3$s添加%1$d到[%2$s]（现在为%4$d）							###1: Score Value ##2: Objective Name ##3: Player Name ##4: New Score Value
-commands.scoreboard.players.add.multiple.success=已为%3$个实体添加%1$d到[%2$s]						###1: Score Value ##2: Objective Name ##3: Player Count
-commands.scoreboard.players.nameNotFound=必须提供玩家名称。										###
-commands.scoreboard.players.enable.noTrigger=计分项%1$s不是触发器								###1: Objective Name
-commands.scoreboard.players.enable.success=已对%2$s启用触发器%1$s									###1: Trigger Name ##2: Objective Name
-commands.scoreboard.players.list.count=记分板上正在显示%1$d个被追踪的玩家：						###1: Number of Players
-commands.scoreboard.players.list.empty=记分板上没有追踪的玩家						###
-commands.scoreboard.players.list.player.count=正在为%2$s显示%1$d个追踪计分项：					###1: Objective Count ##2: Player Name
-commands.scoreboard.players.list.player.empty=玩家%1$s没有分数记录							###1: Player Name
-commands.scoreboard.players.list.player.entry=- %2$s: %1$s(%3$s)											###1: Score Value ##2: Objective Display Name ##3: Objective Name
-commands.scoreboard.players.operation.invalidOperation=操作%1$s无效								###
-commands.scoreboard.players.operation.notFound=未找到%2$s的%1$s分数									###1: Objective Name ##2: Player Name
-commands.scoreboard.players.operation.success=已为%2$d项目更新[%1$s]								###1: Objective Name ##2: Player Count
+commands.scoreboard.description=跟踪并显示各计分项的分数。	###
+commands.scoreboard.allMatchesFailed=没有匹配的对象	###
+commands.scoreboard.noMultiWildcard=仅允许使用一个用户通配符	###
+commands.scoreboard.objectiveNotFound=没有找到名称为“%1$s”的计分项	###1: Objective Name
+commands.scoreboard.objectiveReadOnly=无法设置只读计分项“%1$s”	###1: Objective Name
+commands.scoreboard.objectives.add.alreadyExists=已存在名为“%1$s”的计分项	###1: Objective Name
+commands.scoreboard.objectives.add.displayTooLong=“%1$s”作为计分项的显示名太长了，它最多只能有%2$d个字	###1: Objective Display Name ##2: Name Length Limit
+commands.scoreboard.objectives.add.success=已成功添加新计分项“%1$s”	###1: Objective Name
+commands.scoreboard.objectives.add.tooLong=“%1$s”作为计分项名太长了，它最多只能有%2$d个字	###1: Objective Name ##2: Name Length Limit
+commands.scoreboard.objectives.add.wrongType=无效的计分项标准类型“%1$s”	###1: Criteria Name
+commands.scoreboard.objectives.add.needName=计分项需要一个名称。	###
+commands.scoreboard.objectives.description=修改记分板的计分项。	###
+commands.scoreboard.objectives.list.count=记分板正在显示%1$d个计分项	###1: Number of Objectives
+commands.scoreboard.objectives.list.empty=记分板上没有计分项	###
+commands.scoreboard.objectives.list.entry=- %1$s：显示为“%2$s”，类型为“%3$s”	###1: Objective Name ##2: Objective Display Name ##3: Critiera Name
+commands.scoreboard.objectives.remove.success=成功地移除了计分项“%1$s”	###1: Objective Name
+commands.scoreboard.objectives.setdisplay.invalidSlot=没有名称为“%1$s”的显示位置	###1: Display Slot
+commands.scoreboard.objectives.setdisplay.successCleared=已清空计分项显示位置“%1$s”	###1: Display Slot
+commands.scoreboard.objectives.setdisplay.successSet=已将显示位置“%1$s”的计分项设置为“%2$s”	###1: Display Slot ##2: Objective Name
+commands.scoreboard.players.add.success=已为%3$s添加%1$d到[%2$s]（现在为%4$d）	###1: Score Value ##2: Objective Name ##3: Player Name ##4: New Score Value
+commands.scoreboard.players.add.multiple.success=已为%3$个实体添加%1$d到[%2$s]	###1: Score Value ##2: Objective Name ##3: Player Count
+commands.scoreboard.players.nameNotFound=必须提供玩家名称。	###
+commands.scoreboard.players.enable.noTrigger=计分项%1$s不是触发器	###1: Objective Name
+commands.scoreboard.players.enable.success=已对%2$s启用触发器%1$s	###1: Trigger Name ##2: Objective Name
+commands.scoreboard.players.list.count=记分板上正在显示%1$d个被追踪的玩家：	###1: Number of Players
+commands.scoreboard.players.list.empty=记分板上没有追踪的玩家	###
+commands.scoreboard.players.list.player.count=正在为%2$s显示%1$d个追踪计分项：	###1: Objective Count ##2: Player Name
+commands.scoreboard.players.list.player.empty=玩家%1$s没有分数记录	###1: Player Name
+commands.scoreboard.players.list.player.entry=- %2$s: %1$s(%3$s)	###1: Score Value ##2: Objective Display Name ##3: Objective Name
+commands.scoreboard.players.operation.invalidOperation=操作%1$s无效	###
+commands.scoreboard.players.operation.notFound=未找到%2$s的%1$s分数	###1: Objective Name ##2: Player Name
+commands.scoreboard.players.operation.success=已为%2$d项目更新[%1$s]	###1: Objective Name ##2: Player Count
 commands.scoreboard.players.offlinePlayerName=玩家离线	#
-commands.scoreboard.players.random.invalidRange=最小值%1$d不小于最大值%2$d							###1: Min Range Value ##2: Max Range Value
-commands.scoreboard.players.remove.success=已为%3$s从[%2$s]中移除%1$d（现在为%4$d）						###1: Score Value ##2: Objective Name ##3: Player Name ##4: New Score Value
-commands.scoreboard.players.remove.multiple.success=已为%3$s个实体从[%2$s]中移除%1$d				###1: Score Value ##2: Objective Name ##3: Player Count
-commands.scoreboard.players.reset.success=已重置玩家%1$s的分数										###1: Player Name
-commands.scoreboard.players.resetscore.success=已重置玩家%2$s的%1$s分数								###1: Objective Name ##2: Player Name
-commands.scoreboard.players.set.success=将%2$s的[%1$s]设定为%3$d										###1: Objective Name ##2: Player Name ##3: Score Value
-commands.scoreboard.players.set.multiple.success=将%2$d的[%1$s]设定为%3$d						###1: Objective Name ##2: Player Count ##3: Score Value
-commands.scoreboard.players.set.tagError=无法解析数据标签，原因：%1$s								###
-commands.scoreboard.players.set.tagMismatch=数据标签与%1$s不匹配								###
-commands.scoreboard.players.score.notFound=未找到%2$s的%1$s分数										###1: Objective Name ##2: Player Name
-commands.scoreboard.players.test.failed=分数%1$d不在%2$d到%3$d范围内								###1: Value ##2: Min Range Value ##3: Max Range Value
-commands.scoreboard.players.test.success=分数%1$d在%2$d到%3$d范围内								###1: Value ##2: Min Range Value ##3: Max Range Value
-commands.scoreboard.players.get.success=%1$d																###
+commands.scoreboard.players.random.invalidRange=最小值%1$d不小于最大值%2$d	###1: Min Range Value ##2: Max Range Value
+commands.scoreboard.players.remove.success=已为%3$s从[%2$s]中移除%1$d（现在为%4$d）	###1: Score Value ##2: Objective Name ##3: Player Name ##4: New Score Value
+commands.scoreboard.players.remove.multiple.success=已为%3$s个实体从[%2$s]中移除%1$d	###1: Score Value ##2: Objective Name ##3: Player Count
+commands.scoreboard.players.reset.success=已重置玩家%1$s的分数	###1: Player Name
+commands.scoreboard.players.resetscore.success=已重置玩家%2$s的%1$s分数	###1: Objective Name ##2: Player Name
+commands.scoreboard.players.set.success=将%2$s的[%1$s]设定为%3$d	###1: Objective Name ##2: Player Name ##3: Score Value
+commands.scoreboard.players.set.multiple.success=将%2$d的[%1$s]设定为%3$d	###1: Objective Name ##2: Player Count ##3: Score Value
+commands.scoreboard.players.set.tagError=无法解析数据标签，原因：%1$s	###
+commands.scoreboard.players.set.tagMismatch=数据标签与%1$s不匹配	###
+commands.scoreboard.players.score.notFound=未找到%2$s的%1$s分数	###1: Objective Name ##2: Player Name
+commands.scoreboard.players.test.failed=分数%1$d不在%2$d到%3$d范围内	###1: Value ##2: Min Range Value ##3: Max Range Value
+commands.scoreboard.players.test.success=分数%1$d在%2$d到%3$d范围内	###1: Value ##2: Min Range Value ##3: Max Range Value
+commands.scoreboard.players.get.success=%1$d	###
 
 #### Scoreboards can also handle teams, which are close to what an Objective does	####
 #### with just a little extra functionality											####
 
-commands.scoreboard.teamNotFound=没有找到名为“%1$s”的队伍																	###1: Team Name
-commands.scoreboard.teams.add.alreadyExists=已经存在名为“%1$s”的队伍													###1: Team Name
-commands.scoreboard.teams.add.displayTooLong=“%1$s”作为队伍的显示名称太长了，它最多只能有%2$d个字符		###1: Team Display Name ##2: Name Length Limit
-commands.scoreboard.teams.add.success=已成功添加新队伍“%1$s”																###1: Team Name
-commands.scoreboard.teams.add.tooLong=“%1$s”作为队伍名称太长了，它最多只能有%2$d个字符					###1: Team Name ##2: Name Length Limit
-commands.scoreboard.teams.empty.alreadyEmpty=队伍%1$s已空，无法移除不存在的玩家								###1: Team Name
-commands.scoreboard.teams.empty.success=已将全部%1$d名玩家从队伍%2$s中移除														###1: Number of Players ##2: Team Name
-commands.scoreboard.teams.join.failure=无法向队伍%2$s添加%1$d名玩家：%3$s													###1: Number of Players ##2: Team Name ##3: List of Players
-commands.scoreboard.teams.join.success=已将%1$d名玩家添加至队伍%2$s：%3$s															###1: Number of Players ##2: Team Name ##3: List of Players
-commands.scoreboard.teams.leave.failure=无法从队伍%2$s中移除%1$d名玩家											###1: Number of Players ##2: Team Name
-commands.scoreboard.teams.leave.noTeam=你不在队伍中																			###
-commands.scoreboard.teams.leave.success=已从他们的队伍中移除%1$d名玩家：%2$s													###1: Number of Players ##2: List of Players
-commands.scoreboard.teams.list.count=记分板上正在显示%1$d个队伍：																###1: Number of Teams
-commands.scoreboard.teams.list.empty=无记分板上注册的队伍													###
-commands.scoreboard.teams.list.entry=- %1$s：“%2$s”有%3$d名玩家																	###1: Team Name ##2: Team Display Name ##3: Number of Players
-commands.scoreboard.teams.list.player.count=正在显示队伍%2$s中的%1$d名玩家：														###1: Number of Players ##2 Team Name
-commands.scoreboard.teams.list.player.empty=队伍%1$s没有玩家																	###1: Team Name
-commands.scoreboard.teams.list.player.entry=- %2$s：%1$s(%3$s)																			###1: Player Name ##2: Score Value ##3: Team Display Name
-commands.scoreboard.teams.option.noValue=选项%1$s的有效数值有：%2$s															###1: Option Name ##2: List of Option Values
-commands.scoreboard.teams.option.success=将队伍%2$s的选项%1$s设置为%3$s															###1: Option Name ##2: Team Name ##3: Option Value
-commands.scoreboard.teams.remove.success=已移除队伍%1$s																				###1: Team Name
+commands.scoreboard.teamNotFound=没有找到名为“%1$s”的队伍	###1: Team Name
+commands.scoreboard.teams.add.alreadyExists=已经存在名为“%1$s”的队伍	###1: Team Name
+commands.scoreboard.teams.add.displayTooLong=“%1$s”作为队伍的显示名称太长了，它最多只能有%2$d个字符	###1: Team Display Name ##2: Name Length Limit
+commands.scoreboard.teams.add.success=已成功添加新队伍“%1$s”	###1: Team Name
+commands.scoreboard.teams.add.tooLong=“%1$s”作为队伍名称太长了，它最多只能有%2$d个字符	###1: Team Name ##2: Name Length Limit
+commands.scoreboard.teams.empty.alreadyEmpty=队伍%1$s已空，无法移除不存在的玩家	###1: Team Name
+commands.scoreboard.teams.empty.success=已将全部%1$d名玩家从队伍%2$s中移除	###1: Number of Players ##2: Team Name
+commands.scoreboard.teams.join.failure=无法向队伍%2$s添加%1$d名玩家：%3$s	###1: Number of Players ##2: Team Name ##3: List of Players
+commands.scoreboard.teams.join.success=已将%1$d名玩家添加至队伍%2$s：%3$s	###1: Number of Players ##2: Team Name ##3: List of Players
+commands.scoreboard.teams.leave.failure=无法从队伍%2$s中移除%1$d名玩家	###1: Number of Players ##2: Team Name
+commands.scoreboard.teams.leave.noTeam=你不在队伍中	###
+commands.scoreboard.teams.leave.success=已从他们的队伍中移除%1$d名玩家：%2$s	###1: Number of Players ##2: List of Players
+commands.scoreboard.teams.list.count=记分板上正在显示%1$d个队伍：	###1: Number of Teams
+commands.scoreboard.teams.list.empty=无记分板上注册的队伍	###
+commands.scoreboard.teams.list.entry=- %1$s：“%2$s”有%3$d名玩家	###1: Team Name ##2: Team Display Name ##3: Number of Players
+commands.scoreboard.teams.list.player.count=正在显示队伍%2$s中的%1$d名玩家：	###1: Number of Players ##2 Team Name
+commands.scoreboard.teams.list.player.empty=队伍%1$s没有玩家	###1: Team Name
+commands.scoreboard.teams.list.player.entry=- %2$s：%1$s(%3$s)	###1: Player Name ##2: Score Value ##3: Team Display Name
+commands.scoreboard.teams.option.noValue=选项%1$s的有效数值有：%2$s	###1: Option Name ##2: List of Option Values
+commands.scoreboard.teams.option.success=将队伍%2$s的选项%1$s设置为%3$s	###1: Option Name ##2: Team Name ##3: Option Value
+commands.scoreboard.teams.remove.success=已移除队伍%1$s	###1: Team Name
 commands.screenshake.description=对玩家视野施以一定强度和时间的视角震动。	#
 commands.screenshake.success=已向以下玩家发送视角震动请求：%s	#
 commands.screenshake.successStop=已停止以下玩家的视角震动：%s	#
@@ -1410,15 +1410,15 @@ commands.summon.success=对象已成功召唤	#
 commands.summon.tagError=数据标签解析失败：%1$s	#
 commands.tag.description=管理存储在实体中的标签。	#
 commands.tag.add.failed=目标已有该标签，或已有太多标签	#
-commands.tag.add.success.single=已添加标签“%1$s”至%2$s															###1: Tag string   ##2: Entity/Player/Item name
-commands.tag.add.success.multiple=已添加标签“%1$s”至%2$d个实体													###1: Tag string   ##2: Number of entities (numerals)
-commands.tag.list.single.empty=%s没有标签 																		###1: Entity/Player/Item name
-commands.tag.list.single.success=%1$s有%2$d个标签：%3$s															###1: Entity/Player/Item name   ##2: Number of tags   ##3: Comma separated list of tags
-commands.tag.list.multiple.empty=%d个实体上没有标签												###1: Number of entities matching the selector
-commands.tag.list.multiple.success=%1$d个实体上总计有%2$d个标签：%3$s										###1: Number of entities matching the selector   ##2: Number of tags   ##3: Comma separated list of tags
+commands.tag.add.success.single=已添加标签“%1$s”至%2$s	###1: Tag string   ##2: Entity/Player/Item name
+commands.tag.add.success.multiple=已添加标签“%1$s”至%2$d个实体	###1: Tag string   ##2: Number of entities (numerals)
+commands.tag.list.single.empty=%s没有标签	###1: Entity/Player/Item name
+commands.tag.list.single.success=%1$s有%2$d个标签：%3$s	###1: Entity/Player/Item name   ##2: Number of tags   ##3: Comma separated list of tags
+commands.tag.list.multiple.empty=%d个实体上没有标签	###1: Number of entities matching the selector
+commands.tag.list.multiple.success=%1$d个实体上总计有%2$d个标签：%3$s	###1: Number of entities matching the selector   ##2: Number of tags   ##3: Comma separated list of tags
 commands.tag.remove.failed=目标没有该标签	#
-commands.tag.remove.success.single=已移除%2$s上的标签“%1$s”														###1: Tag string   ##2: Entity/Player/Item name
-commands.tag.remove.success.multiple=已移除%2$d个实体上的标签“%1$s”											###1: Tag string   ##2: Number of selector matches
+commands.tag.remove.success.single=已移除%2$s上的标签“%1$s”	###1: Tag string   ##2: Entity/Player/Item name
+commands.tag.remove.success.multiple=已移除%2$d个实体上的标签“%1$s”	###1: Tag string   ##2: Number of selector matches
 commands.tell.description=向一名或多名玩家发送私信。	#
 commands.tellraw.description=向其他玩家发送JSON消息。	#
 commands.tellraw.jsonException=无效的JSON：%1$s	#
@@ -1473,7 +1473,7 @@ commands.tickingarea-list.preload=预加载	#
 commands.tickingarea-list.success.currentDimension=当前维度中的所有常加载区域的列表	#
 commands.tickingarea-list.success.allDimensions=所有维度中的所有常加载区域的列表	#
 commands.tickingarea-list.failure.allDimensions=任何维度中都不存在任何常加载区域。	#
-commands.tickingarea-list.to=到		### Used in the context of "from position to other position"
+commands.tickingarea-list.to=到	### Used in the context of "from position to other position"
 commands.tickingarea-list.type.circle=圆形	#
 commands.time.added=将时间调快了%1$d	#
 commands.time.description=更改或查询世界的游戏时间。	#
@@ -2440,7 +2440,7 @@ realmsSettingsScreen.inviteLinkRemoveButton=移除	#
 realmsSettingsScreen.inviteLinkRemoveButtonTTS=链接. 按钮.	#
 realmsSettingsScreen.inviteLinkCopiedToast=邀请链接已复制到剪贴板。	#
 realmsSettingsScreen.inviteLinkRemoveModalTitle=删除邀请链接？	#
-realmsSettingsScreen.inviteLinkRemoveModalBody=这将从Realm中删除邀请链接。任何已经加入的人都会留下，但其他人都不再能使用此链接加入。 	#
+realmsSettingsScreen.inviteLinkRemoveModalBody=这将从Realm中删除邀请链接。任何已经加入的人都会留下，但其他人都不再能使用此链接加入。	#
 realmsSettingsScreen.inviteLinkRemoveModalConfirm=是的，删除链接	#
 realmsSettingsScreen.inviteLinkExpirationLabel=过期日期	#
 realmsSettingsScreen.inviteLinkExpirationDescription=设置该链接的过期时间。	#
@@ -2512,7 +2512,7 @@ playfab.account.banned.permanent=封禁	#
 playfab.account.banned.title=你已被%s	#
 playfab.account.banned.body=你已在Minecraft多人游戏中被%s。你将无法在服务器上游玩、加入Realms、创建或加入多人游戏或访问商城。	#
 playfab.account.banned.body.line1=由于“%s”，你已在Minecraft多人游戏中被%s。你将无法在服务器上游玩、加入Realms、创建或加入多人游戏或访问商城。	#
-playfab.account.banned.body.line2=点击下方“%s”查看我们的社区准则以及如何提交举报审查请求当你认为自己有%s错误时。	#
+playfab.account.banned.body.line2=点击下方“%s”查看我们的社区准则以及了解当你认为自己有%s错误时如何提交申诉请求。	#
 playfab.account.banned.body.line3.hour=你的账号距离解禁还剩1小时。	#
 playfab.account.banned.body.line3.hours=你的账号距离解禁还剩%d小时。	#
 playfab.account.banned.body.line3.day=你的账号距离解禁还剩1天。	#
@@ -2835,7 +2835,7 @@ disconnectionScreen.unexpectedPacket=由于收到无法处理的意外数据包�
 disconnectionScreen.connectionLost=与主机的连接中断。如果该世界仍在托管，请检查网络连接并尝试重新连接。	#
 disconnectionScreen.deepLink.TryingToOpenDemoWorldWhileSignedIn.title=无法加载世界。	#
 disconnectionScreen.deepLink.TryingToOpenDemoWorldWhileSignedIn.body=尝试在演示模式下打开该世界。	#
-disconnectionScreen.errorCode=错误代码: 	#
+disconnectionScreen.errorCode=错误代码:	#
 
 storageSpaceWarningScreen.frontend=你的存储空间即将不足！Minecraft已限制了该功能的访问，直至你清理出额外的存储空间为止。	#
 storageSpaceWarningScreen.lowduringgameplay=你的设备空间不足，Minecraft无法在此设备上存储世界和设置。请删除一些你不需要的旧东西，便于你保存新内容。	#
@@ -3225,10 +3225,10 @@ gameTip.breakBlock.touch.classic=点击并按住破坏方块	#
 gameTip.breakBlock.controller=点击并按住破坏方块	#
 gameTip.breakBlock.touch.crosshair=点击并按住 :tip_virtual_button_action_attack_or_destroy:[LINEBREAK]破坏方块	### {StrContains='LINEBREAK'}
 
-gameTip.placeBlock.mouse=右键点击放置方块 	#
-gameTip.placeBlock.touch=点击放置方块  	#
+gameTip.placeBlock.mouse=右键点击放置方块	#
+gameTip.placeBlock.touch=点击放置方块	#
 gameTip.placeBlock.controller=点击地面放置方块	#
-gameTip.placeBlock.touch.crosshair=点击 :tip_virtual_button_action_build_or_use: 放置方块 	#
+gameTip.placeBlock.touch.crosshair=点击 :tip_virtual_button_action_build_or_use: 放置方块	#
 
 gameTip.openInventorySurvival.mouse=打开物品栏[LINEBREAK]按下 :_input_key.inventory:	### {StrContains='LINEBREAK'}
 gameTip.openInventorySurvival.touch=打开物品栏查看合成配方	#
@@ -3516,7 +3516,7 @@ howtoplay.blocks.text.8=§e熔岩§f - 该方块自然存在于下界中，它�
 howtoplay.blocks.text.9=§e砂土§f - 该方块与普通泥土方块极为相似，但上面无法长出草。可以在热带草原和针叶林生物群系中找到它。	#
 
 howtoplay.bookAndQuill=书与笔	#
-howtoplay.bookAndQuill.text.1=书与笔让你可以记录自己的冒险经历。通过在页面中输入文字和图像来讲述你的故事。你甚至可以更改书名和作者！对书与笔签名即可完成你的巨作。在签名之前，书与笔将处于可编辑状态。 	#
+howtoplay.bookAndQuill.text.1=书与笔让你可以记录自己的冒险经历。通过在页面中输入文字和图像来讲述你的故事。你甚至可以更改书名和作者！对书与笔签名即可完成你的巨作。在签名之前，书与笔将处于可编辑状态。	#
 
 howtoplay.brewingStand=酿造台	#
 howtoplay.brewingStand.text.1=酿造药水需要一个酿造台。每份药水首先需要一瓶水，该瓶水可由来自炼药锅或水源的水灌注玻璃瓶获得。	#
@@ -3564,7 +3564,7 @@ howtoplay.commandBlocks.text.3=命令方块成功执行或未能执行其存储�
 howtoplay.commandBlocks.text.4=你可以在悬停注释字段中设置命令方块的名称。	#
 howtoplay.commandBlocks.text.5=§e方块类型§f - 有三种类型的命令方块，每一种都有自己独有的颜色和行为：	#
 howtoplay.commandBlocks.text.5.1=§e脉冲§f - 仅在方块收到红石信号时才会执行存储的命令。	#
-howtoplay.commandBlocks.text.5.2=§e连锁§f - 无论其前面的命令方块是否已执行其命令，都会执行存储的命令。 	#
+howtoplay.commandBlocks.text.5.2=§e连锁§f - 无论其前面的命令方块是否已执行其命令，都会执行存储的命令。	#
 howtoplay.commandBlocks.text.5.3=§e循环§f - 激活后，只要此命令方块存在，它就会继续执行其存储的命令。	#
 howtoplay.commandBlocks.text.6=§e条件制约§f - 有两种条件类型，每一个条件都会影响命令方块的行为：	#
 howtoplay.commandBlocks.text.6.1=§e条件制约§f - 即使其后面的命令方块未能执行其命令，也会执行存储的命令。	#
@@ -3830,7 +3830,7 @@ howtoplay.gameSettings.text.1=在创建世界时你有多个选项。以下是�
 howtoplay.gameSettings.text.2=§e世界名称§f：你可以在此处对你的世界进行命名。	#
 howtoplay.gameSettings.text.3=§e默认游戏模式§f：这是所有新玩家进入世界的初始游戏模式。你可以让玩家从生存模式或创造模式开始。选择创造模式将会开启作弊。	#
 howtoplay.gameSettings.text.4=§e难度§f：该设置会影响世界的难度等级。你可以选择和平、简单、普通或困难。	#
-howtoplay.gameSettings.header.1=世界偏好 	#
+howtoplay.gameSettings.header.1=世界偏好	#
 howtoplay.gameSettings.text.5=§e初始地图§f：如果启用该设置，每名玩家都可以在其快捷栏中获得一个开始地图。	#
 howtoplay.gameSettings.text.6=§e奖励箱§f：如果启用该设置，则在你的初始出生位置附近将会有一个箱子，其中包含一些初始战利品。	#
 howtoplay.gameSettings.text.7=§e世界类型§f：该设置控制世界的创建方式。通过从下拉菜单中选择无限或超平坦来更改世界类型。	#
@@ -3898,7 +3898,7 @@ howtoplay.jukebox.text.2.touch=手里拿着音乐唱片的同时点击唱片机�
 howtoplay.jukebox.header.2=红石	#
 howtoplay.jukebox.text.3=唱片机播放音乐唱片时会为红石线提供能量。	#
 howtoplay.jukebox.text.4=尝试播放不同的音乐唱片来获得不同的能量等级。	#
-howtoplay.jukebox.text.5=看看当唱片播放到结尾时会发生什么。 	#
+howtoplay.jukebox.text.5=看看当唱片播放到结尾时会发生什么。	#
 howtoplay.jukebox.text.6=一个唱片机可供你放入一张音乐唱片，在播放完后请取出该唱片。	#
 howtoplay.jukebox.header.3=寻找音乐唱片	#
 howtoplay.jukebox.text.7=可以在世界各处的箱子里找到一些音乐唱片。	#
@@ -3937,18 +3937,18 @@ howtoplay.mounts.text.3.notTouch=马、驴和骡子在利用之前必须先§e�
 howtoplay.mounts.text.3.touch=马、驴和骡子在利用之前必须先§e驯服§f。要驯服一匹马，需要先骑上去，在它想把你摔下来的时候保持不掉下来。点击在靠近一匹马时出现的骑乘按钮来试图驯服马、驴和骡子。	#
 howtoplay.mounts.text.4=当马周围出现爱心时，表示它已经被驯服，将不再试图将玩家摔下马背。	#
 howtoplay.mounts.header.2=骑乘动物	#
-howtoplay.mounts.text.5=玩家必须给马和骆驼装备§e鞍§f才能驾驭它。 	#
-howtoplay.mounts.text.6=可以从村民那里购买鞍，在世界里的隐藏箱子里找到鞍，或者通过钓鱼获得鞍。当骑马时，打开物品栏并将一个鞍放入马鞍槽。 	#
+howtoplay.mounts.text.5=玩家必须给马和骆驼装备§e鞍§f才能驾驭它。	#
+howtoplay.mounts.text.6=可以从村民那里购买鞍，在世界里的隐藏箱子里找到鞍，或者通过钓鱼获得鞍。当骑马时，打开物品栏并将一个鞍放入马鞍槽。	#
 howtoplay.mounts.text.6b=骆驼可以一次性携带两名玩家。	#
 howtoplay.mounts.text.7=和其他动物一样，马和驴都可以用金苹果或金胡萝卜喂食。	#
 howtoplay.mounts.text.8=小马驹随后会长成成年马，喂食小麦或干草可加速其成长。	#
 howtoplay.mounts.header.3=驮畜	#
-howtoplay.mounts.text.9=羊驼是另一种可以驯服的可骑乘生物，可用来运输大件物品。 	#
-howtoplay.mounts.text.10=可以像驯服马一样驯服羊驼。但即使已经驯服羊驼，玩家在骑乘它们时仍然无法控制它们的行动。 	#
-howtoplay.mounts.text.11=可以用一根拴绳拴住一只羊驼，随后周围的羊驼（驯服和未驯服的羊驼）都将跟随其后，组成一支商队。 	#
+howtoplay.mounts.text.9=羊驼是另一种可以驯服的可骑乘生物，可用来运输大件物品。	#
+howtoplay.mounts.text.10=可以像驯服马一样驯服羊驼。但即使已经驯服羊驼，玩家在骑乘它们时仍然无法控制它们的行动。	#
+howtoplay.mounts.text.11=可以用一根拴绳拴住一只羊驼，随后周围的羊驼（驯服和未驯服的羊驼）都将跟随其后，组成一支商队。	#
 howtoplay.mounts.text.12=可以给羊驼装备箱子，根据羊驼的体力给予羊驼3到15格的物品栏空间。还可以给羊驼装备地毯。各色地毯的图案都各不相同。	#
 howtoplay.mounts.header.4=猪	#
-howtoplay.mounts.text.13=也可以骑乘猪，但如果你不采取激励手段，它们不会前往你想去的地方。 	#
+howtoplay.mounts.text.13=也可以骑乘猪，但如果你不采取激励手段，它们不会前往你想去的地方。	#
 howtoplay.mounts.text.14=给猪装备鞍，然后将萝卜钓竿指向你想去的方向。	#
 howtoplay.mounts.header.5=下马	#
 howtoplay.mounts.text.15.notTouch=按下 :_input_key.sneak: 跃下。	#
@@ -3991,7 +3991,7 @@ howtoplay.gatheringResources.text.3=靠近即可捡起任何掉落的资源。	#
 howtoplay.selectingItems=选择物品	#
 howtoplay.selectingItems.title=游戏指南：选择物品	#
 howtoplay.selectingItems.text.1=你捡起的资源会出现在屏幕底部的§e快捷栏§f中。	#
-howtoplay.selectingItems.text.2.keyboard=要将物品拿在手中，滚动鼠标滚轮进行选择。你也可以用数字键进行选择，1对应快捷栏第一个栏位，而9则对应最后一个栏位。 	#
+howtoplay.selectingItems.text.2.keyboard=要将物品拿在手中，滚动鼠标滚轮进行选择。你也可以用数字键进行选择，1对应快捷栏第一个栏位，而9则对应最后一个栏位。	#
 howtoplay.selectingItems.text.2.gamepad=要将物品拿在手中，使用 :_input_key.cycleItemLeft: 和 :_input_key.cycleItemRight: 进行选择。	#
 howtoplay.selectingItems.text.2.touch=要将物品拿在手中，只需点击快捷栏中的物品即可。	#
 howtoplay.selectingItems.text.2.rift=要将物品拿在手中，使用 :rift_left_trigger: 和 :rift_left_grab: 进行选择。	#
@@ -4121,30 +4121,30 @@ howtoplay.skins=皮肤	#
 howtoplay.skins.text.1=穿上一些新鲜的像素，用各种各样的灵感造型表达自己。	#
 
 howtoplay.structureBlocks=结构方块	#
-howtoplay.structureBlocks.text.1=结构方块使得创作者们能够把世界的部分区域复制并保存为一个结构，所保存的结构在之后又可以粘贴回世界中。		###
-howtoplay.structureBlocks.header.1=获取方式		###
-howtoplay.structureBlocks.text.2=要获得结构方块，你必须使用/give命令。要使用结构方块，你必须具有管理员权限。		###
-howtoplay.structureBlocks.header.2=模式		###
-howtoplay.structureBlocks.text.3=结构方块有四种模式：储存、加载、角落和3D输出，你可以使用模式下拉菜单在它们之间进行切换。		###
+howtoplay.structureBlocks.text.1=结构方块使得创作者们能够把世界的部分区域复制并保存为一个结构，所保存的结构在之后又可以粘贴回世界中。	###
+howtoplay.structureBlocks.header.1=获取方式	###
+howtoplay.structureBlocks.text.2=要获得结构方块，你必须使用/give命令。要使用结构方块，你必须具有管理员权限。	###
+howtoplay.structureBlocks.header.2=模式	###
+howtoplay.structureBlocks.text.3=结构方块有四种模式：储存、加载、角落和3D输出，你可以使用模式下拉菜单在它们之间进行切换。	###
 howtoplay.structureBlocks.text.4=储存模式会将世界的一个区域保存为一个结构。	###
 howtoplay.structureBlocks.text.5=加载模式会将结构加载到世界中。只有保存至世界中的结构或者世界中启用的行为包所包含的结构才能被加载。	###
 howtoplay.structureBlocks.text.6=角落模式与保存模式的检测按钮配合使用，可以自动设置要保存的区域。详细内容请查看下文"角落模式"部分。	###
 howtoplay.structureBlocks.text.7=3D输出模式会在支持的平台上导出3D模型文件。	###
-howtoplay.structureBlocks.header.3=预览窗口		###
-howtoplay.structureBlocks.text.8=在结构方块屏幕的右侧，将根据方块所处的模式，显示你所选择的区域或者要加载的结构的预览。		###
+howtoplay.structureBlocks.header.3=预览窗口	###
+howtoplay.structureBlocks.text.8=在结构方块屏幕的右侧，将根据方块所处的模式，显示你所选择的区域或者要加载的结构的预览。	###
 howtoplay.structureBlocks.text.9.keyboard=按下 :_input_key.attack: 并拖动来旋转3D预览。	#
 howtoplay.structureBlocks.text.9.gamepad=使用 :_gamepad_stick_right: 来旋转3D预览。	#
 howtoplay.structureBlocks.text.9.touch=触摸并拖动预览来旋转3D预览。	#
-howtoplay.structureBlocks.header.4=红石激活		###
-howtoplay.structureBlocks.text.10=红石可以用来激活一个结构方块。这将根据方块的模式及其设置将结构保存到外部或将结构加载至世界。		###
-howtoplay.structureBlocks.header.5=完整性和种子		###
-howtoplay.structureBlocks.text.11=你可以通过更改完整性和种子的值来更改某个结构的加载量。		###
+howtoplay.structureBlocks.header.4=红石激活	###
+howtoplay.structureBlocks.text.10=红石可以用来激活一个结构方块。这将根据方块的模式及其设置将结构保存到外部或将结构加载至世界。	###
+howtoplay.structureBlocks.header.5=完整性和种子	###
+howtoplay.structureBlocks.text.11=你可以通过更改完整性和种子的值来更改某个结构的加载量。	###
 howtoplay.structureBlocks.text.12=完整性--从结构中加载的方块的百分比，接受的值是0到100。如果没有指定种子，将随机选择方块。	###
 howtoplay.structureBlocks.text.13=种子--在这里输入的值将决定在使用完整性时将删除哪些方块。如果你希望随机选择方块，请将此字段留空。	###
-howtoplay.structureBlocks.header.6=结构空位方块		###
-howtoplay.structureBlocks.text.14=当一个带有结构空位方块的结构被加载到世界中时，结构空位方块加载目的地上的任何原本可能被移除的方块反而会留在该世界中。		###
+howtoplay.structureBlocks.header.6=结构空位方块	###
+howtoplay.structureBlocks.text.14=当一个带有结构空位方块的结构被加载到世界中时，结构空位方块加载目的地上的任何原本可能被移除的方块反而会留在该世界中。	###
 howtoplay.structureBlocks.text.15=举例：在把一艘空的沉船加载到海底时，通常会在水方块上方复制空气。如果沉船充满了结构空位，那么水就会留下来，你就会获得一个充满水的沉船了。	###
-howtoplay.structureBlocks.header.7=检测和角落模式		###
+howtoplay.structureBlocks.header.7=检测和角落模式	###
 howtoplay.structureBlocks.text.16=若要自动选择保存的区域，你可以在结构周围放置角落模式方块，并使用与要保存的结构相同的名称来命名它们。	###
 howtoplay.structureBlocks.text.17=在储存模式下按下检测按钮将找到所有具有相同名称的角落模式方块，并创建一个选择区域，以便保存该区域中的所有内容。	###
 
@@ -4199,7 +4199,7 @@ howtoplay.transportation.text.1=除了步行、骑乘或飞行外，还有很多
 howtoplay.transportation.header.1=矿车	#
 howtoplay.transportation.text.2=矿车是在铁轨上行驶的可乘坐的车子。你可以通过彼此相邻放置铁轨来前往你要去的地方，将矿车放置在铁轨上即可乘坐。	#
 howtoplay.transportation.text.2.touch=矿车是你可以建造来前往任何地方的在铁轨上行驶的可乘坐的车子。只需彼此相邻放置铁轨并将矿车放置在铁轨上即可乘坐。	#
-howtoplay.transportation.text.3.keyboard=在看向矿车时按下 :_input_key.use: 乘坐。按下 :_input_key.forward: 向前行驶。按下 :_input_key.jump: 或 :_input_key.sneak: 离开。 	#
+howtoplay.transportation.text.3.keyboard=在看向矿车时按下 :_input_key.use: 乘坐。按下 :_input_key.forward: 向前行驶。按下 :_input_key.jump: 或 :_input_key.sneak: 离开。	#
 howtoplay.transportation.text.3.gamepad=在看向矿车时按下 :_input_key.use: 乘坐。向前推 :_gamepad_stick_left: 向前行驶。按下 :_input_key.jump: 或 :_input_key.sneak: 离开。	#
 howtoplay.transportation.text.3a.touch=看向矿车并点击乘坐以乘坐。	#
 howtoplay.transportation.text.3b.touch=当使用方向按键触控模式时，点击并按住 :touch_forward: 开始前进并提供动力，点击 :touch_jump: 离开。	#
@@ -4219,7 +4219,7 @@ howtoplay.weapons.text.1=剑是Minecraft中的主要近战武器。可以使用�
 howtoplay.weapons.text.2.notTouch=在手持剑时按下 :_input_key.attack: 进行攻击。	#
 howtoplay.weapons.text.2.touch=点击生物对其进行攻击。	#
 howtoplay.weapons.header.2=弓	#
-howtoplay.weapons.text.3.notTouch=弓是Minecraft中的主要远程武器。按住 :_input_key.use: 拉弓。释放 :_input_key.use: 射箭。弓在有箭的情况下才能射出。 	#
+howtoplay.weapons.text.3.notTouch=弓是Minecraft中的主要远程武器。按住 :_input_key.use: 拉弓。释放 :_input_key.use: 射箭。弓在有箭的情况下才能射出。	#
 howtoplay.weapons.text.3.touch=弓是Minecraft中的主要远程武器。按住屏幕拉弓。释放所按屏幕射箭。弓在有箭的情况下才能射出。	#
 howtoplay.weapons.text.4=弦往后拉得越多，弓造成的伤害就越大，请确保将弦拉满。	#
 howtoplay.weapons.header.3=弩	#
@@ -4314,8 +4314,8 @@ inventory.binSlot=摧毁物品	#
 
 item.air.name=空气	#
 item.apple.name=苹果	#
-item.axolotlAdultBodySingle.name=成年%1$s美西螈桶 	#
-item.axolotlBabyBodySingle.name=幼年%1$s美西螈桶 	#
+item.axolotlAdultBodySingle.name=成年%1$s美西螈桶	#
+item.axolotlBabyBodySingle.name=幼年%1$s美西螈桶	#
 item.axolotlColorLucy.name=粉红色	#
 item.axolotlColorCyan.name=青色	#
 item.axolotlColorGold.name=金色	#
@@ -5083,52 +5083,52 @@ item.tropicalColorBlue.name=蓝色	#
 item.tropicalColorBrown.name=棕色	#
 item.tropicalColorGreen.name=绿色	#
 item.tropicalColorRed.name=红色	#
-item.tropicalBodyKobSingle.name=%1$s石首鱼桶 	#
-item.tropicalBodySunstreakSingle.name=%1$s日纹鱼桶 	#
-item.tropicalBodySnooperSingle.name=%1$s窥伺者桶 	#
-item.tropicalBodyDasherSingle.name=%1$s速跃者桶 	#
-item.tropicalBodyBrinelySingle.name=%1$s咸水鱼桶 	#
-item.tropicalBodySpottySingle.name=%1$s多斑鱼桶 	#
-item.tropicalBodyFlopperSingle.name=%1$s飞翼鱼桶 	#
-item.tropicalBodyStripeySingle.name=%1$s条纹鱼桶 	#
-item.tropicalBodyGlitterSingle.name=%1$s闪鳞鱼桶 	#
-item.tropicalBodyBlockfishSingle.name=%1$s方身鱼桶 	#
-item.tropicalBodyBettySingle.name=%1$s背蒂鱼桶 	#
-item.tropicalBodyClayfishSingle.name=%1$s陶鱼桶 	#
-item.tropicalBodyKobMulti.name=%1$s-%2$s石首鱼桶 	#
-item.tropicalBodySunstreakMulti.name=%1$s-%2$s日纹鱼桶 	#
-item.tropicalBodySnooperMulti.name=%1$s-%2$s窥伺者桶 	#
-item.tropicalBodyDasherMulti.name=%1$s-%2$s速跃者桶 	#
-item.tropicalBodyBrinelyMulti.name=%1$s-%2$s咸水鱼桶 	#
-item.tropicalBodySpottyMulti.name=%1$s-%2$s多斑鱼桶 	#
-item.tropicalBodyFlopperMulti.name=%1$s-%2$s飞翼鱼桶 	#
-item.tropicalBodyStripeyMulti.name=%1$s-%2$s条纹鱼桶 	#
-item.tropicalBodyGlitterMulti.name=%1$s-%2$s闪鳞鱼桶 	#
-item.tropicalBodyBlockfishMulti.name=%1$s-%2$s方身鱼桶 	#
-item.tropicalBodyBettyMulti.name=%1$s-%2$s背蒂鱼桶 	#
-item.tropicalBodyClayfishMulti.name=%1$s-%2$s陶鱼桶 	#
-item.tropicalSchoolAnemone.name=海葵鱼桶 	#
-item.tropicalSchoolBlackTang.name=黑刺尾鲷桶 	#
-item.tropicalSchoolBlueDory.name=蓝色多莉桶 	#
-item.tropicalSchoolButterflyFish.name=蝴蝶鱼桶 	#
-item.tropicalSchoolCichlid.name=丽鱼桶 	#
-item.tropicalSchoolClownfish.name=小丑鱼桶 	#
-item.tropicalSchoolCottonCandyBetta.name=五彩搏鱼桶 	#
-item.tropicalSchoolDottyback.name=绣雀鲷桶 	#
-item.tropicalSchoolEmperorRedSnapper.name=川纹笛鲷桶 	#
-item.tropicalSchoolGoatfish.name=拟羊鱼桶 	#
-item.tropicalSchoolMoorishIdol.name=镰鱼桶 	#
-item.tropicalSchoolOrnateButterfly.name=华丽蝴蝶鱼桶 	#
-item.tropicalSchoolParrotfish.name=鹦嘴鱼桶 	#
-item.tropicalSchoolQueenAngelFish.name=额斑刺蝶鱼桶 	#
-item.tropicalSchoolRedCichlid.name=红丽鱼桶 	#
-item.tropicalSchoolRedLippedBlenny.name=红唇真蛇鳚桶 	#
-item.tropicalSchoolRedSnapper.name=红边笛鲷桶 	#
-item.tropicalSchoolThreadfin.name=马鲅桶 	#
-item.tropicalSchoolTomatoClown.name=白条双锯鱼桶 	#
-item.tropicalSchoolTriggerfish.name=鳞鲀桶 	#
-item.tropicalSchoolYellowTang.name=黄刺尾鲷桶 	#
-item.tropicalSchoolYellowtailParrot.name=高鳍鹦嘴鱼桶 	#
+item.tropicalBodyKobSingle.name=%1$s石首鱼桶	#
+item.tropicalBodySunstreakSingle.name=%1$s日纹鱼桶	#
+item.tropicalBodySnooperSingle.name=%1$s窥伺者桶	#
+item.tropicalBodyDasherSingle.name=%1$s速跃者桶	#
+item.tropicalBodyBrinelySingle.name=%1$s咸水鱼桶	#
+item.tropicalBodySpottySingle.name=%1$s多斑鱼桶	#
+item.tropicalBodyFlopperSingle.name=%1$s飞翼鱼桶	#
+item.tropicalBodyStripeySingle.name=%1$s条纹鱼桶	#
+item.tropicalBodyGlitterSingle.name=%1$s闪鳞鱼桶	#
+item.tropicalBodyBlockfishSingle.name=%1$s方身鱼桶	#
+item.tropicalBodyBettySingle.name=%1$s背蒂鱼桶	#
+item.tropicalBodyClayfishSingle.name=%1$s陶鱼桶	#
+item.tropicalBodyKobMulti.name=%1$s-%2$s石首鱼桶	#
+item.tropicalBodySunstreakMulti.name=%1$s-%2$s日纹鱼桶	#
+item.tropicalBodySnooperMulti.name=%1$s-%2$s窥伺者桶	#
+item.tropicalBodyDasherMulti.name=%1$s-%2$s速跃者桶	#
+item.tropicalBodyBrinelyMulti.name=%1$s-%2$s咸水鱼桶	#
+item.tropicalBodySpottyMulti.name=%1$s-%2$s多斑鱼桶	#
+item.tropicalBodyFlopperMulti.name=%1$s-%2$s飞翼鱼桶	#
+item.tropicalBodyStripeyMulti.name=%1$s-%2$s条纹鱼桶	#
+item.tropicalBodyGlitterMulti.name=%1$s-%2$s闪鳞鱼桶	#
+item.tropicalBodyBlockfishMulti.name=%1$s-%2$s方身鱼桶	#
+item.tropicalBodyBettyMulti.name=%1$s-%2$s背蒂鱼桶	#
+item.tropicalBodyClayfishMulti.name=%1$s-%2$s陶鱼桶	#
+item.tropicalSchoolAnemone.name=海葵鱼桶	#
+item.tropicalSchoolBlackTang.name=黑刺尾鲷桶	#
+item.tropicalSchoolBlueDory.name=蓝色多莉桶	#
+item.tropicalSchoolButterflyFish.name=蝴蝶鱼桶	#
+item.tropicalSchoolCichlid.name=丽鱼桶	#
+item.tropicalSchoolClownfish.name=小丑鱼桶	#
+item.tropicalSchoolCottonCandyBetta.name=五彩搏鱼桶	#
+item.tropicalSchoolDottyback.name=绣雀鲷桶	#
+item.tropicalSchoolEmperorRedSnapper.name=川纹笛鲷桶	#
+item.tropicalSchoolGoatfish.name=拟羊鱼桶	#
+item.tropicalSchoolMoorishIdol.name=镰鱼桶	#
+item.tropicalSchoolOrnateButterfly.name=华丽蝴蝶鱼桶	#
+item.tropicalSchoolParrotfish.name=鹦嘴鱼桶	#
+item.tropicalSchoolQueenAngelFish.name=额斑刺蝶鱼桶	#
+item.tropicalSchoolRedCichlid.name=红丽鱼桶	#
+item.tropicalSchoolRedLippedBlenny.name=红唇真蛇鳚桶	#
+item.tropicalSchoolRedSnapper.name=红边笛鲷桶	#
+item.tropicalSchoolThreadfin.name=马鲅桶	#
+item.tropicalSchoolTomatoClown.name=白条双锯鱼桶	#
+item.tropicalSchoolTriggerfish.name=鳞鲀桶	#
+item.tropicalSchoolYellowTang.name=黄刺尾鲷桶	#
+item.tropicalSchoolYellowtailParrot.name=高鳍鹦嘴鱼桶	#
 item.cake.name=蛋糕	#
 item.camera.name=相机	#
 item.canBreak=能破坏：	#
@@ -5700,7 +5700,7 @@ jigsaw.joint_type.rollable=可旋转	#
 jigsaw.exit.done=完成	#
 
 ##EDU Joincode
-joincode.entry_popup.icon_button=%1加入代码按钮		# Example: Apple join code button	#
+joincode.entry_popup.icon_button=%1加入代码按钮	# Example: Apple join code button	#
 joincode.entry_popup.icon_entry=%3加入代码记录，第%1/%2条	# Example: Apple join code entry 2 of 5	#
 joincode.entry_popup.title=输入加入代码	#
 joincode.connecting.title=加入世界	#
@@ -6196,7 +6196,7 @@ options.buttonSize=移动菜单尺寸	#
 options.alwaysHighlightHoveringBoxInCrosshair=始终高亮显示	#
 options.useSpecificTouchControlNames=使用特定的触控名称	#
 options.controlMode.title=触控模式	#
-options.controlMode.selected=已选择： 	#
+options.controlMode.selected=已选择：	#
 options.controlMode.selectControlMode=更改触控模式	#
 options.showTouchControlSelectionScreen=显示触控选择屏幕	#
 options.showActionButton=显示操作按钮	#
@@ -6324,7 +6324,7 @@ options.dev_enableDebugHudOverlay.client_network=客户端网络	#
 options.dev_enableDebugHudOverlay.server_network=服务器网络	#
 options.dev_enableDebugHudOverlay.spatial_packet_optimizations=Spatial数据包优化	#
 options.dev_enableDebugHudOverlay.lock_contention=锁竞争	#
-options.dev_enableDebugHudOverlay.hbui=Gameface 				# This is a proper name, do not translate	#
+options.dev_enableDebugHudOverlay.hbui=Gameface	# This is a proper name, do not translate	#
 options.dev_transport_layer=传输层类型	#
 options.dev_controltower_override_transport_layer=覆盖本地MUT传输层	#
 options.dev_transport_layer.raknet=RakNet	#
@@ -7047,7 +7047,7 @@ sunsetting.popup.dontshow=不再提示	#
 sunsetting.popup.pendingSunset.device=我们即将结束对该设备的支持。直至2025年3月，你还会继续收到更新，届时你将会收到此设备的最终更新。%s收到最终更新后，你仍然可以在自己的世界上游玩，或者在商城进行购买（包括Minecoin）。由此设备管理的Realm可以继续使用6个月，除非Realm所有者在其他设备上更新。%s要取消Realm订阅，你需要在创建Realm的设备上找到订阅的“设置”菜单进行操作。%s你将无法收到最新更新、无法与继续接收更新的设备或Realm进行多人游戏、并且无法连接到某些服务器。%s点击按钮可获取更多信息。	#
 sunsetting.popup.sunset.device=此设备不再受到支持。从2025年3月开始，你将无法收到更新，这是与此设备兼容的最后一个更新。%s你可以继续在自己的世界建造，而且你购买的商城内容（包括Minecoin）仍然可用。从2025年3月起，你的Realm可以继续使用6个月，除非Realm所有者在其他设备上更新。%s要取消Realm订阅，你需要在创建Realm的设备上找到订阅的“设置”菜单进行操作。%s你将无法收到最新更新、无法与继续接收更新的设备或Realm进行多人游戏、并且无法连接到某些服务器。%s点击按钮可获取更多信息。	#
 sunsetting.popup.pendingSunset.windows_xr=我们即将结束对该VR/MR图形设备的支持。直至2025年3月，你还会继续收到更新，届时你将会收到此设备的最终更新。%s收到最终更新后，你仍然可以在PC上收到更新，也可以在没有VR/MR设备的情况下进行游戏。从现在开始，你可以继续在世界中建造，也可以在非VR/MR图形设备（如电脑显示器）上继续使用在商城购买的物品（包括Minecoin）。你将无法在Minecraft中使用你的VR/MR设备，因为最新更新将不再支持此设备。%s点击按钮可获取更多信息。	#
-sunsetting.popup.sunset.windows_xr=此VR/MR图形设备不再受到支持。你已收到支持此图形设备的最后一次更新，你仍然可以在PC上收到更新，也可以在没有VR/MR设备的情况下进行游戏。从现在开始，您可以继续在世界中建造，也可以在非VR/MR图形设备（如电脑显示器）上继续使用在商城购买的物品（包括Minecoin）。你将无法在Minecraft中使用你的VR/MR设备，因为最新更新将不再支持此设备。%s点击按钮可获取更多信息。给你带来的不便我们深表歉意。同时我们也衷心感谢你为这款游戏付出的时间以及你的支持。	#
+sunsetting.popup.sunset.windows_xr=此VR/MR图形设备不再受到支持。你已收到支持此图形设备的最后一次更新，你仍然可以在PC上收到更新，也可以在没有VR/MR设备的情况下进行游戏。从现在开始，你可以继续在世界中建造，也可以在非VR/MR图形设备（如电脑显示器）上继续使用在商城购买的物品（包括Minecoin）。你将无法在Minecraft中使用你的VR/MR设备，因为最新更新将不再支持此设备。%s点击按钮可获取更多信息。给你带来的不便我们深表歉意。同时我们也衷心感谢你为这款游戏付出的时间以及你的支持。	#
 
 sunsetting.banner.play.worldTab.pending=你的版本可能即将无法进行多人游戏	#
 sunsetting.banner.play.friendsTab.pending=你的版本可能即将无法进行多人游戏	#
@@ -8067,7 +8067,7 @@ resourcePack.cartoon.description=大大的眼睛！憨憨的笑容！用此包�
 resourcePack.candy.name=糖果	#
 resourcePack.candy.description=用糖衣包裹你的世界，把所有的纹理都变成糖浆点心。	#
 
-resourcePack.festivemashup2016.name=节日混搭2016 	#
+resourcePack.festivemashup2016.name=节日混搭2016	#
 resourcePack.festivemashup2016.description=用此白雪皑皑的季节包创造一个冬季仙境。	#
 
 resourcePack.chinesemythology.name=中国神话混搭包	#
@@ -8081,7 +8081,7 @@ resourcepack.MagicTheGathering.name=万智牌	#
 
 resourcePack.GreekMythology=希腊神话混搭包	#
 resourcePack.GreekMythology.name=希腊神话混搭包	#
-resourcePack.GreekMythology.description=把神话传说中的希腊带到你的指尖。 	#
+resourcePack.GreekMythology.description=把神话传说中的希腊带到你的指尖。	#
 
 resourcePack.Skyrim.name=天际混搭包	#
 resourcePack.Skyrim.description=在天际大地上建立你专属的世界。	#
@@ -8385,7 +8385,7 @@ store.loading.error.internetDown=我们未检测到互联网连接。	#
 store.loading.error.account=你的账号出现了问题。请稍后重试，如果此问题仍然存在，请联系支持人员。	#
 store.loading.error.account.banned=结束封禁前你将无法使用商城。	#
 
-store.giftPromo.day=第%s天		### %s being day number such as "Day 1", "Day 2", etc. Please use short translations. 3 letters if possible
+store.giftPromo.day=第%s天	### %s being day number such as "Day 1", "Day 2", etc. Please use short translations. 3 letters if possible
 store.equipped=已领取	#
 store.promo.title=夏日庆典	#
 store.promo.incompatible=此世界与该设备不兼容。请在支持的设备上领取。	#
@@ -8453,8 +8453,8 @@ store.realmsPlus.landing.beta=Beta	#
 store.realmsPlus.landing.preview=Preview	#
 
 store.realmsPlus.landing.info3.para1=Realms在Minecraft %s中免费提供给所有的Realms订阅者！这个新的Realm让你有机会在新功能发布之前尝试它们。	#
-store.realmsPlus.landing.info3.para2=通过订阅Realm，你可以使用主菜单中的“新建”按钮创建新的%s Realm。如果你还没有Realms订阅，请前往完整版Minecraft进行注册。 	#
-store.realmsPlus.landing.info3.para3=除了购买新的订阅或管理现有Realm订阅外所有Realm界面和功能都在%s中可用。 	#
+store.realmsPlus.landing.info3.para2=通过订阅Realm，你可以使用主菜单中的“新建”按钮创建新的%s Realm。如果你还没有Realms订阅，请前往完整版Minecraft进行注册。	#
+store.realmsPlus.landing.info3.para3=除了购买新的订阅或管理现有Realm订阅外所有Realm界面和功能都在%s中可用。	#
 store.realmsPlus.landing.info3.para4=只要你拥有链接到付费Realm订阅的%s Realm，你的%s Realm就会一直保持活跃状态。	#
 
 store.realmsPlus.faq.header=常见问题	#
@@ -8514,7 +8514,7 @@ store.csb.brand.2=PASS	### {StrContains="PASS"}
 store.csb=Marketplace Pass	### {StrContains="Marketplace Pass"}
 store.csb.content=内容	#
 store.csb.faq=常见问题解答	#
-store.csb.buyNow=立即订阅 	### Maximum 13 characters
+store.csb.buyNow=立即订阅	### Maximum 13 characters
 store.csb.buyNowPerMonth=购买价格为%s/月	#
 store.csb.signInToSubscribe=登录以订阅Marketplace Pass	### {StrContains="Marketplace Pass"}
 store.csb.buyNowTrialPerMonth=开始试用	### Maximum 25 characters
@@ -8603,7 +8603,7 @@ store.csb.upsell.leftBullet.3=每月限时推出角色创建器物品	#
 
 store.csb.upsell.rightBullet.1=可容纳10个好友的个人服务器	#
 store.csb.upsell.rightBullet.2=好友免费玩	#
-store.csb.upsell.rightBullet.3=包含			### Precedes the term Marketplace Pass in a different font
+store.csb.upsell.rightBullet.3=包含	### Precedes the term Marketplace Pass in a different font
 
 store.csb.upsell.learnMore=了解更多	#
 store.csb.upsell.price=%s/月	#
@@ -8618,7 +8618,7 @@ store.csb.purchaseErrorDialog.errorCode=错误代码：%s	#
 store.csb.purchaseErrorDialog.correlationId=关联 ID：%s	#
 
 store.csb.purchase.amazonDeviceWarning.title=注意	#
-store.csb.purchase.amazonDeviceWarning.body.line1=抱歉！当前无法在Amazon设备上购买Marketplace Pass。 	### {StrContains="Marketplace Pass"}
+store.csb.purchase.amazonDeviceWarning.body.line1=抱歉！当前无法在Amazon设备上购买Marketplace Pass。	### {StrContains="Marketplace Pass"}
 store.csb.purchase.amazonDeviceWarning.body.line2=如有任何疑问，请访问support.minecraft.net。	#
 store.csb.purchase.amazonDeviceWarning.button.back=返回	#
 
@@ -8829,7 +8829,7 @@ store.ratings.ratingsCount=%s评分	#
 store.ratings.ratingOutOfFive=%s/5	#
 store.ratings.rateContent=为此包评分	#
 store.ratings.rateContentGeneral=为此内容评分	#
-store.ratings.yourRating=你的评分 	#
+store.ratings.yourRating=你的评分	#
 store.ratings.stars=%s星	#
 store.ratings.rate=为此包评分！	#
 
@@ -8837,7 +8837,7 @@ store.ratings.signIn.title=为商城中的物品评分	#
 store.ratings.signIn.description1=告诉创作者和社区你关于此物品的体验！	#
 store.ratings.signIn.description2=你需要先使用微软账号登录，然后才能为某个物品评分。	#
 
-store.purchase.success.realMoney1=你刚才解锁了：%s，花费了%s 	#
+store.purchase.success.realMoney1=你刚才解锁了：%s，花费了%s	#
 store.purchase.success.realMoney2=+%s:minecoin:	#
 store.purchase.signIn=用大量精彩内容扩充你的游戏。	#
 store.purchase.signInPart2=使用微软账号登录，开始使用商城！	#
@@ -10262,7 +10262,7 @@ trial.upsell.cb.startNew=开始新世界	#
 trial.tabbed_upsell.title=解锁完整游戏	#
 trial.tabbed_upsell.button=购买Minecraft！	#
 trial.tabbed_upsell.buttonAlternate=解锁Minecraft完整版	#
-trial.tabbed_upsell.minecraft.title=Minecraft 	#
+trial.tabbed_upsell.minecraft.title=Minecraft	#
 trial.tabbed_upsell.minecraft.description=无限探索你自己的独特世界，建造你能想象到的一切--从最简单的住宅，到最宏伟的城堡！你可以在创造模式中利用无限资源建造奇迹，也可以在生存模式中进行挖掘，合成武器和盔甲，抵御各种危险生物并在夜晚幸存下来。另外还可以在线与好友一起畅玩！立即解锁完整游戏！	#
 trial.tabbed_upsell.xbl.title=微软账号	#
 trial.tabbed_upsell.xbl.description=你可以借助完整的Minecraft体验获得创造模式、成就等等，另外你还可以借助微软账号在Minecraft社区中结识其他玩家！你可以加入你好友的世界，在服务器上结识新的好友，并将你的商城购买同步到你玩Minecraft的任何地方。	#
@@ -10276,7 +10276,7 @@ trial.tabbed_upsell.server.description=服务器提供了一些享受Minecraft�
 trial.tabbed_upsell.store.title=商店	#
 trial.tabbed_upsell.store.description=访问我们的游戏内商店--Minecraft商城。用新的皮肤让自己焕然一新，更改你的世界，或者探索来自最佳的社区创作者的神奇新地图！立即获得完整游戏！	#
 trial.tabbed_upsell.creative.title=创造	#
-trial.tabbed_upsell.creative.description=购买Minecraft并获得创造模式！访问整个物品栏--唯一能限制你建造的东西的只有你的想象力！飞遍你的世界，用任何东西、一切东西建造你的梦想之家，或者干脆用无限量的TNT炸掉一座山！ 	#
+trial.tabbed_upsell.creative.description=购买Minecraft并获得创造模式！访问整个物品栏--唯一能限制你建造的东西的只有你的想象力！飞遍你的世界，用任何东西、一切东西建造你的梦想之家，或者干脆用无限量的TNT炸掉一座山！	#
 trial.tabbed_upsell.addon.title=附加包	#
 trial.tabbed_upsell.addon.description=想让狼表现得像兔子一样吗？把所有的树都变成棉花糖？你可以在完整的Minecraft游戏体验中使用附加包改变一切！此外，你还可以访问多人游戏、创造模式、成就等等！立即购买Minecraft获得完整访问权限！	#
 trial.tabbed_upsell.seeds.title=种子	#
@@ -10396,7 +10396,7 @@ xbox.failedsignin.body=无法登录到你的微软账号。对Realms、资料页
 xbox.failedsignin.error=错误代码：	#
 xbox.failedsignin.moreInfo=更多信息	#
 xbox.dev_wrongSandboxSigninFailed.title=出错了	#
-xbox.dev_wrongSandboxSigninFailed.line1=无法登录至%s沙盒。请更改沙盒并重新启动Minecraft，或者使用另一个账号登录。重新启动时沙盒将为%s。 	#
+xbox.dev_wrongSandboxSigninFailed.line1=无法登录至%s沙盒。请更改沙盒并重新启动Minecraft，或者使用另一个账号登录。重新启动时沙盒将为%s。	#
 xbox.dev_wrongSandboxSigninFailed.button.dev=更改为开发沙盒	#
 xbox.dev_wrongSandboxSigninFailed.button.retail=更改为零售沙盒	#
 xbox.dev_wrongSandboxSigninFailed.button.clearXbl=清除账号登录数据	#
@@ -10407,7 +10407,7 @@ xbox.thirdpartysignin.line2=你需要用微软账号登录才能进行连接！	
 xbox.signInLong=免费注册！	#
 xbox.signOutLong=退出登录你的微软账号	#
 
-xbox.genericsignin.line1=你的Minecraft账号允许你在PC和移动设备上与好友一同玩在线多人游戏。最棒的是什么？ 	#
+xbox.genericsignin.line1=你的Minecraft账号允许你在PC和移动设备上与好友一同玩在线多人游戏。最棒的是什么？	#
 xbox.genericsignin.line2=免费！	#
 xbox.genericsignin.line3=你可以随时随地使用它来玩Minecraft。	#
 
@@ -10578,7 +10578,7 @@ uiPackError.invalidChildNames=%s：子空间必须具有唯一的名称：%s。�
 uiPackError.parseError=%s：无法分析UI JSON文件与堆栈：%s	#
 uiPackError.missingControl=%s：无法找到该控件：%s	#
 uiPackError.missingControlTarget=%s (%s)：在操作“%s”期间无法找到控件“%s”	#
-uiPackError.missingArrayName=%s (%s)：缺少字段“array_name”或“control_name”。 	#
+uiPackError.missingArrayName=%s (%s)：缺少字段“array_name”或“control_name”。	#
 uiPackError.missingCondition=%s (%s)：缺少操作条件“%s”。	#
 uiPackError.missingValue=%s (%s)：缺少操作值“%s”。	#
 uiPackError.missingOperation=%s (%s)：缺少操作。	#
@@ -11271,7 +11271,7 @@ gameTest.error.flakyTestError=成功次数不足：%s/%s次尝试。要求成功
 gameTest.error.testMissing=找不到名称为“%s”的测试。	#
 gameTest.error.structureNotSpawned=未能生成路径为%s的测试结构	### %s is the file path of the structure
 gameTest.error.flakyFailed=片状测试%s失败，尝试：%s/%s	#
-gameTest.error.flakyFailedShowSuccesses=，成功：%s（需要 %s）           	### This appears right after gameTest.error.flakyFailed if multiple successes are required
+gameTest.error.flakyFailedShowSuccesses=，成功：%s（需要 %s）	### This appears right after gameTest.error.flakyFailed if multiple successes are required
 gameTest.error.failed=%s失败！	#
 gameTest.error.succeededInInvalidTick=在无效标记中成功：需要%s，但当前标记为%s	#
 gameTest.error.noTestsFound=未找到用于标签“%s”的测试	#
@@ -11313,18 +11313,18 @@ gameTest.assert.didNotExpectEntityInstance=意外的“%s”类型的实体实�
 gameTest.assert.invalidFluidType=无效的流体类型	#
 gameTest.assert.expectCauldron=需要炼药锅类型的方块	#
 gameTest.success.runningTests=正在运行%s测试...	#
-gameTest.success.relativePosition=位置相对于%s：%s					## first %s is the name of the test and the second %s is the local location in the test structure
+gameTest.success.relativePosition=位置相对于%s：%s	## first %s is the name of the test and the second %s is the local location in the test structure
 gameTest.success.passed=%s通过！	#
 gameTest.success.flakyPassedEnough=%s通过了%s次尝试，总计有%s次尝试。	### this is used when a test has passed a sufficient number of times
 gameTest.success.flakyPassed=片状测试%s成功，尝试：%s，成功：%s。	### this one is used when a test has passed, but not yet reached the required number of times to succeed
 gameTest.success.testsStarted=正在运行 %s 个带有标签“%s”的测试...	#
 gameTest.report.testLocation=位于：%s，%s，%s（相关：%s，%s，%s）	#
-gameTest.report.tickCount=刻：%s                                              	### This appears right below the gameTest.report.testLocation line
+gameTest.report.tickCount=刻：%s	### This appears right below the gameTest.report.testLocation line
 gameTest.report.testCount=GameTest完成！运行了%s个测试	#
 gameTest.report.someTestsFailed=%s个必要测试失败 :(	#
 gameTest.report.allRequiredTestsPassed=全部必要测试均通过 :)	#
 gameTest.report.optionalFailures=%s个可选测试失败	#
-gameTest.report.bookTitle=GameTest报告                                      	### A book with this title is placed next to each test with the test results inside
+gameTest.report.bookTitle=GameTest报告	### A book with this title is placed next to each test with the test results inside
 
 ## Script
 script.description=用于调试GameTest框架的选项	#
@@ -11463,7 +11463,7 @@ tile.pale_oak_trapdoor.name=苍白橡木活板门	#
 tile.pale_oak_wood.name=苍白橡木	#
 tile.stripped_pale_oak_log.name=去皮苍白橡木原木	#
 tile.stripped_pale_oak_wood.name=去皮苍白橡木	#
-tile.pale_hanging_moss.name=苍白垂藤	#
+tile.pale_hanging_moss.name=苍白垂须	#
 tile.pale_moss_block.name=苍白苔藓块	#
 tile.pale_moss_carpet.name=苍白覆地苔藓	#
 tile.creaking_heart.name=嘎枝之心	#
@@ -11625,8 +11625,8 @@ hbui.AddFriendAccordion.narration.gamertagSearchSuggestions=%1$s条搜索结果	
 hbui.AddFriendAccordion.narration.noSuggestionsFound=当前没有建议	#
 hbui.AddFriendAccordion.narration.noSuggestionsMessagefollowers=你已经添加了所有粉丝！请稍后再来查看。	#
 hbui.AddFriendAccordion.narration.noSuggestionsMessagegamertagSearch=请优化搜索内容。	#
-hbui.AddFriendAccordion.narration.noSuggestionsMessagerecentlyPlayedWith=与Realms或服务器上的人一起玩以获得更多建议！	#
-hbui.AddFriendAccordion.narration.noSuggestionsMessagerecommendedFriends=与Realms或服务器上的人一起玩以获得更多建议！	#
+hbui.AddFriendAccordion.narration.noSuggestionsMessagerecentlyPlayedWith=与Realms或服务器上的人一起玩以获得更多建议！	### {StrContains="Realms"}
+hbui.AddFriendAccordion.narration.noSuggestionsMessagerecommendedFriends=与Realms或服务器上的人一起玩以获得更多建议！	### {StrContains="Realms"}
 hbui.AddFriendAccordion.narration.enumeration=第%1$s个/共%2$s个	#
 hbui.AddFriendAccordion.narration.followersSuggestions=%1$s粉丝建议	#
 hbui.AddFriendAccordion.narration.friendsHint=你已是该玩家的好友。点击查看个人资料。	#
@@ -11683,6 +11683,18 @@ hbui.AnnouncementModalRoute.errorNoMessage=未找到消息	#
 hbui.AnnouncementModalRoute.errorTitle=通知错误	#
 hbui.AnnouncementModalRoute.errorUnsupportedTemplate=模板未生效	#
 hbui.AnnouncementModalRoute.unlock=解锁	#
+hbui.BannedOrSuspendedMessage.BannedMessage.bodyFirstParagraph=你已被永久禁止使用Minecraft在线服务。这意味着你将无法在服务器上游玩游戏、加入Realms、创建多人游戏、加入多人游戏或是使用商城。	#
+hbui.BannedOrSuspendedMessage.BannedMessage.bodySecondParagraph=如需更多信息或提交申述请求，请点击帮助按钮。	#
+hbui.BannedOrSuspendedMessage.BannedMessage.helpButton=更多信息	#
+hbui.BannedOrSuspendedMessage.BannedMessage.reasonsTitle=封禁原因：	#
+hbui.BannedOrSuspendedMessage.BannedMessage.title=你已被永久封禁	#
+hbui.BannedOrSuspendedMessage.SuspendedMessage.bodyFirstParagraph=你已被临时封停游玩Minecraft多人游戏。你将无法在服务器上游玩游戏、加入Realms、创建多人游戏、加入多人游戏或是使用商城。	#### {StrContains="Realms"}
+hbui.BannedOrSuspendedMessage.SuspendedMessage.bodySecondParagraph=如需更多信息或提交申述请求，请点击帮助按钮。	#
+hbui.BannedOrSuspendedMessage.SuspendedMessage.helpButton=帮助	#
+hbui.BannedOrSuspendedMessage.SuspendedMessage.reasonsTitle=封停的原因：	#
+hbui.BannedOrSuspendedMessage.SuspendedMessage.title=封停	#
+hbui.BannedOrSuspendedMessage.timer=%1$s天%2$s小时%3$s分钟	#
+hbui.BannedOrSuspendedReason.reasonForBan=封禁原因：	#
 hbui.BannedOrSuspendedReason.xbox.report.drugs=提及非法药物	#
 hbui.BannedOrSuspendedReason.xbox.report.exploits=利用漏洞和第三方应用程序	#
 hbui.BannedOrSuspendedReason.xbox.report.extremeViolence=描写现实生活中的过度暴力或血腥事件	#
@@ -11729,8 +11741,8 @@ hbui.ChooseRealmRoute.chooseAPreviewRealm=1. 选择Preview Realm	#
 hbui.ChooseRealmRoute.chooseARealmSubscription=1. 选择订阅	#
 hbui.ChooseRealmRoute.creative=创造	#
 hbui.ChooseRealmRoute.emptyState.message=我们遇到一个未知错误。请重试。	#
-hbui.ChooseRealmRoute.emptyState.noRealmsErrorTitle.beta=Beta Realms无法加载！	#
-hbui.ChooseRealmRoute.emptyState.noRealmsErrorTitle.preview=Preview Realms无法加载！	#
+hbui.ChooseRealmRoute.emptyState.noRealmsErrorTitle.beta=Beta Realms无法加载！	### {StrContains="Beta Realms"}
+hbui.ChooseRealmRoute.emptyState.noRealmsErrorTitle.preview=Preview Realms无法加载！	### {StrContains="Preview Realms"}
 hbui.ChooseRealmRoute.emptyState.noSubscriptionErrorTitle=订阅无法加载！	#
 hbui.ChooseRealmRoute.emptyState.tryAgain=重试	#
 hbui.ChooseRealmRoute.pairedWith=匹配：%s	#
@@ -12472,15 +12484,15 @@ hbui.CreateNewWorld.resourcePacks.inactivePacksEmptyTitle=你还没有任何资�
 hbui.CreateNewWorld.resourcePacks.inactivePacksEmptyTitle.edu=你没有任何资源包	#
 hbui.CreateNewWorld.resourcePacks.inactivePacksOnExpandAccordionHint=向下展开以显示你拥有的资源包	#
 hbui.CreateNewWorld.resourcePacks.localPacksListHeader=当前	#
-hbui.CreateNewWorld.resourcePacks.marketplacePassPacksAccordionHeader=Marketplace Pass	#
-hbui.CreateNewWorld.resourcePacks.marketplacePassPacksAccordionHint=展开以访问所有Marketplace Pass的所有包	#
+hbui.CreateNewWorld.resourcePacks.marketplacePassPacksAccordionHeader=Marketplace Pass	### {StrContains="Marketplace Pass"}
+hbui.CreateNewWorld.resourcePacks.marketplacePassPacksAccordionHint=展开以访问所有Marketplace Pass的所有包	### {StrContains="Marketplace Pass"}
 hbui.CreateNewWorld.resourcePacks.marketplacePassPacksEmptyBody.edu=你创建和安装的资源包将可以在你的世界中激活和使用	#
 hbui.CreateNewWorld.resourcePacks.marketplacePassPacksEmptyTitle=没有更多可用的资源包	#
-hbui.CreateNewWorld.resourcePacks.marketplacePassPacksOnExpandAccordionHint=向下展开以访问Marketplace Pass的所有包	#
-hbui.CreateNewWorld.resourcePacks.marketplacePassPromotionBody=通过新的Marketplace Pass订阅可访问150多项精彩内容！（Realms Plus现在包含Marketplace Pass的内容）	#
-hbui.CreateNewWorld.resourcePacks.marketplacePassPromotionButtonInputLegend=Marketplace Pass	#
+hbui.CreateNewWorld.resourcePacks.marketplacePassPacksOnExpandAccordionHint=向下展开以访问Marketplace Pass的所有包	### {StrContains="Marketplace Pass"}
+hbui.CreateNewWorld.resourcePacks.marketplacePassPromotionBody=通过新的Marketplace Pass订阅可访问150多项精彩内容！（Realms Plus现在包含Marketplace Pass的内容）	### {StrContains="Marketplace Pass"}
+hbui.CreateNewWorld.resourcePacks.marketplacePassPromotionButtonInputLegend=Marketplace Pass	### {StrContains="Marketplace Pass"}
 hbui.CreateNewWorld.resourcePacks.marketplacePassPromotionButtonLabel=了解更多	#
-hbui.CreateNewWorld.resourcePacks.marketplacePassPromotionTitle=你没有Marketplace Pass订阅！	#
+hbui.CreateNewWorld.resourcePacks.marketplacePassPromotionTitle=你没有Marketplace Pass订阅！	### {StrContains="Marketplace Pass"}
 hbui.CreateNewWorld.resourcePacks.missingDependencyBody=此资源包缺少一个或多个依赖项。是否仍要启用？	#
 hbui.CreateNewWorld.resourcePacks.missingDependencyNewBody=此资源包缺少一个或多个依赖项，激活后可能会破坏你的体验	#
 hbui.CreateNewWorld.resourcePacks.missingDependencyTitle=缺少依赖项	#
@@ -12521,12 +12533,12 @@ hbui.CreateNewWorld.scriptingCoding.codeBuilderTitle=代码编辑器	#
 hbui.CreateNewWorld.scriptingCoding.narrationComponentTypeSectionHeader=组	#
 hbui.CreateNewWorld.scriptingCoding.settingsTitle=脚本和编程设置	#
 hbui.CreateNewWorld.signInPromptWorldOnRealmModal.cancel=取消	#
-hbui.CreateNewWorld.signInPromptWorldOnRealmModal.msaGuestCreateWorld.message=你需要一个微软账号才能在Realms上创建世界。	#
-hbui.CreateNewWorld.signInPromptWorldOnRealmModal.msaGuestEditWorld.message=你需要一个微软账号才能在Realms上游玩。	#
-hbui.CreateNewWorld.signInPromptWorldOnRealmModal.platformGuestCreate.nintendo.message=你需要登录你的Nintendo账号才能在Realms上创建世界。	#
-hbui.CreateNewWorld.signInPromptWorldOnRealmModal.platformGuestCreate.playStation.message=你需要登录你的PlayStation™Network账号才能在Realms上创建世界。	### CertRequirement: [account for PlayStation™Network]
-hbui.CreateNewWorld.signInPromptWorldOnRealmModal.platformGuestEdit.nintendo.message=你需要登录你的Nintendo账号才能在Realms上游玩。	#
-hbui.CreateNewWorld.signInPromptWorldOnRealmModal.platformGuestEdit.playStation.message=你需要登录你的PlayStation™Network账号才能在Realms上游玩。	### CertRequirement: [account for PlayStation™Network]
+hbui.CreateNewWorld.signInPromptWorldOnRealmModal.msaGuestCreateWorld.message=你需要一个微软账号才能在Realms上创建世界。	### {StrContains="Realms"}
+hbui.CreateNewWorld.signInPromptWorldOnRealmModal.msaGuestEditWorld.message=你需要一个微软账号才能在Realms上游玩。	### {StrContains="Realms"}
+hbui.CreateNewWorld.signInPromptWorldOnRealmModal.platformGuestCreate.nintendo.message=你需要登录你的Nintendo账号才能在Realms上创建世界。	### {StrContains="Realms"}
+hbui.CreateNewWorld.signInPromptWorldOnRealmModal.platformGuestCreate.playStation.message=你需要登录你的PlayStation™Network账号才能在Realms上创建世界。	### CertRequirement: [account for PlayStation™Network]	### {StrContains="Realms"}
+hbui.CreateNewWorld.signInPromptWorldOnRealmModal.platformGuestEdit.nintendo.message=你需要登录你的Nintendo账号才能在Realms上游玩。	### {StrContains="Realms"}
+hbui.CreateNewWorld.signInPromptWorldOnRealmModal.platformGuestEdit.playStation.message=你需要登录你的PlayStation™Network账号才能在Realms上游玩。	### CertRequirement: [account for PlayStation™Network]	### {StrContains="Realms"}
 hbui.CreateNewWorld.signInPromptWorldOnRealmModal.signIn=登录	#
 hbui.CreateNewWorld.signInPromptWorldOnRealmModal.title=需要登录	#
 hbui.CreateNewWorld.tabContainerNarrationSuffix=纵向子菜单	#
@@ -12546,7 +12558,7 @@ hbui.CreateNewWorldSideMenu.behaviorPacksTabLabel=行为包	#
 hbui.CreateNewWorldSideMenu.cheatsTabLabel=作弊	#
 hbui.CreateNewWorldSideMenu.create=创建	#
 hbui.CreateNewWorldSideMenu.create.edu=游戏	#
-hbui.CreateNewWorldSideMenu.createOnRealm=在Realms上创建	#
+hbui.CreateNewWorldSideMenu.createOnRealm=在Realms上创建	### {StrContains="Realms"}
 hbui.CreateNewWorldSideMenu.experimentalFeaturesTabLabel=实验性功能	#
 hbui.CreateNewWorldSideMenu.generalTabLabel=通用	#
 hbui.CreateNewWorldSideMenu.inputLegendSelect=选择	#
@@ -12610,9 +12622,9 @@ hbui.EditWorld.notificationToasts.saved=%1$s已保存	#
 hbui.EditWorld.notificationToasts.worldConverted=升级世界	#
 hbui.EditWorld.playOnRealmsErrorModal.closeButton=关闭	#
 hbui.EditWorld.playOnRealmsErrorModal.crossPlatformRestricted.message=你不能在你的Realm上游玩这个世界，因为它使用的资源包不能用于跨平台多人游戏。	#
-hbui.EditWorld.playOnRealmsErrorModal.crossPlatformRestricted.message2=请移除该资源包以便在Realms上进行游戏。	#
+hbui.EditWorld.playOnRealmsErrorModal.crossPlatformRestricted.message2=请移除该资源包以便在Realms上进行游戏。	### {StrContains="Realms"}
 hbui.EditWorld.playOnRealmsErrorModal.crossPlatformRestricted.title=不支持的资源包	#
-hbui.EditWorld.playOnRealmsErrorModal.memberOfTooManyRealms.message=已达到Realms成员资格限制。每个账号最多可以关联1000个包括Realms的Xbox live俱乐部。	#
+hbui.EditWorld.playOnRealmsErrorModal.memberOfTooManyRealms.message=已达到Realms成员资格限制。每个账号最多可以关联1000个包括Realms的Xbox live俱乐部。	### {StrContains="Realms"}
 hbui.EditWorld.playOnRealmsErrorModal.memberOfTooManyRealms.title=无法加入Realm	#
 hbui.EditWorld.playOnRealmsErrorModal.unknown.errorCode=错误代码：%1$s	#
 hbui.EditWorld.playOnRealmsErrorModal.unknown.message=请稍后再试。	#
@@ -12633,8 +12645,8 @@ hbui.ExportWorld.error.needToRemoveVRHeadset.title=请断开VR设备然后重试
 hbui.ExportWorld.error.unknownError.title=发生错误。请稍后再试	#
 hbui.FirstTimeSignInRoute.altSignInList1=保存进度和购买记录	#
 hbui.FirstTimeSignInRoute.altSignInList2=使用2FA身份验证确保账号安全	#
-hbui.FirstTimeSignInRoute.altSignInList3=访问成就、Realms、服务器和商城	#
-hbui.FirstTimeSignInRoute.altSignInList3PS=访问Realms、服务器和商城	#
+hbui.FirstTimeSignInRoute.altSignInList3=访问成就、Realms、服务器和商城	### {StrContains="Realms"}
+hbui.FirstTimeSignInRoute.altSignInList3PS=访问Realms、服务器和商城	### {StrContains="Realms"}
 hbui.FirstTimeSignInRoute.altSignInPrompt=登录或免费注册以解锁这些功能及更多：	#
 hbui.FirstTimeSignInRoute.altSignInPromptMobile=登录或免费注册以保存你的进度、获得成就、访问服务器等	#
 hbui.FirstTimeSignInRoute.createAccountPrompt=没有微软账号？立即免费创建一个！	#
@@ -12686,6 +12698,9 @@ hbui.FriendsDrawer.joinFriendServerErrorModal.blockedByVersion.title=不兼容�
 hbui.FriendsDrawer.joinFriendServerErrorModal.cancel=取消	#
 hbui.FriendsDrawer.joinFriendServerErrorModal.UnknownError.message=未知错误	#
 hbui.FriendsDrawer.joinFriendServerErrorModal.UnknownError.title=出错了	#
+hbui.FriendsDrawer.msaGuestNintendoBanner=你需要一个微软账号和Nintendo Switch Online订阅服务才能进行跨平台多人游戏。	#
+hbui.FriendsDrawer.msaGuestPlaystationBanner=你需要一个微软账号和高级订阅服务才能进行跨平台多人游戏。	#
+hbui.FriendsDrawer.msaGuestPremiumBanner=你需要一个微软账号才能进行跨平台多人游戏。	#
 hbui.FriendsDrawer.multiplayerBanner.learnMore=了解更多	#
 hbui.FriendsDrawer.multiplayerBanner.text=你已禁用多人游戏。	#
 hbui.FriendsDrawer.multiplayerBanner.textParental=多人游戏已禁用。	#
@@ -12741,7 +12756,7 @@ hbui.InboxListItem.narration.readPost=已读帖子	#
 hbui.InboxListItem.narration.reject=拒绝	#
 hbui.InboxListItem.narration.unreadPost=未读帖子	#
 hbui.InboxListItem.purchased=已购	#
-hbui.InboxListItem.realms=Realms	#
+hbui.InboxListItem.realms=Realms	### {StrContains="Realms"}
 hbui.InboxListItem.reject=拒绝	#
 hbui.InboxListItem.rejected=已拒绝	#
 hbui.InboxListItem.remove=移除	#
@@ -12754,19 +12769,19 @@ hbui.InboxMessageDetailsRoute.gameInvitationNote0=你被受邀加入%1$s的游�
 hbui.InboxMessageDetailsRoute.gameInvitationRejectedMessage=你拒绝了%1$s的游戏邀请。	#
 hbui.InboxMessageDetailsRoute.gameInvite=游戏邀请	#
 hbui.InboxMessageDetailsRoute.go=前往	#
-hbui.InboxMessageDetailsRoute.invitationNote0=你被受邀加入%1$s的Realm。	#
-hbui.InboxMessageDetailsRoute.invitationNote1=Realm是你和你的朋友可以通过任何具有Minecraft基岩版的设备访问的个人服务器	#
-hbui.InboxMessageDetailsRoute.invitationNote2=即使所有者不在Realms也始终在线	#
-hbui.InboxMessageDetailsRoute.invitationNote3=一起玩或异步玩，并在Realm消息中与Realm的其他成员分享你的经验	#
-hbui.InboxMessageDetailsRoute.invitationNote4=Realms是一种多人游戏体验，需要在你的微软账号上进行适当的设置：多人游戏和俱乐部。	#
+hbui.InboxMessageDetailsRoute.invitationNote0=你被受邀加入%1$s的Realm。	### {StrContains="Realm"}
+hbui.InboxMessageDetailsRoute.invitationNote1=Realm是你和你的朋友可以通过任何具有Minecraft基岩版的设备访问的个人服务器	### {StrContains="Realm"}
+hbui.InboxMessageDetailsRoute.invitationNote2=即使所有者不在Realms也始终在线	### {StrContains="Realms"}
+hbui.InboxMessageDetailsRoute.invitationNote3=一起玩或异步玩，并在Realms动态中与Realm的其他成员分享你的经验	### {StrContains="Realms"}
+hbui.InboxMessageDetailsRoute.invitationNote4=Realms是一种多人游戏体验，需要在你的微软账号上进行适当的设置：多人游戏和俱乐部。	### {StrContains="Realms"}
 hbui.InboxMessageDetailsRoute.invitationRejectedMessageDetails=如果不小心拒绝了邀请，你可以请对方再发送一次邀请。	#
 hbui.InboxMessageDetailsRoute.join=加入	#
 hbui.InboxMessageDetailsRoute.narration.accept=接受	#
 hbui.InboxMessageDetailsRoute.narration.buttonSiblings=第%1$s个/共%2$s个按钮	#
 hbui.InboxMessageDetailsRoute.narration.reject=拒绝	#
-hbui.InboxMessageDetailsRoute.realmInvite=Realm邀请	#
-hbui.InboxMessageDetailsRoute.realms=Realms	#
-hbui.InboxMessageDetailsRoute.realmsInvitationRejectedMessage=你拒绝了%1$s的Realm邀请。	#
+hbui.InboxMessageDetailsRoute.realmInvite=Realms邀请	### {StrContains="Realms"}
+hbui.InboxMessageDetailsRoute.realms=Realms	### {StrContains="Realms"}
+hbui.InboxMessageDetailsRoute.realmsInvitationRejectedMessage=你拒绝了%1$s的Realm邀请。	### {StrContains="Realm"}
 hbui.InboxMessageDetailsRoute.reject=拒绝	#
 hbui.InboxMessageDetailsRoute.viewProfile=查看个人资料	#
 hbui.InboxRoute.accept=接受	#
@@ -12782,17 +12797,17 @@ hbui.InboxRoute.details=详情	#
 hbui.InboxRoute.emptyInvitesText=当有人邀请你加入某个Realm时将会显示在这里。	#
 hbui.InboxRoute.emptyInvitesTitle=没有新的邀请	#
 hbui.InboxRoute.emptyMarketplacePassLearn=了解更多	#
-hbui.InboxRoute.emptyMarketplacePassSubscribePromptText=你可以通过Marketplace Pass访问每月更新的150多项精彩内容！	#
+hbui.InboxRoute.emptyMarketplacePassSubscribePromptText=你可以通过Marketplace Pass访问每月更新的150多项精彩内容！	### {StrContains="Marketplace Pass"}
 hbui.InboxRoute.emptyMarketplacePassSubscribePromptTitle=订阅并游玩！	#
-hbui.InboxRoute.emptyMarketplacePassText=在这里你可以收到有关Marketplace Pass订阅的信息。	#
+hbui.InboxRoute.emptyMarketplacePassText=在这里你可以收到有关Marketplace Pass订阅的信息。	### {StrContains="Marketplace Pass"}
 hbui.InboxRoute.emptyMarketplacePassTitle=敬请期待即将到来的内容！	#
 hbui.InboxRoute.emptyMessageText=稍后回来查看新消息。	#
 hbui.InboxRoute.emptyMessageTitle=没有新消息	#
 hbui.InboxRoute.emptyNewsText=在这里你可以收到有关Minecraft的新闻和其他更新。稍后回来查看新消息。	#
 hbui.InboxRoute.emptyNewsTitle=没有新消息	#
-hbui.InboxRoute.emptyRealmNoSubText=Minecraft Realms是一种简单安全地与朋友一起游玩的方式。获取个人服务器，在共享世界中跨平台游玩，并通过精选内容增强游戏体验。	#
-hbui.InboxRoute.emptyRealmNoSubTitle=试用Minecraft Realms！	#
-hbui.InboxRoute.emptyRealmSubText=在这里你可以收到有关Realms的消息，包括功能更新和账号信息。	#
+hbui.InboxRoute.emptyRealmNoSubText=Minecraft Realms是一种简单安全地与朋友一起游玩的方式。获取个人服务器，在共享世界中跨平台游玩，并通过精选内容增强游戏体验。	### {StrContains="Realms"}
+hbui.InboxRoute.emptyRealmNoSubTitle=试用Minecraft Realms！	### {StrContains="Realms"}
+hbui.InboxRoute.emptyRealmSubText=在这里你可以收到有关Realms的消息，包括功能更新和账号信息。	### {StrContains="Realms"}
 hbui.InboxRoute.emptyRealmSubTitle=没有新消息	#
 hbui.InboxRoute.endsSoon=在%1$s天后终止	#
 hbui.InboxRoute.endsToday=今天终止	#
@@ -12808,10 +12823,10 @@ hbui.InboxRoute.from=来自%1$s	#
 hbui.InboxRoute.go=开始	#
 hbui.InboxRoute.header=收件箱	#
 hbui.InboxRoute.invites=邀请	#
-hbui.InboxRoute.join=加入Realm	#
-hbui.InboxRoute.joinRealms=加入Realm游玩！	#
+hbui.InboxRoute.join=加入Realm	### {StrContains="Realm"}
+hbui.InboxRoute.joinRealms=加入Realms开始游玩！	### {StrContains="Realms"}
 hbui.InboxRoute.learn=了解更多	#
-hbui.InboxRoute.marketplacepass=Marketplace Pass	#
+hbui.InboxRoute.marketplacepass=Marketplace Pass	### {StrContains="Marketplace Pass"}
 hbui.InboxRoute.messagingServiceFailure=无法连接到收件箱	#
 hbui.InboxRoute.messagingServiceFailureBody=我们遇到了一些未知问题，请稍后再来。	#
 hbui.InboxRoute.moreSentence=以及更多...	#
@@ -12819,7 +12834,7 @@ hbui.InboxRoute.news=新闻	#
 hbui.InboxRoute.notification=通知	#
 hbui.InboxRoute.purchased=已购买	#
 hbui.InboxRoute.purchaseHistory=购买历史记录	#
-hbui.InboxRoute.realms=Realms	#
+hbui.InboxRoute.realms=Realms	### {StrContains="Realms"}
 hbui.InboxRoute.reject=拒绝	#
 hbui.InboxRoute.rejected=已拒绝	#
 hbui.InboxRoute.select=选择	#
@@ -12864,8 +12879,8 @@ hbui.JoinRealmsServerError.invalidMultiplayerSkin.changeSkin=更改皮肤	#
 hbui.JoinRealmsServerError.invalidMultiplayerSkin.close=关闭	#
 hbui.JoinRealmsServerError.invalidMultiplayerSkin.title=不允许的皮肤	#
 hbui.JoinRealmsServerError.inviteLinkNotFound=此邀请链接无效。	#
-hbui.JoinRealmsServerError.memberOfTooManyRealms=你已达到可加入的Realm数量上限。	#
-hbui.JoinRealmsServerError.memberOfTooManyRealms.message=你已达到Realm成员上限。每个账号最多可以关联包括Realms的1000个Xbox live俱乐部。	#
+hbui.JoinRealmsServerError.memberOfTooManyRealms=你已达到可加入的Realms数量上限。	### {StrContains="Realms"}
+hbui.JoinRealmsServerError.memberOfTooManyRealms.message=你已达到Realms成员上限。每个账号最多可以关联包括Realms的1000个Xbox live俱乐部。	### {StrContains="Realms"}
 hbui.JoinRealmsServerError.memberOfTooManyRealms.title=无法加入Realm	#
 hbui.JoinRealmsServerError.noPlatformSubscription.nintendo.body=你没有Nintendo Switch Online会员资格。你需要它来进行在线游戏。	#
 hbui.JoinRealmsServerError.noPlatformSubscription.nintendo.moreInformation=更多信息	#
@@ -12894,7 +12909,7 @@ hbui.JoinRealmsServerTransient.caption=你可以随时离开他们的Realm。	#
 hbui.JoinRealmsServerTransient.joinButtonLabel=加入	#
 hbui.JoinRealmsServerTransient.joinRealmModal=正在加入Realm	#
 hbui.JoinRealmsServerTransient.ownerInformation=是否要加入%1$s的Realm？	#
-hbui.JoinRealmsServerTransient.successSnackbar=加入了"%1$s"！	#
+hbui.JoinRealmsServerTransient.successSnackbar=你加入了"%1$s"！	#
 hbui.JoinRealmsServerTransient.title=加入Realm	#
 hbui.JoinServerWarningModal.cancel=取消	#
 hbui.JoinServerWarningModal.continue=继续	#
@@ -12923,7 +12938,7 @@ hbui.ModalMenuDropdown.dropdown.placeholder=请选择一个选项...	#
 hbui.ModalMenuDropdown.dropdown.role=下拉菜单	#
 hbui.ModalMenuDropdown.placeholder=选择一个选项...	#
 hbui.MultiplayerPrivilegeBlockedModal.descriptionOnline=由于账号设置限制，你无法进行多人游戏。请在账号设置中通过隐私与在线安全管理你的多人游戏设置。	#
-hbui.MultiplayerPrivilegeBlockedModal.descriptionParental=由于家长控制限制，你无法在Realms上游戏。请在家长控制中通过在线安全查看和管理你的多人游戏设置。	#
+hbui.MultiplayerPrivilegeBlockedModal.descriptionParental=由于家长控制限制，你无法在Realms上游戏。请在家长控制中通过在线安全查看和管理你的多人游戏设置。	### {StrContains="Realms"}
 hbui.MultiplayerPrivilegeBlockedModal.learnMore=了解更多	#
 hbui.MultiplayerPrivilegeBlockedModal.title=需要权限！	#
 hbui.Notifications.achievementsDisabled=你不能获得成就。	#
@@ -12936,7 +12951,7 @@ hbui.Notifications.hardcoreMode.generalTab=由于你在创建世界时选择了�
 hbui.Notifications.inTrialMode=由于你正处于试玩模式，部分设置被锁定。	#
 hbui.Notifications.multiplayerWarnings.checkInternetConnection=你未连接至互联网。联网让你的好友加入你的多人游戏世界。	#
 hbui.Notifications.multiplayerWarnings.multiplayerPrivilegesBlocked=由于你微软账号的设置问题，你无法进行在线多人游戏。请确保你的在线安全设置已允许多人游戏。请前往aka.ms/MCMultiplayerHelp查看如何更改这些设置。	#
-hbui.Notifications.multiplayerWarnings.multiplayerPrivilegesBlockedOnConsole=由于你微软账号的设置问题，你无法进行在线多人游戏。请确保你的在线安全设置已允许多人游戏和俱乐部且当前你拥有Xbox Live Gold订阅。请前往aka.ms/MCMultiplayerHelp查看如何更改这些设置。	###disable_3rd_party_console_resource_pack_check
+hbui.Notifications.multiplayerWarnings.multiplayerPrivilegesBlockedOnConsole=由于你微软账号的设置问题，你无法进行在线多人游戏。请确保你的在线安全设置已允许多人游戏和俱乐部且当前你拥有Xbox Game Pass订阅。请前往aka.ms/MCMultiplayerHelp查看如何更改这些设置。	###disable_3rd_party_console_resource_pack_check
 hbui.Notifications.multiplayerWarnings.nintendoDisconnectedThirdPartyWithSubscription=你没有连接到Nintendo Switch Online服务。你的Nintendo好友将无法加入你的多人游戏世界。登录至Nintendo Switch Online即可与好友畅玩。	#
 hbui.Notifications.multiplayerWarnings.nintendoLocalMultiplayerPrivilegesBlockedThirdParty=由于家长控制限制，你不能游玩本地多人游戏。通过家长控制中的“与他人交流”查看和管理你的多人游戏设置。	#
 hbui.Notifications.multiplayerWarnings.nintendoMultiplayerPrivilegesBlockedThirdParty=由于家长控制限制，你不能游玩本地多人游戏。通过家长控制中的“与他人交流”查看和管理你的多人游戏设置。	#
@@ -12949,10 +12964,10 @@ hbui.Notifications.readMoreLink=阅读更多	#
 hbui.Notifications.unlockSettingsLink=解锁设置	#
 hbui.Notifications.unlockSettingsMessage=部分设置被模板创作者锁定。	#
 hbui.notLoggedInWarning.loginLink=登录或注册	#
-hbui.notLoggedInWarning.playScreen.message.realms=你需要一个微软账号才能在Realms上游玩。	#
+hbui.notLoggedInWarning.playScreen.message.realms=你需要一个微软账号才能在Realms上游玩。	### {StrContains="Realms"}
 hbui.notLoggedInWarning.playScreen.message.servers=你需要一个微软账号才能在服务器上游玩。	#
 hbui.notLoggedInWarning.startFromTemplateScreen.message.featured=你需要一个账号才能在商城购买模板。	#
-hbui.notLoggedInWarning.startFromTemplateScreen.message.marketplacePass=您需要微软账号才能访问Marketplace Pass。	#
+hbui.notLoggedInWarning.startFromTemplateScreen.message.marketplacePass=你需要微软账号才能访问Marketplace Pass。	### {StrContains="Marketplace Pass"}
 hbui.PackListItem.activateButtonText=启用	#
 hbui.PackListItem.collapseDescriptionInputLegend=收起	#
 hbui.PackListItem.creatorLabel=作者：%1$s	#
@@ -13153,7 +13168,7 @@ hbui.PlayScreen.experimentalWorldLoadingModal.title=加载实验性世界？	#
 hbui.PlayScreen.genericError.realmDetails.description=出错了。请稍后再试	#
 hbui.PlayScreen.genericError.realmDetails.title=无法加载Realm	#
 hbui.PlayScreen.genericError.realms.description=出错了。请稍后再试	#
-hbui.PlayScreen.genericError.realms.title=无法加载Realms	#
+hbui.PlayScreen.genericError.realms.title=无法加载Realms	### {StrContains="Realms"}
 hbui.PlayScreen.feedbackButton=提出反馈	#
 hbui.PlayScreen.friendsDrawerShortcut=点击%1$s打开或关闭好友抽屉	#
 hbui.PlayScreen.genericError.servers.description=出错了。请稍后重试	#
@@ -13161,16 +13176,16 @@ hbui.PlayScreen.genericError.servers.title=服务器无法加载	#
 hbui.PlayScreen.guestAccountMessage.bannerLogIn=登录或注册	#
 hbui.PlayScreen.guestAccountMessage.bannerLogInMicrosoft=登录或注册到微软	#
 hbui.PlayScreen.guestAccountMessage.buttonLogInMicrosoft=登录微软账号	#
-hbui.PlayScreen.guestAccountMessage.realmsNintendoGuest=你需要一个微软账号并登录到Nintendo账号才能在%1$s上游戏。	#
-hbui.PlayScreen.guestAccountMessage.realmsNoPlatformAccountNintendo=你需要登录到Nintendo账号才能在%1$s上游戏。	#
-hbui.PlayScreen.guestAccountMessage.realmsNoPlatformAccountPlaystation=你需要登录到PlayStation™Network才能在%1$s上游戏。	### CertRequirement: [PlayStation™Network]	#
-hbui.PlayScreen.guestAccountMessage.realmsPlaystationGuest=你需要一个微软账号并登录到PlayStation™Network才能在%1$s上游戏。	### CertRequirement: [PlayStation™Network]	#
-hbui.PlayScreen.guestAccountMessage.reamlsNoMicrosoftAccount=你需要一个微软账号才能在%1$s上游戏。	#
-hbui.PlayScreen.guestAccountMessage.subtitleNintendoFriends=登录到Nintendo Switch Online以查看你的朋友。	#
-hbui.PlayScreen.guestAccountMessage.subtitleNintendoServers=你需要一个微软账号并登录至Nintendo账号才能在服务器上游玩。	#
-hbui.PlayScreen.guestAccountMessage.subtitlePlaystationFriends=登录到PlayStation™Network以查看你的朋友。	### CertRequirement: [PlayStation™Network]	#
-hbui.PlayScreen.guestAccountMessage.subtitlePlaystationServers=你需要一个微软账号并登录到PlayStation™Network才能在服务器上游戏。	### CertRequirement: [PlayStation™Network]	#
-hbui.PlayScreen.guestAccountMessage.title=你正在使用访客账号	#
+hbui.PlayScreen.guestAccountMessage.realmsNintendoGuest=你需要微软账号和Nintendo Switch Online订阅服务才能在Realms上游玩。	### {StrContains="Realms"}
+hbui.PlayScreen.guestAccountMessage.realmsNoMicrosoftAccount=你需要微软账号才能在Realms上游玩。	### {StrContains="Realms"}
+hbui.PlayScreen.guestAccountMessage.realmsNoPlatformAccountNintendo=你需要Nintendo Switch Online订阅服务才能在Realms上游玩。	### {StrContains="Realms"}
+hbui.PlayScreen.guestAccountMessage.realmsNoPlatformAccountPlaystation=你需要高级订阅服务才能在Realms上游玩。	### {StrContains="Realms"}
+hbui.PlayScreen.guestAccountMessage.realmsPlaystationGuest=你需要微软账号和高级订阅服务才能在Realms上游玩。	### {StrContains="Realms"}
+hbui.PlayScreen.guestAccountMessage.serversNintendoGuest=你需要微软账号和Nintendo Switch Online订阅服务才能在服务器上游玩。	#
+hbui.PlayScreen.guestAccountMessage.serversNoMicrosoftAccount=你需要微软账户才能在服务器上游玩。	#
+hbui.PlayScreen.guestAccountMessage.serversNoPlatformAccountNintendo=你需要Nintendo Switch Online订阅服务才能在服务器上游玩。	#
+hbui.PlayScreen.guestAccountMessage.serversNoPlatformAccountPlaystation=你需要高级订阅服务才能在服务器上游玩。	#
+hbui.PlayScreen.guestAccountMessage.serversPlaystationGuest=你需要微软账号和高级订阅服务才能在服务器上游玩。	#
 hbui.PlayScreen.importWorldErrorModal.close=关闭	#
 hbui.PlayScreen.importWorldErrorModal.unknownError.body=导入该世界时出现问题。	#
 hbui.PlayScreen.importWorldErrorModal.unknownError.title=出错了	#
@@ -13191,10 +13206,22 @@ hbui.PlayScreen.layoutButton.toggleList=切换到列表布局	#
 hbui.PlayScreen.layoutButton.toggleListHint=世界将以列表布局显示	#
 hbui.PlayScreen.layoutButton.worldsInGrid=世界以网格布局显示	#
 hbui.PlayScreen.layoutButton.worldsInList=世界以列表布局显示	#
+hbui.PlayScreen.missingActiveResourcesModal.body=是否要购买这个世界所使用的资源包？	#
+hbui.PlayScreen.missingActiveResourcesModal.confirm=是	#
+hbui.PlayScreen.missingActiveResourcesModal.decline=否	#
+hbui.PlayScreen.missingActiveResourcesModal.title=是否购买资源包？	#
+hbui.PlayScreen.missingDependenciesModal.body=要在此世界中游玩，你需要下载缺失的材质。是否现在开始下载？	#
+hbui.PlayScreen.missingDependenciesModal.body.downloading=正在下载%1$s	#
+hbui.PlayScreen.missingDependenciesModal.body.importing=正在安装%1$s	#
+hbui.PlayScreen.missingDependenciesModal.close=稍后再说	#
+hbui.PlayScreen.missingDependenciesModal.primary=全部下载	#
+hbui.PlayScreen.missingDependenciesModal.title=下载缺失的材质	#
+hbui.PlayScreen.missingDependenciesModal.title.downloading=正在下载材质	#
 hbui.PlayScreen.mobileFriendsDrawerNarration=好友选项卡位于右上角	#
 hbui.PlayScreen.multiplayerBlocked.body=你已在Xbox账号设置中禁用多人游戏。	#
 hbui.PlayScreen.multiplayerBlocked.close=关闭	#
 hbui.PlayScreen.multiplayerBlocked.title=多人游戏已禁用	#
+hbui.PlayScreen.multiplayerDisabledDueToBan.close=关闭	#
 hbui.PlayScreen.narration.title=游戏横向标签	#
 hbui.PlayScreen.noInternetMessage.title=你已离线	#
 hbui.PlayScreen.nonMultiplayerSkinModal.back=返回	#
@@ -13202,11 +13229,12 @@ hbui.PlayScreen.nonMultiplayerSkinModal.body=你当前的皮肤来自多人游�
 hbui.PlayScreen.nonMultiplayerSkinModal.changeAction=更改皮肤	#
 hbui.PlayScreen.nonMultiplayerSkinModal.continueAction=在非多人游戏的情况下继续	#
 hbui.PlayScreen.nonMultiplayerSkinModal.title=不允许的皮肤	#
-hbui.PlayScreen.noOnlineSubscriptionMessage.moreInformation=更多信息	#
-hbui.PlayScreen.noOnlineSubscriptionMessage.subtitle=你需要此帐户才能在线玩游戏	#
-hbui.PlayScreen.noOnlineSubscriptionMessage.titleNintendo=你没有Nintendo Switch Online会员资格	#
-hbui.PlayScreen.noOnlineSubscriptionMessage.titlePlaystation=你没有PlayStation®Plus订阅	### CertRequirement: [PlayStation®Plus]
-hbui.PlayScreen.noOnlineSubscriptionMessage.titleXbox=你没有Xbox Live Gold订阅	#
+hbui.PlayScreen.noPremiumSubscriptionMessage.realmsNintendo=你需要Nintendo Switch Online订阅服务才能在Realms上游玩。	### {StrContains="Realms"}
+hbui.PlayScreen.noPremiumSubscriptionMessage.realmsPlaystation=你需要高级订阅服务才能在Realms上游玩。	### {StrContains="Realms"}
+hbui.PlayScreen.noPremiumSubscriptionMessage.realmsXbox=你需要Xbox Gamepass Core订阅服务才能在Realms上游玩。	### {StrContains="Realms"}
+hbui.PlayScreen.noPremiumSubscriptionMessage.serversNintendo=你需要Nintendo Switch Online订阅服务才能在服务器上游玩。	#
+hbui.PlayScreen.noPremiumSubscriptionMessage.serversPlaystation=你需要高级订阅服务才能在服务器上游玩。	#
+hbui.PlayScreen.noPremiumSubscriptionMessage.serversXbox=你需要Xbox Gamepass Core订阅服务才能在服务器上游玩。	#
 hbui.PlayScreen.onlinePlayWarning.back=返回	#
 hbui.PlayScreen.onlinePlayWarning.external.body=注意：在线游戏由第三方服务器提供，这些服务器并非Mojang Studios或微软所拥有、运营或监督。在线游戏期间，你可能会接触到未经审核的聊天信息或其他类型的用户内容，这可能不适合所有年龄段的用户。	#
 hbui.PlayScreen.onlinePlayWarning.external.header=注意：第三方在线游戏	#
@@ -13223,7 +13251,7 @@ hbui.PlayScreen.outOfStorageModal.body=你的存储空间即将不足！Minecraf
 hbui.PlayScreen.outOfStorageModal.close=关闭	#
 hbui.PlayScreen.outOfStorageModal.closeInputLegend=关闭	#
 hbui.PlayScreen.outOfStorageModal.title=存储空间不足	#
-hbui.PlayScreen.realms=Realms	#
+hbui.PlayScreen.realms=Realms	### {StrContains="Realms"}
 hbui.PlayScreen.realmsTab.bannerClosed=已关闭	#
 hbui.PlayScreen.realmsTab.bannerExpired=已过期	#
 hbui.PlayScreen.realmsTab.bannerFull=已满	#
@@ -13231,9 +13259,10 @@ hbui.PlayScreen.realmsTab.buttonHeader.buyNow=立即购买	#
 hbui.PlayScreen.realmsTab.buttonHeader.freeTrialUpsell=免费试用	#
 hbui.PlayScreen.realmsTab.buttonHeader.invitations=邀请(%1$s)	#
 hbui.PlayScreen.realmsTab.buttonHeader.invitationsAmount=待处理的邀请%1$s	#
-hbui.PlayScreen.realmsTab.buttonHeader.joinRealm=加入Realms	#
-hbui.PlayScreen.realmsTab.buttonHeader.narration.buttonSiblings=%1$s的%2$s	#
+hbui.PlayScreen.realmsTab.buttonHeader.joinRealm=加入Realm	### {StrContains="Realm"}
+hbui.PlayScreen.realmsTab.buttonHeader.narration.buttonSiblings=第%1$s个/共%2$s个	#
 hbui.PlayScreen.realmsTab.buttonHeader.narration.invitationsAmount=待处理的邀请%1$s	#
+hbui.PlayScreen.realmsTab.buttonHeader.subscribeNowUpsell=立即订阅	#
 hbui.PlayScreen.realmsTab.claimPreviewRealm.link=领取Realm	#
 hbui.PlayScreen.realmsTab.claimPreviewRealm.text=你有一个可用的免费预览Realm！	#
 hbui.PlayScreen.realmsTab.lastPlayed=最近游玩	#
@@ -13242,25 +13271,35 @@ hbui.PlayScreen.realmsTab.leaveRealmNotification=你离开了"%1$s"	#
 hbui.PlayScreen.realmsTab.leaveRealmProgressMessage=离开Realm中	#
 hbui.PlayScreen.realmsTab.narration.buttonSiblings=第%1$s个/共%2$s个	#
 hbui.PlayScreen.realmsTab.narration.realmInformation=Realm信息	#
-hbui.PlayScreen.realmsTab.noInternetMessage=请检查你的互联网连接以在Realms上游玩。	#
+hbui.PlayScreen.realmsTab.narration.realmInformation.storiesUnreadBadgeCount.multiple=%1$s个新动态	#
+hbui.PlayScreen.realmsTab.narration.realmInformation.storiesUnreadBadgeCount.single=1个新动态	#
+hbui.PlayScreen.realmsTab.noInternetMessage=请检查你的互联网连接以在Realms上游玩。	### {StrContains="Realms"}
 hbui.PlayScreen.realmsTab.options=选项	#
 hbui.PlayScreen.realmsTab.play=游玩	#
 hbui.PlayScreen.realmsTab.playersOnline=在线	#
 hbui.PlayScreen.realmsTab.playersOnline.realmOwner=%1$s的Realm	#
-hbui.PlayScreen.realmsTab.preproductionAccess.buttonText=了解更多	#
-hbui.PlayScreen.realmsTab.preproductionAccess.message=你没有访问处于预生产环境Realms的权限。要获取访问权限，请参阅指南[aka.ms/Realms-preprod-access](https://aka.ms/Realms-preprod-access)	#
-hbui.PlayScreen.realmsTab.preproductionAccess.title=你没有访问Realms的权限	#
-hbui.PlayScreen.realmsTab.realmsDescription=Realms描述	#
+hbui.PlayScreen.realmsTab.realmsDescription=Realms描述	### {StrContains="Realms"}
 hbui.PlayScreen.realmsTab.realmSettingsModalMenu.edit=编辑活跃世界	#
 hbui.PlayScreen.realmsTab.realmSettingsModalMenu.optionsEnumeration=第%1$s个/共%2$s个	#
 hbui.PlayScreen.realmsTab.realmSettingsModalMenu.realmSettings=Realm设置	#
 hbui.PlayScreen.realmsTab.realmSettingsModalMenu.title=选项	#
-hbui.PlayScreen.realmsTab.realmsOptionsModalMenu.addRealm=添加Realms订阅	#
+hbui.PlayScreen.realmsTab.realmsLeaveRealmErrorModal.closeAction=关闭	#
+hbui.PlayScreen.realmsTab.realmsLeaveRealmErrorModal.description=无法离开Realm。请稍后再试。	#
+hbui.PlayScreen.realmsTab.realmsLeaveRealmErrorModal.title=出错了	#
+hbui.PlayScreen.realmsTab.realmsLeaveRealmModal.cancelAction=取消	#
+hbui.PlayScreen.realmsTab.realmsLeaveRealmModal.description=你即将离开“%1$s”。要想重新加入，请使用Realm邀请代码或让所有者向你发送新的邀请。	#
+hbui.PlayScreen.realmsTab.realmsLeaveRealmModal.leaveRealmAction=离开Realm	#
+hbui.PlayScreen.realmsTab.realmsLeaveRealmModal.title=离开Realm	#
+hbui.PlayScreen.realmsTab.realmsOptionsModalMenu.addRealm=添加Realms订阅	### {StrContains="Realms"}
 hbui.PlayScreen.realmsTab.realmsOptionsModalMenu.joinRealm=加入现有的Realm	#
 hbui.PlayScreen.realmsTab.realmsOptionsModalMenu.learnMore=了解更多	#
 hbui.PlayScreen.realmsTab.realmsOptionsModalMenu.optionsEnumeration=第%1$s个/共%2$s个	#
 hbui.PlayScreen.realmsTab.realmsOptionsModalMenu.title=选项	#
 hbui.PlayScreen.realmsTab.realmsStories=动态	#
+hbui.PlayScreen.realmsTab.realmsTabErrorStates.realmsPreprodError.button.inputLegend=帮助	#
+hbui.PlayScreen.realmsTab.realmsTabErrorStates.realmsPreprodError.button.text=了解更多	#
+hbui.PlayScreen.realmsTab.realmsTabErrorStates.realmsPreprodError.text=你无法访问预生产环境下的Realms。要获取访问权限，请前往aka.ms/Realms-preprod-access查看指南	### {StrContains="Realms"}
+hbui.PlayScreen.realmsTab.realmsTabErrorStates.realmsPreprodError.title=你没有访问Realms的权限	### {StrContains="Realms"}
 hbui.PlayScreen.realmsTab.realmsTabErrorStates.realmsRateLimitError.text=请稍等几分钟后重试。	#
 hbui.PlayScreen.realmsTab.realmsTabErrorStates.realmsRateLimitError.title=无法连接到Realms	###{StrContains="Realms"}
 hbui.PlayScreen.realmsTab.realmsTabErrorStates.realmsServiceError.button.inputLegend=选择	#
@@ -13281,13 +13320,14 @@ hbui.PlayScreen.realmsTab.sideMenu.externalServer=其他服务器(%1$s)	#
 hbui.PlayScreen.realmsTab.sideMenu.full=已满	#
 hbui.PlayScreen.realmsTab.sideMenu.inputLegend=打开	#
 hbui.PlayScreen.realmsTab.sideMenu.invitations=邀请(%1$s)	#
-hbui.PlayScreen.realmsTab.sideMenu.joinedRealms=已加入Realm(%1$s)	#
+hbui.PlayScreen.realmsTab.sideMenu.joinedRealms=已加入的Realms(%1$s)	### {StrContains="Realms"}
 hbui.PlayScreen.realmsTab.sideMenu.joinRealm=加入Realm	#
 hbui.PlayScreen.realmsTab.sideMenu.narration.addOrJoinRealm=添加/加入Realm	#
 hbui.PlayScreen.realmsTab.sideMenu.narration.buttonSiblings=第%1$s个/共%2$s个	#
 hbui.PlayScreen.realmsTab.sideMenu.narration.context=Realms列表	#
 hbui.PlayScreen.realmsTab.sideMenu.narration.contextJoinedRealms=你已加入%1$s个Realm	#
 hbui.PlayScreen.realmsTab.sideMenu.narration.contextOwnedRealms=你拥有%1$s个Realm	#
+hbui.PlayScreen.realmsTab.sideMenu.narration.hasNotification=通知	#
 hbui.PlayScreen.realmsTab.sideMenu.narration.invitations=邀请	#
 hbui.PlayScreen.realmsTab.sideMenu.narration.invitationsAmount=未处理的邀请%1$s	#
 hbui.PlayScreen.realmsTab.sideMenu.narration.onePlayerOnline=1名玩家在线	#
@@ -13406,8 +13446,8 @@ hbui.PlayScreen.templateScreenNotAvailableInPreview.text=从模板创建仅在Mi
 hbui.PlayScreen.templateScreenNotAvailableInPreview.title=不可用	#
 hbui.PlayScreen.title=游戏	#
 hbui.PlayScreen.underConstructionMessage=我们仍在开发此功能。请稍后再回来查看！	#
-hbui.PlayScreen.underConstructionMessageRealmsAvailable=看来你已经订阅了Realms！我们仍在努力将Realms引入新版菜单设计中，目前还请暂时使用旧UI。	#
-hbui.PlayScreen.underConstructionMessageRealmsUnavailable=可在旧UI中找到Realms。我们仍在努力将Realms引入新版菜单设计中，目前还请暂时使用旧UI。	#
+hbui.PlayScreen.underConstructionMessageRealmsAvailable=看来你已经订阅了Realms！我们仍在努力将Realms引入新版菜单设计中，目前还请暂时使用旧UI。	### {StrContains="Realms"}
+hbui.PlayScreen.underConstructionMessageRealmsUnavailable=可在旧UI中找到Realms。我们仍在努力将Realms引入新版菜单设计中，目前还请暂时使用旧UI。	### {StrContains="Realms"}
 hbui.PlayScreen.underConstructionTitle=正在开发中	#
 hbui.PlayScreen.unexpectedLaunchErrorModal.body=加载这个世界时出现错误。	#
 hbui.PlayScreen.unexpectedLaunchErrorModal.body2=错误代码：%1$s	#
@@ -13430,7 +13470,20 @@ hbui.PlayScreen.xboxPermissionMessage.helpButton=帮助	#
 hbui.PlayScreen.xboxPermissionMessage.parentalText=由于家长控制限制，你无法进行多人游戏。请在家长控制中查看和管理你的多人游戏设置。	#
 hbui.PlayScreen.xboxPermissionMessage.text=由于账号设置限制，你无法进行多人游戏。请在账号设置中的“隐私与在线安全”中管理你的多人游戏设置。	#
 hbui.PlayScreen.xboxPermissionMessage.title=需要权限！	#
-hbui.PrivacyAndOnlineSafetyModal.buttonAction=打开Realms安全网站	#
+hbui.PostToRealmStoriesRoute.accessDenied.button=了解更多	#
+hbui.PostToRealmStoriesRoute.accessDenied.message=你没有共享截屏的权限。前往“在线安全”并将“你可以将截屏上传到Xbox”设置为允许。	#
+hbui.PostToRealmStoriesRoute.accessDenied.title=访问被拒绝	#
+hbui.PostToRealmStoriesRoute.noRealmsFound.button=详细了解Realms	### {StrContains="Realms"}
+hbui.PostToRealmStoriesRoute.noRealmsFound.title=未找到Realms	#
+hbui.PostToRealmStoriesRoute.realmsCantLoad.button=重试	#
+hbui.PostToRealmStoriesRoute.realmsCantLoad.message=我们遇到了一个未知错误，请重试。	#
+hbui.PostToRealmStoriesRoute.realmsCantLoad.title=Realms无法加载！	### {StrContains="Realms"}
+hbui.PostToRealmStoriesRoute.select=选择	#
+hbui.PostToRealmStoriesRoute.title=发布到Realm动态	#
+hbui.PostToRealmStoriesRoute.youNeedPermission.button=了解更多	#
+hbui.PostToRealmStoriesRoute.youNeedPermission.message=你没有访问动态帖子的权限。前往“在线安全”并将“你可以创建并加入俱乐部”设置为允许。	#
+hbui.PostToRealmStoriesRoute.youNeedPermission.title=访问被拒绝	#
+hbui.PrivacyAndOnlineSafetyModal.buttonAction=打开Realms安全网站	### {StrContains="Realms"}
 hbui.PrivacyAndOnlineSafetyModal.clubPermissionMessage=“你可以创建和加入俱乐部”的权限为允许	#
 hbui.PrivacyAndOnlineSafetyModal.externalLinkText=帮助我解决这个问题	#
 hbui.PrivacyAndOnlineSafetyModal.fromOnlineSafety=为了在线安全：	#
@@ -13438,13 +13491,13 @@ hbui.PrivacyAndOnlineSafetyModal.header=哎呀！首先你需要获得权限	#
 hbui.PrivacyAndOnlineSafetyModal.linkButtonHint=这将带你访问一个网页以帮助解决此问题	#
 hbui.PrivacyAndOnlineSafetyModal.multiplayerPermissionMessage=“你可以加入多人游戏”的权限为允许	#
 hbui.PrivacyAndOnlineSafetyModal.qrCodeHint=这是一个二维码，将带你访问外部链接以更改权限	#
-hbui.PrivacyAndOnlineSafetyModal.toAccessRealms=要访问Realms，请设置：	#
-hbui.PrivacyAndOnlineSafetyModal.toAccessRealmsNumbered=1. 要访问Realms，请设置：	#
-hbui.PrivacyAndOnlineSafetyModal.toAccessRealmsStories=要访问Realms动态，请设置：	#
-hbui.PrivacyAndOnlineSafetyModal.toAccessRealmsStoriesNumbered=2. 要访问Realms动态，请设置：	#
+hbui.PrivacyAndOnlineSafetyModal.toAccessRealms=要访问Realms，请设置：	### {StrContains="Realms"}
+hbui.PrivacyAndOnlineSafetyModal.toAccessRealmsNumbered=1. 要访问Realms，请设置：	### {StrContains="Realms"}
+hbui.PrivacyAndOnlineSafetyModal.toAccessRealmsStories=要访问Realms动态，请设置：	### {StrContains="Realms Stories"}
+hbui.PrivacyAndOnlineSafetyModal.toAccessRealmsStoriesNumbered=2. 要访问Realms动态，请设置：	### {StrContains="Realms Stories"}
 hbui.PrivacyAndOnlineSafetyModal.tryAgain=请重试	#
 hbui.PrivacyAndOnlineSafetySuccessModal.buttonAction=开始使用	#
-hbui.PrivacyAndOnlineSafetySuccessModal.content=你的所有权限已成功启用！现在你可以访问Realms和Realms动态了。	#
+hbui.PrivacyAndOnlineSafetySuccessModal.content=你的所有权限已成功启用！现在你可以访问Realms和Realms动态了。	### {StrContains="Realms"} {StrContains="Realms Stories"}
 hbui.PrivacyAndOnlineSafetySuccessModal.header=权限已启用！	#
 hbui.ProfanityWarningModalRoute.body=你输入的文本因包含可能对他人产生冒犯的词汇从而无法使用。请重试。	#
 hbui.ProfanityWarningModalRoute.close=关闭	#
@@ -13523,28 +13576,29 @@ hbui.RealmListItem.joinedRealm=已加入Realm	#
 hbui.RealmListItem.lastPlayed=上次游戏	#
 hbui.RealmListItem.lastPlayedNarration=上次游戏：%1$s	#
 hbui.RealmListItem.role=列表项	#
+hbui.RealmListItem.select=选择	#
 hbui.RealmListItem.yourRealm=你的Realm	#
 hbui.Realms.ErrorModals.CannotContactRealms.message=请检查网络连接并重试。	#
-hbui.Realms.ErrorModals.CannotContactRealms.title=无法连接Realms	#
+hbui.Realms.ErrorModals.CannotContactRealms.title=无法连接Realms	### {StrContains="Realms"}
 hbui.Realms.ErrorModals.close=关闭	#
 hbui.Realms.ErrorModals.ok=关闭	#
 hbui.Realms.ErrorModals.postingCommentFailed.message=无法发布新评论。请检查你的网络连接然后重试。	#
 hbui.Realms.ErrorModals.postingCommentFailed.title=发布评论失败	#
-hbui.Realms.ErrorModals.rateLimitError.message=请在几分钟后重试。Realms正在尝试处理。	#
+hbui.Realms.ErrorModals.rateLimitError.message=请在几分钟后重试。Realms正在尝试处理。	### {StrContains="Realms"}
 hbui.Realms.ErrorModals.rateLimitError.title=操作失败	#
 hbui.Realms.ErrorModals.select=选择	#
-hbui.Realms.ErrorModals.somethingWentWrong.message=无法连接Realms。请重试。	#
+hbui.Realms.ErrorModals.somethingWentWrong.message=无法连接Realms。请重试。	### {StrContains="Realms"}
 hbui.Realms.ErrorModals.somethingWentWrong.title=出错了	#
 hbui.Realms.InviteExpiredModals.header=Realm邀请已过期	#
 hbui.Realms.InviteExpiredModals.message=此邀请已失效。	#
 hbui.Realms.InviteExpiredModals.ok=确定	#
 hbui.Realms.LoadingModals.activatingSlot=更换槽位...	#
-hbui.Realms.LoadingModals.contactingRealms=连接Realms...	#
+hbui.Realms.LoadingModals.contactingRealms=连接Realms...	### {StrContains="Realms"}
 hbui.Realms.LoadingModals.creatingRealm=创建Realm...	#
 hbui.Realms.LoadingModals.fetchingRealmInformation=获取Realm信息...	#
 hbui.Realms.LoadingModals.fetchingSubscriptionInformation=获取订阅信息...	#
 hbui.Realms.LoadingModals.loading=加载中...	#
-hbui.Realms.LoadingModals.loadingRealmsStories=加载Realms动态...	#
+hbui.Realms.LoadingModals.loadingRealmsStories=加载Realms动态...	### {StrContains="Realms Stories"}
 hbui.RealmsNewStoryImageSelectRoute.cancel=取消	#
 hbui.RealmsNewStoryImageSelectRoute.deleteScreenshotsLabel.plural=删除%1$s张截屏	#
 hbui.RealmsNewStoryImageSelectRoute.deleteScreenshotsLabel.single=删除%1$s张截屏	#
@@ -13588,8 +13642,8 @@ hbui.RealmsPDPFAQAccordion.clickToExpand=点击展开	#
 hbui.RealmsPDPFAQAccordion.enumeration=第%1$s个/共%2$s个	#
 hbui.RealmsPDPFAQAccordion.textBlock=文本框	#
 hbui.RealmsPDPScreen.FAQ.Cost.description1=你可以订阅Realms计划：	### {StrContains="Realms"}
-hbui.RealmsPDPScreen.FAQ.Cost.description2=Realms Core计划：%1$s/月。无限制添加成员，同时与2名其他玩家进行在线游戏。	### {StrContains="Realms"}
-hbui.RealmsPDPScreen.FAQ.Cost.description3=Realms Plus计划：%1$s/月。无限制添加成员，同时与10名其他玩家进行在线游戏。此外还可在Marketplace Pass目录中免费享受超过150个商城内容。	### {StrContains="Realms"}
+hbui.RealmsPDPScreen.FAQ.Cost.description2=Realms Core计划：%1$s/月。无限制添加成员，同时与2名其他玩家进行在线游戏。	### {StrContains="Realms Core"}
+hbui.RealmsPDPScreen.FAQ.Cost.description3=Realms Plus计划：%1$s/月。无限制添加成员，同时与10名其他玩家进行在线游戏。此外还可在Marketplace Pass目录中免费享受超过150个商城内容。	### {StrContains="Realms Plus"} {StrContains="Marketplace Pass"}
 hbui.RealmsPDPScreen.FAQ.Cost.title=Realm的费用是多少？	### {StrContains="Realm"}
 hbui.RealmsPDPScreen.FAQ.Expiry.description=你的世界需要由自己保管。在订阅到期后，你有18个月的时间可以将其下载到设备上。如果你在此期间重新订阅，即可再次获得访问Realm的权限，你的Realm与之前相比不会发生任何变化。	### {StrContains="Realm"}
 hbui.RealmsPDPScreen.FAQ.Expiry.title=如果订阅到期，Realm中的世界会怎么样？	### {StrContains="Realm"}
@@ -13616,6 +13670,7 @@ hbui.RealmsPDPScreen.promos.header=什么是Realms？	### {StrContains="Realms"}
 hbui.RealmsPDPScreen.promos.persistent.description=你和你邀请的Realm成员可随时在任意设备上游玩已上传至Realm中的世界。即便你不在线成员也一样可以游玩。	### {StrContains="Realm"}
 hbui.RealmsPDPScreen.promos.persistent.title=永不下线的多人游戏世界	#
 hbui.RealmsPDPScreen.splash.buyNow=立即购买	### {MaxLength="20"}
+hbui.RealmsPDPScreen.splash.subscribeNow=立即订阅	### {MaxLength="20"}
 hbui.RealmsPDPScreen.splash.text=管理自己的Minecraft服务器！哪些玩家可以加入、游戏要怎么玩，都由你来定。即便你不在线成员也可以免费游玩。轻松设置、管理，并且可在任何设备上游玩。	### {MaxLength="200"}
 hbui.RealmsPDPScreen.splash.title=你的专属服务器，永不下线	### {MaxLength="50"}
 hbui.RealmsPDPScreen.splash.tryFree=免费试用	### {MaxLength="20"}
@@ -13641,7 +13696,7 @@ hbui.RealmsPlanPickerScreen.featureLine5=免费自动备份	#
 hbui.RealmsPlanPickerScreen.featureLine5Narration=自动免费备份	#
 hbui.RealmsPlanPickerScreen.featureLine6=Realms动态	### {StrContains="Realms"}
 hbui.RealmsPlanPickerScreen.featureLine7=30天免费试用	#
-hbui.RealmsPlanPickerScreen.featureLine8=包含Marketplace Pass	#
+hbui.RealmsPlanPickerScreen.featureLine8=包含Marketplace Pass	### {StrContains="Marketplace Pass"}
 hbui.RealmsPlanPickerScreen.featureNarrationCore=Realms core套餐详情。文本框	### {StrContains="Realms"}
 hbui.RealmsPlanPickerScreen.featureNarrationPlus=Realms plus套餐详情。文本框	### {StrContains="Realms"}
 hbui.RealmsPlanPickerScreen.planCoreCardNarration=纵向面板。组。core套餐每月%1$s	#
@@ -13653,8 +13708,8 @@ hbui.RealmsPlanPickerScreen.title=选择你的计划	#
 hbui.RealmsPlanPickerScreen.titleNarrationHint=比较两个计划	#
 hbui.RealmsPreviews.create.cancel.beta=不，不要创建Beta Realm	#
 hbui.RealmsPreviews.create.cancel.preview=不，不要创建Preview Realm	#
-hbui.RealmsPreviews.create.message.beta=你将创建一个与付费Realms订阅匹配的免费Beta Realm。只要付费订阅处于活跃状态，就可以访问这个全新的Beta Realm。你的付费Realm不会受到影响。	#
-hbui.RealmsPreviews.create.message.preview=你将创建一个与付费Realms订阅匹配的免费Preview Realm。只要付费订阅处于活跃状态，就可以访问这个全新的Preview Realm。你的付费Realm不会受到影响。	#
+hbui.RealmsPreviews.create.message.beta=你将创建一个与付费Realms订阅匹配的免费Beta Realm。只要付费订阅处于活跃状态，就可以访问这个全新的Beta Realm。你的付费Realm不会受到影响。	### {StrContains="Beta Realms"}
+hbui.RealmsPreviews.create.message.preview=你将创建一个与付费Realms订阅匹配的免费Preview Realm。只要付费订阅处于活跃状态，就可以访问这个全新的Preview Realm。你的付费Realm不会受到影响。	### {StrContains="Preview Realms"}
 hbui.RealmsPreviews.create.select=选择	#
 hbui.RealmsPreviews.create.titleAndButtonLabel.beta=创建Beta Realm	#
 hbui.RealmsPreviews.create.titleAndButtonLabel.preview=创建Preview Realm	#
@@ -13664,10 +13719,10 @@ hbui.RealmsPreviews.ReplaceWorld.message=这将删除你活跃槽位中的世界
 hbui.RealmsPreviews.ReplaceWorld.select=选择	#
 hbui.RealmsPreviews.ReplaceWorld.title=替换世界？	#
 hbui.RealmsPreviews.SubscriptionNeeded.close=关闭	#
-hbui.RealmsPreviews.SubscriptionNeeded.message.beta=你需要购买Realms订阅才能创建Beta Realm。请前往完整版Minecraft购买订阅或开始免费试用。	#
-hbui.RealmsPreviews.SubscriptionNeeded.message.preview=你需要购买Realms订阅才能创建Preview Realm。请前往完整版Minecraft购买订阅或开始免费试用。	#
+hbui.RealmsPreviews.SubscriptionNeeded.message.beta=你需要购买Realms订阅才能创建Beta Realm。请前往完整版Minecraft购买订阅或开始免费试用。	### {StrContains="Realms"}
+hbui.RealmsPreviews.SubscriptionNeeded.message.preview=你需要购买Realms订阅才能创建Preview Realm。请前往完整版Minecraft购买订阅或开始免费试用。	### {StrContains="Realms"}
 hbui.RealmsPreviews.SubscriptionNeeded.select=选择	#
-hbui.RealmsPreviews.SubscriptionNeeded.title=需要购买Realms订阅	#
+hbui.RealmsPreviews.SubscriptionNeeded.title=需要购买Realms订阅	### {StrContains="Realms"}
 hbui.RealmsPurchaseSubscriptionRoute.backHint=这将让你返回上一个屏幕	#
 hbui.RealmsPurchaseSubscriptionRoute.banner.heading.core=Core	#
 hbui.RealmsPurchaseSubscriptionRoute.banner.heading.plus=Plus	#
@@ -13677,19 +13732,33 @@ hbui.RealmsPurchaseSubscriptionRoute.banner.subheading.trial=免费试用30天�
 hbui.RealmsPurchaseSubscriptionRoute.banner.subheading.trial.narration=免费试用30天，然后每月%1$s	#
 hbui.RealmsPurchaseSubscriptionRoute.checkboxLabel=我同意	#
 hbui.RealmsPurchaseSubscriptionRoute.ErrorModals.close=关闭	#
+hbui.RealmsPurchaseSubscriptionRoute.errorModals.failedClubNameValidation.body=你输入的文本因包含可能对他人产生冒犯的词汇从而无法使用。请重试。	#
+hbui.RealmsPurchaseSubscriptionRoute.errorModals.failedClubNameValidation.title=脏话过滤器	#
+hbui.RealmsPurchaseSubscriptionRoute.errorModals.genericFailure.body=购买失败	#
+hbui.RealmsPurchaseSubscriptionRoute.errorModals.genericFailure.title=出错了	#
+hbui.RealmsPurchaseSubscriptionRoute.errorModals.invalidRealmName.body=你输入的Realm名称无效。请务必填写此字段，且不包含任何特殊字符。	#
+hbui.RealmsPurchaseSubscriptionRoute.errorModals.invalidRealmName.title=无效的Realm名称	#
+hbui.RealmsPurchaseSubscriptionRoute.errorModals.offerNotAvailableAllOffersOccupied.core.body=无法处理此购买，因为你已达到此平台上的Realms Core订阅服务限制。	#
+hbui.RealmsPurchaseSubscriptionRoute.errorModals.offerNotAvailableAllOffersOccupied.core.title=Realms Core订阅服务已达最大值	#
+hbui.RealmsPurchaseSubscriptionRoute.errorModals.offerNotAvailableAllOffersOccupied.plus.body=无法处理此购买，因为你已达到此平台上的Realms Plus订阅服务限制。	#
+hbui.RealmsPurchaseSubscriptionRoute.errorModals.offerNotAvailableAllOffersOccupied.plus.title=Realms Plus订阅服务已达最大值	#
+hbui.RealmsPurchaseSubscriptionRoute.errorModals.offerNotAvailableAllOffersOccupied.trial.body=无法处理此购买，因为此账号的免费体验已不可用。	#
+hbui.RealmsPurchaseSubscriptionRoute.errorModals.offerNotAvailableAllOffersOccupied.trial.title=试用版优惠不可用	#
+hbui.RealmsPurchaseSubscriptionRoute.errorModals.offerNotAvailableIncompleteData.body=你的设备与商店连接中断，我们无法确认此优惠是否可用。请检查你的互联网连接，或稍后再试。	#
+hbui.RealmsPurchaseSubscriptionRoute.errorModals.offerNotAvailableIncompleteData.title=商店连接已中断	#
+hbui.RealmsPurchaseSubscriptionRoute.errorModals.offerNotFound.body=我们遇到了未知错误，无法完成购买。请检查你的互联网连接或稍后重试。	#
+hbui.RealmsPurchaseSubscriptionRoute.errorModals.offerNotFound.title=无法完成请求	#
 hbui.RealmsPurchaseSubscriptionRoute.ErrorModals.select=选择	#
-hbui.RealmsPurchaseSubscriptionRoute.header.core=创建一个Realms Core服务器	#
-hbui.RealmsPurchaseSubscriptionRoute.header.plus=创建一个Realms Plus服务器	#
+hbui.RealmsPurchaseSubscriptionRoute.header.core=创建一个Realms Core服务器	### {StrContains="Realms Core"}
+hbui.RealmsPurchaseSubscriptionRoute.header.plus=创建一个Realms Plus服务器	### {StrContains="Realms Plus"}
 hbui.RealmsPurchaseSubscriptionRoute.header.renew=续订Realms	#
-hbui.RealmsPurchaseSubscriptionRoute.header.trial=Realms Plus免费试用	#
+hbui.RealmsPurchaseSubscriptionRoute.header.trial=Realms Plus免费试用	### {StrContains="Realms Plus"}
 hbui.RealmsPurchaseSubscriptionRoute.heroButton.create=每月%1$s创建	#
 hbui.RealmsPurchaseSubscriptionRoute.heroButton.renew=每月%1$s续订	#
 hbui.RealmsPurchaseSubscriptionRoute.heroButton.trial=开始免费试用	#
 hbui.RealmsPurchaseSubscriptionRoute.inputLabel=服务器名称	#
 hbui.RealmsPurchaseSubscriptionRoute.inputPlaceholder=%1$s的Realm	#
-hbui.RealmsPurchaseSubscriptionRoute.modals.failed.body=购买失败	#
-hbui.RealmsPurchaseSubscriptionRoute.modals.failed.title=出错了	#
-hbui.RealmsPurchaseSubscriptionRoute.modals.purchaseInProgress=购买进行中	#
+hbui.RealmsPurchaseSubscriptionRoute.modals.purchaseInProgress=进行中	#
 hbui.RealmsPurchaseSubscriptionRoute.panelButton.privacyPolicy=隐私政策	#
 hbui.RealmsPurchaseSubscriptionRoute.panelButton.termsAndConditions=条款和条件	#
 hbui.RealmsPurchaseSubscriptionRoute.panelButton.title=条款和条件	#
@@ -13719,7 +13788,7 @@ hbui.RealmsStories.errorMessageTitle=无法加载Realm数据。	#
 hbui.RealmsStories.errorModal.commentPostFailedMessage=你对这个Realm动态的评论发布失败。	#
 hbui.RealmsStories.errorModal.continue=继续	#
 hbui.RealmsStories.errorModal.defaultErrorMessage=出错了。	#
-hbui.RealmsStories.errorModal.header=Realms动态错误	#
+hbui.RealmsStories.errorModal.header=Realms动态错误	### {StrContains="Realms Stories"}
 hbui.RealmsStories.errorModal.storyPostFailedMessage=你的动态未能发布到此Realm的列表。	#
 hbui.RealmsStories.feed=动态信息	#
 hbui.RealmsStories.feed.addStory=添加动态	### The term 'Story' represents a social feature, similar to a 'Post' on social media. Translations should use a term more fitting for a social posting rather than a story book, for example. {MaxLength='15'}
@@ -13761,6 +13830,8 @@ hbui.RealmsStories.feedEvent.medium.FirstAbandonedMineshaftFound=%1$s发现了�
 hbui.RealmsStories.feedEvent.medium.FirstAncientCityFound=%1$s发现了一个远古城市	#
 hbui.RealmsStories.feedEvent.medium.FirstBadlandsFound=%1$s发现了一片恶地	#
 hbui.RealmsStories.feedEvent.medium.FirstConduit=%1$s现在掌控着海洋	#
+hbui.RealmsStories.feedEvent.medium.FirstCraftedNetherite=%1$s升级了下界合金	#
+hbui.RealmsStories.feedEvent.medium.FirstCraftedNetherite.grouped=%1$s升级了下界合金	### 1 = List of player names ex. Player1, Player2, and Player 3 upgraded to Netherite
 hbui.RealmsStories.feedEvent.medium.FirstDiamondFound=%1$s发现了一颗钻石	#
 hbui.RealmsStories.feedEvent.medium.FirstEnchantment=%1$s发现了附魔	#
 hbui.RealmsStories.feedEvent.medium.FirstEnchantment.grouped=%1$s发现了附魔	### 1 = List of player names ex. Player1, Player2, and Player 3 discovered enchanting
@@ -13768,8 +13839,6 @@ hbui.RealmsStories.feedEvent.medium.FirstEndPortal=%1$s前往了末地？	#
 hbui.RealmsStories.feedEvent.medium.FirstFullyExploredMap=%1$s已开始绘制世界地图	#
 hbui.RealmsStories.feedEvent.medium.FirstMushroomFieldFound=%1$s发现了一个蘑菇岛	#
 hbui.RealmsStories.feedEvent.medium.FirstNetherFortressFound=%1$s发现了一个下界要塞	#
-hbui.RealmsStories.feedEvent.medium.FirstNetherite=%1$s升级了下界合金	#
-hbui.RealmsStories.feedEvent.medium.FirstNetherite.grouped=%1$s升级了下界合金	### 1 = List of player names ex. Player1, Player2, and Player 3 upgraded to Netherite
 hbui.RealmsStories.feedEvent.medium.FirstNetherPortalLit=%1$s建造了通往下界的传送门	#
 hbui.RealmsStories.feedEvent.medium.FirstPeakMountainFound=%1$s登上了山峰	#
 hbui.RealmsStories.feedEvent.medium.FirstPillagerOutpostFound=%1$s发现了一个掠夺者前哨站	#
@@ -13875,13 +13944,13 @@ hbui.RealmsStories.members.leastRecentlyPlayed=最少游玩	#
 hbui.RealmsStories.members.manage=管理成员	#
 hbui.RealmsStories.members.member=成员	#
 hbui.RealmsStories.members.noMembersFound=未找到成员	#
-hbui.RealmsStories.members.notMemberRealmsStories=不是Realms动态成员	#
+hbui.RealmsStories.members.notMemberRealmsStories=不是Realms动态成员	### {StrContains="Realms Stories"}
 hbui.RealmsStories.members.onlineMembers=在线成员	#
 hbui.RealmsStories.members.operator=管理员	#
 hbui.RealmsStories.members.optedOutMembers=退出的成员	#
 hbui.RealmsStories.members.realmMembers=Realm成员	#
 hbui.RealmsStories.members.realmOwner=Realm拥有者	#
-hbui.RealmsStories.members.realmStoriesMembers=Realms动态成员	#
+hbui.RealmsStories.members.realmStoriesMembers=Realms动态成员	### {StrContains="Realms Stories"}
 hbui.RealmsStories.members.recentlyPlayed=最近玩过	#
 hbui.RealmsStories.members.search=搜索这个Realm的成员	#
 hbui.RealmsStories.members.searchResult.hint.cleared=搜索过滤器已清空	#
@@ -13901,21 +13970,21 @@ hbui.RealmsStories.messages.timelineEmpty.body=在Realm上游玩以生成时间�
 hbui.RealmsStories.messages.timelineEmpty.title=没有数据	#
 hbui.RealmsStories.messages.timelineOff.body=该Realm上的时间轴不可用。	#
 hbui.RealmsStories.messages.timelineOff.title=时间轴已禁用	#
-hbui.RealmsStories.messages.title=无法加载Realms动态！	#
+hbui.RealmsStories.messages.title=无法加载Realms动态！	### {StrContains="Realms Stories"}
 hbui.RealmsStories.messages.titleWithArg=%1$s无法加载！	#
 hbui.RealmsStories.messages.unknownErrorBody=我们遇到了一个未知错误，请重试。	#
 hbui.RealmsStories.narration.settings=设置 按钮	#
-hbui.RealmsStories.narration.title=Realms动态	#
+hbui.RealmsStories.narration.title=Realms动态	### {StrContains="Realms Stories"}
 hbui.RealmsStories.narrationPlayerXOfY=第%1$s个/共%2$s个	#
 hbui.RealmsStories.new=新建	#
 hbui.RealmsStories.oneUnreadStoryHint=你有1则未读动态	#
 hbui.RealmsStories.OptInModal.message=现在，你可以将动态分享到动态帖子，通过成员选项卡了解Realm中有哪些人，并通过时间轴与他们协调游戏时间。开始享受吧！	#
-hbui.RealmsStories.OptInModal.openStoriesButton=打开Realms动态	#
-hbui.RealmsStories.OptInModal.title=你来了！欢迎来到Realms动态	#
+hbui.RealmsStories.OptInModal.openStoriesButton=打开Realms动态	### {StrContains="Realms Stories"}
+hbui.RealmsStories.OptInModal.title=你来了！欢迎来到Realms动态	### {StrContains="Realms Stories"}
 hbui.RealmsStories.OptInNoticeModal.gotItButton=我了解了！	#
-hbui.RealmsStories.OptInNoticeModal.message.p1=你已选择加入...但是在使用Realms动态之前，Realms所有者需要加入。邀请他们选择加入！	#
+hbui.RealmsStories.OptInNoticeModal.message.p1=你已选择加入...但是在使用Realms动态之前，Realms所有者需要加入。邀请他们选择加入！	### {StrContains="Realms Stories"}
 hbui.RealmsStories.OptInNoticeModal.message.p2=一旦他们这样做了，你就可以将动态分享到动态帖子，通过成员选项卡了解谁在Realm上，并通过时间轴与他们协调游戏时间。	#
-hbui.RealmsStories.OptInNoticeModal.title=哎呀！你无法访问Realms动态	#
+hbui.RealmsStories.OptInNoticeModal.title=哎呀！你无法访问Realms动态	### {StrContains="Realms Stories"}
 hbui.RealmsStories.OptInScreen.learnMore.dataType=文本框	#
 hbui.RealmsStories.OptInScreen.learnMore.history.body.1=可以查看其他玩家的游戏时间，了解他们的创作和计划，这样下一次就可以与他们一同游玩。	#
 hbui.RealmsStories.OptInScreen.learnMore.history.body.2=了解其他玩家的游戏时间，观看他们在游戏中的经历。多和他们一起玩！	#
@@ -13926,12 +13995,12 @@ hbui.RealmsStories.OptInScreen.learnMore.members.title=了解Realm成员	#
 hbui.RealmsStories.OptInScreen.learnMore.social.body.1=将自己的故事发布到动态帖子，分享你的冒险与创作，让其他玩家知道你在做什么。	#
 hbui.RealmsStories.OptInScreen.learnMore.social.body.2=点赞并评论其他玩家的分享。互相赞美和鼓励！	#
 hbui.RealmsStories.OptInScreen.learnMore.social.title=与好友分享故事	#
-hbui.RealmsStories.OptInScreen.learnMore.title=详细了解Realms动态	#
+hbui.RealmsStories.OptInScreen.learnMore.title=详细了解Realms动态	### {StrContains="Realms Stories"}
 hbui.RealmsStories.OptInScreen.maybeLaterButton=过一会吧	#
 hbui.RealmsStories.OptInScreen.optInButton=我想加入	#
-hbui.RealmsStories.OptInScreen.optInButton.hint=这将带你进入Realms动态。	#
+hbui.RealmsStories.OptInScreen.optInButton.hint=这将带你进入Realms动态。	### {StrContains="Realms Stories"}
 hbui.RealmsStories.OptInScreen.screen=屏幕	#
-hbui.RealmsStories.OptInScreen.title=想要加入REALMS动态吗？！	#
+hbui.RealmsStories.OptInScreen.title=想要加入Realms动态吗？！	#
 hbui.RealmsStories.OptInScreen.title.suffix=标题	#
 hbui.RealmsStories.OptOutModal.cancel=不是，不要退出	#
 hbui.RealmsStories.OptOutModal.confirm=是的，选择退出	#
@@ -13941,6 +14010,7 @@ hbui.RealmsStories.OptOutModal.realmMember.message=如果你选择退出，你�
 hbui.RealmsStories.OptOutModal.realmOwner.message.para.1=作为Realms所有者，如果你选择退出，任何人都无法访问Realms的动态帖子、时间轴或成员选项卡。	#
 hbui.RealmsStories.OptOutModal.realmOwner.message.para.2=你确定要选择退出吗？	#
 hbui.RealmsStories.OptOutModal.title=你确定要选择退出吗？	#
+hbui.RealmsStories.postedTo=发布到%1$s	#
 hbui.RealmsStories.RealmPlayerListItem.hint=按下以访问玩家资料	#
 hbui.RealmsStories.RealmPlayerListItem.role=按钮	#
 hbui.RealmsStories.RealmPlayerListItem.viewProfile=查看玩家资料	#
@@ -14013,7 +14083,7 @@ hbui.RealmsStories.settings.personalSettings.badgeNotifSwitch.title=横幅通知
 hbui.RealmsStories.settings.personalSettings.description=这些设置只适用于在这个Realm中的你。	#
 hbui.RealmsStories.settings.personalSettings.header=1. 个人设置	#
 hbui.RealmsStories.settings.personalSettings.member.header=个人设置	#
-hbui.RealmsStories.settings.realmWideSettings.description=这些设置适用于本Realm中已加入Realm动态的所有人。	#
+hbui.RealmsStories.settings.realmWideSettings.description=这些设置适用于本Realm中已加入Realm动态的所有人。	### {StrContains="Realms Stories"}
 hbui.RealmsStories.settings.realmWideSettings.header=2. 全Realm设置	#
 hbui.RealmsStories.settings.realmWideSettings.member.header=全Realm设置	#
 hbui.RealmsStories.settings.realmWideSettings.playerTimeline.description=允许所有人查看时间轴。	#
@@ -14025,10 +14095,10 @@ hbui.RealmsStories.settings.realmWideSettings.storyCoordinates.title=Realm事件
 hbui.RealmsStories.settings.screen=%1$s屏幕	#
 hbui.RealmsStories.settings.screenheader=%1$s动态设置屏幕	#
 hbui.RealmsStories.settings.section=章节	#
-hbui.RealmsStories.ShareLink.message=现在你可以和好友一起在这个Realm中开始游戏。你还可以使用相机按钮截图并在Realms动态中分享它们。尽情享受吧！	#
-hbui.RealmsStories.ShareLink.openStories=查看Realms动态	#
+hbui.RealmsStories.ShareLink.message=现在你可以和好友一起在这个Realm中开始游戏。你还可以使用相机按钮截图并在Realms动态中分享它们。尽情享受吧！	### {StrContains="Realms Stories"}
+hbui.RealmsStories.ShareLink.openStories=查看Realms动态	### {StrContains="Realms Stories"}
 hbui.RealmsStories.ShareLink.playNow=立即游戏	#
-hbui.RealmsStories.ShareLink.title=欢迎来到Realms！	#
+hbui.RealmsStories.ShareLink.title=欢迎来到Realms！	### {StrContains="Realms"}
 hbui.RealmsStories.storyFeed=动态帖子	#
 hbui.RealmsStories.timeline=时间轴	#
 hbui.RealmsStories.Timeline.Information.close=关闭	#
@@ -14128,6 +14198,8 @@ hbui.ScreenshotDetailsSideMenu.share=分享	#
 hbui.ScreenshotDetailsSideMenu.shareText=查看我的Minecraft截屏！	#
 hbui.ScreenshotDetailsSideMenu.shareTitle=Minecraft截屏	#
 hbui.ScreenshotDetailsSideMenu.shareToExternal=共享至外部	#
+hbui.ScreenshotGalleryContainer.cancel=取消	#
+hbui.ScreenshotGalleryContainer.confirmButtonText=确认	#
 hbui.ScreenshotGalleryContainer.featured=精选(%1$s)	#
 hbui.ScreenshotGalleryContainer.headerTextWithNumbers=%1$s(%2$s/%3$s)	#
 hbui.ScreenshotGalleryContainer.newestFirst=从新到旧	#
@@ -14159,8 +14231,12 @@ hbui.ScreenshotGalleryInfoModal.showcaseHint=在档案的展示相册中，标�
 hbui.ScreenshotGalleryInfoModal.title=如何使用截屏	#
 hbui.ScreenshotGalleryItem.featured=精选	#
 hbui.ScreenshotGalleryItem.narration.cardRole=卡片	#
+hbui.ScreenshotGalleryItem.narration.checkboxRole=复选框	#
+hbui.ScreenshotGalleryItem.narration.checked=已选中	#
 hbui.ScreenshotGalleryItem.narration.enumeration=第%1$s个/共%2$s个	#
 hbui.ScreenshotGalleryItem.narration.featured=精选	#
+hbui.ScreenshotGalleryItem.narration.notChecked=未检查	#
+hbui.ScreenshotGalleryItem.narration.showcased=展示的	#
 hbui.ScreenshotGalleryItem.pickScreenshot=选择一张截屏	#
 hbui.ScreenshotGalleryItem.replaceScreenshot=替换截屏	#
 hbui.ScreenshotGalleryItem.screenshotInputLegend=选择	#
@@ -14176,9 +14252,7 @@ hbui.ScreenshotGalleryRoute.moreOptions=更多选项	#
 hbui.ScreenshotGalleryRoute.optionsEnumeration=第%1$s个/共%2$s个	#
 hbui.ScreenshotGalleryRoute.screenshotGalleryHeader=截屏相册	#
 hbui.ScreenshotPicker.header=选择截屏	#
-hbui.ScreenshotShowcaseRoute.clearShowcaseSlot=清除展示栏	#
-hbui.ScreenshotShowcaseRoute.galleryBanner=朋友可以从你的档案查看你的展示相册。	#
-hbui.ScreenshotShowcaseRoute.manageHeader=管理展示相册	#
+hbui.ScreenshotShowcaseRoute.header=%1$s的展示相册	#
 hbui.SeedTemplateCard.narrationSuffix=预设的种子	#
 hbui.SeedTemplatesRoute.errorBackButtonInputLegend=后退	#
 hbui.SeedTemplatesRoute.errorBackButtonText=返回	#
@@ -14233,7 +14307,6 @@ hbui.SignInSavePurchasesRoute.altSignInPrompt=登录或免费注册以保存你�
 hbui.SignInSavePurchasesRoute.createAccountPrompt=没有微软账号？立即免费创建一个！	#
 hbui.SignInSavePurchasesRoute.laterButton=以后再说	#
 hbui.SignInSavePurchasesRoute.signInButton=立即登录	#
-hbui.SignInSavePurchasesRoute.signIndsList3=保存购买，以免在系统出现问题时导致丢失	#
 hbui.SignInSavePurchasesRoute.signInHeader=登录以保存购买	#
 hbui.SignInSavePurchasesRoute.signInList1=从任何平台访问你购买的商城内容	#
 hbui.SignInSavePurchasesRoute.signInList2=跨平台使用你的自定义角色	#
@@ -14270,12 +14343,12 @@ hbui.StartFromTemplateRoute.InitializationModal.message=连接中...	#
 hbui.StartFromTemplateRoute.InitializationModal.title=开始下载	#
 hbui.StartFromTemplateRoute.InstallModal.message=开始安装	#
 hbui.StartFromTemplateRoute.InstallModal.title=正在安装内容(2/2)	#
-hbui.StartFromTemplateRoute.MarketplacePass.description=为Marketplace Pass订阅者提供更多世界模板。	#
+hbui.StartFromTemplateRoute.MarketplacePass.description=为Marketplace Pass订阅者提供更多世界模板。	### {StrContains="Marketplace Pass"}
 hbui.StartFromTemplateRoute.MarketplacePass.imageNarration=Marketplace pass	#
 hbui.StartFromTemplateRoute.MarketplacePass.imageRole=图片	#
 hbui.StartFromTemplateRoute.MarketplacePass.noInternetMessage=请检查你的互联网连接以浏览商城。	#
 hbui.StartFromTemplateRoute.MarketplacePass.NoTemplatesMessage.button=前往设置	#
-hbui.StartFromTemplateRoute.MarketplacePass.NoTemplatesMessage.description=要启用Marketplace Pass屏幕，请前往商城调试选项卡，将商城Discovery环境设置为生产，然后重新启动。	#
+hbui.StartFromTemplateRoute.MarketplacePass.NoTemplatesMessage.description=要启用Marketplace Pass屏幕，请前往商城调试选项卡，将商城Discovery环境设置为生产，然后重新启动。	### {StrContains="Marketplace Pass"}
 hbui.StartFromTemplateRoute.MarketplacePass.NoTemplatesMessage.title=模板不可用	#
 hbui.StartFromTemplateRoute.MarketplacePass.role=纵向子菜单	#
 hbui.StartFromTemplateRoute.MarketplacePass.title=Marketplace Pass模板	#
@@ -14318,7 +14391,7 @@ hbui.StartFromTemplateRoute.OwnedByMe.searchResult.hint.noResult=没有搜索结
 hbui.StartFromTemplateRoute.OwnedByMe.searchResult.hint.oneResult=一个搜索结果	#
 hbui.StartFromTemplateRoute.OwnedByMe.searchResult.name=搜索结果	#
 hbui.StartFromTemplateRoute.OwnedByMe.searchResult.role=屏幕	#
-hbui.StartFromTemplateRoute.OwnedByMe.title=已拥有的模板	#
+hbui.StartFromTemplateRoute.OwnedByMe.title=已拥有模板	#
 hbui.StartFromTemplateRoute.SideMenu.cnwButton=创建新世界	#
 hbui.StartFromTemplateRoute.SideMenu.featured=精选创作者	#
 hbui.StartFromTemplateRoute.SideMenu.inputLegend=打开	#
@@ -14487,9 +14560,9 @@ hbui.EditorActionItemCollection.attachDebugger.tooltip.title=附加脚本调试�
 hbui.EditorActionItemCollection.crosshairMode=十字准星模式	#
 hbui.EditorActionItemCollection.crosshairMode.tooltip.description=切换到十字准心模式进行单方块精准编辑	#
 hbui.EditorActionItemCollection.crosshairMode.tooltip.title=模式切换	#
-hbui.EditorActionItemCollection.inputMapping=输入映射	#
-hbui.EditorActionItemCollection.inputMapping.tooltip.description=打开输入映射模态框以配置已注册的绑定。	#
-hbui.EditorActionItemCollection.inputMapping.tooltip.title=输入映射	#
+hbui.EditorActionItemCollection.keyboardSettings=键盘设置	#
+hbui.EditorActionItemCollection.keyboardSettings.tooltip.description=打开键盘设置以配置已注册的绑定。	#
+hbui.EditorActionItemCollection.keyboardSettings.tooltip.title=键盘设置	#
 hbui.EditorActionItemCollection.reload=重载	#
 hbui.EditorActionItemCollection.reload.tooltip.description=重载所有脚本文件，从所有行为包中刷新UI。	#
 hbui.EditorActionItemCollection.reload.tooltip.title=重载	#
@@ -14532,6 +14605,10 @@ hbui.EditorColorPicker.green=绿色	#
 hbui.EditorColorPicker.red=红色	#
 hbui.EditorColorPicker.selectedColor=选定的颜色	#
 hbui.EditorColorPicker.type=颜色选取器	#
+hbui.EditorConflictMessagesPopup.cancel=取消	#
+hbui.EditorConflictMessagesPopup.confirmAndClear=确认并清除冲突	#
+hbui.EditorConflictMessagesPopup.confirmAndGoTo=确认并转到冲突	#
+hbui.EditorConflictMessagesPopup.conflictMessage=%1$s已在使用中，将从%2$s>%3$s中移除	#
 hbui.EditorCrosshairMode.toast.modeSwitch=ESC或%1返回工具模式	#
 hbui.EditorDrawer.closeButton=关闭按钮	#
 hbui.EditorDrawer.headerButton=标题按钮	#
@@ -14683,26 +14760,31 @@ hbui.EditorInput.keyName.SLASH=斜杠	#
 hbui.EditorInput.keyName.SPACE=SPACE	#
 hbui.EditorInput.keyName.TAB=TAB	#
 hbui.EditorInput.keyName.UP=上	#
-hbui.EditorInputMapping.bindingField.tooltip=点击输入框并按下键盘键以创建所需的绑定。按下ENTER或取消焦点以确认绑定，或者按下空格以重置绑定。按住输入框时右键单击将解除当前绑定。	#
-hbui.EditorInputMapping.clearBinding.tooltip=解除按键绑定。	#
-hbui.EditorInputMapping.core=核心	#
-hbui.EditorInputMapping.count=第%1$s个/共%2$s个	#
-hbui.EditorInputMapping.exclusive=独占	#
-hbui.EditorInputMapping.exclusive.tooltip=开启独占切换后，单键操作仅在没有其他修饰符存在时激活，或在与按键一起使用指定的修饰符组合时激活。	#
-hbui.EditorInputMapping.name=名称	#
-hbui.EditorInputMapping.reset=重置	#
-hbui.EditorInputMapping.resetAll=重置所有	#
-hbui.EditorInputMapping.restore=恢复默认	#
-hbui.EditorInputMapping.restore.tooltip=恢复按键绑定为默认值。	#
-hbui.EditorInputMapping.restoreAll=恢复所有默认值	#
-hbui.EditorInputMapping.save=保存	#
-hbui.EditorInputMapping.saveAll=保存所有	#
-hbui.EditorInputMapping.shortcut=快捷键	#
-hbui.EditorInputMapping.title=输入映射	#
-hbui.EditorInputMapping.tools=模态工具	#
 hbui.EditorKeybindingField.type=按键绑定框	#
 hbui.EditorKeybindingField.unbound=未绑定	#
 hbui.EditorKeybindingField.value=值	#
+hbui.EditorKeyboardSettings.bindingField.tooltip=点击输入框并按下键盘键以创建所需的绑定。按下ENTER或取消焦点以确认绑定，或者按下空格以重置绑定。按住输入框时右键单击将解除当前绑定。	#
+hbui.EditorKeyboardSettings.clearBinding.tooltip=解除按键绑定。	#
+hbui.EditorKeyboardSettings.core=核心上下文	#
+hbui.EditorKeyboardSettings.count=第%1$s个/共%2$s个	#
+hbui.EditorKeyboardSettings.exclusive=独占	#
+hbui.EditorKeyboardSettings.exclusive.tooltip=开启独占切换后，单键操作仅在没有其他修饰符存在时激活，或在与按键一起使用指定的修饰符组合时激活。	#
+hbui.EditorKeyboardSettings.name=动作	#
+hbui.EditorKeyboardSettings.reset=重置	#
+hbui.EditorKeyboardSettings.resetAll=全部重置	#
+hbui.EditorKeyboardSettings.restore=恢复默认	#
+hbui.EditorKeyboardSettings.restore.tooltip=将按键绑定恢复为默认设置。	#
+hbui.EditorKeyboardSettings.restoreAll=恢复所有默认设置	#
+hbui.EditorKeyboardSettings.save=保存	#
+hbui.EditorKeyboardSettings.saveAll=全部保存	#
+hbui.EditorKeyboardSettings.shortcut=快捷键	#
+hbui.EditorKeyboardSettings.title=键盘设置	#
+hbui.EditorKeyboardSettings.tools=模态工具	#
+hbui.EditorLink.warningModal.cancel=取消	#
+hbui.EditorLink.warningModal.content=注意，你要打开的链接尚未经过Minecraft验证。	#
+hbui.EditorLink.warningModal.continue=继续	#
+hbui.EditorLink.warningModal.link=链接：%s	#
+hbui.EditorLink.warningModal.title=未验证的链接	#
 hbui.EditorListSearchField.noResults=没有结果	#
 hbui.EditorListSearchField.search=搜索	#
 hbui.EditorLogPanel.autoScroll=自动滚动	#
@@ -14757,7 +14839,9 @@ hbui.EditorStructurePanel.actionBarSortOptionAtoz=从A到Z	#
 hbui.EditorStructurePanel.actionBarSortOptionBySource=按来源排序	#
 hbui.EditorStructurePanel.actionBarSortOptionByTags=按标签排序	#
 hbui.EditorStructurePanel.actionBarSortOptionZtoa=从Z到A	#
+hbui.EditorStructurePanel.button=按钮	#
 hbui.EditorStructurePanel.contentElementsLabel=内容元素	#
+hbui.EditorStructurePanel.count=第%1$s个/共%2$s个	#
 hbui.EditorStructurePanel.countLabel=计数	#
 hbui.EditorStructurePanel.filterIconTooltip=过滤器	#
 hbui.EditorStructurePanel.gridViewIconTooltip=网格视图	#
@@ -14773,6 +14857,7 @@ hbui.EditorStructurePanel.saveLabel=保存	#
 hbui.EditorStructurePanel.sizeLabel=大小	#
 hbui.EditorStructurePanel.sortLabel=排序	#
 hbui.EditorStructurePanel.structureContentSectionHeader=结构内容	#
+hbui.EditorStructurePanel.structureItem=结构物品	#
 hbui.EditorStructurePanel.tagsSectionHeader=标签	#
 hbui.EditorStructurePanel.totalBlocksLabel=总方块数	#
 hbui.EditorStructurePanel.windowTitle=结构体	#
@@ -14791,6 +14876,8 @@ hbui.EditorToggleButton.count=第%1$s个/共%2$s个	#
 hbui.EditorToggleButton.elementType=选项开关	#
 hbui.EditorToggleButton.select=选择	#
 hbui.EditorToggleButton.selected=已选择	#
+hbui.EditorToggleContainer.nextPage=下一页按钮	#
+hbui.EditorToggleContainer.prevPage=上一页按钮	#
 hbui.EditorToggleHeader.collapsed=已收起	#
 hbui.EditorToggleHeader.elementType=切换标题	#
 hbui.EditorToolRail.title=工具槽	#
@@ -14823,7 +14910,7 @@ hbui.EditorWelcomeDemo.toolSectionText2=- 在X轴和Z轴上移动：WASD	#
 hbui.EditorWelcomeDemo.toolSectionText3=- 在Y轴上移动：Space（向上），Shift（向下）	#
 hbui.EditorWelcomeDemo.toolSectionText4=- 访问斜杠命令窗口：/	#
 hbui.EditorWelcomeDemo.toolSectionText5=- 在工具和十字准星模式间切换：Ctrl+Tab或视窗底部的UI按钮。在十字准星中时，你将需要使用快捷键，但是是Ctrl+Tab或Esc。	#
-hbui.EditorWelcomeDemo.toolSectionText6=查看控件的详细目录： 	#
+hbui.EditorWelcomeDemo.toolSectionText6=查看控件的详细目录：	#
 hbui.EditorWelcomeDemo.toolSectionText7=aka.ms/EditorHowADO	#
 hbui.EditorWelcomeDemo.toolSectionTitle=控件	#
 hbui.EditorWelcomePanel.actionsTabLabel=功能	#
@@ -14962,9 +15049,12 @@ hbui.Pagination.indexCounter=第%1$s个/共%2$s个	#
 hbui.Pagination.next=下一页是%1$s，共%2$s页	#
 hbui.Pagination.nextPage=下一页，跳转到第%1$s页	#
 hbui.Pagination.nextPageDisabled=下一页，已禁用	#
+hbui.Pagination.nextPageInputLegend=下一页	#
+hbui.Pagination.nowOnPage=现在位于第%1$s页	#
 hbui.Pagination.previous=上一页是%1$s，共%2$s页	#
 hbui.Pagination.previousPage=上一页，跳转到第%1$s页	#
 hbui.Pagination.previousPageDisabled=上一页，已禁用	#
+hbui.Pagination.previousPageInputLegend=上一页	#
 hbui.Pagination.select=选择	#
 hbui.Pagination.selected=已选择	#
 hbui.Pagination.skipNext=向前跳转至第%1$s页	#
@@ -15882,17 +15972,17 @@ tile.underwater_torch.name=水下火把	#
 ## 教育版
 
 authentication.popup.setup.title=账号设置	#
-authentication.popup.setup.firstPage.body=欢迎来到Minecraft教育版！%1%1在开始之前，我们需要验证你的年龄。因此我们将打开你的浏览器并要求你使用你的个人微软账号登录。%1%1如果你没有个人微软账号也不必担心...你可以在登录页面上创建一个账号。		### %1 will be replaced with a new line so two will result in an empty line seperating the two pieces of text
+authentication.popup.setup.firstPage.body=欢迎来到Minecraft教育版！%1%1在开始之前，我们需要验证你的年龄。因此我们将打开你的浏览器并要求你使用你的个人微软账号登录。%1%1如果你没有个人微软账号也不必担心...你可以在登录页面上创建一个账号。	### %1 will be replaced with a new line so two will result in an empty line seperating the two pieces of text
 authentication.popup.setup.firstPage.learnMore=为什么需要验证我的年龄？	#
 authentication.popup.setup.firstPage.button=立即验证	#
-authentication.popup.setup.secondPage.body=我们在你的浏览器中打开了账号设置页面。请在该页面登录你的个人微软账号并验证你的年龄。%1%1请在完成后告知我们。		### %1 will be replaced with a new line so two will result in an empty line seperating the two pieces of text
+authentication.popup.setup.secondPage.body=我们在你的浏览器中打开了账号设置页面。请在该页面登录你的个人微软账号并验证你的年龄。%1%1请在完成后告知我们。	### %1 will be replaced with a new line so two will result in an empty line seperating the two pieces of text
 authentication.popup.setup.secondPage.openAgain=重新打开“账号设置”页面。	#
 authentication.popup.setup.secondPage.button=完成了	#
 authentication.popup.demoLink=尝试演示课程。	#
 
 classroomSettings.uriResource.header.title=资源链接	#
 classroomSettings.uriResource.header.description=在游戏菜单上创建一个新按钮，为你的世界添加一个评估工具、网站或其他资源的链接。	#
-classroomSettings.uriResource.name.placeHolder=打开链接（默认）		### Text before (Default) should match pause.externalLink
+classroomSettings.uriResource.name.placeHolder=打开链接（默认）	### Text before (Default) should match pause.externalLink
 classroomSettings.uriResource.name.title=资源按钮名称	#
 classroomSettings.uriResource.uri.placeHolder=需要启用按钮	#
 classroomSettings.uriResource.uri.title=资源按钮URL	#
@@ -16025,7 +16115,7 @@ library.item.sharepopup.addResource.learnMoreLinkText=了解更多	#
 library.item.sharepopup.addResource.urlLabel=资源按钮URL：	#
 library.item.sharepopup.addResource.urlHintText=需要启用按钮	#
 library.item.sharepopup.addResource.buttonNameLabel=资源按钮名称：	#
-library.item.sharepopup.addResource.buttonNameHintText=打开链接（默认）		### Text before (Default) should match pause.externalLink
+library.item.sharepopup.addResource.buttonNameHintText=打开链接（默认）	### Text before (Default) should match pause.externalLink
 library.item.sharepopup.addResource.doneButton=完成	#
 library.item.sharepopup.addResource.cancelButton=取消	#
 library.item.sharepopup.addResource.deleteButton=删除	#
@@ -16198,7 +16288,7 @@ library.category.description.commonCoreMath=这些引人入胜的活动旨在为
 library.notification.label.resourceUri=此世界与指向其他资源的链接共享。在你创建世界后，请在游戏菜单上寻找“%1”按钮。	#
 
 library.search.title=图书馆搜索	#
-library.search.placeholder=搜索图书馆... 	### This string can only be 15 characters. If the string is too long, just "Search..." is OK.
+library.search.placeholder=搜索图书馆...	### This string can only be 15 characters. If the string is too long, just "Search..." is OK.
 library.search.singleResult="%s"在图书馆中有1个搜索结果	#
 library.search.multipleResults="%s"在图书馆中有%1个搜索结果	#
 library.search.sortMethod.lexicographic.ascending=从A到Z排序	#
@@ -16274,7 +16364,7 @@ toast.genericLinkOpened=已在你的网页浏览器中打开链接。	#
 structure_block.export.default_name=我的建筑方块	#
 
 joincode.invalid.title=加入代码不正确	#
-joincode.invalid.body=你已输入%1个不正确的加入代码。请与服主确认你拥有正确的代码，或者你也可以尝试通过连接ID加入。 	#
+joincode.invalid.body=你已输入%1个不正确的加入代码。请与服主确认你拥有正确的代码，或者你也可以尝试通过连接ID加入。	#
 joincode.invalid.button.tryagain=再试一次	#
 joincode.invalid.button.enterip=输入连接ID	#
 joincode.invalid.abuse.body=你已输入%1个不正确的加入代码。请稍后再试或尝试使用连接ID加入世界	#
@@ -16650,7 +16740,7 @@ ori.exit.controls.controller=退出	#
 ori.exit.controls.keyboard=退出：[Enter]	#
 ori.cancelling=正在取消...	#
 
-ori.welcome.state=欢迎来到Minecraft Oculus启动器！ 	#
+ori.welcome.state=欢迎来到Minecraft Oculus启动器！	#
 ori.winstore.state=(1) 更新至Windows 10 1809并从Windows 10商店获取Minecraft或试玩版。	#
 ori.oculus.state=(2) 在Oculus应用程序中将设置->通用->未知源切换至[开启]	#
 ori.help.state=(?) 如果你遇到启动错误，请访问https://www.minecraft.net/vr寻求帮助！	#
