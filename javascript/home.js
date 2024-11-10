@@ -20,8 +20,8 @@
  * SOFTWARE.
  */
 
-const site_version = "2.0"; // NOTE 版本号
-const update_count = "2024-10-23-01"; // NOTE 发布编号
+const site_version = "2.0.1"; // NOTE 版本号
+const update_count = "2024-11-10-01"; // NOTE 发布编号
 const server_version = "4.0";
 const version_info = "<span>Version: " + site_version + "<br>Server Version: " + server_version + "<br>Updated: " + update_count + "</span>";
 
@@ -30,44 +30,44 @@ if (version_area) {
     version_area.innerHTML = version_info;
 }
 
-const startTime = new Date().getTime();
-const main = document.getElementById("main");
-
+// 日志管理器
 window.logManager = {
     log: function (message, level = 'info') {
         const isLocalEnv = hostPath.includes('localhost') || rootPath.includes('_test');
-
-        // 根据环境输出不同日志
+        const formattedMessage = `[${level.toUpperCase()}]: ${message}`;
+        const logFunction = console[level] || console.log;
         if (level === 'error') {
-            console.error(`[ERROR]: ${message}`);
+            logFunction.call(console, formattedMessage);
+            console.trace(); // 输出堆栈追踪
         } else if (isLocalEnv) {
-            // 在本地环境或测试环境中输出所有日志
-            if (level === 'info') {
-                console.log(`[INFO]: ${message}`);
-            } else if (level === 'warn') {
-                console.warn(`[WARN]: ${message}`);
-            }
+            logFunction.call(console, formattedMessage);
+            console.trace(); // 在测试和开发环境中也输出
         }
     }
 };
 
+
 // 检测浏览器是否处于夜间模式
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    // 覆盖夜间模式下的样式
-    document.body.classList.add('no-dark-mode');
+    document.body.classList.add('no-dark-mode'); // 覆盖夜间模式下的样式
 }
 
 // 禁止拖动元素
-const images = document.querySelectorAll("img");
-const links = document.querySelectorAll("a");
-images.forEach(function (image) {
-    image.draggable = false;
+const cantDraggableElements = document.querySelectorAll("img, a");
+cantDraggableElements.forEach(function (cantDraggableElement) {
+    cantDraggableElement.draggable = false;
 });
 
-links.forEach(function (link) {
-    link.draggable = false;
-});
-
+window.addEventListener('load', () => setTimeout(function () {
+    const menu_icon = document.getElementById('menu_icon');
+    const back_icon = document.getElementById('back_icon');
+    if (back_icon) {
+        back_icon.src = '/mclang_cn/images/arrowLeft.png';
+    }
+    if (menu_icon) {
+        menu_icon.src = '/mclang_cn/images/menu.png';
+    }
+}, 10));
 
 // 节流函数,防止事件频繁触发
 function throttle(func, delay) {
@@ -93,23 +93,22 @@ function showScroll(customScrollbar, scrollTimeout) {
 function updateThumb(thumb, container, content, customScrollbar) {
     const scrollHeight = content.scrollHeight;
     const containerHeight = container.getBoundingClientRect().height;
-    if (content.classList.contains('main_with_tab_bar')) customScrollbar.style.top = '100px';
-    const thumbHeight = Math.max((containerHeight / scrollHeight) * containerHeight, 20);
-    const maxScrollTop = scrollHeight - containerHeight;
-    const currentScrollTop = Math.round(container.scrollTop);
-    let thumbPosition = (currentScrollTop / maxScrollTop) * (containerHeight - (thumbHeight + 4));
-    if (content.classList.contains('sidebar_content')) thumbPosition = (currentScrollTop / maxScrollTop) * (containerHeight - thumbHeight);
+    if (content.classList.contains('main_with_tab_bar')) customScrollbar.style.top = '100px'; // 这里需要给标签栏预留高度
+    const thumbHeight = Math.max((containerHeight / scrollHeight) * containerHeight, 20); // 最小高度20px,防止滚动条过小
+    const maxScrollTop = scrollHeight - containerHeight; // 滚动条能到达的最大位置
+    const currentScrollTop = Math.round(container.scrollTop); // 当前的滚动条位置
+    let thumbPosition = (currentScrollTop / maxScrollTop) * (containerHeight - (thumbHeight + 4)); // 4为滚动条滑块的Border总高度,计算时应去除
+    if (content.classList.contains('sidebar_content')) thumbPosition = (currentScrollTop / maxScrollTop) * (containerHeight - thumbHeight); // 次要滚动条的样式与主要滚动条样式不同
 
     thumb.style.height = `${thumbHeight}px`;
     thumb.style.top = `${thumbPosition}px`;
     customScrollbar.style.height = `${containerHeight}px`;
-
     customScrollbar.style.display = thumbHeight >= containerHeight ? 'none' : 'block';
 }
 
 // 处理滚动条点击跳转
 function handleScrollbarClick(e, isDragging, customScrollbar, thumb, container, content) {
-    if (isDragging || content.classList.contains('sidebar_content')) return;
+    if (isDragging || content.classList.contains('sidebar_content')) return; // 次要滚动条和拖动中的主要滚动条不能点击跳转
 
     const {top, height: scrollbarHeight} = customScrollbar.getBoundingClientRect();
     const clickPosition = e.clientY - top;
@@ -137,7 +136,7 @@ function handleScroll(customScrollbar, customThumb, container, content, scrollTi
 
 // 处理拖动滚动条的逻辑
 function handlePointerMove(e, dragState, thumb, container, content) {
-    if (!dragState.isDragging || content.classList.contains('sidebar_content')) return;
+    if (!dragState.isDragging || content.classList.contains('sidebar_content')) return; // 次要滚动条不能拖动
 
     const currentY = e.clientY || e.touches[0].clientY;
     const deltaY = currentY - dragState.startY;
@@ -148,7 +147,7 @@ function handlePointerMove(e, dragState, thumb, container, content) {
     const maxScrollTop = content.scrollHeight - containerHeight; // 计算页面内容的滚动位置
 
     container.scrollTo({
-        top: (newTop / maxThumbTop) * maxScrollTop, behavior: "instant" // 确保滚动时不产生动画
+        top: (newTop / maxThumbTop) * maxScrollTop, behavior: "instant" // 滚动时不产生动画
     });
 
     updateThumb(thumb, container, content, container.closest('scroll-view').querySelector('custom-scrollbar'));
@@ -178,7 +177,7 @@ function bindScrollEvents(container, content, customScrollbar, customThumb) {
 
     const throttledScroll = throttle(() => {
         scrollTimeout = handleScroll(customScrollbar, customThumb, container, content, scrollTimeout);
-    }, 1);
+    }, 1); // 使用节流函数优化性能
 
     container.addEventListener('scroll', throttledScroll);
     window.addEventListener('resize', throttledScroll);
@@ -188,7 +187,7 @@ function bindScrollEvents(container, content, customScrollbar, customThumb) {
     customThumb.addEventListener('pointerdown', (e) => handlePointerDown(e, customThumb, container, content, dragState));
     customThumb.addEventListener('touchstart', (e) => handlePointerDown(e, customThumb, container, content, dragState));
     customScrollbar.addEventListener('click', (e) => handleScrollbarClick(e, dragState.isDragging, customScrollbar, customThumb, container, content));
-    window.addEventListener('load', () => setTimeout(throttledScroll, 10));
+    window.addEventListener('load', () => setTimeout(throttledScroll, 10)); // 页面加载完成后延时触发
 }
 
 // 获取并处理所有滚动容器
@@ -238,13 +237,13 @@ let hostPath = window.location.origin;
 const parts = currentPagePath.split('/').filter(Boolean);
 let rootPath = '/' + (parts.length > 0 ? parts[0] + '/' : '');
 const slashCount = (currentPagePath.match(/\//g) || []).length;
-const pageLevel = (slashCount - 1) + "级页面";
 
 logManager.log("浏览器UA: " + navigator.userAgent)
 logManager.log("完整路径: " + currentURL);
 logManager.log("来源: " + hostPath);
 logManager.log("根路径: " + rootPath);
 logManager.log("当前路径: " + currentPagePath);
+logManager.log("当前位于" + slashCount - 1 + "级页面");
 
 if (hostPath.includes('file:///')) {
     logManager.log('当前运行在本地文件');
@@ -269,8 +268,6 @@ if (rootPath.includes('_test')) {
     logManager.log("环境为标准环境");
 }
 
-logManager.log("当前位于" + pageLevel);
-
 // 输出错误日志
 window.addEventListener("error", function (event) {
     logManager.log("错误: " + event.message, 'error');
@@ -280,11 +277,27 @@ document.addEventListener("DOMContentLoaded", function () {
     logManager.log("页面加载完成!");
 });
 
+const startTime = new Date().getTime();
 window.addEventListener("load", function () {
     const endTime = new Date().getTime();
     let loadTime = endTime - startTime;
     logManager.log("页面加载耗时: " + loadTime + "ms");
 });
+
+// 为链接添加点击音效
+function addClickSoundToLinks() {
+    const links = document.querySelectorAll('a:not(.sidebar_item)'); // 选择所有类名不为sidebar_item的链接
+    links.forEach(link => {
+        const originalOnClick = link.getAttribute('onclick');
+        if (originalOnClick) { // 如果存在原始的点击事件则先调用原有的再添加
+            link.setAttribute('onclick', `playSound('click');${originalOnClick}`);
+        } else {
+            link.setAttribute('onclick', "playSound('click');");
+        }
+    });
+}
+
+window.addEventListener('load', () => setTimeout(addClickSoundToLinks, 100)); // 页面加载完成后延时执行
 
 // 页面加载时缓存音效文件
 const cacheName = 'audio-cache';
@@ -292,7 +305,7 @@ window.onload = async function () {
     if ('caches' in window) {
         try {
             const cache = await caches.open(cacheName);
-            await cache.addAll([soundClickPath, soundButtonPath]);
+            await cache.addAll([soundPaths['click'], soundPaths['button']]);
             logManager.log('音效文件已缓存!');
         } catch (error) {
             logManager.log('音效文件缓存失败: ' + error, 'error');
@@ -354,12 +367,12 @@ window.addEventListener('load', () => setTimeout(function () {
         modal.focus();
         logManager.log("显示兼容性提示弹窗");
     }
-}, 20));
+}, 20)); // 页面加载完成后延时显示弹窗
 
 function hideCompatibilityModal(button) {
     const overlay = document.getElementById("overlay_compatibility_modal");
     const modal = document.getElementById("compatibility_modal");
-    playSound(button);
+    playSoundType(button);
     overlay.style.display = "none";
     modal.style.display = "none";
     logManager.log("关闭兼容性提示弹窗");
@@ -371,98 +384,50 @@ function neverShowCompatibilityModalAgain(button) {
     logManager.log("关闭兼容性提示弹窗且不再提示");
 }
 
-const soundClickPath = rootPath + 'sounds/click.ogg';
-const soundButtonPath = rootPath + 'sounds/button.ogg';
-const soundPopPath = rootPath + 'sounds/pop.ogg';
-const soundHidePath = rootPath + 'sounds/hide.ogg';
-const soundOpenPath = rootPath + 'sounds/open.wav';
-const soundClosePath = rootPath + 'sounds/close.wav';
+const soundPaths = {
+    click: rootPath + 'sounds/click.ogg',
+    button: rootPath + 'sounds/button.ogg',
+    pop: rootPath + 'sounds/pop.ogg',
+    hide: rootPath + 'sounds/hide.ogg',
+    open: rootPath + 'sounds/open.wav',
+    close: rootPath + 'sounds/close.wav'
+};
 
-function playClickSound() {
-    getCachedAudio(soundClickPath).then(audio => {
+function playSound(type) {
+    const soundPath = soundPaths[type];
+    if (!soundPath) {
+        logManager.log(`未知的音效类型: ${type}`, 'error');
+        return;
+    }
+
+    getCachedAudio(soundPath).then(audio => {
         audio.play().then(() => {
-            logManager.log("点击音效播放成功!");
+            logManager.log(`${type}音效播放成功!`);
         }).catch(error => {
-            logManager.log('点击音效播放失败: ' + error, 'error');
+            logManager.log(`${type}音效播放失败: ${error}`, 'error');
         });
     }).catch(error => {
-        logManager.log('获取点击音效失败: ' + error, 'error');
-    });
-}
-
-function playButtonSound() {
-    getCachedAudio(soundButtonPath).then(audio => {
-        audio.play().then(() => {
-            logManager.log("按钮音效播放成功!");
-        }).catch(error => {
-            logManager.log('获取按钮音效失败: ' + error, 'error');
-        });
-    }).catch(error => {
-        logManager.log('获取按钮音效失败: ' + error, 'error');
-    });
-}
-
-function playPopSound(){
-    getCachedAudio(soundPopPath).then(audio => {
-        audio.play().then(() => {
-            logManager.log("弹出音效播放成功!");
-        }).catch(error => {
-            logManager.log('获取弹出音效失败: ' + error, 'error');
-        });
-    }).catch(error => {
-        logManager.log('获取弹出音效失败: ' + error, 'error');
-    });
-}
-
-function playHideSound(){
-    getCachedAudio(soundHidePath).then(audio => {
-        audio.play().then(() => {
-            logManager.log("隐藏音效播放成功!");
-        }).catch(error => {
-            logManager.log('获取隐藏音效失败: ' + error, 'error');
-        });
-    }).catch(error => {
-        logManager.log('获取隐藏音效失败: ' + error, 'error');
-    });
-}
-
-function playOpenSound(){
-    getCachedAudio(soundOpenPath).then(audio => {
-        audio.play().then(() => {
-            logManager.log("打开音效播放成功!");
-        }).catch(error => {
-            logManager.log('获取打开音效失败: ' + error, 'error');
-        });
-    }).catch(error => {
-        logManager.log('获取打开音效失败: ' + error, 'error');
-    });
-}
-
-function playCloseSound(){
-    getCachedAudio(soundClosePath).then(audio => {
-        audio.play().then(() => {
-            logManager.log("关闭音效播放成功!");
-        }).catch(error => {
-            logManager.log('获取关闭音效失败: ' + error, 'error');
-        });
-    }).catch(error => {
-        logManager.log('获取关闭音效失败: ' + error, 'error');
+        logManager.log(`获取${type}音效失败: ${error}`, 'error');
     });
 }
 
 // 按键音效
-function playSound(button) {
+function playSoundType(button) {
     if (button.classList.contains("normal_btn") || button.classList.contains("red_btn") || button.classList.contains("sidebar_btn") || (button.classList.contains("tab_bar_btn") && button.classList.contains("no_active")) || button.classList.contains("close_btn")) {
-        playClickSound();
+        playSound('click');
     } else if (button.classList.contains("green_btn")) {
-        playButtonSound();
+        playSound('button');
     }
+}
+
+function toRepo() {
+    window.open("https://github.com/Spectrollay" + rootPath + "issues/new");
 }
 
 // 点击返回按钮事件
 function clickedBack() {
     logManager.log("点击返回");
-    playClickSound();
+    playSound('click');
     if (window.history.length <= 1) {
         logManager.log("关闭窗口");
         setTimeout(function () {
@@ -478,10 +443,10 @@ function clickedBack() {
 
 // 跳转链接
 function jumpToPage(link) {
-    playClickSound();
+    playSound('click');
     setTimeout(function () {
         window.location.href = link;
-    }, 320);
+    }, 360);
 }
 
 // 打开网页
@@ -495,11 +460,7 @@ function delayedOpenLink(url) {
     }, 1500);
 }
 
-function toRepo() {
-    window.open("https://github.com/Spectrollay" + rootPath + "issues/new");
-}
-
-// 回到网页顶部
+// 滚动到网页顶部
 function scrollToTop() {
     mainScrollContainer.scrollTo({
         top: 0, behavior: "smooth"
@@ -507,6 +468,7 @@ function scrollToTop() {
     console.log("成功执行回到顶部操作");
 }
 
+// 跳转到网页顶部
 function toTop() {
     mainScrollContainer.scrollTo({
         top: 0, behavior: "instant"
@@ -517,18 +479,13 @@ function toTop() {
 function copyText(text) {
     let textToCopy = text;
     let tempTextarea = document.createElement("textarea");
-
     tempTextarea.value = textToCopy;
     document.body.appendChild(tempTextarea);
-
     tempTextarea.select();
     tempTextarea.setSelectionRange(0, 999999); // 兼容移动设备
-
-    navigator.clipboard.writeText(tempTextarea.value)
-        .then(() => {
-            logManager.log('复制成功: ', tempTextarea.value);
-        })
-        .catch(error => {
-            logManager.log('复制失败: ' + error, 'error');
-        });
+    navigator.clipboard.writeText(tempTextarea.value).then(() => {
+        logManager.log('复制成功: ', tempTextarea.value);
+    }).catch(error => {
+        logManager.log('复制失败: ' + error, 'error');
+    });
 }

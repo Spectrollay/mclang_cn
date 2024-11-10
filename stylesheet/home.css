@@ -185,7 +185,7 @@ main {
     width: 100vw;
 }
 
-/* 主体框架滚动条 */
+/* 主要滚动条 */
 custom-scrollbar {
     display: block;
     opacity: 1;

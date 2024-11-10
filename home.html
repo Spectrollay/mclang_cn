@@ -28,8 +28,7 @@
     <meta content="3;url=/mclang_cn/" http-equiv="refresh">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <link href="https://spectrollay.github.io/minecraft_repository/stylesheet/loading_mask.css" rel="stylesheet">
-    <link href="https://spectrollay.github.io/minecraft_repository/stylesheet/custom_elements.css" rel="stylesheet">
+    <link href="/mclang_cn/stylesheet/loading_mask.css" rel="stylesheet">
     <link href="/mclang_cn/stylesheet/home.css" rel="stylesheet">
     <style>
         main {
@@ -103,14 +102,12 @@
 
 </body>
 
+<script src="/mclang_cn/javascript/accessibility.js"></script>
+<script src="/mclang_cn/javascript/home.js"></script>
+<script src="/mclang_cn/javascript/custom_elements.js"></script>
 <script>
-    const back_icon = document.getElementById('back_icon');
-    if (back_icon) {
-        back_icon.src = '/mclang_cn/images/arrowLeft.png';
-    }
-
-    const loading_mask = document.getElementById('loading_mask');
     function hide_mask() {
+        const loading_mask = document.getElementById('loading_mask');
         // 延时600ms后隐藏蒙版
         loading_mask.style.opacity = '0';
         setTimeout(function () {
