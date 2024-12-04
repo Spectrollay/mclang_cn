@@ -20,8 +20,8 @@
  * SOFTWARE.
  */
 
-const site_version = "2.0.1"; // NOTE 版本号
-const update_count = "2024-11-10-01"; // NOTE 发布编号
+const site_version = "2.0.2"; // NOTE 版本号
+const update_count = "2024-12-04-01"; // NOTE 发布编号
 const server_version = "4.0";
 const version_info = "<span>Version: " + site_version + "<br>Server Version: " + server_version + "<br>Updated: " + update_count + "</span>";
 
@@ -45,7 +45,6 @@ window.logManager = {
         }
     }
 };
-
 
 // 检测浏览器是否处于夜间模式
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
@@ -103,7 +102,7 @@ function updateThumb(thumb, container, content, customScrollbar) {
     thumb.style.height = `${thumbHeight}px`;
     thumb.style.top = `${thumbPosition}px`;
     customScrollbar.style.height = `${containerHeight}px`;
-    customScrollbar.style.display = thumbHeight >= containerHeight ? 'none' : 'block';
+    customScrollbar.style.display = (thumbHeight + 0.5) >= containerHeight ? 'none' : 'block'; // 解决计算精度不同导致的问题
 }
 
 // 处理滚动条点击跳转
@@ -243,10 +242,10 @@ logManager.log("完整路径: " + currentURL);
 logManager.log("来源: " + hostPath);
 logManager.log("根路径: " + rootPath);
 logManager.log("当前路径: " + currentPagePath);
-logManager.log("当前位于" + slashCount - 1 + "级页面");
+logManager.log("当前位于" + (slashCount - 1) + "级页面");
 
 if (hostPath.includes('file:///')) {
-    logManager.log('当前运行在本地文件');
+    logManager.log("当前运行在本地文件");
 } else if (hostPath.includes('localhost')) {
     logManager.log("当前运行在本地服务器");
 } else if (hostPath.includes('github.io')) {
@@ -306,9 +305,9 @@ window.onload = async function () {
         try {
             const cache = await caches.open(cacheName);
             await cache.addAll([soundPaths['click'], soundPaths['button']]);
-            logManager.log('音效文件已缓存!');
+            logManager.log("音效文件已缓存!");
         } catch (error) {
-            logManager.log('音效文件缓存失败: ' + error, 'error');
+            logManager.log("音效文件缓存失败: " + error, 'error');
         }
     }
 };
@@ -321,11 +320,11 @@ async function getCachedAudio(filePath) {
             if (response) {
                 const blob = await response.blob();
                 const audioURL = URL.createObjectURL(blob);
-                logManager.log('从缓存获取音效文件');
+                logManager.log("从缓存获取音效文件");
                 return new Audio(audioURL); // 返回缓存中的音效
             }
         } catch (error) {
-            logManager.log('从缓存获取音效文件失败: ' + error, 'error');
+            logManager.log("从缓存获取音效文件失败: " + error, 'error');
         }
     } else {
         return new Audio(filePath); // 缓存不存在或失败时直接返回网络资源
@@ -421,7 +420,21 @@ function playSoundType(button) {
 }
 
 function toRepo() {
-    window.open("https://github.com/Spectrollay" + rootPath + "issues/new");
+    setTimeout(function () {
+        window.open("https://github.com/Spectrollay/mclang_cn/issues/new");
+    }, 600);
+}
+
+// 重试按钮事件
+function retry(defaultUrl = "/mclang_cn/") {
+    const params = new URLSearchParams(window.location.search);
+    const source = params.get('source');
+
+    if (source) {
+        window.location.href = decodeURIComponent(source);
+    } else {
+        window.location.href = defaultUrl;
+    }
 }
 
 // 点击返回按钮事件
@@ -484,8 +497,8 @@ function copyText(text) {
     tempTextarea.select();
     tempTextarea.setSelectionRange(0, 999999); // 兼容移动设备
     navigator.clipboard.writeText(tempTextarea.value).then(() => {
-        logManager.log('复制成功: ', tempTextarea.value);
+        logManager.log("复制成功: ", tempTextarea.value);
     }).catch(error => {
-        logManager.log('复制失败: ' + error, 'error');
+        logManager.log("复制失败: " + error, 'error');
     });
 }

@@ -487,20 +487,24 @@ custom-dropdown .disabled_dropdown {
 
 
 /* Modal弹窗 */
-#overlay_clear_storage_warning, #overlay_reload_page_warning, #overlay_version_info_modal, #overlay_disclaimer_modal, #overlay_donate_modal, #overlay_acknowledgments_modal {
-    z-index: 12;
+#overlay_clear_storage_warning, #overlay_reload_page_warning, #overlay_clear_all_warning, #overlay_version_info_modal, #overlay_disclaimer_modal, #overlay_donate_modal, #overlay_acknowledgments_modal {
+    z-index: 11;
 }
 
 #overlay_alert_modal {
-    z-index: 14;
+    z-index: 13;
 }
 
 #overlay_first_visit_today_modal {
-    z-index: 18;
+    z-index: 17;
 }
 
 #overlay_compatibility_modal {
-    z-index: 20;
+    z-index: 19;
+}
+
+#overlay_status_modal {
+    z-index: 99;
 }
 
 modal_area {
@@ -513,23 +517,27 @@ modal_area {
     position: fixed;
     top: 50%;
     transform: translate(-50%, -50%);
-    z-index: 11;
+    z-index: 10;
 }
 
-#clear_storage_warning, #reload_page_warning, #version_info_modal, #disclaimer_modal, #donate_modal, #acknowledgments_modal {
-    z-index: 13;
+#clear_storage_warning, #reload_page_warning, #clear_all_warning, #version_info_modal, #disclaimer_modal, #donate_modal, #acknowledgments_modal {
+    z-index: 12;
 }
 
 #alert_modal {
-    z-index: 15;
+    z-index: 14;
 }
 
 #first_visit_today_modal {
-    z-index: 19;
+    z-index: 18;
 }
 
 #compatibility_modal {
-    z-index: 21;
+    z-index: 20;
+}
+
+#status_modal {
+    z-index: 100;
 }
 
 modal {
@@ -583,7 +591,8 @@ modal_close_btn:hover, modal_close_btn:active {
 }
 
 modal_content {
-    display: block;
+    display: grid;
+    align-items: center;
     max-height: calc(min(450px, calc(90vh - 150px)));
     min-height: 60px;
     overflow-y: auto;
@@ -610,6 +619,19 @@ modal_button_area {
     display: flex;
     justify-content: center;
     padding: 2px 0;
+}
+
+modal_textfield_area {
+    background-color: #48494A;
+    border-bottom: 2px solid #333334;
+    border-top: 2px solid #5A5B5C;
+    display: block;
+    padding: 2px 0;
+    text-align: left;
+}
+
+modal_textfield_title {
+    margin: 10px;
 }
 
 .modal_custom_btn {

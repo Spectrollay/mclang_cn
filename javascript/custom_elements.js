@@ -300,7 +300,7 @@ function showModal(modal) {
     overlay.style.display = "block";
     frame.style.display = "block";
     frame.focus(); // 将焦点聚集到弹窗上,防止选中弹窗下方元素
-    logManager.log('显示弹窗 ' + modal);
+    logManager.log("显示弹窗 " + modal);
 }
 
 function hideModal(button) {
@@ -320,7 +320,7 @@ function hideModal(button) {
     playSoundType(button);
     overlay.style.display = "none";
     frame.style.display = "none";
-    logManager.log('隐藏弹窗 ' + frame);
+    logManager.log("隐藏弹窗 " + frameId);
 }
 
 
@@ -780,6 +780,7 @@ class TextField extends HTMLElement {
         const containerId = this.parentNode.id;
         const type = this.getAttribute('type') || 'text';
         const isSingleLine = this.getAttribute('single-line') || 'true';
+        const maxLength = parseInt(this.getAttribute('max-length')) || null; // 获取最大长度
         this.classList.add(containerId);
         this.inputField = document.createElement('textarea');
         this.inputField.classList.add('input');
@@ -807,18 +808,21 @@ class TextField extends HTMLElement {
 
         this.isComposing = false;
         this.inputField.addEventListener('compositionstart', () => {
-            this.isComposing = true;
+            this.isComposing = true;// 标记输入法状态
         });
 
         this.inputField.addEventListener('compositionend', () => {
             this.isComposing = false;
-            const inputValue = this.inputField.value;
-            const {isValid, filtered} = this.isValidAndFilterInput(inputValue, type);
-            if (!isValid) {
-                this.inputField.value = filtered; // 过滤掉非法字符
-                return; // 不保存到存储,直接返回
-            }
-            this.saveTextFieldValue(); // 有效输入才保存
+            setTimeout(() => {  // 延迟执行验证
+                this.validateLength(maxLength);
+                const inputValue = this.inputField.value;
+                const {isValid, filtered} = this.isValidAndFilterInput(inputValue, type);
+                if (!isValid) {
+                    this.inputField.value = filtered; // 过滤掉非法字符
+                    return; // 不保存到存储,直接返回
+                }
+                this.saveTextFieldValue(); // 有效输入才保存
+            }, 0);
         });
 
         this.inputField.addEventListener('beforeinput', (e) => {
@@ -831,6 +835,7 @@ class TextField extends HTMLElement {
         });
 
         this.inputField.addEventListener('input', () => {
+            this.validateLength(maxLength); // 验证长度
             this.updateTextField();
             // 仅在输入有效时保存
             if (this.isValidAndFilterInput(this.inputField.value, type).isValid) {
@@ -842,6 +847,15 @@ class TextField extends HTMLElement {
             this.updateTextField();
             this.getTextFieldValue();
         }, 100); // 延时防止获取到不正确数据
+    }
+
+    validateLength(maxLength) {
+        const content = this.inputField.value;
+        const length = content.length;
+
+        if (maxLength !== null && length > maxLength) {
+            this.inputField.value = content.substring(0, maxLength); // 如果超过最大长度则截断
+        }
     }
 
     static get observedAttributes() {
@@ -873,13 +887,13 @@ class TextField extends HTMLElement {
     autoResize() {
         this.inputField.style.height = '40px'; // 默认值(40px可与按钮高度对齐)
         this.style.height = '40px'; // 默认值(40px可与按钮高度对齐)
-        this.inputField.style.height = this.inputField.scrollHeight + 'px';
-        this.style.height = this.inputField.scrollHeight + 'px';
+        this.inputField.style.height = Math.max(this.inputField.scrollHeight, 40) + 'px';
+        this.style.height = Math.max(this.inputField.scrollHeight, 40) + 'px';
     }
 
     updateContainerHeight() {
         const container = this.parentNode;
-        container.style.height = this.inputField.scrollHeight + 'px';
+        container.style.height = Math.max(this.inputField.scrollHeight, 40) + 'px';
         mainHandleScroll(); // 联动自定义网页滚动条
     }
 
@@ -916,7 +930,6 @@ class TextField extends HTMLElement {
         return {isValid: regex.test(input), filtered: filteredInput};
     }
 
-
     getValue() {
         return this.inputField.value;
     }
@@ -931,6 +944,7 @@ class TextField extends HTMLElement {
         const storageKey = '(/mclang_cn/)text_field_value';
         const storedData = JSON.parse(localStorage.getItem(storageKey)) || {};
         const currentValue = this.inputField.value;
+        if (this.parentElement.classList.contains("do_not_save")) return;
         if (currentValue.length === 0) {
             delete storedData[this.classList[0]];
         } else {

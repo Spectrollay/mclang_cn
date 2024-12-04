@@ -268,7 +268,7 @@ custom-scrollbar-thumb {
 }
 
 .description {
-    margin: 10px;
+    text-align: left;
 }
 
 .description p {
@@ -357,6 +357,13 @@ a {
 
 .notice_img {
     width: 280px;
+}
+
+.guidance_image {
+    display: flex;
+    margin: 20px 10px;
+    max-width: 600px;
+    justify-self: center;
 }
 
 /* 块间隙 */
@@ -508,7 +515,7 @@ td {
     position: fixed;
     right: 0;
     top: 0;
-    z-index: 10;
+    z-index: 11;
 }
 
 /* 除了顶栏 */
