@@ -456,7 +456,6 @@ function clickedBack() {
 
 // 跳转链接
 function jumpToPage(link) {
-    playSound('click');
     setTimeout(function () {
         window.location.href = link;
     }, 360);

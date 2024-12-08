@@ -134,8 +134,7 @@ header {
 }
 
 /* 顶栏按钮图标 */
-
-.back_icon, .menu_icon, .repo_icon, .debug_icon, .settings_icon, .feedback_icon {
+.back_icon, .menu_icon, .repo_icon, .debug_icon, .settings_icon, .feedback_icon, .run_icon {
     height: 32px;
 }
 
@@ -143,7 +142,7 @@ header {
     padding: 4px 6px 4px 4px;
 }
 
-.repo_icon, .debug_icon, .settings_icon, .feedback_icon {
+.repo_icon, .debug_icon, .settings_icon, .feedback_icon, .run_icon {
     padding: 4px 4px 4px 6px;
 }
 
@@ -172,6 +171,7 @@ scroll-container {
     height: calc(100% - 44px);
     overflow-x: hidden;
     overflow-y: auto;
+    overscroll-behavior: contain;
     position: fixed;
     scroll-behavior: smooth;
     scrollbar-width: none;
@@ -335,11 +335,6 @@ a {
     padding: 0 16px;
 }
 
-.main_block_cont {
-    margin: 10px 0;
-    min-height: 100px;
-}
-
 /* 主体块 */
 .block {
     border-bottom: 2px solid #333334;
@@ -422,6 +417,64 @@ a {
     box-shadow: inset 0 -2px 0 0 #000000;
 }
 
+/* Badge */
+.badge_area {
+    align-items: center;
+    display: flex;
+}
+
+.badge {
+    height: 6px;
+    margin-right: 6px;
+    width: 6px;
+}
+
+.green_badge {
+    background-color: #6CC349;
+}
+
+.blue_badge {
+    background-color: #8CB3FF;
+}
+
+.yellow_badge {
+    background-color: #FFE866;
+}
+
+.red_badge {
+    background-color: #F46D6D;
+}
+
+/* Tag */
+.tag {
+    align-self: center;
+    color: #000000;
+    font-size: 12px;
+    margin: 4px;
+    padding: 0 2px;
+}
+
+.black_tag {
+    background-color: #1E1E1F;
+    color: #FFFFFF;
+}
+
+.green_tag {
+    background-color: #6CC349;
+}
+
+.blue_tag {
+    background-color: #8CB3FF;
+}
+
+.yellow_tag {
+    background-color: #FFE866;
+}
+
+.red_tag {
+    background-color: #F46D6D;
+}
+
 /* 表格属性 */
 .table_area {
     align-items: center;
@@ -468,6 +521,43 @@ td {
 
 .table td {
     min-width: 100px;
+}
+
+/* 友链样式 */
+reciprocal-link-block {
+    cursor: pointer;
+    display: block;
+    border: 2px solid #58585A;
+    margin: 6px;
+    min-height: 80px;
+    width: 270px;
+}
+
+reciprocal-link-block:hover, reciprocal-link-block:active {
+    border: 2px solid #6D6D6E;
+    background-color: #58585A;
+}
+
+.reciprocal_link_title {
+    display: flex;
+    justify-content: center;
+    margin: 10px 4px;
+}
+
+.reciprocal_link_title_img {
+    align-self: center;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.reciprocal_link_title_text {
+    align-self: center;
+    font-size: 17px;
+}
+
+.reciprocal_link_description {
+    margin: 10px;
+    color: #D0D1D4;
 }
 
 /* 表格底部信息区域 */

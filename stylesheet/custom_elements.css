@@ -23,7 +23,7 @@
 /* 文章样式 */
 article_block {
     display: block;
-    min-width: 260px;
+    min-width: 270px;
     text-align: center;
     width: 90%;
 }
