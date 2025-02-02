@@ -898,7 +898,7 @@ class TextField extends HTMLElement {
     }
 
     isValidAndFilterInput(input, type) {
-        if (!input) return {isValid: true, filtered: input}; // 如果没有输入，直接返回有效
+        if (!input) return {isValid: true, filtered: input}; // 如果没有输入,直接返回有效
 
         let regex;
         let filteredInput;

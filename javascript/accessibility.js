@@ -21,7 +21,6 @@
  */
 
 switchValues = JSON.parse(localStorage.getItem('(/mclang_cn/)switch_value')) || {};
-expAccessibilityState = switchValues['experimental_accessibility'] || 'on';
 
 // 焦点事件
 // 选择多个元素
@@ -40,6 +39,7 @@ const inclusionSelectors = [
     '#banner_tip',
     'modal_close_btn',
     '.edition_block',
+    'link-block',
     '.btn:not(.disabled_btn)',
     '.tab_bar_btn',
     '.expandable_card',
@@ -123,59 +123,6 @@ modals.forEach((modal) => {
     });
 });
 
-updateFocusableElements(); // 初始化元素焦点
-
-if (expAccessibilityState === 'on') {
-
-    // TTS文本转语音
-    let enable_tts;
-    enable_tts = false;
-    if (enable_tts) {
-        useTTS();
-    }
-
-    function useTTS() {
-        if ('speechSynthesis' in window) {
-            // 支持TTS
-            let currentUtterance = null;
-            let lastText = '';
-
-            function speakText(text) {
-                if (text === lastText) return; // 如果目标文本没有改变
-                lastText = text;
-
-                if (currentUtterance) {
-                    window.speechSynthesis.cancel();
-                }
-
-                currentUtterance = new SpeechSynthesisUtterance(text);
-                window.speechSynthesis.speak(currentUtterance);
-            }
-
-            function handleEvent(event) {
-                const text = event.target.innerText.trim();
-                if (text) {
-                    speakText(text);
-                }
-            }
-
-            document.addEventListener('mouseover', handleEvent);
-            document.addEventListener('touchstart', handleEvent, {passive: true});
-
-            window.addEventListener('unload', () => {
-                window.speechSynthesis.cancel(); // 页面卸载时取消未完成的语音任务
-            });
-        } else {
-            // 不支持TTS
-            logManager.log("当前浏览器不支持TTS文本转语音", 'warn');
-        }
-    }
-
-    // Screen Reader屏幕阅读器
-    let element;
-    if (element) {
-        element.setAttribute('role', 'main');
-        element.setAttribute('aria-hidden', true);
-    }
-
-}
+window.addEventListener('load', () => {
+    updateFocusableElements(); // 初始化元素焦点
+});

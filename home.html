@@ -25,11 +25,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta content="3;url=/mclang_cn/" http-equiv="refresh">
+    <meta content="3;url=./" http-equiv="refresh">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <link href="/mclang_cn/stylesheet/loading_mask.css" rel="stylesheet">
-    <link href="/mclang_cn/stylesheet/home.css" rel="stylesheet">
+    <link href="./stylesheet/loading_mask.css" rel="stylesheet">
+    <link href="./stylesheet/home.css" rel="stylesheet">
+    <link href="./images/Logo.png" rel="icon">
     <style>
         main {
             align-items: center;
@@ -50,14 +51,13 @@
             margin: 10px 0;
         }
     </style>
-    <link href="/mclang_cn/images/Logo.jpg" rel="icon">
     <title>中文译名修正项目</title>
 </head>
 
 <body>
 <div class="loading_mask" id="loading_mask">
     <div>
-        <div class="spinner"><img alt="" id="spinner_img" src="/mclang_cn/images/Loading_white.gif"/></div>
+        <div class="spinner"><img alt="" id="spinner_img" src="./images/Loading_white.gif"/></div>
         <div class="spinner">
             <div class="spinner"><span class="spinner_text">载入中</span></div>
         </div>
@@ -67,7 +67,7 @@
                     display: none;
                 }
             </style>
-            <div class="spinner"><img alt="" id="spinner_img_error" src="/mclang_cn/images/ErrorMessage.png"/></div>
+            <div class="spinner"><img alt="" id="spinner_img_error" src="./images/ErrorMessage.png"/></div>
             <div class="spinner">
                 <div class="spinner"><span class="spinner_text_error">页面无法加载: 当前浏览器已禁用JavaScript.<br>请在启用相关功能后访问本站.</span></div>
             </div>
@@ -76,11 +76,10 @@
 </div>
 <header>
     <div class="header_item header_item_left" id="back" onclick="clickedBack();">
-        <img alt="Back" class="back_icon" id="back_icon" src=""/>
+        <img alt="Back" class="back_icon" id="back_icon" src="./images/arrowLeft.png"/>
     </div>
     <div class="header_logo" onclick="scrollToTop();">
-        <img alt="Title Icon" class="title_icon" src="/mclang_cn/images/Logo.jpg"/>
-        <span class="header_title">Repository</span>
+        <img alt="Title Icon" class="title_icon" src="./images/Logo.png"/>
     </div>
     <div class="header_item header_item_right header_right_blank"></div>
 </header>
@@ -102,33 +101,12 @@
 
 </body>
 
-<script src="/mclang_cn/javascript/accessibility.js"></script>
-<script src="/mclang_cn/javascript/home.js"></script>
-<script src="/mclang_cn/javascript/custom_elements.js"></script>
+<script src="./javascript/accessibility.js"></script>
+<script src="./javascript/home.js"></script>
+<script src="./javascript/custom_elements.js"></script>
+<script src="./javascript/loading.js"></script>
 <script>
-    function hide_mask() {
-        const loading_mask = document.getElementById('loading_mask');
-        // 延时600ms后隐藏蒙版
-        loading_mask.style.opacity = '0';
-        setTimeout(function () {
-            loading_mask.style.display = 'none';
-        }, 600);
-    }
-
-    // 加载超过8秒时
-    let count = 8;
-    const secondInterval = setInterval(function () {
-        count--;
-        if (count <= 0) {
-            clearInterval(secondInterval);
-            hide_mask();
-        }
-    }, 1000);
-
-    // 页面加载完成时
     window.addEventListener('load', function () {
-        hide_mask();
-
         const secondElement = document.getElementById('second');
         if (secondElement) {
             let count = parseInt(secondElement.textContent);
@@ -141,7 +119,6 @@
                 }
             }, 1000);
         }
-
     });
 </script>
 

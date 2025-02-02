@@ -32,19 +32,17 @@ article_title {
     color: #FFFFFF;
     display: block;
     font-family: "Minecraft Seven", sans-serif;
-    font-size: 23px;
+    font-size: 21px;
     height: auto;
-    margin: 15px 0;
-    width: 100%;
+    margin: 15px;
 }
 
 article_date, article_subtitle {
     display: block;
     font-family: "Minecraft Seven", sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     height: auto;
-    margin: 10px 0;
-    width: 100%;
+    margin: 10px;
 }
 
 article_detail {
@@ -132,12 +130,22 @@ article_list_level3:before {
 
 
 /* 按钮 */
+button {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
 .btn {
     cursor: pointer;
     font-family: "NotoSans Bold", sans-serif;
     height: 40px;
     justify-self: center;
     margin: 6px;
+}
+
+.extra_small_btn {
+    width: 100px;
 }
 
 .small_btn {
@@ -224,7 +232,23 @@ article_list_level3:before {
     padding-bottom: 6px;
 }
 
+.disabled_btn img {
+    filter: invert(100%) grayscale(100%) brightness(50%);
+}
+
 /* 带有图标的按钮 */
+.button_img {
+    width: 14px;
+}
+
+.button_img.left {
+    margin-right: 4px;
+}
+
+.button_img.right {
+    margin-left: 4px;
+}
+
 .link_img, .link_img_black {
     height: 14px;
     margin-bottom: -1.5px;
@@ -488,11 +512,11 @@ custom-dropdown .disabled_dropdown {
 
 /* Modal弹窗 */
 #overlay_clear_storage_warning, #overlay_reload_page_warning, #overlay_clear_all_warning, #overlay_version_info_modal, #overlay_disclaimer_modal, #overlay_donate_modal, #overlay_acknowledgments_modal {
-    z-index: 11;
+    z-index: 13;
 }
 
 #overlay_alert_modal {
-    z-index: 13;
+    z-index: 15;
 }
 
 #overlay_first_visit_today_modal {
@@ -517,15 +541,15 @@ modal_area {
     position: fixed;
     top: 50%;
     transform: translate(-50%, -50%);
-    z-index: 10;
-}
-
-#clear_storage_warning, #reload_page_warning, #clear_all_warning, #version_info_modal, #disclaimer_modal, #donate_modal, #acknowledgments_modal {
     z-index: 12;
 }
 
-#alert_modal {
+#clear_storage_warning, #reload_page_warning, #clear_all_warning, #version_info_modal, #disclaimer_modal, #donate_modal, #acknowledgments_modal {
     z-index: 14;
+}
+
+#alert_modal {
+    z-index: 16;
 }
 
 #first_visit_today_modal {
@@ -761,7 +785,7 @@ modal_button_list {
 }
 
 .normal_switch {
-    background: linear-gradient(to right, #3C8527 50%, #8C8D90 50%); /* 左半部分绿色，右半部分灰色 */
+    background: linear-gradient(to right, #3C8527 50%, #8C8D90 50%); /* 左半部分绿色,右半部分灰色 */
     border: 2px solid #1E1E1F;
     box-shadow: inset 2px 2px rgba(255, 255, 255, 0.2), inset -2px -2px rgba(255, 255, 255, 0.1);
 }

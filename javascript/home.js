@@ -20,8 +20,8 @@
  * SOFTWARE.
  */
 
-const site_version = "2.0.2"; // NOTE 版本号
-const update_count = "2024-12-04-01"; // NOTE 发布编号
+const site_version = "2.0.4"; // NOTE 版本号
+const update_count = "2025-02-01-01"; // NOTE 发布编号
 const server_version = "4.0";
 const version_info = "<span>Version: " + site_version + "<br>Server Version: " + server_version + "<br>Updated: " + update_count + "</span>";
 
@@ -56,17 +56,6 @@ const cantDraggableElements = document.querySelectorAll("img, a");
 cantDraggableElements.forEach(function (cantDraggableElement) {
     cantDraggableElement.draggable = false;
 });
-
-window.addEventListener('load', () => setTimeout(function () {
-    const menu_icon = document.getElementById('menu_icon');
-    const back_icon = document.getElementById('back_icon');
-    if (back_icon) {
-        back_icon.src = '/mclang_cn/images/arrowLeft.png';
-    }
-    if (menu_icon) {
-        menu_icon.src = '/mclang_cn/images/menu.png';
-    }
-}, 10));
 
 // 节流函数,防止事件频繁触发
 function throttle(func, delay) {
@@ -229,6 +218,31 @@ function watchHeightChange() { // 检查高度变化 NOTE 在有容器高度平�
     requestAnimationFrame(watchHeightChange); // 在下一帧再次检查
 }
 
+// 跳转判定
+let isNavigating = false;
+
+function ifNavigating(way, url) {
+    if (isNavigating) {
+        return; // 防止重复点击
+    }
+    isNavigating = true; // 设置状态,正在跳转
+    if (way === 'open') {
+        setTimeout(function () {
+            window.open(url);
+            setTimeout(function () {
+                isNavigating = false; // 重置状态,允许下一次点击
+            }, 100);
+        }, 100);
+    } else if (way === 'jump') {
+        setTimeout(function () {
+            window.location.href = url;
+            setTimeout(function () {
+                isNavigating = false; // 重置状态,允许下一次点击
+            }, 100);
+        }, 600);
+    }
+}
+
 // 路径检测
 const currentURL = window.location.href;
 const currentPagePath = window.location.pathname;
@@ -304,7 +318,7 @@ window.onload = async function () {
     if ('caches' in window) {
         try {
             const cache = await caches.open(cacheName);
-            await cache.addAll([soundPaths['click'], soundPaths['button']]);
+            await cache.addAll([soundPaths['click'], soundPaths['button'], soundPaths['open'], soundPaths['close']]);
             logManager.log("音效文件已缓存!");
         } catch (error) {
             logManager.log("音效文件缓存失败: " + error, 'error');
@@ -322,13 +336,17 @@ async function getCachedAudio(filePath) {
                 const audioURL = URL.createObjectURL(blob);
                 logManager.log("从缓存获取音效文件");
                 return new Audio(audioURL); // 返回缓存中的音效
+            } else {
+                logManager.log("缓存中未找到音效文件,尝试直接从链接加载");
             }
         } catch (error) {
             logManager.log("从缓存获取音效文件失败: " + error, 'error');
         }
     } else {
-        return new Audio(filePath); // 缓存不存在或失败时直接返回网络资源
+        logManager.log("浏览器不支持缓存API,直接加载音效");
     }
+    // 如果缓存获取失败直接返回网络资源
+    return new Audio(filePath);
 }
 
 // 兼容性检测
@@ -383,13 +401,16 @@ function neverShowCompatibilityModalAgain(button) {
     logManager.log("关闭兼容性提示弹窗且不再提示");
 }
 
+// TODO 用户音量调节
+let userVolume = 1;
+
 const soundPaths = {
     click: rootPath + 'sounds/click.ogg',
     button: rootPath + 'sounds/button.ogg',
     pop: rootPath + 'sounds/pop.ogg',
     hide: rootPath + 'sounds/hide.ogg',
-    open: rootPath + 'sounds/open.wav',
-    close: rootPath + 'sounds/close.wav'
+    open: rootPath + 'sounds/drawer_open.ogg',
+    close: rootPath + 'sounds/drawer_close.ogg'
 };
 
 function playSound(type) {
@@ -421,7 +442,7 @@ function playSoundType(button) {
 
 function toRepo() {
     setTimeout(function () {
-        window.open("https://github.com/Spectrollay/mclang_cn/issues/new");
+        ifNavigating("open", "https://github.com/Spectrollay/mclang_cn/issues/new");
     }, 600);
 }
 
@@ -431,9 +452,9 @@ function retry(defaultUrl = "/mclang_cn/") {
     const source = params.get('source');
 
     if (source) {
-        window.location.href = decodeURIComponent(source);
+        ifNavigating("jump", decodeURIComponent(source));
     } else {
-        window.location.href = defaultUrl;
+        ifNavigating("jump", defaultUrl);
     }
 }
 
@@ -441,34 +462,30 @@ function retry(defaultUrl = "/mclang_cn/") {
 function clickedBack() {
     logManager.log("点击返回");
     playSound('click');
-    if (window.history.length <= 1) {
-        logManager.log("关闭窗口");
-        setTimeout(function () {
+    setTimeout(function () {
+        if (window.history.length <= 1) {
+            logManager.log("关闭窗口");
             window.close();
-        }, 600);
-    } else {
-        logManager.log("返回上一级页面");
-        setTimeout(function () {
+        } else {
+            logManager.log("返回上一级页面");
             window.history.back();
-        }, 600);
-    }
+        }
+    }, 600);
 }
 
 // 跳转链接
 function jumpToPage(link) {
-    setTimeout(function () {
-        window.location.href = link;
-    }, 360);
+    ifNavigating("jump", link);
 }
 
 // 打开网页
 function openLink(url) {
-    window.open(url);
+        ifNavigating("open", url);
 }
 
 function delayedOpenLink(url) {
     setTimeout(function () {
-        window.open(url);
+        ifNavigating("open", url);
     }, 1500);
 }
 

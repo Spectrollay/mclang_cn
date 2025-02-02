@@ -20,50 +20,26 @@
  * SOFTWARE.
  */
 
-.loading_mask {
-    align-items: center;
-    background-color: #48494A;
-    display: flex;
-    height: 100%;
-    justify-content: center;
-    left: 0;
-    opacity: 1;
-    position: fixed;
-    top: 0;
-    transition: opacity 0.6s;
-    width: 100%;
-    z-index: 999;
+function hide_mask() {
+    const loading_mask = document.getElementById('loading_mask');
+    // 延时600ms后隐藏蒙版
+    loading_mask.style.opacity = '0';
+    setTimeout(function () {
+        loading_mask.style.display = 'none';
+    }, 600);
 }
 
-.spinner {
-    align-items: center;
-    display: flex;
-    height: auto;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-}
+// 加载超过8秒时
+let count = 8;
+const secondInterval = setInterval(function () {
+    count--;
+    if (count <= 0) {
+        clearInterval(secondInterval);
+        hide_mask();
+    }
+}, 1000);
 
-#spinner_img {
-    height: 50px;
-    width: 50px;
-}
-
-.spinner_text {
-    color: #FFFFFF;
-    font-size: 20px;
-}
-
-#spinner_img_error {
-    height: 160px;
-    padding: 10px 0;
-}
-
-.spinner_text_error {
-    color: #C02D2D;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 10px 0;
-    paint-order: stroke;
-    -webkit-text-stroke: 0.1em #FFFFFF;
-}
+// 页面加载完成时
+window.addEventListener('load', function () {
+    hide_mask();
+});
