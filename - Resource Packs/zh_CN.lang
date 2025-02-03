@@ -48,7 +48,8 @@ accessibility.list.or.three_or_more.last=和%s	#
 accessibility.button.tts.title=按钮	#
 accessibility.checkbox.tts.title=复选框	#
 accessibility.checkbox.tts.status=状态%s	### Status will be checked or unchecked
-accessibility.dropdown.tts.title=下拉	#
+accessibility.dropdown.tts.title=下拉框	#
+accessibility.image.tts.title=图片	### TTS spoken word for image types {MaxLength=15}
 accessibility.screen.tts.title=%s屏幕	### %s will be replaced with the title of the screen (Example: Library Screen)
 accessibility.slider.tts.title=滑块	#
 accessibility.tab.tts.title=选项卡	#
@@ -152,7 +153,7 @@ accessibility.screenName.emoteWheel=表情屏幕	#
 accessibility.screenName.addExternalServer=添加外部服务器屏幕	#
 accessibility.screenName.editExternalServer=编辑外部服务器屏幕	#
 
-accessibility.search.sort_menu.A_to_Z.tts.title=从A到Z	### Single quotes (') are there for emphasis on the sound of the letters that will be spoken. 
+accessibility.search.sort_menu.A_to_Z.tts.title=从A到Z	### Single quotes (') are there for emphasis on the sound of the letters that will be spoken.
 accessibility.search.sort_menu.Z_to_A.tts.title=从Z到A	### Single quotes (') are there for emphasis on the sound of the letters that will be spoken.
 
 accessibility.settings.reset=重置	#
@@ -6146,6 +6147,8 @@ menu.realms=Realms	###{StrContains="Realms"}
 menu.realmsServer=Realms服务器	###{StrContains="Realms"}{MaxLength=‘18’}
 menu.servers=服务器	#
 menu.trialLabel=进入试玩模式，探索、收集和合成 - 全部限时免费。	#
+menu.onlinefriends.main=(%s)	### This is the text for the button used to open the friends drawer from main menu. For now it's only a variable, may change later. {MaxLength="5"} {StrContains="(%s)"}
+menu.onlinefriends.ingame=好友(%s)	### This is the text for the button used to open the friends drawer from the ingame menu. {MaxLength="13"} {StrContains="(%s)"}
 
 merchant.deprecated=交易一些别的东西来解锁！	#
 
@@ -6183,6 +6186,7 @@ multiplayer.joincode.refreshed=该游戏的加入代码已更新。	#
 notification.lock.noCraft=该物品已锁定，无法被合成	#
 notification.lock.noDrop=该物品已锁定，无法掉落	#
 notification.lock.noRemove=该物品已锁定，无法从物品栏移除	#
+notification.lock.noReplace=该物品已锁定，无法被替换	### Locked items cannot be removed from the player's inventory. {MaxLength=42}
 
 npcscreen.action.buttonmode=按钮模式	#
 npcscreen.action.onEnter=进入时	#
@@ -6471,9 +6475,6 @@ options.dev_xbox_environment.retail=零售版	#
 options.dev_xbox_environment.dev=开发版	#
 options.dev_xbox_environment.dev_achievement=开发版成就	#
 options.dev_experimentalTreatment=实验性处理	#
-options.dev_sandboxRetail=Xforge沙盒：稳定版	#
-options.dev_sandboxDev=Xforge沙盒：开发版	#
-options.dev_sandboxDevAchievement=Xforge沙盒：开发版成就	#
 options.dev_showDiscoveryOverridePanel=覆盖服务端点	#
 options.dev_serviceOverrideType=覆盖类型	#
 options.dev_serviceOverrideTypeMultibranch=多分支部署	#
@@ -6492,8 +6493,13 @@ options.dev_applyTreatments=应用处理	#
 options.dev_resetToDefault=重置为默认值	#
 options.dev_clearFlights=清除	#
 options.dev_experimentalProgressions=覆盖进程	#
+options.dev_overrideRealmsFeatures=覆盖Realms功能	### Realms Features are dev flags that are hidden to players; this is an option to replace which ones are enabled or disabled
 options.dev_displayProgressionsPanel=显示进程	#
+options.dev_displayRealmsFeaturesPanel=展示Realms功能	### Dev-only option to display Realms feature flags in the options menu
 options.dev_addProgressionId=添加进程ID	#
+options.dev_addRealmsFeatureId=添加Realms功能ID	### Dev-only button to add a Realms feature flag by name (ID)
+options.dev_currentRealmsFeaturesTitle=启用Realms功能标志	### Dev-only menu displaying enabled Realms feature flags
+options.dev_unusedRealmsFeaturesTitle=禁用Realms功能标志	### Dev-only menu displaying disabled Realms feature flags
 options.dev_reset_day_one_experience=重置第一天游戏体验内容	#
 options.dev_reset_new_player_flow=重置新玩家流程（必须删除世界和资源包）	#
 options.dev_useZippedInPackagePacks=使用压缩包内的资源包	#
@@ -11503,6 +11509,11 @@ unloadedchunk.message.warning=区块仍在加载。你可能会遇到一些轻�
 
 
 ## 实验性
+tile.wildflowers.name=野花簇 ###A patch of thin decorative wild flowers on the ground{MaxLength=100}
+tile.firefly_bush.name=萤火虫灌木丛 ###A bush inhabited by Firefly bugs{MaxLength=100}
+tile.bush.name=灌木丛 ###A small, dense, plant {MaxLength=100}
+tile.leaf_litter.name=枯叶  ###A patch of thin decorative leaf litter on the ground{MaxLength=100}
+
 entity.firefly.name=萤火虫	#
 item.spawn_egg.entity.firefly.name=萤火虫刷怪蛋	#
 
@@ -13265,6 +13276,8 @@ hbui.PlayScreen.allWorlds.emptyStateStartFromTemplateButton=从模板开始	#
 hbui.PlayScreen.allWorlds.emptyStateText=从零开始创建新世界或从模板创建世界。	#
 hbui.PlayScreen.allWorlds.emptyStateText.trialMode=从零开始创建新世界。	#
 hbui.PlayScreen.allWorlds.emptyStateTitle=这里目前还没有世界...!	#
+hbui.PlayScreen.AllWorldsTab.ButtonHeader.createFromContent=创建...	### Button text that leads to a page where players can create a world from some form of content, ex. Create from Template or Create from Add-On {MaxLength=30}
+hbui.PlayScreen.AllWorldsTab.ButtonHeader.createFromContentNarration=探索由合作创作者创建的世界。使用现有模板或从商城上购买。 	### Narration only, longer description for a button that says "Create from..." implying a player would create a world from some existing content {MaxLength=1000}
 hbui.PlayScreen.AllWorldsTab.ButtonHeader.createFromTemplate=从模板创建	#
 hbui.PlayScreen.AllWorldsTab.ButtonHeader.createFromTemplateNarration=探索由合作创作者创建的世界。使用现有模板或从商城上购买。	#
 hbui.PlayScreen.AllWorldsTab.ButtonHeader.createNewWorld=创建新世界	#
