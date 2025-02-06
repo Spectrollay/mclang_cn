@@ -1,5 +1,6 @@
 {
   "beginner_loading_messages": [
+    "onlinePlay.message",
     "beginnerTips.1",
     "beginnerTips.2",
     "beginnerTips.3",
@@ -15,6 +16,7 @@
     "beginnerTips.13"
   ],
   "mid_game_loading_messages": [
+    "onlinePlay.message",
     "beginnerTips.1",
     "beginnerTips.2",
     "beginnerTips.3",
@@ -27,7 +29,6 @@
     "beginnerTips.10",
     "beginnerTips.11",
     "beginnerTips.12",
-    "beginnerTips.13",
     "midgameTips.1",
     "midgameTips.2",
     "midgameTips.3",
@@ -100,6 +101,7 @@
     "midgameTips.70"
   ],
   "late_game_loading_messages": [
+    "onlinePlay.message",
     "beginnerTips.1",
     "beginnerTips.2",
     "beginnerTips.3",
@@ -112,7 +114,6 @@
     "beginnerTips.10",
     "beginnerTips.11",
     "beginnerTips.12",
-    "beginnerTips.13",
     "midgameTips.1",
     "midgameTips.2",
     "midgameTips.3",
@@ -182,7 +183,6 @@
     "midgameTips.67",
     "midgameTips.68",
     "midgameTips.69",
-    "midgameTips.70",
     "lategameTips.1",
     "lategameTips.2",
     "lategameTips.3",
@@ -212,6 +212,33 @@
     "lategameTips.27",
     "lategameTips.28"
   ],
+  "creative_loading_messages": [
+    "onlinePlay.message",
+    "tips.creative.1",
+    "tips.creative.2",
+    "tips.creative.3",
+    "tips.creative.4",
+    "tips.creative.5",
+    "tips.creative.6",
+    "tips.creative.7",
+    "tips.creative.8",
+    "tips.creative.9",
+    "tips.creative.10",
+    "tips.creative.11",
+    "tips.creative.12",
+    "tips.creative.13",
+    "tips.creative.14",
+    "tips.creative.15",
+    "tips.creative.16",
+    "tips.creative.17",
+    "tips.creative.18",
+    "tips.creative.19",
+    "tips.creative.20",
+    "tips.creative.21",
+    "tips.creative.22",
+    "tips.creative.23",
+    "tips.creative.24"
+  ],
   "editor_loading_messages": [
     "beginnerTips.1",
     "beginnerTips.2",
@@ -225,7 +252,6 @@
     "beginnerTips.10",
     "beginnerTips.11",
     "beginnerTips.12",
-    "beginnerTips.13",
     "midgameTips.1",
     "midgameTips.2",
     "midgameTips.3",
@@ -295,7 +321,6 @@
     "midgameTips.67",
     "midgameTips.68",
     "midgameTips.69",
-    "midgameTips.70",
     "lategameTips.1",
     "lategameTips.2",
     "lategameTips.3",
@@ -326,6 +351,7 @@
     "lategameTips.28"
   ],
   "realms_loading_messages": [
+    "onlinePlay.message",
     "tips.realms.1",
     "tips.realms.2",
     "tips.realms.3",
@@ -335,5 +361,26 @@
     "tips.realms.7",
     "tips.realms.8",
     "tips.realms.9"
+  ],
+  "addons_loading_messages": [
+    "onlinePlay.message",
+    "progressScreen.message.modifiedWorldWarning.1",
+    "progressScreen.message.modifiedWorldWarning.2",
+    "progressScreen.message.modifiedWorldWarning.3",
+    "progressScreen.message.modifiedWorldWarning.4",
+    "progressScreen.message.modifiedWorldWarning.5",
+    "progressScreen.message.modifiedWorldWarning.6",
+    "progressScreen.message.modifiedWorldWarning.7",
+    "progressScreen.message.modifiedWorldWarning.8",
+    "progressScreen.message.modifiedWorldWarning.9"
+  ],
+  "store_progress_tooltips": [
+    "store.progress.dialog.tooltip.1",
+    "store.progress.dialog.tooltip.2",
+    "store.progress.dialog.tooltip.3",
+    "store.progress.dialog.tooltip.4",
+    "store.progress.dialog.tooltip.5",
+    "store.progress.dialog.tooltip.6",
+    "store.progress.dialog.tooltip.7"
   ]
 }

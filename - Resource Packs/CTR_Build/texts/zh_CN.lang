@@ -3487,7 +3487,7 @@ howtoplay.armor.text.1=通过穿戴盔甲，你可以保护自己免受伤害。
 howtoplay.armor.header.1=合成	#
 howtoplay.armor.text.2=盔甲可以由皮革、铁锭、金锭或钻石合成。链甲可以通过村民交易获得，也可以从僵尸和骷髅身上获取。	#
 howtoplay.armor.text.3=通过打开物品栏并将盔甲移动到玩家模型旁的相应槽位中装备盔甲。	#
-howtoplay.armor.text.4=铁甲、链甲和金甲可以在熔炉中熔化成铁粒或金粒。	#
+howtoplay.armor.text.4=铁甲、链甲和金甲可以在熔炉中熔化成铁粒或金粒。	### How To Play help text. {MaxLength="500"}
 howtoplay.armor.header.2=盾牌	#
 howtoplay.armor.text.5.keyboard=盾牌可以抵挡收到的伤害。盾牌可以装备在副手槽或快捷栏中。按住 :_input_key.sneak: 使用盾牌进行格挡。	#
 howtoplay.armor.text.5.gamepad=盾牌可以抵挡收到的伤害。盾牌可以装备在副手槽或快捷栏中。按下 :_input_key.sneak: 或 :_gamepad_stick_right: 切换盾牌进行格挡。	#
@@ -3520,7 +3520,7 @@ howtoplay.banners.header.1=应用一个图案	#
 howtoplay.banners.text.3=可以使用你的染料创造许多不同的图案，例如：	#
 howtoplay.banners.text.4=  - 摆放一个三角形将获得一个V字形图案。	#
 howtoplay.banners.text.5=  - 摆放一个十字将获得一个十字图案。	#
-howtoplay.banners.text.6=  - 添加一朵滨菊将获得一个花朵图案。	#
+howtoplay.banners.text.6=  - 使用一朵滨菊制作一个花朵图案。	### How To Play help text. {MaxLength="500"}
 howtoplay.banners.text.7=尝试不同组合可获得更多图案！	#
 howtoplay.banners.header.2=多层次	#
 howtoplay.banners.text.8=旗帜也可以有多个层次，因此你可以在旗帜上布置多个图案。如果你不喜欢画在旗帜上的最后一个图案，则可以在炼药锅中洗掉最后一层。	#
@@ -3564,7 +3564,7 @@ howtoplay.blocks.text.5=§e玻璃§f - 这是一种透明方块，通过在熔�
 howtoplay.blocks.text.6=§e混凝土§f - 通过将混凝土粉末方块放入水中制成。	#
 howtoplay.blocks.text.7=§e陶瓦§f - 该方块自然存在于恶地生物群系中，或者可以使用在水下找到的黏土作为原料合成并染色制成。可以将陶瓦放入熔炉中烧炼制成带釉陶瓦。	#
 howtoplay.blocks.text.8=§e熔岩§f - 该方块自然存在于下界中，它会发出光亮并会烧毁在它上面的任何东西。	#
-howtoplay.blocks.text.9=§e砂土§f - 该方块与普通泥土方块极为相似，但上面无法长出草。可以在热带草原和针叶林生物群系中找到它。	#
+howtoplay.blocks.text.9=§e砂土§f - 该方块与普通泥土方块极为相似，但上面无法长出草。可以在风袭热带草原和原始针叶林生物群系中找到它。	### How To Play help text. {MaxLength="500"}
 
 howtoplay.bookAndQuill=书与笔	#
 howtoplay.bookAndQuill.text.1=书与笔让你可以记录自己的冒险经历。通过在页面中输入文字和图像来讲述你的故事。你甚至可以更改书名和作者！对书与笔签名即可完成你的巨作。在签名之前，书与笔将处于可编辑状态。	#
@@ -3817,7 +3817,7 @@ howtoplay.enderChest=末影箱	#
 
 howtoplay.enderChest.text.1=世界中的所有末影箱都互相关联。你可从任一末影箱内获取置于其他末影箱内的物品。但是，对于每个玩家来说，末影箱中所装物品都是特定的。这让玩家可将物品存储在任一末影箱内，然后从世界不同位置的其他末影箱内取回它们。	#
 
-howtoplay.eyeOfEnder=末影之眼	#
+howtoplay.eyeOfEnder=末影之眼	### How To Play help text header. {MaxLength="80"}
 howtoplay.eyeOfEnder.text.1=末影之眼与末地以一种神秘的方式相连，它在使用时会表现得非常奇怪。	#
 howtoplay.eyeOfEnder.text.2=传言它们可能会导致你打开另一个维度。	#
 
@@ -3892,7 +3892,7 @@ howtoplay.gameSettings.header.2=作弊和游戏规则	#
 howtoplay.gameSettings.text.9=§e激活作弊§f：该设置允许玩家使用命令。如果在创建世界时此设置处于启用状态，则会禁用所有成就。	#
 howtoplay.gameSettings.text.10=下面是必须启用作弊才能使用的游戏规则：	#
 howtoplay.gameSettings.text.11=§e终为白日§f：启用该设置时，夜晚永远不会降临。	#
-howtoplay.gameSettings.text.12=§e昼夜更替§f：禁用该设置时，时间将不会流逝。	#
+howtoplay.gameSettings.text.12=§e昼夜更替§f：禁用该设置时，时间将不会流逝。	### How To Play help text. {MaxLength="500"}
 howtoplay.gameSettings.text.13=§e死亡不掉落§f：该设置允许玩家在死亡时保留其物品栏内的物品。	#
 howtoplay.gameSettings.text.14=§e允许生物生成§f：禁用该设置时会阻止所有生物生成。	#
 howtoplay.gameSettings.text.15=§e允许生物破坏§f：禁用该设置时，会阻止生物破坏世界。	#
@@ -4118,7 +4118,7 @@ howtoplay.ranching=牧场经营	#
 howtoplay.ranching.text.1=在Minecraft中，你可以拥有自己的牧场，养满牲畜！牧场经营可获得许多资源，如羊毛、鸡蛋和生肉。	#
 howtoplay.ranching.header.1=扩大你的牧群	#
 howtoplay.ranching.text.2=为了使牲畜数量不断增长，必须让动物繁殖。成年动物必须进入爱情模式才能繁殖。喂动物吃喜欢的食物来让它们进入爱情模式。	#
-howtoplay.ranching.text.3=当两只同类动物彼此靠近并且都处于爱情模式时，它们就会亲吻一会儿，然后生出一只动物宝宝！动物宝宝会与其父母呆在一起直至成年。生完宝宝后，成年动物必须等5分钟才能再次进入爱情模式。	#
+howtoplay.ranching.text.3=当两只同类动物彼此靠近并且都处于爱情模式时，它们就会亲吻一会儿，然后生出一只动物宝宝！动物宝宝会与其父母呆在一起直至成年。生完宝宝后，成年动物必须等1分钟才能再次进入爱情模式。	### How To Play help text. {MaxLength="500"}
 howtoplay.ranching.header.2=生物吃什么？	#
 howtoplay.ranching.text.4=牛、哞菇和绵羊都吃小麦。猪可以吃胡萝卜或甜菜根。鸡喜欢吃各种种子。兔子吃胡萝卜、金胡萝卜或蒲公英。豹猫喜欢吃生鳕鱼或鲑鱼。狼喜欢吃各种肉类。	#
 howtoplay.ranching.text.5=当你拿着动物喜欢的食物时，它们会跟着你。这将有助于你将它们引入你的牧场或引导它们走向其他动物。	#
@@ -4133,7 +4133,7 @@ howtoplay.recipeBook.text.2.gamepad=收集到所需的合成原料后，请再�
 howtoplay.recipeBook.text.2.touch=收集到所需的合成原料后，请再次点击配方，然后将其从输出槽移动到快捷栏或物品栏。	#
 
 howtoplay.redstone=红石	#
-howtoplay.redstone.text.1=红石粉是传输电子信号的红石元件。当充能时，它将点亮并将其信号传输给邻近的其他红石物品。	#
+howtoplay.redstone.text.1=红石粉来源于红石。这种粉末是传输电子信号的红石元件。当充能时，它将点亮并将其信号传输给邻近的其他红石物品。	### How To Play help text. {MaxLength="500"}
 howtoplay.redstone.header.1=红石能量	#
 howtoplay.redstone.text.2=若要为其中一个物品提供能量，你需要诸如拉杆、按钮或压力板等电源。试着找齐全部电源！	#
 howtoplay.redstone.text.3=在电源旁边放置一些红石粉并开启它来传输能量。	#
@@ -4211,11 +4211,11 @@ howtoplay.theCraftingTable.text.2.touch=将你的工作台放置在世界中，�
 
 howtoplay.theEnd=末地	#
 howtoplay.theEnd.text.1=末地是可通过激活的末地传送门进入的另外一个维度。末地传送门可在要塞之中找到，要塞位于主世界的地底深处。	#
-howtoplay.theEnd.text.2=每个末地传送门框架方块都缺少一些神秘物品来诱发其内部的力量。	#
+howtoplay.theEnd.text.2=每个末地传送门框架方块都缺少一些神秘物品来诱发其内部的力量。	### How To Play help text. {MaxLength="500"}
 howtoplay.theEnd.header.1=另一边	#
 howtoplay.theEnd.text.3=一旦传送门被激活，跳入其中即可前往末地。	#
 howtoplay.theEnd.text.4=末地是可怕的末影龙的家园。她是既凶残又强大的敌人，似乎能从奇异的水晶中汲取力量。她的龙息和火球攻击可以在整个战地留下滞留性酸物。带上一些好友确保取得胜利！	#
-howtoplay.theEnd.text.5=一次不够的话，可以将四颗末地水晶添加到返回传送门的各个角落来重新唤醒末影龙。	#
+howtoplay.theEnd.text.5=一次不够的话，可以将四颗末地水晶添加到返回传送门的各个角落来重新唤醒末影龙。	### How To Play help text. {MaxLength="500"}
 
 howtoplay.textures=纹理 #
 howtoplay.textures.text.1=纹理包在视觉上改变游戏的外观，为你的Minecraft世界披上一层新鲜的外套。 #
@@ -6147,8 +6147,7 @@ menu.realms=Realms	###{StrContains="Realms"}
 menu.realmsServer=Realms服务器	###{StrContains="Realms"}{MaxLength=‘18’}
 menu.servers=服务器	#
 menu.trialLabel=进入试玩模式，探索、收集和合成 - 全部限时免费。	#
-menu.onlinefriends.main=(%s)	### This is the text for the button used to open the friends drawer from main menu. For now it's only a variable, may change later. {MaxLength="5"} {StrContains="(%s)"}
-menu.onlinefriends.ingame=好友(%s)	### This is the text for the button used to open the friends drawer from the ingame menu. {MaxLength="13"} {StrContains="(%s)"}
+menu.onlinefriends=好友(%s)	### This is the text for the button used to open the friends drawer, used on the main menu and the ingame menu. {MaxLength="13"} {StrContains="(%s)"}
 
 merchant.deprecated=交易一些别的东西来解锁！	#
 
@@ -6400,7 +6399,8 @@ options.dev_enableDebugHudOverlay.client_network=客户端网络	#
 options.dev_enableDebugHudOverlay.server_network=服务器网络	#
 options.dev_enableDebugHudOverlay.spatial_packet_optimizations=Spatial数据包优化	#
 options.dev_enableDebugHudOverlay.lock_contention=锁竞争	#
-options.dev_enableDebugHudOverlay.hbui=Gameface	# This is a proper name, do not translate	#
+options.dev_enableDebugHudOverlay.hbui=Gameface	### This is a proper name, do not translate
+options.dev_enableDebugHudOverlay.cachestorageusage=LRU缓存使用情况	### refers to how cache (small high speed storage) is managed by the least recently used (LRU) algorithm.{MaxLength=39}
 options.dev_transport_layer=传输层类型	#
 options.dev_controltower_override_transport_layer=覆盖本地MUT传输层	#
 options.dev_transport_layer.raknet=RakNet	#
@@ -7620,6 +7620,7 @@ progressScreen.message.modifiedWorldWarning.5=高级提示：一个附加包包�
 progressScreen.message.modifiedWorldWarning.6=附加包会向你的世界添加新的方块、物品或生物。	#
 progressScreen.message.modifiedWorldWarning.7=世界和附加包都很复杂！虽然有些可以很好地配合，但对于其他一些可能会产生奇怪的结果。	#
 progressScreen.message.modifiedWorldWarning.8=更多的附加包意味着更多的乐趣，但游戏加载可能需要更长的时间。	#
+progressScreen.message.modifiedWorldWarning.9=本中文译名修正包由Spectrollay制作!	#
 progressScreen.dialog.title.resourcePack=下载世界资源包？	#
 progressScreen.dialog.title.storageProviderError=同步世界数据失败	#
 progressScreen.dialog.title.storageProviderLongWait=正在同步世界数据	#
@@ -8934,10 +8935,6 @@ store.ratings.yourRating=你的评分	#
 store.ratings.stars=%s星	#
 store.ratings.rate=为此包评分！	#
 
-store.ratings.signIn.title=为商城中的物品评分	#
-store.ratings.signIn.description1=告诉创作者和社区你关于此物品的体验！	#
-store.ratings.signIn.description2=你需要先使用微软账号登录，然后才能为某个物品评分。	#
-
 store.purchase.success.realMoney1=你刚才解锁了：%s，花费了%s	#
 store.purchase.success.realMoney2=+%s:minecoin:	#
 store.purchase.signIn=用大量精彩内容扩充你的游戏。	#
@@ -9160,6 +9157,7 @@ store.progress.dialog.tooltip.3=查看我们的Minecoin礼包——有些还附�
 store.progress.dialog.tooltip.4=为你的购买评分可向内容创作者提供反馈。	#
 store.progress.dialog.tooltip.5=附加包可用于新的世界和现有世界。	#
 store.progress.dialog.tooltip.6=尝试各种类型的内容——世界、皮肤、附加包、材质等。	#
+store.progress.dialog.tooltip.7=本中文译名修正包由Spectrollay制作!	#
 
 stream.confirm_start=你确定要开始直播吗？	#
 stream.unavailable.account_not_bound=在通过Twitch直播Minecraft之前，你需要在mojang.com上绑定你的Twitch账号。是否马上开启？	#
@@ -10953,6 +10951,31 @@ tips.realms.7=在Realms动态的成员选项卡中了解你的Realm社区。	#
 tips.realms.8=使用Realms动态社交，跟上你朋友的进度，并组织游玩时间。	#
 tips.realms.9=本中文译名修正包由Spectrollay制作!	#
 
+tips.creative.1=对重力感到厌倦？连跳两次来飞翔！	###A fun way to tell players that they can fly if they press the jump button twice.{MaxLength="200"}
+tips.creative.2=用刷怪蛋瞬间召唤生物。	###Players can use an item called Sawn Egg to summon animals and monsters.{MaxLength="200"}
+tips.creative.3=收集山羊角，让世界充满音乐。	###Goat horn is an object players can use to play loud sounds.{MaxLength="200"}
+tips.creative.4=用打火石点燃TNT方块，体验爆炸的威力。	###Flint and steel is a tool used to create fire or to ignite certain blocks, structures and mobs. TNT will explode when you light it.{MaxLength="200"}
+tips.creative.5=试着使用末影珍珠在地图上瞬移。小心别晕了！	###An ender pearl is an item that can be thrown and teleports the thrower to where it lands.{MaxLength="200"}
+tips.creative.6=使用铁轨和矿车打造完美的运输系统，或者是过山车！	###To  encourage players to build railroads{MaxLength="200"}
+tips.creative.7=想要更多的挑战？生存模式等着你！	###In the Game mode Survival mode you can die. In Creative you can’t.{MaxLength="200"}
+tips.creative.8=弩需要弹药。出发狩猎前，记得先备好箭矢。	###Crossbows need ammo. Add some arrows to your inventory before going hunting.{MaxLength="200"}
+tips.creative.9=你不会死，但村民会。好好利用这点......	###This means you can do things that will get villagers killed. Like attracting monsters to the village.{MaxLength="200"}
+tips.creative.10=村民擅长建造村庄。你觉得自己能做得更好吗？	###This is a prompt to encourage players to build things.{MaxLength="200"}
+tips.creative.11=狼会攻击骷髅并啃它们美味的骨头。	###Wolves will attack skeletons. It’s also a discrete hint that you should feel wolves with bones to tame them.{MaxLength="200"}
+tips.creative.12=骑上野生的马，直到它冷静下来，就能驯服它了。然后上鞍，策马奔腾。（请注意：现实世界的马并不是这样驯服的。）	###It’s a bit unintuitive how you tame horses. Most other animals are tamed by feeding them. Not Horses. {MaxLength="200"}
+tips.creative.13=想吃多少就吃多少，你永远不会吃饱！当然，你也不会饿死。	###In Creative Mode you don’t get hungry. Eating the food it just for fun.{MaxLength="200"}
+tips.creative.14=使用旁观模式穿越固体方块。	###There is a Game mode called Spectator Mode. It allows you to fly through walls and blocks and everything.{MaxLength="200"}
+tips.creative.15=谁需要工具？在创造模式里，你可以徒手瞬间打破方块。	###Block breaking happens very fast when you’re in Creative Mode.{MaxLength="200"}
+tips.creative.16=看到喜欢的方块？使用拾取方块键，就能立即开始使用它建造！是的，甚至包括生物！	###There is a feature called “Pick block” that enables players to instantly equip any block they click on. If you click on a mob(animal or monster) you will get a spawn egg that summons another monster/animal of that kind.{MaxLength="200"}
+tips.creative.17=使用/tp命令瞬间到达某个地方。	###You can teleport yourself in Creative. You use the /tp command in the chat.{MaxLength="200"}
+tips.creative.18=在创造模式下，怪物不会注意到你，但它们仍然会互相厮杀......	###Mobs(animals & monsters) won’t notice you in creative mode, but they’ll still notice each other… meaning that they can still kill each other.{MaxLength="200"}
+tips.creative.19=每天一个监守者，怪物远离你我他。	###The Warden is a scary monster that live in underground cities.{MaxLength="200"}
+tips.creative.20=为什么不建一个水下基地呢？反正你不会淹死。	###You can’t drown in creative mode. So it’s possible to build underwater without danger.{MaxLength="200"}
+tips.creative.21=无论你想建造什么，都可以实现。在创造模式下，你的资源是无限的。	###Players have endless resources in Creative mode. They get all the building blocks from their inventory.{MaxLength="200"}
+tips.creative.22=幻翼伤不了你，但你仍然可以通过睡觉让它们消失。记住，是在床上睡觉，而不是用床砸它们。	###Phantoms are flying mobs(monsters) that spawn when you havn't slept for a few days. They won't hurt you in Creative Mode. To get rid of them you sleep in a bed.{MaxLength="200"}
+tips.creative.23=试过在岩浆里游泳吗？就像在泡热水澡一样......不过，别在生存模式里这么做。	###Lava doesn't hurt you in creative mode.{MaxLength="200"}
+tips.creative.24=本中文译名修正包由Spectrollay制作!	#
+
 splitscreen.joinPrompt=以玩家%s的身份加入	#
 splitscreen.unavailable.toastHeader=分屏不可用	#
 splitscreen.unavailable.toastMessage=第二名玩家当前无法加入。	#
@@ -11483,6 +11506,7 @@ world_recovery.progress=正在恢复%2个文件（%3）%1%1进度： 已完成%4
 ## Gatherings
 gathering.button.liveEventFallback=直播活动	#
 gathering.button.join.liveEventFallback=加入活动	#
+gathering.button.updateRequired=需要更新	###An updated version of Minecraft is required for the user to proceed{MaxLength=30}
 gathering.caption.startsIn=距离开始还剩 %s	#
 gathering.caption.endsIn=距离结束还剩 %s	#
 gathering.caption.liveEventFallback=快来看看！	#
@@ -11509,10 +11533,15 @@ unloadedchunk.message.warning=区块仍在加载。你可能会遇到一些轻�
 
 
 ## 实验性
-tile.wildflowers.name=野花簇 ###A patch of thin decorative wild flowers on the ground{MaxLength=100}
-tile.firefly_bush.name=萤火虫灌木丛 ###A bush inhabited by Firefly bugs{MaxLength=100}
-tile.bush.name=灌木丛 ###A small, dense, plant {MaxLength=100}
-tile.leaf_litter.name=枯叶  ###A patch of thin decorative leaf litter on the ground{MaxLength=100}
+tile.wildflowers.name=野花簇	###A patch of thin decorative wild flowers on the ground{MaxLength=100}
+tile.firefly_bush.name=萤火虫灌木丛	###A bush inhabited by Firefly bugs{MaxLength=100}
+tile.bush.name=灌木丛	###A small, dense, plant {MaxLength=100}
+tile.leaf_litter.name=枯叶	###A patch of thin decorative leaf litter on the ground{MaxLength=100}
+tile.cactus_flower.name=仙人掌花	###A pink flower which grows on the top of a Cactus{MaxLength=100}
+item.brown_egg.name=棕色鸡蛋	###A brown chicken egg which hatches a warm climate variant of a chicken{MaxLength=100}
+item.blue_egg.name=蓝色鸡蛋	###A blue chicken egg which hatches a cold climate variant of a chicken{MaxLength=100}
+tile.short_dry_grass.name=矮枯草丛	###A patch of short dried grass on the ground{MaxLength=100}
+tile.tall_dry_grass.name=高枯草丛	###A patch of tall dried grass on the ground{MaxLength=100}
 
 entity.firefly.name=萤火虫	#
 item.spawn_egg.entity.firefly.name=萤火虫刷怪蛋	#
@@ -14828,7 +14857,7 @@ hbui.WorldTag.experimental=实验性	#
 hbui.WorldTag.hardcore=极限	#
 hbui.WorldTag.lan=局域网	#
 hbui.WorldTag.survival=生存	#
-hbui.WorldTag.unknown=未知	#
+hbui.WorldTag.unknown=未知	###Placeholder if the other tags don't fit, the unknown world tag{MaxLength=21}
 hbui.Editor.title=输入映射	#
 hbui.EditorActionBar.leftTray=左	#
 hbui.EditorActionBar.rightTray=右	#
@@ -15137,6 +15166,7 @@ hbui.EditorPaletteItem.title=调色板项	#
 hbui.EditorPaletteItem.type=简单方块	#
 hbui.EditorPaletteItem.weight=重量	#
 hbui.EditorRemotePane.narration=面板	#
+hbui.EditorRemotePane.overlayModal=弹窗	###Represents a modal panel overlaid on another panel. {MaxLength=100}
 hbui.EditorRoute.brushToolDescription=绘制自定义画笔描边。	#
 hbui.EditorRoute.brushToolTooltip=画笔工具	#
 hbui.EditorRoute.stampToolDescription=将世界的一个区域复制到另一个区域。	#
