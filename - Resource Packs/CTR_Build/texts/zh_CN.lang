@@ -11551,7 +11551,10 @@ item.blue_egg.name=蓝色鸡蛋	###A blue chicken egg which hatches a cold clima
 tile.short_dry_grass.name=矮枯草丛	###A patch of short dried grass on the ground{MaxLength=100}
 tile.tall_dry_grass.name=高枯草丛	###A patch of tall dried grass on the ground{MaxLength=100}
 
+
+
 ## 实验性
+
 item.copper_horn.name=铜制号角	#
 itemGroup.name.copperHorn=铜制号角	#
 
@@ -11670,7 +11673,7 @@ hbui.AchievementPermanentlyDisabledModal.permissions=世界创建者拥有管理
 hbui.AchievementPermanentlyDisabledModal.reasonText=如果满足以下条件，则无法在该世界中获取成就：	### Text shown in the modal when the world have the achievements permanently disabled {MaxLength="150"}
 hbui.AchievementPermanentlyDisabledModal.template=世界基于模板创建	### Reason why the world has achievements disabled, the world was created from a template {MaxLength="150"}
 hbui.AchievementPermanentlyDisabledModal.title=你无法获取成就	### Title of modal shown to let the player that in this world achievements are permanently disabled {MaxLength="40"}
-hbui.AchievementPermanentlyDisabledModal.trial=世界创建者使用的是Minecraft试用版	### Reason why the world has achievements disabled, player is using a trial version of the game {MaxLength="150"}
+hbui.AchievementPermanentlyDisabledModal.trial=世界创建者使用的是Minecraft试玩版	### Reason why the world has achievements disabled, player is using a trial version of the game {MaxLength="150"}
 hbui.AchievementReward.narration.rewardLocked=奖励未解锁	#
 hbui.AchievementReward.narration.rewardUnlocked=奖励已解锁	#
 hbui.AchievementReward.reward=奖励	#
