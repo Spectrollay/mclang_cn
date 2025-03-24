@@ -611,6 +611,7 @@ chestScreen.header.player=物品栏	#
 chestScreen.header.small=箱子	#
 
 chooseRealmScreen.header=选择一个Realm服务器	#
+chooseRealmScreen.addrealmbuttontext=加入一个Realm	###{StrContains="Realm"}{MaxLength=18}
 chooseRealmScreen.realmsplusbuttontext=创建一个10名玩家的Realm	#
 chooseRealmScreen.realmsbuttontext=创建一个2名玩家的Realm	#
 
@@ -1978,6 +1979,8 @@ createWorldScreen.experimentalArmadillo=犰狳和狼铠	#
 createWorldScreen.experimentalArmadilloDescription=了解犰狳，用全新的狼铠装备你的狼！	#
 createWorldScreen.experimentalY2025Drop1=2025小更新1	#
 createWorldScreen.experimentalY2025Drop1Description=在2025年的第一次游戏小更新中探索新的生物群系优化和生物变种	#
+createWorldScreen.experimentalLocatorBar=定位栏	### Name for the ui element on the screen which shows dots showing the direction to other players{MaxLength=150}
+createWorldScreen.experimentalLocatorBarDescription=在多人游戏中展示其他玩家的位置	### Text providing description of the ui element on the screen, showing the direction to other players{MaxLength=150}
 createWorldScreen.worldPreferences=世界首选项	#
 createWorldScreen.startWithMap=初始地图	#
 createWorldScreen.defaultName=我的世界	#
@@ -2385,6 +2388,13 @@ realmsSettingsScreen.playersSectionTitle=玩家	#
 realmsSettingsScreen.membersSectionTitle=成员	#
 realmsSettingsScreen.subscriptionSectionTitle=订阅	#
 realmsSettingsScreen.inviteLinksSectionTitle=邀请链接	#
+realmsSettingsScreen.advancedSectionTitle=高级	###Advanced tab title{MaxLength="16"}
+realmsSettingsScreen.advancedLoading=正在加载服务器分区	###Loading server regions message{MaxLength="33"}
+realmsSettingsScreen.advancedLoadingFailed=加载服务器分区失败	###Failed to load server regions message{MaxLength="60"}
+realmsSettingsScreen.serverRegionPreferenceTitle=服务器分区偏好	###Server region preference selected label{MaxLength="36"}
+realmsSettingsScreen.setRegionLabel=设置分区	###Set Region Drop down label{MaxLength="16"}
+realmsSettingsScreen.preferredRegions.firstToJoin=自动（第一个加入的会话）	###Region Selection Preference first to join{MaxLength="43"}
+realmsSettingsScreen.preferredRegions.owner=自动（Realm所有者连接）	###Region Selection Preference owner{MaxLength="43"}
 realmsSettingsScreen.devOptionsSectionTitle=开发选项	#
 realmsSettingsScreen.backupSection=备份	#
 realmsSettingsScreen.backupInfo=你可以用该列表中的一项备份来替换你Realm上的世界。	#
@@ -2519,8 +2529,8 @@ realmsSettingsScreen.windowsStoreDisplayName=Windows 应用商店	#
 realmsSettingsScreen.xboxOneStoreDisplayName=Xbox 商店	#
 realmsSettingsScreen.amazonStoreDisplayName=Amazon Appstore	#
 realmsSettingsScreen.oculusStoreDisplayName=Oculus Store	#
-realmsSettingsScreen.berwickStoreDisplayName=PlayStation®Store	### CertRequirement: [PlayStation®Store]
-realmsSettingsScreen.SonyStoreDisplayName=PlayStation®Store	 ### CertRequirement: [PlayStation®Store]
+realmsSettingsScreen.berwickStoreDisplayName=PlayStation®Store	### CertRequirement:{PS4}[PlayStation®Store] CertRequirement:{PS5}[PlayStation®Store]{MaxLength=3000}
+realmsSettingsScreen.SonyStoreDisplayName=PlayStation®Store	 ### CertRequirement:{PS4}[PlayStation®Store] CertRequirement:{PS5}[PlayStation®Store]{MaxLength=3000}
 realmsSettingsScreen.unknownStoreDisplayName=未知商店	#
 realmsSettingsScreen.extendingRealm=正在延长Realm...	#
 realmsSettingsScreen.offerError.title=购买待处理	#
@@ -2939,6 +2949,10 @@ edu.servers_screen.play=开始探索	### Button text on a server tile in the ser
 edu.servers_screen.back=返回	### Button text on a server tile in the servers grid, {MaxLength=10}
 edu.servers_screen.share=分享	### Button text on a server tile in the servers grid, {MaxLength=10}
 edu.servers_screen.remove=移除	### Button text on a server tile in the servers grid, {MaxLength=10}
+edu.servers_screen.confirm_remove.title=移除服务器	### Title text on a confirmation of removal modal, {MaxLength=40}
+edu.servers_screen.confirm_remove.body=如果删除了该服务器你仍然可以在稍后重新添加。	### Description for remove server action in modal, {MaxLength=150}
+edu.servers_screen.confirm_remove.cancel=返回	### Button text on a confirmation of removal modal, {MaxLength=25}
+edu.servers_screen.confirm_remove.confirm=移除服务器	### Button text on a confirmation of removal modal, {MaxLength=25}
 
 edu.pause.multiplayer.disabled=用户课程在该课程中不可用。	#
 
@@ -3397,6 +3411,8 @@ gui.skip=跳过	#
 gui.stats=统计信息	#
 gui.tab=标签	#
 gui.toMenu=返回到标题界面	#
+gui.toStorage=管理存储	### Manage storage button, will navigate to the storage settings menu.  {MaxLength="30"}
+gui.okay=好的	### Okay button, it acknowledges the warning and will do no other action. {MaxLength="30"}
 gui.tryAgain=重试	#
 gui.up=向上	#
 gui.warning.exitGameWarning=是否要退出Minecraft？	#
@@ -3983,7 +3999,7 @@ howtoplay.minecoins.text.1=使用Minecoin探索无限可能性：Minecraft中的
 howtoplay.minecoins.text.2=兑换后，你的Minecoin将与你的微软账号关联，因此你可以在其他支持的设备上访问你的Minecoin和购买内容！	#
 howtoplay.minecoins.button.text.1=获取Minecoin	#
 howtoplay.minecoins.header.1=免责声明	#
-howtoplay.minecoins.text.3=*Minecoin需要带有Minecraft商城的Minecraft基岩版。Minecoin在PlayStation®上不兼容。有关兼容信息，请参阅minecraft.net/minecoins	### CertRequirement: [PlayStation®]
+howtoplay.minecoins.text.3=*Minecoin需要带有Minecraft商城的Minecraft基岩版。Minecoin在PlayStation®上不兼容。有关兼容信息，请参阅minecraft.net/minecoins	### CertRequirement:{PS4}[PlayStation®] CertRequirement:{PS5}[PlayStation®]{MaxLength=3000}
 
 
 howtoplay.mining=采矿	#
@@ -6537,6 +6553,7 @@ options.dev_overrideVersionPatch=补丁	#
 options.dev_updateVersionOverride=更新客户端版本覆盖	#
 options.dev_resetOverrideDate=重置替代日期时间	#
 options.dev_clearStoreCache=清除商城缓存	#
+options.dev_clearDownloadeCache=清除下载缓存	### Clears the internal download storage cache. {MaxLength="50"}
 options.dev_clearLibraryCache=清除图书馆缓存	#
 options.dev_clearScreenshotsCache=清除截屏缓存	#
 options.dev_clearAllCache=清除所有缓存	#
@@ -6778,6 +6795,7 @@ options.modelPart.right_sleeve=右袖	#
 options.multiplayer.title=多人游戏设置...	#
 options.music=音乐	#
 options.name=名称	#
+options.new_player_path_character_selector=为新玩家启用角色选择器	### Label for debug toggle for enabling character selector for new players. {MaxLength="55"}
 options.defaultName=Steve	#
 options.off=关	#
 options.on=开	#
@@ -7105,6 +7123,7 @@ options.pointLightShadowQuality.medium=中	#
 options.pointLightShadowQuality.high=高	#
 options.pointLightShadowQuality.ultra=极致	#
 options.pointLightLODingQuality=点光源质量	#
+options.pointLightLODingQuality.off=关闭	### {MaxLength=32}
 options.pointLightLODingQuality.low=低	#
 options.pointLightLODingQuality.medium=中	#
 options.pointLightLODingQuality.high=高	#
@@ -7568,6 +7587,7 @@ progressScreen.title.connectingExternal=正在连接外部服务器	#
 progressScreen.title.connectingRealms=正在连接Realm	#
 progressScreen.title.copyingWorld=复制世界	#
 progressScreen.title.deleteStorageAreaContent=清除存储缓存中	#
+progressScreen.title.deleteDownloadContent=清除下载缓存中	### Progress bar text for when the Clear Download Cache button is pressed {MaxLength="100"}
 progressScreen.title.deleteScreenshotsCache=清除截屏缓存中	#
 progressScreen.title.deleteLocalScreenshots=清除本地截屏中	#
 progressScreen.title.loadingSplitScreenAppearances=加载分屏外观	#
@@ -8774,6 +8794,9 @@ store.popup.xblRequired.message=你需要登录之后才能解锁商城中的项
 store.popup.download.title.KB=下载内容？ - %sKB	#
 store.popup.download.title.MB=下载内容？- %sMB	#
 store.popup.download.msg=这将会将%s下载到你的设备上。	#
+store.popup.download.noSpaceMarketplace.msg=你的可用空间不足，无法下载%s，请清除商城缓存后重试。	### Download warning message, instructing the user to use the clear marketplace cache button, located here options.dev_clearStoreCache. {MaxLength="500"}  
+store.popup.download.noSpaceDownload.msg=你的可用空间不足，无法下载%s，请清除下载缓存后重试。	### Download warning message, instructing the user to use clear the download cache button, located here options.dev_clearDownloadeCache. {MaxLength="500"}  
+store.popup.download.noSpaceLongTerm.msg=你的可用空间不足，无法下载%s，请删除一些项目后重试。	### Download warning message, instructing the user to delete installed items to free up space. {MaxLength="500"}  
 store.popup.downloadCell.title.KB=通过流量下载？ - %sKB	#
 store.popup.downloadCell.title.MB=通过流量下载？ - %sMB	#
 store.popup.downloadCell.msg=你未连接到WiFi。要使用流量网络将%s下载至你的设备吗？	#
@@ -8788,7 +8811,7 @@ store.popup.download.noInternet.title=出错了	#
 store.popup.download.noInternet.msg=抱歉，无法开始下载%s。请检查你的网络连接？	#
 store.popup.download.noSpace.title.KB=空间不足 - %sMB	#
 store.popup.download.noSpace.title.MB=空间不足 - %sMB	#
-store.popup.download.noSpace.msg=你的设备上没有足够的空间，无法下载%s 。	#
+store.popup.download.noSpace.msg=你的可用空间不足，无法下载%s。你可以通过在存储菜单中清除缓存或删除项目释放空间。	### Download warning message, instructing the user to delete downloaded content, or use the two clear cache buttons located here options.dev_clearStoreCache, options.dev_clearDownloadeCache. {MaxLength="500"}
 store.popup.download.unOwned.title=是否购买资源包？	#
 store.popup.download.unOwned.msg=是否要购买这个世界所用的资源包？	#
 store.popup.download.unOwnedTemplate.title=是否购买世界模板？	#
@@ -10552,10 +10575,6 @@ xbox.thirdpartysignin.line2=你需要用微软账号登录才能进行连接！	
 xbox.signInLong=免费注册！	#
 xbox.signOutLong=退出登录你的微软账号	#
 
-xbox.genericsignin.line1=你的Minecraft账号允许你在PC和移动设备上与好友一同玩在线多人游戏。最棒的是什么？	#
-xbox.genericsignin.line2=免费！	#
-xbox.genericsignin.line3=你可以随时随地使用它来玩Minecraft。	#
-
 xbox.disconectionscreen.notSignedIn=使用微软账号登录，与好友畅玩。	#
 xbox.disconectionscreen.multiplayerNotAllowed=此微软账号没有权限加入多人游戏。	#
 xbox.disconectionscreen.accessDenied=你必须与本游戏中某人是好友才能加入。	#
@@ -11643,13 +11662,23 @@ hbui.AchievementDetailsRoute.reward=奖励	#
 hbui.AchievementDetailsRoute.title=成就详情	#
 hbui.AchievementDetailsRoute.titleNarration=成就详情屏幕	#
 hbui.AchievementDetailsRoute.viewReward=查看奖励	#
-hbui.AchievementDisabledModal.closeInputLegend=关闭	#
-hbui.AchievementDisabledModal.goBackButtonText=返回	#
-hbui.AchievementDisabledModal.multipleSettingsMessageCNW=使用当前设置将不能在这个世界中获取成就。如果你想获取成就，请在创建世界前更改以下设置：	#
-hbui.AchievementDisabledModal.multipleSettingsMessageEW=使用当前设置将不能在这个世界中获取成就。如果你想获取成就，请更改以下设置：	#
-hbui.AchievementDisabledModal.oneSettingMessageCNW=使用当前设置将不能在这个世界中获取成就。如果你想获取成就，请在创建世界之前更改以下设置：	#
-hbui.AchievementDisabledModal.oneSettingMessageEW=使用当前设置将不能在这个世界中获取成就。如果你想获取成就，请更改以下设置：	#
-hbui.AchievementDisabledModal.title=你不能获取成就	#
+hbui.AchievementDisabledModal.behaviorPacks=激活了行为包	###Reason world will have achievements permanently disabled {MaxLength=150}  
+hbui.AchievementDisabledModal.cheatsEnabled=启用了作弊	###Reason world will have achievements permanently disabled {MaxLength=150}  
+hbui.AchievementDisabledModal.closeButton=关闭	###Secondary button of modal that appears when the user tries to create a world with settings that will permanently disable achievements {MaxLength=40}  
+hbui.AchievementDisabledModal.confirmButton=仍然创建	###Primary button of modal that appears when the user tries to create a world with settings that will permanently disable achievements {MaxLength=40}  
+hbui.AchievementDisabledModal.confirmButtonEW=仍然继续	###Primary button of modal that appears when the user tries to edit a world with settings that will permanently disable achievements {MaxLength=40}  
+hbui.AchievementDisabledModal.creativeMode=世界是以创造模式创建的	###Reason world will have achievements permanently disabled {MaxLength=150}  
+hbui.AchievementDisabledModal.experiments=启用了实验性功能	###Reason world will have achievements permanently disabled {MaxLength=150}  
+hbui.AchievementDisabledModal.firstParagraph=使用以下任意功能创建世界，将导致该世界无法获取成就。即使之后关闭相关选项，你仍然需要进入其他世界才能获取成就。	###First paragraph of modal that appears when the user tries to create a world with settings that will permanently disable achievements {MaxLength=300}  
+hbui.AchievementDisabledModal.firstParagraph.singleReason=使用以下功能创建世界，将导致该世界无法获取成就。即使之后关闭相关选项，你仍然需要进入其他世界才能获取成就。	###First paragraph of modal that appears when the user tries to create a world with settings that will permanently disable achievements for a single reason {MaxLength=300}  
+hbui.AchievementDisabledModal.firstParagraphEW=由于该世界的设置，你将无法在游玩时获取成就。即使现在更改设置也无法恢复。若要获取成就，请前往其他世界。	###First paragraph of modal that appears when the user tries to edit a world with settings that will permanently disable achievements {MaxLength=300}  
+hbui.AchievementDisabledModal.flatWorld=世界以超平坦形式创建	###Reason world will have achievements permanently disabled {MaxLength=150}  
+hbui.AchievementDisabledModal.goBackButton=返回	###Secondary button of modal that appears when the user tries to create a world with settings that will permanently disable achievements {MaxLength=40}  
+hbui.AchievementDisabledModal.operator=世界创建者拥有管理员权限	###Reason world will have achievements permanently disabled {MaxLength=150}  
+hbui.AchievementDisabledModal.secondParagraph=如果满足以下条件，则无法在该世界中获取成就：	###Second paragraph of modal that appears when the user tries to create a world with settings that will permanently disable achievements {MaxLength=150}  
+hbui.AchievementDisabledModal.template=世界基于模板创建	###Reason world will have achievements permanently disabled {MaxLength=150}  
+hbui.AchievementDisabledModal.title=你无法获取成就	###Title of modal that appears when the user tries to create a world with settings that will permanently disable achievements {MaxLength=40}  
+hbui.AchievementDisabledModal.trial=世界创建者使用的是Minecraft试玩版	###Reason world will have achievements permanently disabled {MaxLength=150}  
 hbui.AchievementListItem.completed=已完成	#
 hbui.AchievementListItem.gamerscoreNarration=玩家分数：%1$s	#
 hbui.AchievementListItem.groupNarration=第%1$s组/共%2$s组	#
@@ -11827,9 +11856,12 @@ hbui.Bedtime.chatScreenDisabled=聊天目前已被禁用	#
 hbui.Bedtime.chattingDisabled=该服务器目前已禁止与其他玩家聊天	#
 hbui.Bedtime.enumeration=第%1$s个/共%2$s个	#
 hbui.Bedtime.leaveBedButton=起床	#
-hbui.Bedtime.messageAllPlayersSleeping=今夜将在睡梦中度过	#
-hbui.Bedtime.messageWaitingForOthersPlural=当%1$s名其他玩家入睡时将跳过夜晚。	#
-hbui.Bedtime.messageWaitingForOthersSingular=当1名其他玩家入睡时将跳过夜晚。	#
+hbui.Bedtime.messageAllPlayersSleepingNight=今夜将在睡梦中度过	### Displayed when the player is sleeping through the night using a bed {MaxLength="100"}
+hbui.Bedtime.messageAllPlayersSleepingThunderstorm=雷暴将在睡梦中度过	### Displayed when the player is sleeping through a thunderstorm using a bed {MaxLength="150"}
+hbui.Bedtime.messageWaitingForOthersPluralNight=当%1$s名其他玩家入睡时将跳过夜晚。	### Displayed during night time when a player is laying in bed and waiting for more multiple other players to go to bed {MaxLength="200"}
+hbui.Bedtime.messageWaitingForOthersPluralThunderstorm=当%1$s名其他玩家入睡时将跳过雷暴。	### Displayed during a thunderstorm when a player is laying in bed and waiting for more multiple other players to go to bed {MaxLength="200"}
+hbui.Bedtime.messageWaitingForOthersSingularNight=当1名其他玩家入睡时将跳过夜晚。	### Displayed during night time when a player is laying in bed and waiting for one other player to go to bed {MaxLength="200"}
+hbui.Bedtime.messageWaitingForOthersSingularThunderstorm=当1名其他玩家入睡时将跳过雷暴。	### Displayed during a thunderstorm when a player is laying in bed and waiting for one other player to go to bed {MaxLength="200"}
 hbui.Bedtime.openChatButton=打开聊天	#
 hbui.Bedtime.sleepingNotPossibleNotWorldOwner=“通过睡觉跳过夜晚”设置已关闭。此世界的所有者需要在编辑世界中开启此设置。	#
 hbui.Bedtime.sleepingNotPossibleWorldOwner=“通过睡觉跳过夜晚”设置已关闭。在编辑世界的高级设置中将其开启。	#
@@ -11875,6 +11907,10 @@ hbui.Common.narration.roles.button=按钮	#
 hbui.CompareStatsRoute.header=对比统计数据	#
 hbui.CompareStatsRoute.playerItemsListRole=横向列表	#
 hbui.CompareStatsRoute.playerItemsNarration=对比两名玩家的统计数据	#
+hbui.ConfirmDisableAchievementsModal.confirmButton=仍然继续	###Primary button of modal that appears when the user tries to edit a world with settings that will permanently disabled achievements {MaxLength=40}
+hbui.ConfirmDisableAchievementsModal.goBackButton=返回	###Secondary button of modal that appears when the user tries to edit a world with settings that will permanently disabled achievements {MaxLength=40}
+hbui.ConfirmDisableAchievementsModal.message=对该世界所做的更改会导致你将无法再获取成就，即使之后更新这些设置也无法恢复。	###Description for modal that appears when a user edits a world with settings that will permanently disabled achievements and tries to save (or start the world) {MaxLength=300}
+hbui.ConfirmDisableAchievementsModal.title=你无法获取成就	###Title of modal that appears when the user tries to edit a world with settings that will permanently disabled achievements {MaxLength=40}
 hbui.ConnectionErrorRoute.backToMenu=返回菜单	#
 hbui.ConnectionErrorRoute.codewordDetailsHelp=使用上方的关键词在help.Minecraft.net中搜索以获取更多信息。	#
 hbui.ConnectionErrorRoute.codewordHelp=有关更多信息，请在help.Minecraft.net上搜索"%1$s"。	#
@@ -12211,6 +12247,7 @@ hbui.CreateNewWorld.achievementsDisabledMessages.template=删除模板	#
 hbui.CreateNewWorld.advanced.bonusChestDescription=生成在一个装有一些入门物品的箱子旁以开始你的冒险。	#
 hbui.CreateNewWorld.advanced.bonusChestTitle=奖励箱	#
 hbui.CreateNewWorld.advanced.copyToClipboard=复制到剪切板	#
+hbui.CreateNewWorld.advanced.expandHintNarration=已在下方展开更多的超平坦世界选项	### More options for how to generate a flat world is shown below in the UI. {MaxLength="1000"}
 hbui.CreateNewWorld.advanced.exportSettingsDescription=某些功能可能会在编辑会话期间被覆盖，但导出时会完全遵守	#
 hbui.CreateNewWorld.advanced.exportSettingsHeader=导出设置	#
 hbui.CreateNewWorld.advanced.firesSpreadsDescription=火焰可以通过方块蔓延	#
@@ -12490,13 +12527,13 @@ hbui.CreateNewWorld.multiplayer.playerPermissionsOperatorLabel=管理员	#
 hbui.CreateNewWorld.multiplayer.playerPermissionsTitle=默认玩家权限	#
 hbui.CreateNewWorld.multiplayer.playerPermissionsVisitorDescription=游客只能观察你的世界，无法进行互动	#
 hbui.CreateNewWorld.multiplayer.playerPermissionsVisitorLabel=游客	#
-hbui.CreateNewWorld.multiplayer.playstationPlayerAccessFriendsDescription=任何你已添加为PlayStation™Network好友的人都可以加入	### CertRequirement: [PlayStation™Network]
-hbui.CreateNewWorld.multiplayer.playstationPlayerAccessFriendsOfFriendsDescription=你的PlayStation™Network好友的好友可以加入	### CertRequirement: [PlayStation™Network]
+hbui.CreateNewWorld.multiplayer.playstationPlayerAccessFriendsDescription=任何你已添加为PlayStation™Network好友的人都可以加入	### CertRequirement:{PS4}[PlayStation™Network] CertRequirement:{PS5}[PlayStation™Network]{MaxLength=3000}
+hbui.CreateNewWorld.multiplayer.playstationPlayerAccessFriendsOfFriendsDescription=你的PlayStation™Network好友的好友可以加入	### CertRequirement:{PS4}[PlayStation™Network] CertRequirement:{PS5}[PlayStation™Network]{MaxLength=3000}
 hbui.CreateNewWorld.multiplayer.playstationPlayerAccessInvitedDescription=任何你直接发送邀请的人都可以加入	#
-hbui.CreateNewWorld.multiplayer.playstationPlayerAccessTitle=PlayStation™Network好友	### CertRequirement: [PlayStation™Network]
+hbui.CreateNewWorld.multiplayer.playstationPlayerAccessTitle=PlayStation™Network好友	### CertRequirement:{PS4}[PlayStation™Network] CertRequirement:{PS5}[PlayStation™Network]{MaxLength=3000}
 hbui.CreateNewWorld.multiplayer.playStationPlusSubscriptionPromotionBody=你需要它才能在线玩游戏	#
 hbui.CreateNewWorld.multiplayer.playStationPlusSubscriptionPromotionButtonLabel=更多信息	#
-hbui.CreateNewWorld.multiplayer.playStationPlusSubscriptionPromotionTitle=你没有订阅PlayStation®Plus	### CertRequirement: [PlayStation®Plus]
+hbui.CreateNewWorld.multiplayer.playStationPlusSubscriptionPromotionTitle=你没有订阅PlayStation®Plus	### CertRequirement:{PS4}[PlayStation®Plus] CertRequirement:{PS5}[PlayStation®Plus] CertRequirement:{PS4}[subscription] CertRequirement:{PS5}[subscription]{MaxLength=300}
 hbui.CreateNewWorld.multiplayer.settingsTitle=设置	#
 hbui.CreateNewWorld.multiplayer.visibleToLanPlayersDescription=局域网内的玩家可以加入你的世界	#
 hbui.CreateNewWorld.multiplayer.visibleToLanPlayersTitle=对局域网内玩家可见	#
@@ -12568,6 +12605,8 @@ hbui.CreateNewWorld.resourcePacks.errorInitializationTimeoutButton=好的	#
 hbui.CreateNewWorld.resourcePacks.errorInitializationTimeoutTitle=无法下载	#
 hbui.CreateNewWorld.resourcePacks.errorNoStoreBody=现在无法连接至商城。请稍后再试。	#
 hbui.CreateNewWorld.resourcePacks.errorNoStoreTitle=连接问题	#
+hbui.CreateNewWorld.resourcePacks.errorNotEnoughDiskSpaceBody=在你的设备上释放%1$s空间以下载"%2$s"。	###Text that informs how much storage space the user needs to free up in order to be able to download the specified pack. %1$s - file size of the resource pack; %2$s - name of the resource pack {MaxLength=100}
+hbui.CreateNewWorld.resourcePacks.errorNotEnoughDiskSpaceTitle=空间不足	###Title of modal which informs user that they do not have enough disc/storage space on the device {MaxLength=50}
 hbui.CreateNewWorld.resourcePacks.errorPluginRemovalBody=移除带有插件的行为包可能会破坏世界并导致你丢失所创建的内容。	#
 hbui.CreateNewWorld.resourcePacks.errorPluginRemovalTitle=操作不被允许。	#
 hbui.CreateNewWorld.resourcePacks.errorReadingBody=此资源包已损坏，游戏无法继续读取。若要解决该问题，你可尝试删除包并重新下载。	#
@@ -12643,9 +12682,9 @@ hbui.CreateNewWorld.signInPromptWorldOnRealmModal.cancel=取消	#
 hbui.CreateNewWorld.signInPromptWorldOnRealmModal.msaGuestCreateWorld.message=你需要一个微软账号才能在Realms上创建世界。	### {StrContains="Realms"}
 hbui.CreateNewWorld.signInPromptWorldOnRealmModal.msaGuestEditWorld.message=你需要一个微软账号才能在Realms上游玩。	### {StrContains="Realms"}
 hbui.CreateNewWorld.signInPromptWorldOnRealmModal.platformGuestCreate.nintendo.message=你需要登录你的Nintendo账号才能在Realms上创建世界。	### {StrContains="Realms"}
-hbui.CreateNewWorld.signInPromptWorldOnRealmModal.platformGuestCreate.playStation.message=你需要登录你的PlayStation™Network账号才能在Realms上创建世界。	### CertRequirement: [account for PlayStation™Network]	### {StrContains="Realms"}
+hbui.CreateNewWorld.signInPromptWorldOnRealmModal.platformGuestCreate.playStation.message=你需要登录你的PlayStation™Network账号才能在Realms上创建世界。	### CertRequirement:{PS4}[account for PlayStation™Network] CertRequirement:{PS5}[account for PlayStation™Network] ### {StrContains="Realms"}{MaxLength=3000}
 hbui.CreateNewWorld.signInPromptWorldOnRealmModal.platformGuestEdit.nintendo.message=你需要登录你的Nintendo账号才能在Realms上游玩。	### {StrContains="Realms"}
-hbui.CreateNewWorld.signInPromptWorldOnRealmModal.platformGuestEdit.playStation.message=你需要登录你的PlayStation™Network账号才能在Realms上游玩。	### CertRequirement: [account for PlayStation™Network]	### {StrContains="Realms"}
+hbui.CreateNewWorld.signInPromptWorldOnRealmModal.platformGuestEdit.playStation.message=你需要登录你的PlayStation™Network账号才能在Realms上游玩。	### CertRequirement:{PS4}[account for PlayStation™Network] CertRequirement:{PS5}[account for PlayStation™Network] ### {StrContains="Realms"}{MaxLength=3000}
 hbui.CreateNewWorld.signInPromptWorldOnRealmModal.signIn=登录	#
 hbui.CreateNewWorld.signInPromptWorldOnRealmModal.title=需要登录	#
 hbui.CreateNewWorld.tabContainerNarrationSuffix=纵向子菜单	#
@@ -12673,15 +12712,15 @@ hbui.CreateNewWorldSideMenu.narrationCreateButtonHint=创建一个名为"%3$s"�
 hbui.CreateNewWorldSideMenu.resourcePacksTabLabel=资源包	#
 hbui.CreateNewWorldSideMenu.scriptingCodingTabLabel=脚本和编程	#
 hbui.CreatePartyRoute.createPartyHeader=创建派对	### Create Party page title. For the purposes of this feature, a Party is a group of players joining up to  play together.
-hbui.CreatePartyRoute.friendsTitle=好友(%1$s)	### The header for a list of Player List Items containing the user's friends
-hbui.CreatePartyRoute.inviteOnly=仅限邀请	### The title for a state where players can only join the party if invited
-hbui.CreatePartyRoute.inviteOnlyDescription=玩家必须受邀才能加入派对。	### Describes the invite only state
-hbui.CreatePartyRoute.maxPartyExplanation=一个派对最多可以有15名玩家。	### Description explaining the maximum size of a party
-hbui.CreatePartyRoute.open=打开	### The title for a state where anyone can join the party
-hbui.CreatePartyRoute.openDescription=玩家无需受邀即可加入派对。	### Describes the Open state
-hbui.CreatePartyRoute.partyPrivacy=派对隐私	### Title for the toggle which controls the party privacy state
-hbui.CreatePartyRoute.partySettings=派对设置	### title of the side bar which contains the party settings options
-hbui.CreatePartyRoute.recentlyPlayedWithTitle=最近一起玩过	### The header for a list of Player List Items containing players the user has recently played with
+hbui.CreatePartyRoute.friendsTitle=好友	### The header for a list of Player List Items containing the user's friends {MaxLength="50"}
+hbui.CreatePartyRoute.inviteOnly=仅限邀请	### The title for a state where players can only join the party if invited {MaxLength="30"}
+hbui.CreatePartyRoute.inviteOnlyDescription=玩家必须受邀才能加入派对。	### Describes the invite only state {MaxLength="120"}
+hbui.CreatePartyRoute.maxPartyExplanation=一个派对最多可以有15名玩家。	### Description explaining the maximum size of a party {MaxLength="120"}
+hbui.CreatePartyRoute.open=打开	### The title for a state where anyone can join the party {MaxLength="30"}
+hbui.CreatePartyRoute.openDescription=所有人都能加入。	### Describes the Open state {MaxLength="120"}
+hbui.CreatePartyRoute.partyPrivacy=派对隐私	### Title for the toggle which controls the party privacy state {MaxLength="30"}
+hbui.CreatePartyRoute.partySettings=派对设置	### title of the side bar which contains the party settings options {MaxLength="30"}
+hbui.CreatePartyRoute.recentlyPlayedWithTitle=最近一起玩过	### The header for a list of Player List Items containing players the user has recently played with {MaxLength="50"}
 hbui.DebugDrawer.closeButtonNarrationHint=使用下方向键执行其他操作	#
 hbui.DebugDrawer.closeDrawerShortcutInputLegend=关闭	#
 hbui.DebugDrawer.title=调试	#
@@ -12761,6 +12800,10 @@ hbui.EditWorldSideMenu.narrationPlayButtonHint=游玩一个名为"%3$s"，难度
 hbui.EditWorldSideMenu.play=游戏	#
 hbui.EditWorldSideMenu.playOnRealm=在Realms上游戏	### {StrContains="Realms"}
 hbui.EmptyFriendList.noFriendsCaption=让我们添加一些好友！	#
+hbui.EndHostingMultiplayerSessionModal.cancel=取消	### Text of button to cancel joining another game, so the player stays in the current session {MaxLength="50"}
+hbui.EndHostingMultiplayerSessionModal.continue=继续	### Text of button to continue joining another game, ending the current multiplayer session {MaxLength="50"}
+hbui.EndHostingMultiplayerSessionModal.text=你是主办者，如果你离开了这个世界，多人游戏也将结束。	###  Text of modal warning that joining another game will cause current multiplayer session to end. {MaxLength="340"}
+hbui.EndHostingMultiplayerSessionModal.title=结束多人游戏？	###  Title of modal warning that joining another game will cause current multiplayer session to end. {MaxLength="40"}
 hbui.ErrorModal.goBack=返回	#
 hbui.ErrorModal.goingBack=正在返回上一个屏幕...	#
 hbui.ErrorModal.title=出错了	#
@@ -12779,6 +12822,32 @@ hbui.FirstTimeSignInRoute.signInList3=加入数以百计的其他玩家，享受
 hbui.FirstTimeSignInRoute.signInList3PS=加入数以百计的其他玩家，享受独特的特色服务器体验	#
 hbui.FirstTimeSignInRoute.signInList4=在多个平台上访问你的商城内容和角色	#
 hbui.FirstTimeSignInRoute.signInPrompt=立即使用你的微软账号登录以解锁各种功能，包括：	#
+hbui.FlatWorld.description=构成超平坦世界的方块层	### The Minecraft block layers used to generate a flat world, eg layer of stone and a layer of bedrock. {MaxLength="1000"}  
+hbui.FlatWorld.designPreviewInputLegend=选择	### Button legend for feedback button. {MaxLength="1000"}  
+hbui.FlatWorld.designPreviewShortDescription=告诉我们你对这个新设计的看法！	### Description below feedback button. {MaxLength="1000"}  
+hbui.FlatWorld.feedbackButton=提供反馈	### Text on feedback button {MaxLength="20"}  
+hbui.FlatWorld.height=高度	### Block height, eg 3 blocks high. {MaxLength="20"}  
+hbui.FlatWorld.layers=层	### Material layers, eg layer of stone. {MaxLength="20"}  
+hbui.FlatWorld.material=材料	### Minecraft material, eg stone, redstone block or dirt. {MaxLength="30"}  
+hbui.FlatWorld.narration.dropdownHint=下方显示层材料	### Below the content the player is focused on in the UI we show the material that the layers consists of, eg layer of stone. {MaxLength="1000"}  
+hbui.FlatWorld.narration.dropdownHintEditWorldOff=无法启用超平坦世界	### Flat world setting can't be turned on. {MaxLength="1000"}  
+hbui.FlatWorld.narration.dropdownHintEditWorldOn=无法关闭超平坦世界。下方显示层材料	### Flat world setting can't be turned off. Below the content the player is focused on in the UI we show the material that the layers consists of, eg layer of stone. {MaxLength="1000"}  
+hbui.FlatWorld.narration.height=高度	### Block height, eg 3 blocks high. {MaxLength="1000"}  
+hbui.FlatWorld.narration.layer=第%1$s层	### Material layer, eg layer of stone. {MaxLength="1000"}  
+hbui.FlatWorld.narration.material=材料	### Minecraft material, eg stone, redstone block or dirt. {MaxLength="1000"}  
+hbui.FlatWorld.narration.switchHintOff=超平坦世界预设下拉菜单已隐藏，需启用超平坦世界后显示	### Flat world is a world that is generated as completely flat, preset is a predetermined composition of layers and materials for this generation. {MaxLength="1000"}  
+hbui.FlatWorld.narration.switchHintOffEditWorld=无法启用超平坦世界	### Flat world setting can't be turned on. {MaxLength="1000"}  
+hbui.FlatWorld.narration.switchHintOn=超平坦世界预设下拉菜单已显示	### Flat world is a world that is generated as completely flat, preset is a predetermined composition of layers and materials for this generation. {MaxLength="1000"}  
+hbui.FlatWorld.narration.switchHintOnEditWorld=无法关闭超平坦世界	### Flat world setting can't be turned off. {MaxLength="1000"}  
+hbui.FlatWorld.preset.bottomlessPit=无底深渊	### Flat world preset name. {MaxLength="20"}  
+hbui.FlatWorld.preset.classicFlat=经典超平坦	### Flat world preset name. {MaxLength="20"}  
+hbui.FlatWorld.preset.desert=沙漠	### Flat world preset name. {MaxLength="20"}  
+hbui.FlatWorld.preset.overworld=主世界	### Flat world preset name. {MaxLength="20"}  
+hbui.FlatWorld.preset.redstoneReady=红石就绪	### Flat world preset name. {MaxLength="20"}  
+hbui.FlatWorld.preset.snowyKingdom=冰雪王国	### Flat world preset name. {MaxLength="20"}  
+hbui.FlatWorld.preset.tunnelersDream=掘地者之梦	### Flat world preset name. {MaxLength="20"}  
+hbui.FlatWorld.preset.waterWorld=水世界	### Flat world preset name. {MaxLength="20"}  
+hbui.FlatWorld.title=超平坦世界预设	### Flat world is a world that is generated as completely flat, preset is a predetermined composition of layers and materials for this generation. {MaxLength="40"}  
 hbui.FriendList.favoriteFriendsNumberMultiple=%1$s位星标好友	#
 hbui.FriendList.favoriteFriendsNumberSingular=%1$s位星标好友	#
 hbui.FriendList.favorites=星标(%1$s/%2$s)	#
@@ -12788,21 +12857,21 @@ hbui.FriendList.mutualFriendsFriendsNumberSingular=%1$s位好友	#
 hbui.FriendList.narration.favorites=星标好友	#
 hbui.FriendList.narration.friends=好友	#
 hbui.FriendList.narration.offline=离线好友	#
-hbui.FriendList.narration.offline.playstation=PlayStation™Network离线好友	### CertRequirement: [PlayStation™Network]
+hbui.FriendList.narration.offline.playstation=PlayStation™Network离线好友	### CertRequirement:{PS4}[PlayStation™Network] CertRequirement:{PS5}[PlayStation™Network]{MaxLength=3000}
 hbui.FriendList.narration.offline.switch=离线好友	#
 hbui.FriendList.narration.online=在线好友	#
-hbui.FriendList.narration.online.playstation=PlayStation™Network在线好友	### CertRequirement: [PlayStation™Network]
+hbui.FriendList.narration.online.playstation=PlayStation™Network在线好友	### CertRequirement:{PS4}[PlayStation™Network] CertRequirement:{PS5}[PlayStation™Network]{MaxLength=3000}
 hbui.FriendList.narration.online.switch=Nintendo在线好友	#
 hbui.FriendList.noFriends=所有好友都已标记为星标好友！	#
 hbui.FriendList.noOfflineFriends=所有的好友都在线！	#
 hbui.FriendList.noOnlineFriends=没有好友在线	#
 hbui.FriendList.offline=离线(%1$s)	#
-hbui.FriendList.offline.playstation=PSN™离线好友(%1$s)	### CertRequirement: [PSN™]
+hbui.FriendList.offline.playstation=PSN™离线好友(%1$s)	### CertRequirement:{PS4}[PSN™] CertRequirement:{PS5}[PSN™]{MaxLength=3000}
 hbui.FriendList.offline.switch=Nintendo离线好友(%1$s)	#
 hbui.FriendList.offlineFriendsNumberMultiple=%1$s名好友离线	#
 hbui.FriendList.offlineFriendsNumberSingular=%1$s名好友离线	#
 hbui.FriendList.online=在线(%1$s)	#
-hbui.FriendList.online.playstation=PSN™在线好友(%1$s)	### CertRequirement: [PSN™]
+hbui.FriendList.online.playstation=PSN™在线好友(%1$s)	### CertRequirement:{PS4}[PSN™] CertRequirement:{PS5}[PSN™]{MaxLength=3000}
 hbui.FriendList.online.switch=Nintendo在线好友(%1$s)	#
 hbui.FriendList.onlineFriendsNumberMultiple=%1$s名好友在线	#
 hbui.FriendList.onlineFriendsNumberSingular=%1$s名好友在线	#
@@ -12879,7 +12948,15 @@ hbui.GenericErrorMessageModal.title=出错了	### Something went wrong while log
 hbui.GetMoreButton.buttonNarration=按钮	#
 hbui.GetMoreButton.inputLegend=探索	#
 hbui.GuidedCreateWorldRoute.title=引导式世界创建	#
+hbui.HasMarketplacePassModal.body=Realms Plus包含Marketplace Pass的内容。我们建议你在订阅Realms Plus后取消订阅Marketplace Pass。	### {StrContains="Realms Plus"} {StrContains="Marketplace Pass"} {MaxLength="200"} content for a modal suggesting users to cancel their marketplace pass after purchasing a realms plus subscription  
+hbui.HasMarketplacePassModal.goBack=返回	### {MaxLength="10"} cancel button content for a modal suggesting users to cancel their marketplace pass after purchasing a realms plus subscription  
+hbui.HasMarketplacePassModal.purchase=购买	### {MaxLength="10"} confirm button content for a modal suggesting users to cancel their marketplace pass after purchasing a realms plus subscription  
+hbui.HasMarketplacePassModal.select=选择	### {MaxLength="10"} input legend when hovering over interactable UI elements for a modal suggesting users to cancel their marketplace pass after purchasing a realms plus subscription  
+hbui.HasMarketplacePassModal.title=订阅重叠	### {MaxLength="30"} title of a modal suggesting users to cancel their marketplace pass after purchasing a realms plus subscription  
+hbui.HasMarketplacePassModal.understand=我知道了	### {MaxLength="15"} checkbox caption inside a modal suggesting users to cancel their marketplace pass after purchasing a realms plus subscription  
 hbui.HeroItem.role=文本框	#
+hbui.IdleScreenRoute.text=你已离开了一段时间。按任意键返回游戏。	### A message that appears when the player is in game and away from keyboard {MaxLength=73}  
+hbui.InboxContentItem.narration.createdBy=创作者：%1$s	#
 hbui.InboxContentItem.view=查看	#
 hbui.InboxListItem.accept=接受	#
 hbui.InboxListItem.delete=删除	#
@@ -13000,6 +13077,9 @@ hbui.InboxSettingsRoute.onlyShowFriends=仅显示来自好友的邀请	#
 hbui.InboxSettingsRoute.showInvites=启用邀请标志提醒	#
 hbui.InboxSettingsRoute.showMessages=启用消息标志提醒	#
 hbui.InboxSettingsRoute.title=收件箱设置	#
+hbui.InviteToPartyRoute.friendsTitle=好友	### The header for a list of Player List Items containing the user's friends
+hbui.InviteToPartyRoute.inviteToPartyHeader=邀请至派对	### Invite to party page title
+hbui.InviteToPartyRoute.recentlyPlayedWithTitle=最近一起游玩	### The header for a list of Player List Items containing players the user has recently played with
 hbui.JoinRealmsServer.buttonEnumeration=第%1$s个/共%2$s个	#
 hbui.JoinRealmsServer.helpButtonLabel=帮助	#
 hbui.JoinRealmsServer.inputDescription=输入你收到的邀请链接以加入Realm。	#
@@ -13054,15 +13134,11 @@ hbui.JoinRealmsServerTransient.joinRealmModal=正在加入Realm	#
 hbui.JoinRealmsServerTransient.ownerInformation=你即将加入%1$s的Realm	### The player is about to become a member of another players Realm. {StrContains="Realm"} {MaxLength="100"}
 hbui.JoinRealmsServerTransient.successSnackbar=你加入了"%1$s"！	#
 hbui.JoinRealmsServerTransient.title=加入%1$s	### Join as in "Join Realm". Becoming a member of a Realm. {MaxLength="20"}
-hbui.JoinServerWarningModal.cancel=取消	#
-hbui.JoinServerWarningModal.continue=继续	#
-hbui.JoinServerWarningModal.text=你是主办者，如果你离开了这个世界，多人游戏也将结束。	#
-hbui.JoinServerWarningModal.title=结束多人游戏？	#
-hbui.JoinWorldBlockedModal.cancel=返回	#
-hbui.JoinWorldBlockedModal.confirmation=保存并加入好友	#
-hbui.JoinWorldBlockedModal.message_p1=加入好友意味着离开当前的世界。	#
-hbui.JoinWorldBlockedModal.message_p2=别担心，当你回来时一切都还在。	#
-hbui.JoinWorldBlockedModal.title=离开当前世界？	#
+hbui.LeaveWorldThenJoinModal.cancel=返回	###  Text of button to cancel joining another game, staying in your current game. {MaxLength="50"}
+hbui.LeaveWorldThenJoinModal.confirmation=保存并加入好友	###  Text of button to accept joining another game and leave your current game. {MaxLength="50"}
+hbui.LeaveWorldThenJoinModal.message_p1=加入好友意味着离开当前的世界。	###  Text of modal warning that joining another game will leave your current game. {MaxLength="340"}
+hbui.LeaveWorldThenJoinModal.message_p2=别担心，当你回来时一切都还在。	###  Text of modal warning that joining another game will leave your current game. {MaxLength="340"}
+hbui.LeaveWorldThenJoinModal.title=离开当前世界？	###  Title of modal warning that joining another game will leave your current game. {MaxLength="40"}
 hbui.ManageShowcaseErrorModal.close=关闭	#
 hbui.ManageShowcaseErrorModal.text=保存到你的展示相册时遇到了问题。	#
 hbui.ManageShowcaseErrorModal.title=出错了	#
@@ -13102,6 +13178,26 @@ hbui.MultiplayerPrivilegeBlockedModal.title=需要权限！	#
 hbui.MultiplayerTab.PlayerAccessPanel.manageMembersButton=管理成员	### String for button that takes a realm owner to the settings page for managing the members of their Realm
 hbui.MultiplayerTab.PlayerAccessPanel.manageMembersLegend=管理成员	### String for button that takes a realm owner to the settings page for managing the members of their Realm
 hbui.MultiplayerTab.PlayerAccessPanel.title=玩家访问权限	### Heading for settings section that displays settings for what type of player can join/access the Realm
+hbui.NewPlayerPathRoute.CharacterSelector.chooseCharacter=选择角色	### Title heading for the whole screen, shown a top. {MaxLength="50"}
+hbui.NewPlayerPathRoute.CharacterSelector.controlChangeDoesNotAffectGamePlay=角色选择不影响游戏玩法	### Disclaimer under the selectable character thumbnails {MaxLength="50"}
+hbui.NewPlayerPathRoute.CharacterSelector.next=下一步	### button to go to the game mode screen {MaxLength="20"}
+hbui.NewPlayerPathRoute.Difficulty.createInputLegend=创建	### Input legend that shows when selecting each difficulty card. Means that the action is create a world with the selected difficulty {MaxLength="20"}
+hbui.NewPlayerPathRoute.Difficulty.easyDescription=敌对生物会生成但只造成较低的伤害。	### Description for the Easy difficulty choice {MaxLength="50"}
+hbui.NewPlayerPathRoute.Difficulty.easyTitle=简单	### Title for the Easy difficulty choice {MaxLength="20"}
+hbui.NewPlayerPathRoute.Difficulty.hardDescription=敌对生物会生成且造成更大的伤害。	### Description for the Hard difficulty choice {MaxLength="50"}
+hbui.NewPlayerPathRoute.Difficulty.hardTitle=困难	### Title for the Hard difficulty choice {MaxLength="20"}
+hbui.NewPlayerPathRoute.Difficulty.normalDescription=敌对生物会生成并造成标准伤害。	### Description for the Normal difficulty choice {MaxLength="50"}
+hbui.NewPlayerPathRoute.Difficulty.normalTitle=普通	### Title for the Normal difficulty choice {MaxLength="20"}
+hbui.NewPlayerPathRoute.Difficulty.peacefulDescription=没有敌对生物，只会生成部分中立生物。	### Description for the Peaceful difficulty choice {MaxLength="50"}
+hbui.NewPlayerPathRoute.Difficulty.peacefulTitle=和平	### Title for the Peaceful difficulty choice {MaxLength="20"}
+hbui.NewPlayerPathRoute.Difficulty.title=生存难度	### Title survival difficulty screen. Shown as the top header {MaxLength="30"}
+hbui.NewPlayerPathRoute.Mode.creativeDescription=无限制地创造、建筑、探索。你可以飞翔、拥有无尽的材料、并且不会被怪物伤害。	### Description for the creative mode choice {MaxLength="105"}
+hbui.NewPlayerPathRoute.Mode.creativeInputLegend=游戏	### Input legend for when having the creative card focused {MaxLength="20"}
+hbui.NewPlayerPathRoute.Mode.creativeTitle=创造	### Title for the creative game mode card {MaxLength="20"}
+hbui.NewPlayerPathRoute.Mode.survivalDescription=探索一个神秘的世界，并在此建筑、收集、合成、与怪物战斗。	### Survival card description on the Game Mode screen {MaxLength="105"}
+hbui.NewPlayerPathRoute.Mode.survivalInputLegend=选择	### Input legend for when having the survival game mode card focused {MaxLength="20"}
+hbui.NewPlayerPathRoute.Mode.survivalTitle=生存	### Title for the survival game mode card {MaxLength="30"}
+hbui.NewPlayerPathRoute.Mode.title=游戏模式	### Title for the game mode screen. Shown atop. {MaxLength="30"}
 hbui.NoInternetModal.button=关闭	### Close as in closing a modal. {MaxLength="50"}
 hbui.NoInternetModal.text=你已离线。请检查你的互联网连接以访问在线功能。	###  Player is not connected to the internet, he is offline. {MaxLength="340"}
 hbui.NoInternetModal.title=无法访问互联网	###  Player is not connected to the internet. {MaxLength="40"}
@@ -13183,6 +13279,7 @@ hbui.PacksLoadingModal.title=正在下载...	#
 hbui.PackTabs.activeTabButtonLabel=启用	#
 hbui.PackTabs.availableTabButtonLabel=可用	#
 hbui.PackTabs.narration.tab=%1$s，第%2$s个/共%3$s个标签	#
+hbui.PartyInviteListGroup.titleWithLength=%1$s(%2$s)	### the title of a list followed by the number of items in the list. The number is in brackets.
 hbui.PlayerAvatarsOnlineInWorld.full=已满	#
 hbui.PlayerBannedModalRoute.body=由于“%2$s”，你已在Minecraft多人游戏中被%1$s。你将无法在服务器上游玩、加入Realms、创建或加入多人游戏或访问商城。	#
 hbui.PlayerBannedModalRoute.body.day=你的账号距离解禁还剩1天。	#
@@ -13275,7 +13372,7 @@ hbui.PlayerListItem.narration.receivedRequest=该玩家向你发送了请求	#
 hbui.PlayerListItem.narration.sentRequest=你向该玩家发送了请求	#
 hbui.PlayerListItem.offline=离线	#
 hbui.PlayerListItem.online=在线	#
-hbui.PlayerListItem.online.playstation=PSN™在线	### CertRequirement: [PSN™]
+hbui.PlayerListItem.online.playstation=PSN™在线	### CertRequirement:{PS4}[PSN™] CertRequirement:{PS5}[PSN™]{MaxLength=3000}
 hbui.PlayerListItem.online.switch=Switch在线	#
 hbui.PlayerListItem.pending=待处理	#
 hbui.PlayerListItem.playingInSameWorld=正在该世界中游玩	###Used as player status when players are in the same world {MaxLength=30}
@@ -13430,16 +13527,16 @@ hbui.PlayScreen.guestAccountMessage.bannerLogInMicrosoft=登录或注册到微�
 hbui.PlayScreen.guestAccountMessage.buttonLogInMicrosoft=登录微软账号	#
 hbui.PlayScreen.GuestAccountMessage.nintendo.button=登录Nintendo账号	### Button that is shown in an empty state when the PlayScreen when the player is not logged into a NintendoAccount. {StrContains="Nintendo Account"} {MaxLength="50"}
 hbui.PlayScreen.GuestAccountMessage.nintendo.text=登录Nintendo账号查看此处内容。	###  Text that is shown in an empty state when the PlayScreen when the player is not logged into a NintendoAccount. {StrContains="Nintendo Account"} {MaxLength="150"}
-hbui.PlayScreen.GuestAccountMessage.playstation.button=登录PlayStation™Network	### Button that is shown in an empty state when the PlayScreen when the player is not logged into the Playstation network. CertRequirement: [PlayStation™Network] {MaxLength="50"}
-hbui.PlayScreen.GuestAccountMessage.playstation.text=登录PlayStation™Network查看此处内容。	### Text that is shown in an empty state when the PlayScreen when the player is not logged into the Playstation network. CertRequirement: [PlayStation™Network] {MaxLength="150"}
+hbui.PlayScreen.GuestAccountMessage.playstation.button=登录PlayStation™Network	### Button that is shown in an empty state when the PlayScreen when the player is not logged into the Playstation network. CertRequirement:{PS4}[PlayStation™Network] CertRequirement:{PS5}[PlayStation™Network] {MaxLength="50"}
+hbui.PlayScreen.GuestAccountMessage.playstation.text=登录PlayStation™Network查看此处内容。	### Text that is shown in an empty state when the PlayScreen when the player is not logged into the Playstation network. CertRequirement:{PS4}[PlayStation™Network] CertRequirement:{PS5}[PlayStation™Network] {MaxLength="150"}
 hbui.PlayScreen.guestAccountMessage.realmsNoMicrosoftAccount=你需要微软账号才能在Realms上游玩。	### {StrContains="Realms"}
 hbui.PlayScreen.guestAccountMessage.realmsNoPlatformAccountNintendo=你需要Nintendo账号才能在Realms上游玩	### {StrContains="Realms"}
-hbui.PlayScreen.guestAccountMessage.realmsNoPlatformAccountPlaystation=你需要PlayStation™Network账号才能在Realms上游玩	### CertRequirement: [PlayStation™Network] {StrContains="Realms"}
+hbui.PlayScreen.guestAccountMessage.realmsNoPlatformAccountPlaystation=你需要PlayStation™Network账号才能在Realms上游玩	### CertRequirement: [PlayStation™Network] {StrContains="Realms"} {MaxLength=3000}
 hbui.PlayScreen.guestAccountMessage.realmsPlaystationGuest=你需要微软账号才能在Realms上游玩。	### {StrContains="Realms"}
 hbui.PlayScreen.guestAccountMessage.serversNintendoGuest=你需要微软账号才能在服务器上游玩。	#
 hbui.PlayScreen.guestAccountMessage.serversNoMicrosoftAccount=你需要微软账号才能在服务器上游玩。	#
 hbui.PlayScreen.guestAccountMessage.serversNoPlatformAccountNintendo=你需要Nintendo账号才能在服务器上游玩	#
-hbui.PlayScreen.guestAccountMessage.serversNoPlatformAccountPlaystation=你需要PlayStation™Network账号才能在服务器上游玩	### CertRequirement: [PlayStation™Network]
+hbui.PlayScreen.guestAccountMessage.serversNoPlatformAccountPlaystation=你需要PlayStation™Network账号才能在服务器上游玩	### CertRequirement: [PlayStation™Network] {MaxLength=3000}
 hbui.PlayScreen.guestAccountMessage.serversPlaystationGuest=你需要微软账号才能在服务器上游玩。	#
 hbui.PlayScreen.GuestAccountMessage.title=尚未登录	#
 hbui.PlayScreen.importWorldErrorModal.close=关闭	#
@@ -13506,7 +13603,7 @@ hbui.PlayScreen.outOfStorageModal.close=关闭	#
 hbui.PlayScreen.outOfStorageModal.closeInputLegend=关闭	#
 hbui.PlayScreen.outOfStorageModal.title=存储空间不足	#
 hbui.PlayScreen.PlatformMultiplayerDisabledMessage.text=在你的账号中启用多人游戏以访问上述及其他社交功能。	#
-hbui.PlayScreen.PlatformMultiplayerDisabledMessage.textForPlayStation=社交功能已在PlayStation™Network账号中禁用。请在PlayStation™Network账号中启用社交功能进行访问。	### This is a communication requirement for PS. CertRequirement: [PlayStation™Network] {MaxLength=300}
+hbui.PlayScreen.PlatformMultiplayerDisabledMessage.textForPlayStation=社交功能已在PlayStation™Network账号中禁用。请在PlayStation™Network账号中启用社交功能进行访问。	### This is a communication requirement for PS. CertRequirement:{PS4}[PlayStation™Network] CertRequirement:{PS5} {MaxLength=300}
 hbui.PlayScreen.PlatformMultiplayerDisabledMessage.title=无法通过	#
 hbui.PlayScreen.realms=Realms	### {StrContains="Realms"}
 hbui.PlayScreen.RealmsBannedMessage.Banned.bodyFirstParagraph=你已被禁止访问Minecraft的Realms服务。这意味着你无法游玩或加入Realms。	### {StrContains="Minecraft"} {StrContains="Realms"}
@@ -13623,8 +13720,13 @@ hbui.PlayScreen.serverTab.externalServer=其他服务器(%1$s)	#
 hbui.PlayScreen.serverTab.externalServerDetails.address=服务器地址	#
 hbui.PlayScreen.serverTab.externalServerDetails.editBtnHint=编辑自定义服务器名称、地址或端口	#
 hbui.PlayScreen.serverTab.externalServerDetails.editButton=编辑服务器	#
+hbui.PlayScreen.serverTab.externalServerDetails.hideButton=隐藏	### Button that appears next to the ip filed in the external server details {MaxLength=30}
+hbui.PlayScreen.serverTab.externalServerDetails.hideButtonHint=隐藏服务器地址	### Hint for button that appears next to the ip filed in the external server details {MaxLength=30}
 hbui.PlayScreen.serverTab.externalServerDetails.name=服务器名称	#
+hbui.PlayScreen.serverTab.externalServerDetails.placeholder=XX.XXX.XXX.XXX	### Placeholder that appears if the address is hidden {MaxLength=30}
 hbui.PlayScreen.serverTab.externalServerDetails.port=服务器端口	#
+hbui.PlayScreen.serverTab.externalServerDetails.showButton=显示	### Button that appears next to the ip filed in the external server details {MaxLength=30}
+hbui.PlayScreen.serverTab.externalServerDetails.showButtonHint=显示服务器地址	### Hint for button that appears next to the ip filed in the external server details {MaxLength=30}
 hbui.PlayScreen.serverTab.featuredServer=精选(%1$s)	#
 hbui.PlayScreen.serverTab.joinServerErrorModal.cancel=关闭	#
 hbui.PlayScreen.serverTab.joinServerErrorModal.NoInternetError.message=你现在没有连接到互联网。请重新连接以在服务器上进行游戏。	#
@@ -13677,6 +13779,11 @@ hbui.PlayScreen.serverTab.serverForm.serverPortInvalidValue=输入的值为空�
 hbui.PlayScreen.serverTab.serverForm.serverPortLabel=端口	#
 hbui.PlayScreen.serverTab.serverForm.serverPortNotWithinRange=输入的值太大。端口号重置为最大值%1$s。	#
 hbui.PlayScreen.serverTab.ServerNotifications.highPingWarning=与所选服务器的连接不稳定。你的体验可能会受到影响。	#
+hbui.PlayScreen.serverTab.ShowServerAddressModal.firstParagraph=警告：这将使你的服务器地址对当前屏幕上的任何人可见（包括直播）。如果你的服务器地址与你的IP地址相同，泄露可能会使你面临网络攻击的风险。	### Message of modal that appears to confirm that user wants to show server address {MaxLength=500}  
+hbui.PlayScreen.serverTab.ShowServerAddressModal.primaryButton=显示服务器地址	### Primary button text of modal that appears to confirm that user wants to show server address {MaxLength=40}  
+hbui.PlayScreen.serverTab.ShowServerAddressModal.secondaryButton=返回	### Secondary button text of modal that appears to confirm that user wants to show server address {MaxLength=40}  
+hbui.PlayScreen.serverTab.ShowServerAddressModal.secondParagraph=确定要显示你的服务器地址吗？	### Message of modal that appears to confirm that user wants to show server address {MaxLength=200}  
+hbui.PlayScreen.serverTab.ShowServerAddressModal.title=个人数据泄露警告	### Title of modal that appears to confirm that user wants to show server address {MaxLength=60}  
 hbui.PlayScreen.serverTab.sideMenuInputLegend=打开	#
 hbui.PlayScreen.serverTab.unsavedAddChanges.discardChangesButton=返回且不保存	#
 hbui.PlayScreen.serverTab.unsavedAddChanges.discardChangesButtonInputLegend=返回	#
@@ -13805,7 +13912,7 @@ hbui.ProfileRoute.noInternetErrorMessage=你现在没有连接至互联网。请
 hbui.ProfileRoute.notLoggedInMSAErrorMessage=请登录微软账号查看个人资料。	#
 hbui.ProfileRoute.overviewTabButtonLabel=概览	#
 hbui.ProfileRoute.platformOnlyProfileErrorMessage=个人资料需要微软账号。	#
-hbui.ProfileRoute.playStationAccount=PlayStation™Network	### CertRequirement: [PlayStation™Network]
+hbui.ProfileRoute.playStationAccount=PlayStation™Network	### CertRequirement:{PS4}[PlayStation™Network] CertRequirement:{PS5}[PlayStation™Network] {MaxLength=3000}
 hbui.ProfileRoute.profileUnavailableErrorTitle=个人资料不可用	#
 hbui.ProfileRoute.replaceFeaturedMessage=用这张新截屏替换你当前的精选截屏？	#
 hbui.ProfileRoute.replaceFeaturedTitle=确认精选	#
@@ -13826,24 +13933,6 @@ hbui.ProgressSpinnerModal.title=加载中	#
 hbui.PromoListItem.enumeration=第%1$s个/共%2$s个	#
 hbui.PromoListItem.role=文本框	#
 hbui.PurchaseRealmOnRetailBanner.text=Realms订阅服务可以在完整版本的Minecraft中购买。    ### {StrContains="Realms"}
-hbui.QuickWorldCreationRoute.Difficulty.createInputLegend=创建	#
-hbui.QuickWorldCreationRoute.Difficulty.easyDescription=会生成敌对生物，但对玩家造成的伤害较少。	#
-hbui.QuickWorldCreationRoute.Difficulty.easyTitle=简单	#
-hbui.QuickWorldCreationRoute.Difficulty.hardDescription=会生成敌对生物，且对玩家造成的伤害更多。	#
-hbui.QuickWorldCreationRoute.Difficulty.hardTitle=困难	#
-hbui.QuickWorldCreationRoute.Difficulty.inputLegend=游戏	#
-hbui.QuickWorldCreationRoute.Difficulty.normalDescription=会生成敌对生物，并对玩家造成标准伤害。	#
-hbui.QuickWorldCreationRoute.Difficulty.normalTitle=普通	#
-hbui.QuickWorldCreationRoute.Difficulty.peacefulDescription=没有敌对生物，只会生成一些中立生物。	#
-hbui.QuickWorldCreationRoute.Difficulty.peacefulTitle=和平	#
-hbui.QuickWorldCreationRoute.Difficulty.title=生存难度	#
-hbui.QuickWorldCreationRoute.Mode.creativeDescription=建造、探索，无拘无束。你可以飞翔，并拥有无穷的材料，还不会被怪物伤害。	#
-hbui.QuickWorldCreationRoute.Mode.creativeInputLegend=游戏	#
-hbui.QuickWorldCreationRoute.Mode.creativeTitle=创造	#
-hbui.QuickWorldCreationRoute.Mode.survivalDescription=探索自己建造、收集、制作的神秘世界，与怪物战斗。	#
-hbui.QuickWorldCreationRoute.Mode.survivalInputLegend=选择	#
-hbui.QuickWorldCreationRoute.Mode.survivalTitle=生存	#
-hbui.QuickWorldCreationRoute.Mode.title=游戏模式	#
 hbui.RealmListItem.enumeration=第%1$s个/共%2$s个	#
 hbui.RealmListItem.joinedRealm=已加入Realm	#
 hbui.RealmListItem.lastPlayed=上次游戏	#
@@ -13914,8 +14003,6 @@ hbui.RealmsNewStoryRoute.textBoxPlaceholder=编写动态...	#
 hbui.RealmsPDPFAQAccordion.clickToExpand=点击展开	#
 hbui.RealmsPDPFAQAccordion.enumeration=第%1$s个/共%2$s个	#
 hbui.RealmsPDPFAQAccordion.textBlock=文本框	#
-hbui.RealmsPDPScreen.banner.notLoggedIn.link=登录或注册	#
-hbui.RealmsPDPScreen.banner.notLoggedIn.title=你需要一个微软账号才能在Realms上游玩。    ### {StrContains="Realms"}
 hbui.RealmsPDPScreen.FAQ.Cost.description1=你可以订阅Realms计划：	### {StrContains="Realms"}
 hbui.RealmsPDPScreen.FAQ.Cost.description2=Realms Core计划：%1$s/月。无限制添加成员，同时与2名其他玩家进行在线游戏。	### {StrContains="Realms Core"}
 hbui.RealmsPDPScreen.FAQ.Cost.description3=Realms Plus计划：%1$s/月。无限制添加成员，同时与10名其他玩家进行在线游戏。此外还可在Marketplace Pass目录中免费享受超过150个商城内容。	### {StrContains="Realms Plus"} {StrContains="Marketplace Pass"}
@@ -14014,6 +14101,10 @@ hbui.RealmsPurchaseSubscriptionRoute.banner.subheading.trial=免费试用30天�
 hbui.RealmsPurchaseSubscriptionRoute.banner.subheading.trial.narration=免费试用30天，然后每月%1$s	#
 hbui.RealmsPurchaseSubscriptionRoute.checkboxLabel=我同意	#
 hbui.RealmsPurchaseSubscriptionRoute.checkboxUncheckedHint=接受条款和条件以创建一个世界	### {StrContains="Realm"}
+hbui.RealmsPurchaseSubscriptionRoute.errorModals.appStoreNotReady.body=请登录你的Apple账户以继续购买。	### modal text telling players that they have to sign in to the Apple AppStore before they can continue with the Realm purchase {MaxLength="100"}  
+hbui.RealmsPurchaseSubscriptionRoute.errorModals.appStoreNotReady.cancel=返回	### text on the cancel button of the modal that tells players that they have to sign in to the Apple AppStore before they can continue with the Realm purchase {MaxLength="10"}  
+hbui.RealmsPurchaseSubscriptionRoute.errorModals.appStoreNotReady.confirm=登录App Store	### text on the confirm button of the modal that tells players that they have to sign in to the Apple AppStore before they can continue with the Realm purchase {MaxLength="20"}  
+hbui.RealmsPurchaseSubscriptionRoute.errorModals.appStoreNotReady.title=登录以继续	### title of the modal that tells players that they have to sign in to the Apple AppStore before they can continue with the Realm purchase {MaxLength="20"}  
 hbui.RealmsPurchaseSubscriptionRoute.ErrorModals.close=关闭	#
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.failedClubNameValidation.body=你输入的文本因包含可能对他人产生冒犯的词汇从而无法使用。请重试。	#
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.failedClubNameValidation.title=脏话过滤器	#
@@ -14021,6 +14112,11 @@ hbui.RealmsPurchaseSubscriptionRoute.errorModals.genericFailure.body=购买失�
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.genericFailure.title=出错了	#
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.invalidRealmName.body=你输入的Realm名称无效。请务必填写此字段，且不包含任何特殊字符。	#
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.invalidRealmName.title=无效的Realm名称	#
+hbui.RealmsPurchaseSubscriptionRoute.errorModals.memberOfTooManyRealms.body=你已拥有过多的Realms。请取消旧的Realms以购买新的Realms订阅。	### {MaxLength="150"} message saying that the player has been a member of too many Realms and thus cannot create more Realms  
+hbui.RealmsPurchaseSubscriptionRoute.errorModals.memberOfTooManyRealms.cancel=返回	### {MaxLength="10"} the button text of the modal saying that the player has been a member of too many Realms  
+hbui.RealmsPurchaseSubscriptionRoute.errorModals.memberOfTooManyRealms.title=成员过多	### {MaxLength="25"} the title of the modal saying that the player has been a member of too many Realms  
+hbui.RealmsPurchaseSubscriptionRoute.errorModals.noAccess.body=你无法在预发布环境中访问Realms。要获取访问权限，请在#ask-realms-preprod-access中咨询，或查看指南：aka.ms/Realms-preprod-access。	### {MaxLength="160"} message saying that the player has no access to Realms and where to request for help (for devs only)  
+hbui.RealmsPurchaseSubscriptionRoute.errorModals.noAccess.title=错误	### {MaxLength="5"} the title of the modal saying that the player has no access to Realms  
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.offerNotAvailableAllOffersOccupied.core.body=无法处理此购买，因为你已达到此平台上的Realms Core订阅服务限制。	#
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.offerNotAvailableAllOffersOccupied.core.title=Realms Core订阅服务已达最大值	#
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.offerNotAvailableAllOffersOccupied.plus.body=无法处理此购买，因为你已达到此平台上的Realms Plus订阅服务限制。	#
@@ -14804,6 +14900,12 @@ hbui.StorageIndicator.petabytes=%1$sPB	#
 hbui.StorageIndicator.settings=设置	#
 hbui.StorageIndicator.storageSpace=已用%1$s/共有%2$s	#
 hbui.StorageIndicator.terabytes=%1$sTB	#
+hbui.SwitchAccordion.closeInputLegend=关闭	### Close an unfolded UI element. {MaxLength="16"}
+hbui.SwitchAccordion.narrationComponentType=开关	### UI element, behaves like a physical switch button. {MaxLength="1000"}
+hbui.SwitchAccordion.narrationCountLabel=%1$s-(%2$s)	### Number x of n . {MaxLength="1000"}
+hbui.SwitchAccordion.openInputLegend=打开	### Open a folded UI element. {MaxLength="16"}
+hbui.SwitchAccordion.stateCollapsed=已收起	### Collapsed UI element. {MaxLength="16"}
+hbui.SwitchAccordion.stateExpanded=已展开	### Expanded UI element. {MaxLength="16"}
 hbui.TemplateCard.button=按钮	#
 hbui.TemplateCard.componentRole=模板	#
 hbui.TemplateCard.creator=作者：%1$s	#
@@ -14929,6 +15031,8 @@ hbui.WorldCard.multiplayerDisabled=多人游戏已禁用	#
 hbui.WorldCard.multiplayerWorldOffline=离线世界	#
 hbui.WorldCard.narration.buttonSiblings=第%1$s个/共%2$s个按钮	#
 hbui.WorldCard.narration.componentRole=世界	#
+hbui.WorldCard.narration.componentRoleLan=局域网世界	### Minecraft LAN World {MaxLength=35}
+hbui.WorldCard.narration.componentRoleLocal=世界	### Minecraft World {MaxLength=30}
 hbui.WorldCard.narration.edit=编辑	#
 hbui.WorldCard.narration.gridAmountContext=第%1$s个/共%2$s个	#
 hbui.WorldCard.narration.play=游玩	#
@@ -14941,15 +15045,27 @@ hbui.WorldListItem.multiplayerWorldOffline=离线	#
 hbui.WorldListItem.narration.button=按钮	#
 hbui.WorldListItem.narration.buttonSiblings=第%1$s个/共%2$s个按钮	#
 hbui.WorldListItem.narration.componentRole=世界	#
+hbui.WorldListItem.narration.componentRoleLan=局域网世界	### Minecraft LAN World {MaxLength=35}
+hbui.WorldListItem.narration.componentRoleLocal=世界	### Minecraft World {MaxLength=30}
 hbui.WorldListItem.narration.edit=编辑	#
 hbui.WorldListItem.narration.lastSaved=最近保存%1$s	#
 hbui.WorldListItem.narration.listLengthContext=第%1$s个/共%2$s个	#
 hbui.WorldListItem.narration.play=游玩	#
 hbui.WorldListItem.narration.worldSize=世界大小%1$s	#
 hbui.WorldListItem.play=游玩	#
+hbui.WorldSettingsButton.difficultyEasyLabel=简单	### Game difficulty setting. Should be the exact same translation as the one used elsewhere in the game. {MaxLength="20"}
+hbui.WorldSettingsButton.difficultyHardLabel=困难	### Game difficulty setting. Should be the exact same translation as the one used elsewhere in the game. {MaxLength="20"}
+hbui.WorldSettingsButton.difficultyNormalLabel=普通	### Game difficulty setting. Should be the exact same translation as the one used elsewhere in the game. {MaxLength="20"}
+hbui.WorldSettingsButton.difficultyPeacefulLabel=和平	### Game difficulty setting. Should be the exact same translation as the one used elsewhere in the game. {MaxLength="20"}
+hbui.WorldSettingsButton.gameModeAdventureLabel=冒险	### Game mode setting. Should be the exact same translation as the one used elsewhere in the game. {MaxLength="20"}
+hbui.WorldSettingsButton.gameModeCreativeLabel=创造	### Game mode setting. Should be the exact same translation as the one used elsewhere in the game. {MaxLength="20"}
+hbui.WorldSettingsButton.gameModeSurvivalLabel=生存	### Game mode setting. Should be the exact same translation as the one used elsewhere in the game. {MaxLength="20"}
+hbui.WorldSettingsButton.gameModeUnknownLabel=未知	### Unknown type of Minecraft world. A known type would be eg survival or creative. {MaxLength=21}
+hbui.WorldSettingsButton.worldNamePlaceholder=我的世界	### Placeholder for a world name. Should be the exact same translation as the one used in Create new world. {MaxLength="20"}
 hbui.WorldTag.adventure=冒险	#
 hbui.WorldTag.creative=创造	#
 hbui.WorldTag.experimental=实验性	#
+hbui.WorldTag.full=已满	### Full means that the Minecraft world is full {MaxLength=10}
 hbui.WorldTag.hardcore=极限	#
 hbui.WorldTag.lan=局域网	#
 hbui.WorldTag.survival=生存	#
@@ -15340,6 +15456,26 @@ hbui.EditorToggleContainer.prevPage=上一页按钮	#
 hbui.EditorToggleHeader.collapsed=已收起	#
 hbui.EditorToggleHeader.elementType=切换标题	#
 hbui.EditorToolRail.title=工具槽	#
+hbui.EditorTutorial.button.begin=开始	###Button on the tutorial modal that starts the tutorial. {MaxLength=1000}
+hbui.EditorTutorial.button.exit=退出	###Button on the tutorial modal that completes tutorial and closes modal. {MaxLength=1000}
+hbui.EditorTutorial.button.next=下一步	###Button on the tutorial modal that skips to the next tutorial stage. {MaxLength=1000}
+hbui.EditorTutorial.exit.cancel=取消	###Button label on the exit tutorial modal that returns user to the current tutorial stage. {MaxLength=1000}
+hbui.EditorTutorial.exit.confirm=确认	###Button label on the exit tutorial modal that ends tutorial. {MaxLength=1000}
+hbui.EditorTutorial.exit.message=你确定要退出教程吗？	###Message that shows on the tutorial modal when exit button is clicked. {MaxLength=1000}
+hbui.EditorTutorial.stage.brush.activate.message=现在，让我们学习“画笔工具”。在工具栏中选择%1$s，或使用快捷键%2$s进行激活。按住鼠标左键并移动鼠标，即可向世界中添加方块。	###Editor tutorial message that explains how to activate brush tool from UI control or key shortcut. {MaxLength=1000}
+hbui.EditorTutorial.stage.brush.delete.message=在使用“画笔工具”时，按住%1$s移除方块，而不是添加。请使用画笔移除一些方块。	###Editor tutorial message that explains how to remove blocks using brush tool. {MaxLength=1000}
+hbui.EditorTutorial.stage.end.info=你可以前往%1$s了解更多关于编辑器的内容。你还可以在工具提示中按“信息”按钮，获取具体工具的详细说明。	###Message at the end of editor tutorial that shows a link to documentation and explains where to find additional information. {MaxLength=1000}
+hbui.EditorTutorial.stage.end.message=太棒了！你现在已经掌握了Minecraft编辑器的基础知识。尽情创造你的第一个编辑器体验吧！请记住，你可以随时使用“测试世界”来试玩你的作品，并在完成后导出你的世界，或上传到Realms，与朋友们分享你的创作。	###Message at the end of editor tutorial that indicates completion of the tutorial. {MaxLength=1000}
+hbui.EditorTutorial.stage.hotbar.message=快捷栏决定了填充操作、画笔等工具使用的方块。你可以使用数字键1-9切换当前快捷栏槽位，或使用鼠标选择它。再次选择当前槽位可打开方块选择器，以更改正在使用的方块，或者你可以使用鼠标中键将其更改为世界中的某个方块。	###Editor tutorial message that explains how hotbar is operated. {MaxLength=1000}
+hbui.EditorTutorial.stage.movement.message=按住鼠标右键时：	###Editor tutorial modal message about steps to execute for player movement example. {MaxLength=1000}
+hbui.EditorTutorial.stage.movement.message.camera=移动鼠标以调整相机视角。	###Editor tutorial modal message option for rotating the player camera. {MaxLength=1000}
+hbui.EditorTutorial.stage.movement.message.navigate=使用%1$s、%2$s、%3$s和%4$s在世界中移动。	###Editor tutorial modal message option for moving the player when parameterized keyboard buttons are pressed. {MaxLength=1000}
+hbui.EditorTutorial.stage.selection.activate.message=现在，让我们学习“选择工具”。在工具栏中选择%1$s，或使用快捷键%2$s进行激活。	###Editor tutorial message that teaches how to activate selection tool with UI control or key shortcut. {MaxLength=1000}
+hbui.EditorTutorial.stage.selection.create.message=让我们决定选择区域的起点。使用鼠标选择世界中的方块，然后使用鼠标左键放置选择的起始位置。按住左键拖动鼠标，即可调整选择区域的大小。	###Editor tutorial text that teaches how to create a new selection in the world. {MaxLength=1000}
+hbui.EditorTutorial.stage.selection.fill.message=现在你已经有了一个选区，让我们用方块填充它。在操作栏中选择“填充”按钮，或按%1$s键填充所选区域。	###Editor tutorial message that explains how to fill a selection {MaxLength=1000}
+hbui.EditorTutorial.stage.selection.info.message=“选择工具”可用于移动方块、复制并粘贴到世界中，以及许多其他功能。	###Editor tutorial message that explains general use cases of selection tool. {MaxLength=1000}
+hbui.EditorTutorial.stage.start.begin=开始	###Button label that starts editor tutorial. {MaxLength=1000}
+hbui.EditorTutorial.stage.start.message=欢迎使用Minecraft编辑器！这是一款专为基岩版打造的工具，让你轻松创建精彩的世界。让我们先了解一些基础内容。本教程可以随时重播，你可以在“帮助”菜单中找到它。	###Modal message that displays before starting editor tutorial. {MaxLength=1000}
 hbui.EditorTypographySample.colorSectionTextSample1=文本样例X	#
 hbui.EditorTypographySample.colorSectionTextSample2=文本样例Y	#
 hbui.EditorTypographySample.colorSectionTextSample3=文本样例Z	#
@@ -17317,174 +17453,6 @@ progressScreen.saving=正在退出世界	#
 
 
 
-## VR
-
-xblLogin.LoginMessageGearVR=请将手机从头盔上取下，登录至Xbox网络。	#
-xblLogin.AddFriendMessageGearVR=请将手机从头盔上取下，添加Xbox网络好友。	#
-xblLogin.LoginMessageRift=请取下头盔，登录至Xbox网络。	#
-xblLogin.AddFriendMessageRift=请取下头盔，添加Xbox网络好友。	#
-xblLogin.ShowGamerCardMessageRift=请取下头盔，查看玩家卡。	#
-
-LostFocus.Rift=鼠标丢失！如果想使用它请在桌面选择Minecraft即可。	#
-
-vr.controls.HandControllerTracked=Oculus Touch跟踪已获取	#
-vr.controls.HandControllerTrackingLost=Oculus Touch跟踪已丢失	#
-
-FileBrowser.Rift.Skin=请取下头盔，选择自定义皮肤。	#
-FileBrowser.Rift.TemplateResource=请取下耳机，选择模板资源。	#
-FileBrowser.Rift.Export=请取下头盔，导出你的世界。	#
-FileBrowser.Rift.Import=请取下头盔，导入你的世界。	#
-FileBrowser.Rift.ExportBook=请取下头盔，导出你的书。	#
-FileBrowser.Rift.ExportPortfolio=请取下头盔，导出你的相片簿。	#
-FileBrowser.Rift.FileChooser=选择文件	#
-FileBrowser.Rift.FolderChooser=选择文件夹	#
-FileBrowser.Rift.ExportWorld=导出世界	#
-FileBrowser.Rift.ExportResourcesPrompt=请取下耳机，导出这些资源。	#
-FileBrowser.Rift.ExportResources=导出资源	#
-FileBrowser.Rift.SkinChooser=选择皮肤	#
-
-howtoplay.vr=VR	#
-howtoplay.vr.title=游戏指南：VR	#
-howtoplay.vr.header.1=起居室模式	#
-howtoplay.vr.text.1=进入游戏后，你会处于一个静态环境中。你的视角仍然是VR状态，你也可以环顾房间，但游戏会固定显示在你面前的虚拟屏幕上。	#
-howtoplay.vr.text.2.keyboard=你完全可以在此模式下玩游戏，所有功能都可开启。你也可通过按下 :_input_key.togglePerspective: 键切换全屏模式。	#
-howtoplay.vr.text.2.gamepad=你完全可以在此模式下玩游戏，所有功能都可开启。你也可通过按下 :_input_key.togglePerspective: 切换全屏模式。	#
-howtoplay.vr.text.2.rift_controller=你完全可以在此模式下玩游戏，所有功能都可开启。你也可通过按下 :_input_key.togglePerspective: 切换全屏模式。	#
-howtoplay.vr.text.2.windowsmr_controller=你完全可以在此模式下玩游戏，所有功能都可开启。你也可通过按下 :_input_key.togglePerspective: 切换全屏模式。	#
-howtoplay.vr.header.2=全屏模式	#
-howtoplay.vr.text.3.keyboard=在全屏模式中，你将采取游戏内玩家的视角，仿佛自己置身于世界中。你也可以随时按下 :_input_key.togglePerspective: 键再次返回起居室。	#
-howtoplay.vr.text.3.gamepad=在全屏模式中，你将采取游戏内玩家的视角，仿佛自己置身于世界中。你也可以随时按下 :_input_key.togglePerspective: 再次返回起居室。	#
-howtoplay.vr.text.3.rift_controller=在全屏模式中，你将采取游戏内玩家的视角，仿佛自己置身于世界中。你也可以随时按下 :_input_key.togglePerspective: 再次返回起居室。	#
-howtoplay.vr.text.3.windowsmr_controller=在全屏模式中，你将采取游戏内玩家的视角，仿佛自己置身于世界中。你也可以随时按下 :_input_key.togglePerspective: 再次返回起居室。	#
-howtoplay.vr.text.4=全屏模式中有许多选项可帮助你减缓眩晕的不适感。	#
-howtoplay.vr.header.centerCursor=居中光标	#
-howtoplay.vr.text.centerCursor.1=启用后，光标将始终位于起居室屏幕的中心。	#
-howtoplay.vr.header.3=相机移动	#
-howtoplay.vr.text.5=-拍摄：允许你以定期步骤转动。对于VR新手玩家建议开启此选项。	#
-howtoplay.vr.text.6=-经典：允许你自由移动相机。	#
-howtoplay.vr.text.7.keyboard=-转轮：通过旋转 :_gamepad_stick_right: 来进行转向。	#
-howtoplay.vr.text.7.gamepad=-转轮：通过旋转 :_gamepad_stick_right: 来进行转向。	#
-howtoplay.vr.text.7.rift_controller=-转轮：通过旋转 :rift_right_stick: 来进行转向。	#
-howtoplay.vr.text.7.windowsmr_controller=-转轮：通过旋转 :windowsmr_right_stick: 来进行转向。	#
-howtoplay.vr.text.snapWheel.keyboard=-拍摄转轮：可通过旋转 :_gamepad_stick_right: 来进行定期步骤转向。	#
-howtoplay.vr.text.snapWheel.gamepad=-拍摄转轮：可通过旋转 :_gamepad_stick_right: 来进行定期步骤转向。	#
-howtoplay.vr.text.snapWheel.rift_controller=-拍摄转轮：可通过旋转 :rift_right_stick: 来进行定期步骤转向。	#
-howtoplay.vr.text.snapWheel.windowsmr_controller=-拍摄转轮：可通过旋转 :windowsmr_right_stick: 来进行定期步骤转向。	#
-howtoplay.vr.header.4=拍摄角度	#
-howtoplay.vr.text.8=选中相机拍摄移动选项后，此滑块控制相机移动的幅度大小。	#
-howtoplay.vr.header.5=可变拍摄角度	#
-howtoplay.vr.text.9.keyboard=选中相机拍摄移动选项后，此开关控制相机的移动幅度是否应根据你推进 :_gamepad_stick_right: 的幅度而变化。	#
-howtoplay.vr.text.9.gamepad=选中相机拍摄移动选项后，此开关控制相机的移动幅度是否应根据你推进 :_gamepad_stick_right: 的幅度而变化。	#
-howtoplay.vr.text.9.rift_controller=选中“相机拍摄移动”选项后，此开关控制相机的移动幅度是否应根据你推进 :rift_right_stick: 的幅度而变化。	#
-howtoplay.vr.text.9.windowsmr_controller=选中“相机拍摄移动”选项后，此开关控制相机的移动幅度是否应根据你推进 :windowsmr_right_stick: 的幅度而变化。	#
-howtoplay.vr.header.6=拍摄声音	#
-howtoplay.vr.text.10=选中相机拍摄移动选项后，此开关控制相机方向更改时是否应播放声音。	#
-howtoplay.vr.header.7=移动	#
-howtoplay.vr.text.11=-线性：开启后，你的速度保持不变，并禁用所有加速/减速效果。	#
-howtoplay.vr.text.12=-经典：玩家可正常加速/减速。	#
-howtoplay.vr.header.8=跳跃	#
-howtoplay.vr.text.13=-线性：跳跃去除所有加速/减速效果。跳跃高度也会降低至与方块相齐平，而非略高于方块。	#
-howtoplay.vr.text.14=-经典：玩家可正常跳跃。	#
-howtoplay.vr.header.9=全屏模式自动跳跃	#
-howtoplay.vr.text.15=启用后，仅在全屏模式下启用自动跳跃。此选项不会影响到起居室模式。	#
-howtoplay.vr.header.10=头部转向	#
-howtoplay.vr.text.16=-视角跟随：玩家的运动方向与你的视角相同。	#
-howtoplay.vr.text.17=-玩家角度跟随：运动方向独立于你的视角。	#
-howtoplay.vr.header.11=粘性开采	#
-howtoplay.vr.text.18=-锁定：采矿时锁定特定方块。	#
-howtoplay.vr.text.19=-仅限手控器：只有在你瞄准时，采矿才会锁定特定方块。	#
-howtoplay.vr.text.20=-禁用：当你在采矿时移动视线，光标会在环境中自由移动。如果你的目光离开当前方块，采矿就会中断。	#
-howtoplay.vr.header.12=HUD位置	#
-howtoplay.vr.text.21=-漂浮：为方便游戏，HUD可以“浮动”。	#
-howtoplay.vr.text.22=-固定：HUD固定在屏幕上。	#
-howtoplay.vr.text.23=-快捷槽位：HUD显示在快捷槽位上方。	#
-howtoplay.vr.header.hudDistance=HUD距离	#
-howtoplay.vr.text.hudDistance.1=在全屏模式下，此滑块控制HUD显示的位置离视觉中心的距离。	#
-howtoplay.vr.header.14=手控器控制项	#
-howtoplay.vr.text.25=启用后，手持的物品将显示在你的手控器的位置。	#
-
-options.auxiliary=辅助功能	#
-options.user=用户	#
-options.resources=资源	#
-
-options.group.vr=VR	#
-options.group.vrTitle=VR设置	#
-
-options.vr.subheaderLivingRoom=起居室模式	#
-options.vr.subheaderImmersive=全屏模式	#
-options.vr.cameraMovement=相机移动	#
-options.vr.cameraMovement.snap=拍摄	#
-options.vr.cameraMovement.classic=经典	#
-options.vr.cameraMovement.wheel=转轮	#
-options.vr.cameraMovement.snapWheel=拍摄转轮	#
-options.vr.snapAngle=拍摄角度	#
-options.vr.variableSnapAngle=可变拍摄角度	#
-options.vr.snapSound=拍摄声音	#
-options.vr.movement=移动	#
-options.vr.movement.linear=线性	#
-options.vr.movement.classic=经典	#
-options.vr.jump=跳跃	#
-options.vr.jump.linear=线性	#
-options.vr.jump.classic=经典	#
-options.vr.headSteering=头部转向	#
-options.vr.headSteering.followGaze=视角跟随	#
-options.vr.headSteering.followPlayer=跟随玩家视角	#
-options.vr.stickyMining=粘性开采	#
-options.vr.stickyMining.lockOn=锁定	#
-options.vr.stickyMining.handControllerOnly=仅限手控器	#
-options.vr.stickyMining.disabled=已禁用	#
-options.vr.hudPosition=HUD位置	#
-options.vr.hudPosition.drift=漂浮	#
-options.vr.hudPosition.fixed=固定	#
-options.vr.hudPosition.offhand=快捷槽位	#
-options.vr.hudDistance=HUD距离	#
-
-options.vrHideHud=隐藏HUD	#
-options.vrHideHand=隐藏手	#
-options.vrHideGUI=在VR中隐藏GUI	#
-options.vrGamma=VR亮度	#
-options.vrMsaa=VR抗锯齿	#
-options.vrRenderDistance=VR能见度	#
-options.vrResetPlayerAlignment=重置VR校准	#
-options.vrHMDdisplacement=使用HMD位移进行移动	#
-options.3DRendering=3D渲染	#
-options.vrHudAtTop=HUD置顶	#
-options.vrAutojump=VR自动跳跃	#
-options.vrMovingBackwardsHardStop=逆向硬停	#
-options.vrLivingRoomCursorCentered=居中光标	#
-options.vrTapTurn=轻按转弯	#
-options.vrTapTurnSensitivity=轻按转弯灵敏度	#
-options.vrRollTurnSensitivity=滚轮转弯灵敏度	#
-options.vrHandControlsItem=手控器控制项	#
-options.vrHandControlsHUD=手控器控制HUD	#
-options.vrHandPointer=手控器指针可见	#
-options.vrHandsVisible=手控器指针可见	#
-options.vr180Turning=反转180	#
-options.vrMirrorTexture=启用镜子纹理	#
-options.vrSensitivity=VR灵敏度	#
-options.vrUIMouseSensitivity=VR光标UI灵敏度	#
-
-vr.pausescreen.recenterDevice=重新定位设备	#
-vr.pausescreen.recenterDeviceKeyboard=按下N可重新定位设备	#
-vr.warning.controllerRequired=需要游戏手柄	#
-vr.warning.controllerRecommended=建议为VR使用游戏手柄	#
-vr.warning.controllerOrMouseRecommended=建议为VR使用游戏手柄或鼠标	#
-vr.warning.exitGameWarning=是否要退出Minecraft？	#
-vr.alignscreen.title=欢迎来到VR！	#
-vr.alignscreen.pressButtonX=将你的头部对准中间位置，并按下 :_gamepad_face_button_left: 继续。	#
-vr.alignscreen.pressButtonX.tts=将你的头部对准中间位置，并按下%s继续。	#
-vr.alignscreen.pressButtonXOrMouse=将你的头部对准中间位置，并点击或按下手柄上的任意按钮继续。	#
-vr.alignscreen.pressButtonAOrSelectTrigger=将你的头部对准中间位置，按下游戏手柄上的A按钮，或者Windows Mixed Reality手柄上的触发键继续。	#
-vr.alignscreen.pressAnyButton=将你的头部对准中间位置，并按下任意按钮继续。	#
-vr.alignscreen.pressButtonX.noAlign=按下 :_gamepad_face_button_left: 继续。	#
-vr.alignscreen.pressButtonX.noAlign.tts=按下%s继续。	#
-vr.alignscreen.info=VR可能会使某些人感到不适。请根据需要进行休息，或使用起居室模式，降低视感冲击。	#
-vr.alignscreen.recalibration=你可以随时按住 :_gamepad_start: 重新校准头部位置。	#
-vr.alignscreen.recalibration.tts=你可以随时按住%s重新校准头部位置。	#
-
-accessibility.gamepad.button.systemLeft=选择按钮	#
-accessibility.gamepad.button.systemRight=开始按钮	#
-
 ## Oculus Rift Installer
 ori.confirm.exit=你确定要退出游戏吗？	#
 ori.launching=正在启动！	#
@@ -17529,8 +17497,8 @@ sunsetting.popup.sunset.geo=我们已在你所在的地区结束对该设备支�
 ## menu.play=游玩测试版	#
 
 beta.loading.1=当你处于测试版中时你只能和其他同样处于测试版中的好友一起游玩！	#
-beta.loading.2=请记住，当你处于测试版中时将不能在Realms和大多数服务器上进行游戏。	#
-beta.loading.3=你在测试版中购买的一切都是真实有效的，即使你离开了测试版它们也不会消失。	#
+beta.loading.2=请记住，当你处于测试版中时将不能在Realms和大多数服务器上进行游戏。	###A tip for the beta indicating most servers will not work
+beta.loading.3=你在测试版中购买的一切都是真实有效的，即使你离开了测试版它们也不会消失。	###A tip for the beta indicating purchases made will be retained
 beta.loading.4=在测试版中加载世界前别忘了创建备份。	#
 beta.loading.5=请在bugs.mojang.com上报告你所发现的所有漏洞！	#
 beta.loading.6=想和我们聊聊测试版？前往discord.gg/Minecraft加入Minecraft Discord！	#
@@ -17544,7 +17512,7 @@ beta.loading.13=测试版程序目前仅在安卓设备上可用。	#
 beta.loading.14=请记住，测试版并不是最终产品。你可能会遇到崩溃、故障或其他奇怪的东西。	#
 beta.loading.15=我们欢迎你的反馈！请前往feedback.minecraft.net告诉我们你的想法！	#
 beta.loading.16=你知道你可以在discord.gg/Minecraft上与我们的开发者聊天吗？	#
-beta.loading.17=不用担心崩溃，因为在测试版中的崩溃意味着之后的崩溃会少一些！	#
+beta.loading.17=不用担心崩溃，因为在测试版中的崩溃意味着之后的崩溃会少一些！	###A tip for the beta indicating crashes might occur and this lets us fix them
 beta.loading.18=中文译名修正包由Spectrollay制作!	#
 
 ## tips.realms.1=使用游戏菜单截屏。	#
