@@ -14,7 +14,7 @@
 
 [![Release](https://img.shields.io/github/v/release/Spectrollay/mclang_cn?color=20A162&label=正式版)](https://github.com/Spectrollay/mclang_cn/releases/latest)   [![Latest](https://img.shields.io/github/v/release/Spectrollay/mclang_cn?color=43B244&include_prereleases&label=最新版)](https://github.com/Spectrollay/mclang_cn/releases)
 
-[![QQ-Group](https://img.shields.io/badge/QQ-%E7%BE%A4%E7%BB%84-blue)](https://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=WVA6aPqtv99hiYleW7vUq5OsBIufCAB1&authKey=B0%2BaXMCTqnmQrGh0wzCZTyWTIPyHS%2FPEM5QXcFfVwroFowNnzs6Yg1er1%2F8Fekqp&noverify=0&group_code=833473609)   [![YH-Group](https://img.shields.io/badge/云湖-%E7%BE%A4%E7%BB%84-blue)](https://yhfx.jwznb.com/share?key=VyTE7W7sLwRl&ts=1684642802)   [![License](https://img.shields.io/badge/%E5%8D%8F%E8%AE%AE-CC%20BY--NC--SA%204.0-ff69b4)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-Hans)
+[![QQ-Group](https://img.shields.io/badge/QQ-%E7%BE%A4%E7%BB%84-blue)](https://qm.qq.com/q/AqLmKLH9mM)   [![YH-Group](https://img.shields.io/badge/云湖-%E7%BE%A4%E7%BB%84-blue)](https://yhfx.jwznb.com/share?key=VyTE7W7sLwRl&ts=1684642802)   [![License](https://img.shields.io/badge/%E5%8D%8F%E8%AE%AE-CC%20BY--NC--SA%204.0-ff69b4)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-Hans)
 
 </div>
 
