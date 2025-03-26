@@ -12313,7 +12313,7 @@ hbui.CreateNewWorld.advanced.worldSeedLabel=种子	#
 hbui.CreateNewWorld.advanced.worldSeedPlaceholder=数字	#
 hbui.CreateNewWorld.all.narrationSuffix=解锁设置以更改	#
 hbui.CreateNewWorld.all.narrationSuffixDisablesAchievements=使用当前设置你将不能获取成就	#
-hbui.CreateNewWorld.all.narrationSuffixEnablesAchievements=你不能在这个世界中获取成就	#
+hbui.CreateNewWorld.all.narrationSuffixEnablesAchievements=你无法在这个世界中获取成就	#
 hbui.CreateNewWorld.all.narrationSuffixSettingsAvailable=附加设置已启用。	#
 hbui.CreateNewWorld.all.narrationSuffixTemplateLocked=解锁设置以更改	#
 hbui.CreateNewWorld.behaviorPacks.activatedAllPacksMessageDescription=你拥有的所有行为包都已启用。前往商城或在线上获取更多行为包！	#
@@ -13201,7 +13201,7 @@ hbui.NewPlayerPathRoute.Mode.title=游戏模式	### Title for the game mode scre
 hbui.NoInternetModal.button=关闭	### Close as in closing a modal. {MaxLength="50"}
 hbui.NoInternetModal.text=你已离线。请检查你的互联网连接以访问在线功能。	###  Player is not connected to the internet, he is offline. {MaxLength="340"}
 hbui.NoInternetModal.title=无法访问互联网	###  Player is not connected to the internet. {MaxLength="40"}
-hbui.Notifications.achievementsDisabled=你不能获取成就。	#
+hbui.Notifications.achievementsDisabled=你无法获取成就。	#
 hbui.Notifications.addonStacking=堆叠多个附加包。	### {MaxLength="80"}
 hbui.Notifications.addonStackingLink=链接	### This is a text button to open a dialog to provide more information {MaxLength="20"}
 hbui.Notifications.changeSkinLink=更改皮肤	#
