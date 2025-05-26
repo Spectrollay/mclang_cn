@@ -25,101 +25,43 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta content="3;url=./" http-equiv="refresh">
+    <meta content="0;url=../minecraft_repository_test/mclang_cn/" http-equiv="refresh">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <link href="./stylesheet/loading_mask.css" rel="stylesheet">
-    <link href="./stylesheet/home.css" rel="stylesheet">
-    <link href="./images/Logo.png" rel="icon">
     <style>
-        main {
+        html {
+            height: 100%;
+        }
+
+        body {
             align-items: center;
             display: flex;
+            height: 100%;
+            margin: 0;
             justify-content: center;
+        }
+
+        h1, h2, h3, h4, h5 {
             text-align: center;
         }
 
-        a {
-            cursor: pointer;
-        }
-
-        .redirect_title, .redirect_message {
-            color: #FFFFFF;
-        }
-
-        .message {
-            margin: 10px 0;
+        .box {
+            align-items: center;
+            justify-content: center;
         }
     </style>
-    <title>中文译名修正项目</title>
+    <title>Minecraft Kit</title>
 </head>
 
 <body>
-<div class="loading_mask" id="loading_mask">
-    <div>
-        <div class="spinner"><img alt="" id="spinner_img" src="./images/Loading_white.gif"/></div>
-        <div class="spinner">
-            <div class="spinner"><span class="spinner_text">载入中</span></div>
-        </div>
-        <noscript>
-            <style>
-                #spinner_img, .spinner_text {
-                    display: none;
-                }
-            </style>
-            <div class="spinner"><img alt="" id="spinner_img_error" src="./images/ErrorMessage.png"/></div>
-            <div class="spinner">
-                <div class="spinner"><span class="spinner_text_error">页面无法加载: 当前浏览器已禁用JavaScript.<br>请在启用相关功能后访问本站.</span></div>
-            </div>
-        </noscript>
-    </div>
+<div class="box">
+    <h1>即将跳转至项目页面..</h1>
+    <h3>没有正确跳转? <a href="../minecraft_repository_test/mclang_cn/">点击这里</a>手动跳转.</h3>
 </div>
-<header>
-    <div class="header_item header_item_left" id="back" onclick="clickedBack();">
-        <img alt="Back" class="back_icon" id="back_icon" src="./images/arrowLeft.png"/>
-    </div>
-    <div class="header_logo" onclick="scrollToTop();">
-        <img alt="Title Icon" class="title_icon" src="./images/Logo.png"/>
-    </div>
-    <div class="header_item header_item_right header_right_blank"></div>
-</header>
-<scroll-view>
-    <scroll-container class="main_scroll_container">
-        <main class="main_content_center scroll_container" id="main">
-            <div>
-                <h2 class="redirect_title">页面已迁移至新地址</h2>
-                <h4 class="message redirect_message"><span id="second">3</span>秒后将自动重定向</h4>
-                <h4 class="message redirect_message">没有成功重定向?<a onclick="jumpToPage('./');">点此前往</a></h4>
-            </div>
-        </main>
-    </scroll-container>
-    <custom-scrollbar class="main_custom_scrollbar">
-        <custom-scrollbar-track></custom-scrollbar-track>
-        <custom-scrollbar-thumb></custom-scrollbar-thumb>
-    </custom-scrollbar>
-</scroll-view>
-
 </body>
 
-<script src="./javascript/accessibility.js"></script>
-<script src="./javascript/home.js"></script>
-<script src="./javascript/custom_elements.js"></script>
-<script src="./javascript/loading.js"></script>
-<script>
-    window.addEventListener('load', function () {
-        const secondElement = document.getElementById('second');
-        if (secondElement) {
-            let count = parseInt(secondElement.textContent);
-
-            const secondInterval = setInterval(function () {
-                count--;
-                secondElement.textContent = count.toString();
-                if (count <= 0) {
-                    clearInterval(secondInterval);
-                }
-            }, 1000);
-        }
-    });
-</script>
+<!--<script>-->
+<!--    -->
+<!--</script>-->
 
 </html>
