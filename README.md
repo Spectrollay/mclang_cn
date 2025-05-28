@@ -4,12 +4,12 @@
 
   # 基岩版中文译名修正
 
-  <a href="https://github.com/Spectrollay/mclang_cn/stargazers"><img src="https://img.shields.io/github/stars/Spectrollay/mclang_cn?color=eac54f&style=for-the-badge&label=星标数" alt="星标数"></a>
-  <a href="https://github.com/Spectrollay/mclang_cn/releases"><img src="https://img.shields.io/github/downloads/Spectrollay/mclang_cn/total?style=for-the-badge&label=总下载" alt="总下载"></a>
-  <a href="https://github.com/Spectrollay/mclang_cn/archive/refs/heads/main.zip"><img src="https://img.shields.io/github/repo-size/Spectrollay/mclang_cn?style=for-the-badge&label=仓库大小" alt="仓库大小"></a>
+  [![星标数](https://img.shields.io/github/stars/Spectrollay/mclang_cn?color=eac54f&style=for-the-badge&label=星标数)](https://github.com/Spectrollay/mclang_cn/stargazers)
+  [![总下载](https://img.shields.io/github/downloads/Spectrollay/mclang_cn/total?style=for-the-badge&label=总下载)](https://github.com/Spectrollay/mclang_cn/releases)
+  [![仓库大小](https://img.shields.io/github/repo-size/Spectrollay/mclang_cn?style=for-the-badge&label=仓库大小)](https://github.com/Spectrollay/mclang_cn/archive/refs/heads/main.zip)
 
-  <a href="https://github.com/Spectrollay/mclang_cn/commits/main"><img src="https://img.shields.io/github/last-commit/Spectrollay/mclang_cn?style=for-the-badge&label=最近提交" alt="最近提交"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/开源许可-CC%20BY--NC--SA%204.0-ff69b4?style=for-the-badge" alt="开源许可: CC BY-NC-SA 4.0"></a>
+  [![最近提交](https://img.shields.io/github/last-commit/Spectrollay/mclang_cn?style=for-the-badge&label=最近提交)](https://github.com/Spectrollay/mclang_cn/commits/main)
+  [![开源许可: CC BY-NC-SA 4.0](https://img.shields.io/badge/开源许可-CC%20BY--NC--SA%204.0-ff69b4?style=for-the-badge)](LICENSE)
 
   ### 和基岩版的无脑翻译说再见!  
   **适用于所有基于基岩引擎开发的游戏版本!**  
