@@ -91,16 +91,20 @@
 * **找到游戏资源包目录**：你需要将上述解压出的 `CTR_xxx_xxx/` 文件夹复制到以下对应平台的资源包目录下：
 
   * **在 Windows 上**，一般位于以下路径或类似路径：
-    * 正式版默认安装路径 - `C:\Users\[你的用户名]\AppData\Local\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\resource_packs`
-    * 测试版/预览版默认安装路径 - `C:\Users\[你的用户名]\AppData\Local\Packages\Microsoft.MinecraftWindowsBeta_8wekyb3d8bbwe\LocalState\games\com.mojang\resource_packs`
-    * 正式版自定义D盘安装路径 - `D:\WpSystem\[设备标识符]\AppData\Local\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\resource_packs`
-    * 测试版/预览版自定义D盘安装路径 - `D:\WpSystem\[设备标识符]\AppData\Local\Packages\Microsoft.MinecraftWindowsBeta_8wekyb3d8bbwe\LocalState\games\com.mojang\resource_packs`
+    | 版本类型 | 默认安装路径 | 自定义 D 盘安装路径 |
+    |----------|-------------|------------------|
+    | UWP 正式版 | `C:\Users\[用户名]\AppData\Local\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\resource_packs` | `D:\WpSystem\[设备标识符]\AppData\Local\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\resource_packs` |
+    | UWP 测试版/预览版 | `C:\Users\[用户名]\AppData\Local\Packages\Microsoft.MinecraftWindowsBeta_8wekyb3d8bbwe\LocalState\games\com.mojang\resource_packs` | `D:\WpSystem\[设备标识符]\AppData\Local\Packages\Microsoft.MinecraftWindowsBeta_8wekyb3d8bbwe\LocalState\games\com.mojang\resource_packs` |
+    | GDK 正式版 | `C:\Users\[用户名]\AppData\Roaming\Minecraft Bedrock\Users\Shared\games\com.mojang\resource_packs` | 同默认安装目录 |
+    | GDK 预览版 | `C:\Users\[用户名]\AppData\Roaming\Minecraft Bedrock Preview\Users\Shared\games\com.mojang\resource_packs` | 同默认安装目录 |
+
 
   * **在 Android 上**，一般位于以下路径：
-    * 标准版内部存储 - `/data/user/0/com.mojang.minecraftpe/games/com.mojang/resource_packs`
-    * 标准版外部存储 - `/sdcard/Android/data/com.mojang.minecraftpe/files/games/com.mojang/resource_packs`
-    * 改包版内部存储（假设改包包名为`com.mojang.minecraftbe`） - `/data/user/0/com.mojang.minecraftbe/games/com.mojang/resource_packs`
-    * 改包版外部存储（假设改包包名为`com.mojang.minecraftbe`） - `/sdcard/Android/data/com.mojang.minecraftbe/files/games/com.mojang/resource_packs`
+    | 版本类型 | 内部存储路径 | 外部存储路径 |
+    |----------|-------------|-------------|
+    | 标准版 | `/data/user/0/com.mojang.minecraftpe/games/com.mojang/resource_packs` | `/sdcard/Android/data/com.mojang.minecraftpe/files/games/com.mojang/resource_packs` |
+    | 改包版（假设包名 `com.mojang.minecraftbe`） | `/data/user/0/com.mojang.minecraftbe/games/com.mojang/resource_packs` | `/sdcard/Android/data/com.mojang.minecraftbe/files/games/com.mojang/resource_packs` |
+
 
   * **在 iOS 上**：
     由于 iOS 系统的严格沙盒机制，普通用户无法直接通过文件管理器访问或修改应用的内部文件。这意味着你不能像在 Windows 或 Android 上那样直接将文件复制到游戏目录中。**对于 iOS 用户，我们强烈建议使用方式一（ `.mcpack` 文件导入）来安装语言包，或者通过 Minecraft Realms 同步资源包。** 尝试手动修改文件需要越狱设备或使用复杂的第三方工具，这有较高风险且不被推荐。
@@ -127,11 +131,14 @@
 
 * **在 Windows 上**：
   * 你需要定位到游戏**程序安装文件夹**的数据目录。请注意，这与你平时放置资源包的`AppData`目录不同，它是受系统保护的程序目录。一般位于以下路径或类似路径（请根据你的实际版本和架构查找以 `Microsoft.MinecraftUWP_` 或 `Microsoft.MinecraftWindowsBeta_` 开头，并包含版本号和架构信息的文件夹）：
-    * 正式版默认安装路径 - `C:\Program Files\WindowsApps\Microsoft.MinecraftUWP_[版本号]_[架构]__8wekyb3d8bbwe\data`
-    * 测试版/预览版默认安装路径 - `C:\Program Files\WindowsApps\Microsoft.MinecraftWindowsBeta_[版本号]_[架构]__8wekyb3d8bbwe\data`
-    * 正式版自定义D盘安装路径 - `D:\WindowsApps\Microsoft.MinecraftUWP_[版本号]_[架构]__8wekyb3d8bbwe\data`
-    * 测试版/预览版自定义D盘安装路径 - `D:\WindowsApps\Microsoft.MinecraftWindowsBeta_[版本号]_[架构]__8wekyb3d8bbwe\data`
-  * **重要提示：** 访问 `WindowsApps` 文件夹通常需要修改其权限。请谨慎操作，并确保你有管理员权限。
+    | 版本类型 | 默认安装路径 | 自定义 D 盘安装路径 |
+    |----------|-------------|------------------|
+    | **UWP 正式版** | `C:\Program Files\WindowsApps\Microsoft.MinecraftUWP_[版本号]_[架构]__8wekyb3d8bbwe\data` | `D:\WindowsApps\Microsoft.MinecraftUWP_[版本号]_[架构]__8wekyb3d8bbwe\data` |
+    | **UWP 测试版 / 预览版** | `C:\Program Files\WindowsApps\Microsoft.MinecraftWindowsBeta_[版本号]_[架构]__8wekyb3d8bbwe\data` | `D:\WindowsApps\Microsoft.MinecraftWindowsBeta_[版本号]_[架构]__8wekyb3d8bbwe\data` |
+    | **GDK 正式版** | `C:\XboxGames\Minecraft for Windows\Content\data` | `D:\XboxGames\Minecraft for Windows\Content\data` |
+    | **GDK 预览版** | `C:\XboxGames\Minecraft Preview for Windows\Content\data` | `D:\XboxGames\Minecraft Preview for Windows\Content\data` |
+
+  * **重要提示：** 访问 `WindowsApps` 和 `XboxGames` 文件夹通常需要修改其权限。请谨慎操作，并确保你有管理员权限。
   * 在该数据目录（包含其子文件夹）下，使用文件查找工具搜索并**删除所有**名为 `zh_CN.lang` 的文件（**在此之前请一定要对要修改的原始文件进行备份！**）。
   * 删除成功后，定位到数据目录下的 `\resource_packs\vanilla\texts` 文件夹，将前面提取出的 `zh_CN.lang` 文件**复制进该目录**，形成如下所示的目录结构：
     ```
@@ -176,10 +183,7 @@
 
 ## 🤝 如何贡献
 
-我们非常欢迎你为项目贡献力量！无论是报告错误、提出建议还是参与翻译修正：
-
-* **发现问题或提出反馈：** 通过 [**GitHub Issues**](https://github.com/Spectrollay/mclang_cn/issues) 详细描述你的问题或建议。
-* **直接参与项目开发：** 欢迎 [**Fork**](https://github.com/Spectrollay/mclang_cn/fork) 本仓库，进行修改后提交 Pull Request。
+我们非常欢迎你为项目贡献力量！详情请查看 [贡献指南](CONTRIBUTING.md)。
 
 ---
 
