@@ -1,7 +1,12 @@
-## 本中文译名修正资源包依照Minecraft Wiki译名标准化进行制作
-## 版权所有: Minecraft Kit开发团队
-## 作者: Spectrollay
-## 转载或二创需保留版权
+## Minecraft基岩版中文译名修正项目
+## 描    述：基于Minecraft Wiki译名标准化的中文译名修正资源包
+## 项目链接：https://github.com/Spectrollay/mclang_cn
+## 官方网站：https://spectrollay.github.io/mclang_cn/
+## 版本发布：https://github.com/Spectrollay/mclang_cn/releases
+## 作    者：Spectrollay
+## 版权所有：Minecraft Kit开发团队
+## 许可协议：CC BY-NC-SA 4.0
+## 做出贡献：https://github.com/Spectrollay/mclang_cn?tab=contributing-ov-file
 
 accessibility.disableTTS=文本转语音已禁用
 accessibility.enableTTS=文本转语音已启用
