@@ -28,6 +28,8 @@
 
 **项目网站：** [![基岩版中文译名修正项目](https://img.shields.io/badge/基岩版中文译名修正项目-blue?style=for-the-badge)](https://spectrollay.github.io/mclang_cn/)
 
+> 📢 项目在线地址应用了 [OreUI](https://github.com/Spectrollay/OreUI) 技术，使用即代表你已阅读并同意对应的使用条款与免责声明。
+
 **适用范围：** 完美兼容各大基于基岩引擎开发的 Minecraft 游戏版本的所有平台：基岩版（使用方式详见下方）、教育版（通过改包使用）、试玩版（通过改包使用）以及基岩版编辑器（通过改文件使用）。
 
 ---
@@ -130,7 +132,7 @@
 请先从下载的语言包中提取出独立的 `zh_CN.lang` 文件以供备用。
 
 * **在 Windows 上**：
-  * 你需要定位到游戏**程序安装文件夹**的数据目录。请注意，这与你平时放置资源包的`AppData`目录不同，它是受系统保护的程序目录。一般位于以下路径或类似路径（请根据你的实际版本和架构查找以 `Microsoft.MinecraftUWP_` 或 `Microsoft.MinecraftWindowsBeta_` 开头，并包含版本号和架构信息的文件夹）：
+  * 你需要定位到游戏**程序安装文件夹**的数据目录。请注意，这与你平时放置资源包的`AppData`目录不同，它是受系统保护的程序目录。一般位于以下路径或类似路径：
     | 版本类型 | 默认安装路径 | 自定义 D 盘安装路径 |
     |----------|-------------|------------------|
     | **UWP 正式版** | `C:\Program Files\WindowsApps\Microsoft.MinecraftUWP_[版本号]_[架构]__8wekyb3d8bbwe\data` | `D:\WindowsApps\Microsoft.MinecraftUWP_[版本号]_[架构]__8wekyb3d8bbwe\data` |
