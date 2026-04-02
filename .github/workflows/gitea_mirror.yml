@@ -14,6 +14,10 @@ jobs:
         with:
           ssh-private-key: ${{ secrets.GITEA_SSH_PRIVATE_KEY }}
 
+      - name: Add gitea.com to known_hosts
+        run: |
+          ssh-keyscan -H gitea.com >> ~/.ssh/known_hosts
+
       - name: Mirror to Gitea
         run: |
           git remote add gitea git@gitea.com:Spectrollay/mclang_cn.git
