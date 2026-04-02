@@ -5,6 +5,11 @@ jobs:
   mirror:
     runs-on: ubuntu-latest
     steps:
+      - if: env.GITEA_ACTIONS == 'true'
+        run: |
+          echo "Detected Gitea Actions, skipping mirror."
+          exit 0
+
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
