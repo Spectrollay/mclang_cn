@@ -1,8 +1,9 @@
 name: Mirror to Gitea
-on: [push, delete, create]
+on: 
+  push:
 
 jobs:
-  mirror:
+  mirror_to_gitea:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
