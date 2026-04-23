@@ -14,16 +14,10 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Setup SSH
-        uses: webfactory/ssh-agent@v0.9.0
-        with:
-          ssh-private-key: ${{ secrets.GITEA_SSH_PRIVATE_KEY }}
-
-      - name: Add gitea.com to known_hosts
-        run: |
-          ssh-keyscan -H gitea.com >> ~/.ssh/known_hosts
-
       - name: Mirror to Gitea
+        env:
+          GITEA_TOKEN : ${{secrets.GITEA_TOKEN}}
         run: |
-          git remote add gitea git@gitea.com:Spectrollay/mclang_cn.git || true
+          REMOTE_URL="https://Spectrollay:${GITEA_TOKEN}@gitea.com/Spectrollay/mclang_cn.git"
+          git remote add gitea "$REMOTE_URL"
           git push --mirror gitea
