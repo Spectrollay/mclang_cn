@@ -1,6 +1,10 @@
 name: Mirror to Gitea
-on: 
+on:
   push:
+    branches:
+      - main
+    tags-ignore:
+      - '**'
 
 jobs:
   mirror_to_gitea:
@@ -21,5 +25,5 @@ jobs:
 
       - name: Mirror to Gitea
         run: |
-          git remote add gitea git@gitea.com:Spectrollay/mclang_cn.git
+          git remote add gitea git@gitea.com:Spectrollay/mclang_cn.git || true
           git push --mirror gitea
