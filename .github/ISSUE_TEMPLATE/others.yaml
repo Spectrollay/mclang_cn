@@ -1,0 +1,60 @@
+name: 其他
+description: 其他任何关于项目的咨询或反馈
+title: "[反馈]: "
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 感谢你能够向我们提出反馈!
+        ## 以下是一些注意事项,请务必阅读让我们能够更容易处理
+
+        ### 确定没有相同或类似的Issue已被提出.
+        ### 确定现有的PR和Issue没有与该反馈相同或类似的内容.
+        ### 如果你不知道如何有效且精准地表述,我们建议强烈建议你先阅读[《提问的智慧》](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md).
+
+        ---
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: 请确保你已阅读以上注意事项,然后勾选下方的确认框.
+      options:
+        - label: 我已经确认过该问题不是个人使用/操作不规范导致的,而是仓库文件中的代码错误导致的.
+          required: true
+        - label: 我已经在 [Issue Tracker](https://github.com/Spectrollay/minecraft_repository_test/issues) 以及 [Pull Request](https://github.com/Spectrollay/minecraft_repository_test/pulls) 中找过我要提出的反馈,没有找到相同或类似的Issue和PR.
+          required: true
+        - label: 我已知晓并同意, [这里](https://github.com/Spectrollay/minecraft_repository_test/issues/new/choose) 并没有合适的其他模板以进行反馈,否则请选择对应的反馈模板进行反馈.
+          required: true
+        - label: 我已知晓并同意,如果我不按照模板提供的指示进行填写,该Issue可能会被无条件自动关闭或/并锁定甚至被删除.
+          required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 内容描述
+      placeholder: 请在此输入你想要反馈的内容...
+    validations:
+      required: true
+
+  - type: input
+    id: name
+    attributes:
+      label: 你的名称
+      description: (可选)用于可能的贡献展示
+    validations:
+      required: false
+
+  - type: input
+    id: email
+    attributes:
+      label: 联系邮箱
+      description: (可选)用于可能的贡献展示
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ## 感谢你的反馈!我们稍后将评估你的反馈并向你返回评估结果.

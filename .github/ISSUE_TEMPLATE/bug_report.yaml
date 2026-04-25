@@ -1,0 +1,105 @@
+name: 错误反馈
+description: 反馈你发现的错误
+title: "[错误]: "
+labels: [ "错误" ]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 感谢你愿意向我们反馈问题!
+        ## 以下是一些注意事项,请务必阅读让我们能够更容易处理
+
+        ### 确定没有相同或类似的Issue已被提出.
+        ### 确定你在下方填写的信息是准确无误的.
+        ### 如果你不知道如何有效且精准地表述,我们强烈建议你先阅读[《提问的智慧》](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md).
+
+        ---
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: 请确保你已阅读以上注意事项,然后勾选下方的确认框.
+      options:
+        - label: 我已经确认过该问题不是个人使用/操作不规范导致的,而是仓库文件中的代码错误导致的.
+          required: true
+        - label: 我已经在 [Issue Tracker](https://github.com/Spectrollay/mclang_cn/issues) 以及 [Pull Request](https://github.com/Spectrollay/mclang_cn/pulls) 中找过我要反馈的问题,没有找到相同或类似的Issue和以及解决了相关或类似问题的PR.
+          required: true
+        - label: 我已知晓并同意,本处仅用于反馈发现的问题,否则请在 [这里](https://github.com/Spectrollay/mclang_cn/issues/new/choose) 选择合适的模板.若该Issue是关于其他内容则可能会被无条件自动关闭或/并锁定.
+          required: true
+        - label: 我已知晓并同意,如果我不按照模板提供的指示进行填写,则该Issue可能会被无条件删除.
+          required: true
+
+  - type: dropdown
+    id: error_type
+    attributes:
+      label: 错误类型
+      description: 选择你发现的错误是哪种类型的
+      options:
+        - 翻译错误
+        - 显示错误
+        - 运行错误
+        - 其他(请在下方说明)
+    validations:
+      required: true
+
+  - type: input
+    id: error_type_other
+    attributes:
+      label: 一句话描述你发现的错误类型(当上方勾选了'其他'时)
+    validations:
+      required: false
+
+  - type: textarea
+    id: original_content
+    attributes:
+      label: 发生错误的位置
+      description: |
+        可以是代码位置/运行截图等能体现出问题的内容
+        请注意:越详细的描述越能帮助我们更好定位到问题,相应的也更容易被修复
+    validations:
+      required: true
+
+  - type: textarea
+    id: fixed_content
+    attributes:
+      label: 你认为的正确内容
+      description: |
+        如果为翻译错误请在此贴出正确的翻译
+        其他情况请在此留下预期行为和修复意见
+    validations:
+      required: true
+
+  - type: textarea
+    id: logging
+    attributes:
+      label: |
+        (可选)错误日志
+        如果有输出错误日志可以在此贴出
+
+  - type: textarea
+    id: extra-desc
+    attributes:
+      label: (可选)补充说明
+
+  - type: input
+    id: name
+    attributes:
+      label: 你的名称
+      description: (可选)用于可能的贡献展示
+    validations:
+      required: false
+
+  - type: input
+    id: email
+    attributes:
+      label: 联系邮箱
+      description: (可选)用于可能的贡献展示
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ## 感谢你的反馈!我们稍后将评估你的反馈并向你返回评估结果.
